@@ -1,29 +1,54 @@
 {
-  "name": "initial-css",
+  "name": "tecnologia-equidade",
   "version": "0.1.0",
-  "description": "CSS Framework",
-  "main": "index.scss",
+  "description": "achieve equity with ethical use of technology",
+  "main": "index.html",
   "scripts": {
-    "build": "npm-run-all build:*",
-    "build:docs": "sassdoc stylesheets/ -d ./build",
-    "prebuild": "npm-run-all --parallel lint clean",
-    "clean": "rimraf ./build/",
-    "lint": "npm-run-all --parallel lint:*",
-    "lint:sass": "sass-lint \"./stylesheets/**/*.scss\" --verbose --no-exit --format junit --output ./testReports/sassLint.xml"
+    "autoprefixer": "postcss --use autoprefixer cssnano --safe -r static/dist/css/**/*.css",
+    "nano": "postcss --use cssnano --safe -r static/dist/css/**/*.css",
+    "compress:img": "imagemin src/images/**/*.{gif,jpg,png} --out-dir=static/dist/img",
+    "scss": "node-sass src/stylesheets --output-style compressed --output static/dist/css --source-map true",
+    "uglify": "uglifyjs static/dist/js/index.js -c -r -o static/dist/js/index.js",
+    "build:sass": "npm run scss && npm run autoprefixer && npm run nano",
+    "build:img": "npm run compress:img",
+    "build:dev": "npm run build:sass && npm run build:img",
+    "build:prod": "npm run build:sass && npm run build:img && npm run hashmark",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npm run lint:sass",
+    "lint:sass": "sass-lint 'src/stylesheets/**/*.scss' -v -q",
+    "pretest": "npm run lint",
+    "watch:sass": "onchange 'src/stylesheets/**/*.scss' -- npm run build:sass",
+    "watch:all": "npm run serve & npm run watch:sass",
+    "hashmark": "hashmark -l 8 dist/**/*.{js,css,map} {dir}/{name}-{hash}{ext} --cwd static --asset-map ../data/assets.json",
+    "version": "version-changelog CHANGELOG.md && changelog-verify CHANGELOG.md && git add CHANGELOG.md"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://sobral@bitbucket.org/sobral/initial-css.git"
+    "url": "git+https://sobral@bitbucket.org/eokoe_it/front_end_boiler_plate.git"
   },
   "keywords": [
+    "html",
+    "hugo",
+    "npm",
     "sass"
   ],
-  "author": "sobral <sobral@eokoe.com>",
-  "license": "MIT",
+  "author": "Daniel Vinciguerra, Juan Caros Coral, Lucas Ansei & Robson Sobral",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/eokoe_it/front_end_boiler_plate#readme",
   "devDependencies": {
-    "npm-run-all": "^4.1.2",
-    "rimraf": "^2.6.2",
+    "autoprefixer": "^8.1.0",
+    "changelog-verify": "^1.1.0",
+    "cssnano": "^3.10.0",
+    "hashmark": "^5.0.0",
+    "imagemin-cli": "^3.0.0",
+    "include-media": "^1.4.9",
+    "node-sass": "^4.7.2",
+    "onchange": "^3.3.0",
+    "postcss-cli": "^5.0.0",
     "sass-lint": "^1.12.1",
-    "sassdoc": "^2.4.0"
+    "susy": "^3.0.3",
+    "svgo": "^1.0.5",
+    "uglify-js": "^3.3.13",
+    "version-changelog": "^2.1.0"
   }
 }
