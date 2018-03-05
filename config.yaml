@@ -1,0 +1,4 @@
+baseURL:         "http://www.tecnologiaequidade.org.br"
+languageCode:    "pt-br"
+title:           "Instituto Tecnologia & Equidade"
+metaDataFormat:  "yaml"
