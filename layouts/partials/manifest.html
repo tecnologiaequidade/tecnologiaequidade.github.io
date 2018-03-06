@@ -1,0 +1,11 @@
+{{ range where .Site.Pages ".File.TranslationBaseName" "manifest" }}
+<article class="manifest" id="manifest">
+	<div class="content-container">
+		<h2>{{ .Title }}</h2>
+		{{ .Content }}
+
+		<button>PDF</button>
+		<button>DOC</button>
+	</div>
+</article>
+{{ end }}
