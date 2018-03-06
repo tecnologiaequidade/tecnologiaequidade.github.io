@@ -1,0 +1,9 @@
+{{ range where .Site.Pages ".File.TranslationBaseName" "newsletter" }}
+<article class="newsletter" id="newsletter">
+	<div class="content-container">
+		{{ .Content }}
+		<input type="email" placeholder="seu e-mail" maxlength="256">
+		<button type="submit">Enviar</button>
+	</div>
+</article>
+{{ end }}
