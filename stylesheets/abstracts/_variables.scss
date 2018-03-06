@@ -92,6 +92,20 @@ $palette: (
 		'dark': rgb(64, 68, 71),
 		'x-dark': shade(rgb(64, 68, 71), 10%),
 	),
+	'blue': (
+		'dark': rgb(51, 53, 100),
+		'pool': rgb(51, 174, 248),
+		'fluorescent': rgb(98, 72, 249),
+	),
+	'esmerald': (
+		'base': rgb(74, 204, 203),
+		'fluorescent': rgb(71, 253, 206),
+	),
+	'orange': (
+		'dark': rgb(249, 101, 63),
+		'base': rgb(250, 151, 68),
+	),
+	'red': rgb(248, 81, 85),
 	'white': rgb(255, 255, 255),
 	'black': rgb(0, 0, 0),
 	'debug': rgb(255, 0, 0),
@@ -108,10 +122,11 @@ $palette: (
 		'focus': rgb(0, 0 , 0),
 		),
 	'button': (
-		'base': rgb(225, 225, 225),
-		'focus': rgb(229, 241, 251),
-		'slider': hsl(0, 0%, 40%),
-		'submit': rgb(217, 83, 79),
+		'base': rgb(249, 101, 63),
+		'focus': rgb(249, 101, 63),
+		'slider': rgb(249, 101, 63),
+		'submit': rgb(249, 101, 63),
+		'social': rgb(51, 174, 248),
 		'reset': transparent,
 	),
 	'disabled': (
@@ -147,7 +162,6 @@ $palette: (
 		'light': rgb(229, 231, 234),
 	),
 );
-
 
 /// Default border-radius
 /// @todo Customize it to match your design.
@@ -214,9 +228,6 @@ $layers: (
 	'default': 1,
 	'below': -1,
 );
-
-
-
 
 /// Relative or absolute URL where all assets are served from.
 /// @todo Customize it to match your setup.
