@@ -1,0 +1,12 @@
+{{ range where .Site.Pages ".File.TranslationBaseName" "projects" }}
+<article class="projects" id="projects">
+	<div class="content-container">
+		<h2>{{ .Title }}</h2>
+		{{ .Content }}
+	</div>
+	<aside>
+
+	</aside>
+
+</article>
+{{ end }}
