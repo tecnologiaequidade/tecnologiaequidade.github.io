@@ -1,4 +1,26 @@
 baseURL:         "http://www.tecnologiaequidade.org.br"
 languageCode:    "pt-br"
 title:           "Instituto Tecnologia & Equidade"
+disableKinds:    ["taxonomy", "taxonomyTerm", "RSS"]
+enableRobotsTXT: true
+googleAnalytics: ""
 metaDataFormat:  "yaml"
+enableMissingTranslationPlaceholders: true
+defaultContentLanguage: pt
+disableFastRender: true
+ignoreFiles: [ "\\.tmp$", "\\.tmp\\-browserify" ]
+stepAnalysis: true
+templateMetrics: true
+pluralizeListTitles: false
+
+params:
+  description: O Instituto Tecnologia e Equidade é uma organização sem fins lucrativos que desenvolve pesquisas e projetos experimentais que contribuem para alcançar a equidade com o uso ético da tecnologia.
+  subtitle:      "Sistema de Avaliação e Gestão Unificado de Informações"
+  authorName:    "tecnologiaequidade"
+  gitHubUser:    "tecnologiaequidade"
+
+  developed:
+    IT&E:
+      name: "IT & Equidade"
+      link: "http://tecnologiaequidade.org.br"
+      logo: "IT&E.png"
