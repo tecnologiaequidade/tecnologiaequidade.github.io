@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://sobral@bitbucket.org/eokoe_it/front_end_boiler_plate.git"
+    "url": "git+https://github.com/tecnologiaequidade/tecnologiaequidade.github.io"
   },
   "keywords": [
     "html",
@@ -32,9 +32,9 @@
     "npm",
     "sass"
   ],
-  "author": "Daniel Vinciguerra, Juan Caros Coral, Lucas Ansei & Robson Sobral",
+  "author": "Evelyn Perez & Robson Sobral",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/eokoe_it/front_end_boiler_plate#readme",
+  "homepage": "http://tecnologiaequidade.org.br",
   "devDependencies": {
     "autoprefixer": "^8.1.0",
     "changelog-verify": "^1.1.0",
