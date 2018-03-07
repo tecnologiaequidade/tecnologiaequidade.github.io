@@ -22,15 +22,13 @@
 	@media screen and (min-width: breakpoint('phablet')) {
 		background-position: 95% bottom;
 		background-size: 500px auto;
-
 	}
 
 	@media screen and (min-width: breakpoint('tablet')) {
-		background-size: 700px auto;
+		background-size: 500px auto;
 		background-position: 90% bottom;
-
-
 	}
+
 	@media screen and (min-width: breakpoint('wide')) {
 		background-position: 80% bottom;
 		background-size: 800px auto;
@@ -44,49 +42,46 @@
 	padding-bottom: 40vh;
 
 	@media screen and (min-width: breakpoint('phablet')) {
-		padding-top: 10vh;
+		padding-top: 8vh;
 		padding-bottom: 50vh;
-		margin-top: 0;
+	}
+	@media screen and (min-width: breakpoint('tablet')) {
+		padding-top: 5vh;
+		padding-bottom: 50vh;
+
 	}
 	@media screen and (min-width: breakpoint('desktop')) {
-		padding-top: 20vh;
+		padding-top: 10vh;
 		padding-bottom: 20vh;
-		margin-top: calc(#{$line-height} * -3rem);
-		max-width: 50em;
+		max-width: 54em;
 	}
 }
 
 [role='banner'] {
 	@include image-replacement;
 
-	width: 12.5 rem;
-	height: 4 rem;
-
+	max-width: 20 rem;
+	max-height: 6.4375 rem;
 
 	background-image: image('logo-200w.png');
 	background-position: left;
 
 	@media screen and (min-width: breakpoint('phablet')) {
-		width: 20 rem;
-		height: 6.4375 rem;
-
 		background-image: image('logo-320w.png');
 	}
 }
 
 [role='banner'] a {
-	margin-bottom: 5em;
 	display: block;
-
 	height: 100%;
+	margin-bottom: $line-height * 3em;
+
 	@media screen and (min-width: breakpoint('phablet')) {
-		margin-bottom: 10em;
+		margin-bottom: $line-height * 5em;
 
 	}
-
-	@media screen and (min-width: breakpoint('desktop')) {
-		margin-bottom: 10em;
+	@media screen and (min-width: breakpoint('wide')) {
+		margin-bottom: $line-height * 6em;
 
 	}
-
 }
