@@ -12,7 +12,7 @@
 ///
 /// @example scss
 /// $title-font-stack: ComicSans, $basic-title-font-stack;
-$title-font-stack: $basic-title-font-stack !default;
+$title-font-stack: 'archiaregular', $basic-title-font-stack !default;
 
 
 /// Text body font stack
@@ -23,7 +23,8 @@ $title-font-stack: $basic-title-font-stack !default;
 ///
 /// @example scss
 /// $text-font-stack: ComicSans, $native-font-stack;
-$text-font-stack: $native-font-stack !default;
+$text-font-stack: 'Noto Serif', serif, $native-font-stack !default;
+
 
 
 /// Code (monospace) font stack
@@ -34,14 +35,14 @@ $text-font-stack: $native-font-stack !default;
 ///
 /// @example scss
 /// $code-font-stack: ComicSans, $basic-code-font-stack;
-$code-font-stack: $basic-code-font-stack !default;
+$code-font-stack: 'archiaregular', $basic-code-font-stack !default;
 
 
 /// Body text font-size
 ///
 /// @access public
 /// @type number
-$body-font-size: 1em !default;
+$body-font-size: 1.3em !default;
 
 /// Default Leading
 ///
@@ -59,6 +60,13 @@ $leadings: (
 	'max': 1.5,
 ) !default;
 
+/// Default Leading
+///
+/// @access public
+/// @type number
+$line-height: 1.45 !default; // 30px
+
+$gutter: $line-height * $body-font-size / 1em * 1rem;
 
 /// flexible line length map
 ///
@@ -74,7 +82,7 @@ $line-lengths: (
 /// @link http://www.modularscale.com/?1&rem&1.25
 $modularscale: (
 	base: 1rem,
-	ratio: 1.25
+	ratio: 1.333
 );
 
 /// List all available colors and tones.
@@ -189,22 +197,22 @@ $gutter: $leading * $body-font-size / 1em * 1rem;
 	@return $new-breakpoints;
 }
 
-/// Breakpoints map
+//// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 $breakpoints: _im-to-em(
 	(
 		'phone': 320px,
+		'phablet': 480px,
 		'tablet': 768px,
-		'desktop': 1024px
+		'desktop': 1024px,
+		'wide': 1280px,
 	)
 ) !default;
-
 $toggle-breakpoints: (
 	'toggle-table-layout': 48em,
 	'toggle-menu': 64em,
 );
-
 $breakpoints: map-merge($breakpoints, $toggle-breakpoints);
 
 // 320
