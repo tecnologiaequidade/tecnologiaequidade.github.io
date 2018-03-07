@@ -1,14 +1,5 @@
 {{ partial "header.html" . }}
 	<main id="conteudo" role="main">
-		<article class="greeting" id="inicio">
-			<div class="content-container">
-				<div class="instituto__logo">
-					<a href="http://tecnologiaequidade.org.br" target="_blank">IT & E</a>
-				</div>
-				<h5>{{ .Content | plainify }}</h5>
-			</div>
-		</article>
-
 		{{ partial "newsletter.html" . }}
 
 		{{ partial "manifest.html" . }}
