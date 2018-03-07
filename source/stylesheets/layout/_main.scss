@@ -7,5 +7,15 @@
  *
  * The `[role='main']` element can be a `main` or an `article`
  */
-[role='main'] {
+.main-container {
+	max-width: $max-width;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: palette('white');
 }
+
+.main-container>* {
+	padding: $gutter;
+}
+
+[role='main'] {}
