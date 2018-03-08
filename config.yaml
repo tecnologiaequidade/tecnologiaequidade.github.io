@@ -19,7 +19,7 @@ params:
   authorName:    "tecnologiaequidade"
   gitHubUser:    "tecnologiaequidade"
 
-  developed:
+  author:
     IT&E:
       name: "IT & Equidade"
       link: "http://tecnologiaequidade.org.br"
