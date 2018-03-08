@@ -1,8 +1,24 @@
-{{ range where .Site.Pages ".File.TranslationBaseName" "projects" }}
 <article class="projects">
-	<div class="content-container">
-		<h2>{{ .Title }}</h2>
-		{{ .Content }}
-	</div>
+	<h2>{{ i18n "projects" | title }}</h2>
+
+		{{ range where .Site.Pages ".File.TranslationBaseName" "fakenews" }}
+		<div class="first-project">
+			<div class="first-project-box">
+				<h2>{{ .Title }}</h2>
+			</div>
+			<div class="first-project-summary">
+				{{ .Summary }}
+			</div>
+		</div>
+		{{ end }}
+		{{ range where .Site.Pages ".File.TranslationBaseName" "pegabots" }}
+		<div class="second-project">
+			<div class="second-project-box">
+				<h2>{{ .Title }}</h2>
+			</div>
+			<div class="second-project-summary">
+				{{ .Summary }}
+			</div>
+		</div>
+		{{ end }}
 </article>
-{{ end }}
