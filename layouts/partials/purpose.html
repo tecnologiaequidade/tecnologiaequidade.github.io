@@ -1,0 +1,22 @@
+<article class="purpose">
+	<h2>{{ i18n "missionVisionValues" | title }}</h2>
+		{{ range where .Site.Pages ".File.TranslationBaseName" "mission" }}
+		<div class="mission-content">
+			<h2>{{ .Title }}</h2>
+			{{ .Summary }}
+		</div>
+		{{ end }}
+		{{ range where .Site.Pages ".File.TranslationBaseName" "vision" }}
+		<div class="vision-content">
+			<h2>{{ .Title }}</h2>
+			{{ .Summary }}
+		</div>
+		{{ end }}
+		{{ range where .Site.Pages ".File.TranslationBaseName" "values" }}
+		<div class="values-content">
+			<h2>{{ .Title }}</h2>
+			{{ .Summary }}
+		</div>
+		{{ end }}
+
+</article>
