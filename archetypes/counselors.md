@@ -6,4 +6,5 @@ medium:
 linkedin:
 facebook:
 twitter:
+avatar:
 ---
