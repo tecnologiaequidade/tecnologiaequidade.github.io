@@ -1,7 +1,7 @@
 ---
 title: "Manifesto"
 date: 2018-03-06T16:19:00-03:00
-draft: true
+draft: false
 callToDownload: "Faça download do manifesto completo"
 pdf:
 doc:

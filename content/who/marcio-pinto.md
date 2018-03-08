@@ -1,11 +1,13 @@
 ---
 title: "Márcio Vasconcelos Pinto"
 date: 2018-03-06T14:55:34-03:00
-draft: true
+draft: false
 medium:
 linkedin:
 facebook:
 twitter:
+avatar:
+weight:
 ---
 
 É administrador de empresas (Mestre e Bacharel) com 25

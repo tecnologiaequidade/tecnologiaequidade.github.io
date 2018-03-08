@@ -1,6 +1,6 @@
 ---
 title: "Comunicação estratégica de causas"
 date: 2018-03-06T14:52:00-03:00
-draft: true
+draft: false
+weight:
 ---
-
