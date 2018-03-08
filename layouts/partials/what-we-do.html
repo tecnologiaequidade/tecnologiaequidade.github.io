@@ -1,0 +1,35 @@
+<article class="what-we-do">
+	<h2>{{ i18n "whatWeDo" | title }}</h2>
+		{{ range where .Site.Pages ".File.TranslationBaseName" "pesquisa" }}
+		<div class="what-we-do-first-box">
+			<h2>{{ .Title }}</h2>
+			<div class="button-plus">
+				<a class="button" href="#">+</a>
+			</div>
+		</div>
+		{{ end }}
+		{{ range where .Site.Pages ".File.TranslationBaseName" "incidencia.md" }}
+		<div class="what-we-do-second-box">
+			<h2>{{ .Title }}</h2>
+			<div class="button-plus">
+				<a class="button" href="#">+</a>
+			</div>
+		</div>
+		{{ end }}
+		{{ range where .Site.Pages ".File.TranslationBaseName" "mobilizacoes" }}
+		<div class="what-we-do-third-box">
+			<h2>{{ .Title }}</h2>
+			<div class="button-plus">
+				<a class="button" href="#">+</a>
+			</div>
+		</div>
+		{{ end }}
+		{{ range where .Site.Pages ".File.TranslationBaseName" "comunicacao" }}
+		<div class="what-we-do-fourth-box">
+			<h2>{{ .Title }}</h2>
+			<div class="button-plus">
+				<a class="button" href="#">+</a>
+			</div>
+		</div>
+		{{ end }}
+</article>
