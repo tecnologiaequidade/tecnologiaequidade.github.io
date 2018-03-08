@@ -1,11 +1,12 @@
 {{ range where .Site.Pages ".File.TranslationBaseName" "manifest" }}
-<article class="manifest" id="manifest">
-	<div class="content-container">
+	<article class="manifest">
 		<h2>{{ .Title }}</h2>
 		{{ .Content }}
 
-		<a href="#" class="button">PDF</a>
-		<a href="#" class="button">DOC</a>
-	</div>
-</article>
+		<div>
+			<a download href="#" class="button">PDF</a>
+			<a download href="#" class="button">DOC</a>
+		</div>
+
+	</article>
 {{ end }}
