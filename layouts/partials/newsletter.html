@@ -1,9 +1,11 @@
 {{ range where .Site.Pages ".File.TranslationBaseName" "newsletter" }}
 <article class="newsletter" id="newsletter">
-	<div class="content-container">
-		{{ .Content }}
-		<input type="email" placeholder="seu e-mail" maxlength="256">
-		<button type="submit">Enviar</button>
-	</div>
+	<form>
+		<div class="content-container">
+			{{ .Content }}
+			<input type="email" placeholder="{{ i18n "e-mail" | lower }}" maxlength="256">
+			<button type="submit">{{ i18n "send" | lower }}</button>
+		</div>
+	</form>
 </article>
 {{ end }}
