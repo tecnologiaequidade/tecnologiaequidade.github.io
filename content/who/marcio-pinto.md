@@ -7,7 +7,7 @@ linkedin:
 facebook:
 twitter:
 avatar:
-weight:
+weight: 2
 ---
 
 É administrador de empresas (Mestre e Bacharel) com 25

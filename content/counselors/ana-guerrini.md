@@ -7,5 +7,5 @@ linkedin:
 facebook:
 twitter:
 avatar:
-weight:
+weight: 1
 ---
