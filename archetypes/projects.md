@@ -5,7 +5,6 @@ image:
 summary: ""
 relatedProjects:
 url: "/projetos/{{ replace .TranslationBaseName "-" " " | lower }}"
-layout: none
 draft: true
 weight:
 ---

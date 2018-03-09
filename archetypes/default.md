@@ -3,4 +3,5 @@ title: "{{ replace .TranslationBaseName "-" " " | title }}"
 date: {{ .Date }}
 draft: true
 weight:
+layout: none
 ---

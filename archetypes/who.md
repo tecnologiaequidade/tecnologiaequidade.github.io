@@ -8,4 +8,7 @@ facebook:
 twitter:
 avatar:
 weight:
+type: person
+role: team
+layout: none
 ---
