@@ -1,15 +1,7 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
-.body {
-	margin: 0;
-	padding: 0;
-}
 
-.content-conteiner {
-	padding: 0;
-	margin: 0;
-}
 .home-page article,
 .newsletter {
 	padding-top: 2rem;
@@ -41,36 +33,75 @@
 		padding-left: 20rem;
 	}
 }
+
+// newsletter section
 .newsletter {
+	text-align: center;
+
+	color: palette('blue', 'dark');
+
 	background-color: palette('esmerald', 'base');
 }
+.newsletter input {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.newsletter [type='submit'] {
+	@include image-replacement;
+
+	width: 48px;
+	height: 48px;
+
+	color: transparent;
+
+	background-image: image('newsletter.png');
+	background-position: center;
+	background-color: transparent;
+
+	border: none;
+}
+
+// manifest section
 .manifest {
 	background-color: palette('blue', 'pool');
 }
+
+// projects section
 .projects {
+	color: palette('white');
+
 	background-color: palette('blue', 'dark');
-	color: palette('white');
 }
+
+// what-we-do section
 .what-we-do {
-	background-color: palette('blue', 'pool');
 	color: palette('white');
+
+	background-color: palette('blue', 'pool');
 }
+
+// purpose section
 .purpose {
 	background-color: palette('esmerald', 'base');
 }
+
+// who-we-are section
 .who-we-are {
-	background-color: palette('blue', 'dark');
 	color: palette('white');
+
+	background-color: palette('blue', 'dark');
 }
+
+// counselors section
 .counselors {
+	color: palette('white');
+
 	background-color: palette('blue', 'pool');
-	color: palette('white');
 }
+
+// midia section
 .midia {
+	color: palette('white');
+
 	background-color: palette('esmerald', 'base');
-	color: palette('white');
-}
-.site-footer {
-	background-color: palette('blue', 'dark');
-	color: palette('white');
 }
