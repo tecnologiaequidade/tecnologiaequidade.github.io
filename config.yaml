@@ -13,6 +13,9 @@ stepAnalysis: true
 templateMetrics: true
 pluralizeListTitles: false
 
+taxonomies:
+  role: "role"
+
 params:
   description: O Instituto Tecnologia e Equidade é uma organização sem fins lucrativos que desenvolve pesquisas e projetos experimentais que contribuem para alcançar a equidade com o uso ético da tecnologia.
   subtitle:      "Sistema de Avaliação e Gestão Unificado de Informações"
