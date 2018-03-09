@@ -6,8 +6,8 @@ medium:
 linkedin:
 facebook:
 twitter:
-avatar:
-weight:
+avatar: assets/images/rodrigo-leao.png
+weight: 7
 type: person
 role: counselor
 ---

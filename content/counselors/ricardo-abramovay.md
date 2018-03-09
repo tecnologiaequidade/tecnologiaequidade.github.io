@@ -6,8 +6,8 @@ medium:
 linkedin:
 facebook:
 twitter:
-avatar:
-weight:
+avatar: assets/images/ricardo-abramovay.png
+weight: 6
 type: person
 role: counselor
 ---

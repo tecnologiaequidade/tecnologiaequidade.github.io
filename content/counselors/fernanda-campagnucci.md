@@ -6,8 +6,8 @@ medium:
 linkedin:
 facebook:
 twitter:
-avatar:
-weight:
+avatar: assets/images/fernanda-campagnucci.png
+weight: 4
 type: person
 role: counselor
 ---

@@ -6,8 +6,8 @@ medium:
 linkedin:
 facebook:
 twitter:
-avatar:
-weight:
+avatar: assets/images/ana-guerrini.png
+weight: 1
 type: person
 role: counselor
 ---

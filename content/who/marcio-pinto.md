@@ -6,8 +6,10 @@ medium:
 linkedin:
 facebook:
 twitter:
-avatar:
+avatar: assets/images/marcio-pinto.png
 weight: 2
+type: person
+role: team
 ---
 
 É administrador de empresas (Mestre e Bacharel) com 25
