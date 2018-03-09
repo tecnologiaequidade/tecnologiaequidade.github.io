@@ -1,6 +1,6 @@
 <article class="who-we-are">
 	<h2>{{ i18n "whoWeAre" | title }}</h2>
-	{{ range where .Site.Pages ".Section" "who" }}
+	{{ range where .Site.Pages ".Params.role" "team" }}
 		<section class="who-we-are__who">
 			<img src="{{ .Params.avatar }}" alt="">
 			<h3>{{ .Title }}</h3>
