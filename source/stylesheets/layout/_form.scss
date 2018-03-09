@@ -7,6 +7,7 @@
 
 form {
 	margin: 0;
+	background-color: transparent;
 }
 
 fieldset {
@@ -204,7 +205,22 @@ form br {
 
 
 
+[type="email"] {
+	border: none;
+	border-bottom: solid 1px palette('blue', 'dark');
+	font-size: 22px;
+	text-align: center;
+	color: palette('white');
+	background-color: transparent;
+	outline: none !important;
 
+	&:focus {
+		background-color: transparent;
+		border: none;
+		border-bottom: solid 1px palette('blue', 'dark');
+		outline: none !important;
+	}
+}
 
 
 
