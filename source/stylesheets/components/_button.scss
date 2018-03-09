@@ -18,7 +18,7 @@
 
 	width: auto; /* 3 */
 
-	padding: 1px 6px; /* 6 */ // sass-lint:disable-line property-units
+	padding: 0; /* 6 */ // sass-lint:disable-line property-units
 
 	overflow: visible; /* 3 */
 
@@ -27,7 +27,10 @@
 
 	cursor: pointer; /* 2 */
 
+	background-position: center;
 	background-color: palette('button'); /* 5 */
+
+	border: 0;
 
 	box-sizing: inherit;
 
@@ -71,7 +74,17 @@ button,
 }
 
 [type='submit'] {
+	@include image-replacement;
+
 	@extend %button-reset;
+
+	width: 3rem;
+	height: 3rem;
+
+	padding: o;
+
+	background-image: image('newsletter.png');
+	background-color: transparent;
 }
 
 /**

@@ -46,21 +46,6 @@
 	margin-top: 25px;
 	margin-bottom: 25px;
 }
-.newsletter [type='submit'] {
-	@include image-replacement;
-
-	width: 48px;
-	height: 48px;
-
-	color: transparent;
-
-	background-image: image('newsletter.png');
-	background-position: center;
-	background-color: transparent;
-
-	border: none;
-}
-
 // manifest section
 .manifest {
 	background-color: palette('blue', 'pool');
