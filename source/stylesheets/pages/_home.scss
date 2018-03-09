@@ -10,14 +10,12 @@
 	padding: 0;
 	margin: 0;
 }
-
 .home-page article,
 .newsletter {
 	padding-top: 2rem;
 	padding-right: 2rem;
 	padding-bottom: 2rem;
 	padding-left: 2rem;
-
 	@media screen and (min-width: breakpoint('phablet')) {
 		padding-top: 3rem;
 		padding-right: 4rem;
@@ -43,15 +41,36 @@
 		padding-left: 20rem;
 	}
 }
-
 .newsletter {
 	background-color: palette('esmerald', 'base');
-
 }
 .manifest {
 	background-color: palette('blue', 'pool');
 }
 .projects {
+	background-color: palette('blue', 'dark');
+	color: palette('white');
+}
+.what-we-do {
+	background-color: palette('blue', 'pool');
+	color: palette('white');
+}
+.purpose {
+	background-color: palette('esmerald', 'base');
+}
+.who-we-are {
+	background-color: palette('blue', 'dark');
+	color: palette('white');
+}
+.counselors {
+	background-color: palette('blue', 'pool');
+	color: palette('white');
+}
+.midia {
+	background-color: palette('esmerald', 'base');
+	color: palette('white');
+}
+.site-footer {
 	background-color: palette('blue', 'dark');
 	color: palette('white');
 }
