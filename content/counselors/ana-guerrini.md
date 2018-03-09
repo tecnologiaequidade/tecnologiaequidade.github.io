@@ -7,5 +7,7 @@ linkedin:
 facebook:
 twitter:
 avatar:
-weight: 1
+weight:
+type: person
+role: counselor
 ---

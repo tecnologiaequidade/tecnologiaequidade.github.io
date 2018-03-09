@@ -8,4 +8,6 @@ facebook:
 twitter:
 avatar:
 weight:
+type: person
+role: counselor
 ---
