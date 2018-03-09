@@ -1,0 +1,9 @@
+<article class="counselors">
+	<h2>{{ i18n "counselors" | title }}</h2>
+	{{ range where .Site.Pages ".Section" "counselors" }}
+		<div class="who-box">
+			<img src="{{ .Params.avatar }}" alt>
+			<h3>{{ .Title }}</h3>
+		</div>
+	{{ end }}
+</article>
