@@ -1,9 +1,10 @@
 <article class="counselors">
 	<h2>{{ i18n "counselors" | title }}</h2>
-	{{ range where .Site.Pages ".Section" "counselors" }}
-		<div class="who-box">
+	{{ range where .Site.Pages ".Params.role" "counselor" }}
+		<section class="counselors__counselor">
 			<img src="{{ .Params.avatar }}" alt>
 			<h3>{{ .Title }}</h3>
-		</div>
+		</section>
+		{{ .File.Path }}
 	{{ end }}
 </article>

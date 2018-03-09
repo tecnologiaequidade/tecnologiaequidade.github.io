@@ -1,10 +1,10 @@
 <article class="who-we-are">
 	<h2>{{ i18n "whoWeAre" | title }}</h2>
 	{{ range where .Site.Pages ".Section" "who" }}
-		<div class="who-box">
+		<section class="who-we-are__who">
 			<img src="{{ .Params.avatar }}" alt="">
 			<h3>{{ .Title }}</h3>
 			{{ .Summary }}
-		</div>
+		</section>
 	{{ end }}
 </article>

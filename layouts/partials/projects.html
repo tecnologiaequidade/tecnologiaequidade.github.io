@@ -2,23 +2,23 @@
 	<h2>{{ i18n "projects" | title }}</h2>
 
 		{{ range where .Site.Pages ".File.TranslationBaseName" "fakenews" }}
-		<div class="first-project">
-			<div class="first-project-box">
+		<section class="first-project">
+			<div class="first-project__box">
 				<h2>{{ .Title }}</h2>
 			</div>
-			<div class="first-project-summary">
+			<div class="first-project__summary">
 				{{ .Summary }}
 			</div>
-		</div>
+		</section>
 		{{ end }}
 		{{ range where .Site.Pages ".File.TranslationBaseName" "pegabots" }}
-		<div class="second-project">
-			<div class="second-project-box">
+		<section class="second-project">
+			<div class="second-project__box">
 				<h2>{{ .Title }}</h2>
 			</div>
-			<div class="second-project-summary">
+			<div class="second-project__summary">
 				{{ .Summary }}
 			</div>
-		</div>
+		</section>
 		{{ end }}
 </article>
