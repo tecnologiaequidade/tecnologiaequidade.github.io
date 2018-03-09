@@ -12,3 +12,8 @@
  */
 [role='contentinfo'] {
 }
+.site-footer {
+	color: palette('white');
+
+	background-color: palette('blue', 'dark');
+}
