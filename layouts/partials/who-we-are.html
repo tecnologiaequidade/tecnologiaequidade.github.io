@@ -1,24 +1,10 @@
-<article class="who">
+<article class="who-we-are">
 	<h2>{{ i18n "whoWeAre" | title }}</h2>
-		{{ range where .Site.Pages ".File.TranslationBaseName" "ariel-kogan" }}
+	{{ range where .Site.Pages ".Section" "who" }}
 		<div class="who-box">
-			<img src="{{ .avatar }}" alt>
-			<h2>{{ .Title }}</h2>
+			<img src="{{ .Params.avatar }}" alt="">
+			<h3>{{ .Title }}</h3>
 			{{ .Summary }}
 		</div>
-		{{ end }}
-		{{ range where .Site.Pages ".File.TranslationBaseName" "marcio-pinto" }}
-		<div class="who-box">
-			<img src="{{ .avatar }}" alt>
-			<h2>{{ .Title }}</h2>
-			{{ .Summary }}
-		</div>
-		{{ end }}
-		{{ range where .Site.Pages ".File.TranslationBaseName" "thiago-rondon" }}
-		<div class="who-box">
-			<img src="{{ .avatar }}" alt="">
-			<h2>{{ .Title }}</h2>
-			{{ .Summary }}
-		</div>
-		{{ end }}
+	{{ end }}
 </article>
