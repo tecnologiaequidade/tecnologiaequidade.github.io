@@ -160,8 +160,6 @@ form br {
 	color: palette('placeholder');
 }
 
-
-
 /* complex inputs
 ============================================================================ */
 [type='date'] {
@@ -178,7 +176,6 @@ form br {
 
 [type='datetime-local'] {
 }
-
 
 /* impossible inputs
 ============================================================================ */
@@ -202,9 +199,6 @@ form br {
 [type='image'] {
 	display: inline-block;
 }
-
-
-
 [type="email"] {
 	border: none;
 	border-bottom: solid 1px palette('blue', 'dark');
@@ -221,19 +215,6 @@ form br {
 		outline: none !important;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /**
  * Consistent background color on Chrome.
@@ -304,10 +285,8 @@ form br {
 
 	-moz-binding: none; //sass-lint:disable-line no-vendor-prefixes
 }
-
 [type='file'][multiple] {
 }
-
 [type='file'] > [type='text'] {
 	height: inherit;
 
@@ -320,7 +299,6 @@ form br {
 
 	border-color: inherit;
 }
-
 [type='file'] > [type='button'] {
 	height: inherit;
 
@@ -343,7 +321,6 @@ form br {
  * 3. Consistent style, width and color between all fields (same than above).
  * 4. Change font properties to `inherit` in Safari.
  */
-
 ::-webkit-file-upload-button {
 	font: inherit; /* 4 */
 
@@ -392,21 +369,6 @@ form br {
 :focus::-ms-browse {
 	outline: 1px dotted palette('black');
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ALERTS and FORMS */
 .success {
