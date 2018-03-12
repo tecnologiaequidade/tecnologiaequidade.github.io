@@ -10,7 +10,9 @@ td {
 	width: auto;
 	height: auto;
 
+	font-weight: normal;
 	font-size: 1em;
+	font-family: 'Noto Serif', $text-font-stack;
 
 	vertical-align: top;
 
@@ -96,6 +98,8 @@ tbody th {
 tbody td {
 	text-align: right;
 
+	font-variant-numeric: lining-nums oldstyle-nums;
+
 	@media screen and (min-width: #{map-get($breakpoints, 'toggle-table-layout')}) {
 		text-align: left;
 
@@ -111,8 +115,6 @@ tbody td {
 			}
 		}
 	}
-
-	font-variant-numeric: lining-nums oldstyle-nums;
 }
 
 td img {
@@ -121,7 +123,6 @@ td img {
 
 tbody tr:nth-of-type(odd) > th,
 tbody tr:nth-of-type(odd) > td {
-
 	@media screen and (min-width: #{map-get($breakpoints, 'toggle-table-layout')}) {
 		background-color: transparent;
 	}
