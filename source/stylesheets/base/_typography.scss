@@ -76,7 +76,7 @@ h1 {
 
 	font-weight: normal;
 	font-size: ms(1);
-	font-family: 'archiaregular';
+	font-family: 'archiaregular', $title-font-stack;
 
 
 	@media screen and (min-width: breakpoint('phablet')) {
@@ -90,7 +90,7 @@ h1 {
 }
 h2 {
 	font-size: ms(2);
-	font-family: 'archiabold';
+	font-family: 'archiabold', $title-font-stack;
 
 	text-align: center;
 	text-transform: uppercase;
@@ -106,7 +106,7 @@ h2 {
 }
 h3 {
 	font-size: ms(1);
-	font-family: 'archiasemibold';
+	font-family: 'archiasemibold', $title-font-stack;
 
 	text-transform: none;
 
@@ -121,7 +121,7 @@ h3 {
 }
 h4 {
 	font-size: ms(1);
-	font-family: 'archiasemibold';
+	font-family: 'archiasemibold', $title-font-stack;
 
 	color: palette('white');
 
@@ -138,7 +138,7 @@ h4 {
 }
 h5 {
 	font-size: ms(1);
-	font-family: 'archiasemibold';
+	font-family: 'archiasemibold', $title-font-stack;
 
 	color: palette('white');
 	@media screen and (min-width: breakpoint('phablet')) {
@@ -148,15 +148,14 @@ h5 {
 		font-size: ms(1);
 	}
 }
+
 p {
 	padding: 0;
 	/*  -moz-font-feature-settings: 'onum' 1, 'pnum' 1, 'zero' 1;
 		-ms-font-feature-settings: 'onum' 1, 'pnum' 1, 'zero' 1;
 		-webkit-font-feature-settings: 'onum' 1, 'pnum' 1, 'zero' 1;
 		font-feature-settings: 'onum' 1, 'pnum' 1, 'zero' 1;*/
-	margin: 0;
-
-	font-family: 'Noto Serif', serif;
+	margin-bottom: $line-height * 1em;
 
 	font-weight: normal;
 }
@@ -376,6 +375,7 @@ s {
 		content: ' [/update] ';
 	}
 }
+
 ins {
 	@extend %updated;
 
@@ -393,6 +393,7 @@ ins {
 		content: ' [/inserido] ';
 	}
 }
+
 del {
 	@extend %updated;
 
@@ -431,24 +432,26 @@ del {
 ///
 
 blockquote {
-	padding-right: $line-height * 1em;
-	padding-right: $line-height * 1em;
+	padding-left: $line-height * 1em;
 	margin-top: $line-height * 1em;
 	margin-right: $line-height * 1em;
 	margin-bottom: $line-height * 1em;
+	margin-left: 0;
 
 	font-weight: normal;
 	font-size: 1.625rem;
 	font-family: 'Noto Serif', serif;
+	border-left: solid 2px palette('white');
 }
+
 blockquote > p {
 	&::before {
-		border: solid 2px white;
 	}
 
 	&:last-of-type::after {
 	}
 }
+
 q,
 blockquote {
 	font-style: italic;
