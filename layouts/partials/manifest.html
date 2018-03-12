@@ -1,7 +1,7 @@
 {{ range where .Site.Pages ".File.TranslationBaseName" "manifest" }}
 	<article class="manifest">
 		<h2>{{ .Title }}</h2>
-		{{ .Content }}
+		<p>{{ .Content }}</p>
 
 		<div class="manifest__download">
 			<a download href="#" class="download-link">PDF</a>

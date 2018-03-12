@@ -2,20 +2,20 @@
 	<h2>{{ i18n "missionVisionValues" | title }}</h2>
 		{{ range where .Site.Pages ".File.TranslationBaseName" "mission" }}
 		<section class="mission-content">
-			<h2>{{ .Title }}</h2>
-			{{ .Content }}
+			<h4>{{ .Title }}</h4>
+			<p>{{ .Content }}</p>
 		</section>
 		{{ end }}
 		{{ range where .Site.Pages ".File.TranslationBaseName" "vision" }}
 		<section class="vision-content">
-			<h2>{{ .Title }}</h2>
-			{{ .Content }}
+			<h4>{{ .Title }}</h4>
+			<p>{{ .Content }}</p>
 		</section>
 		{{ end }}
 		{{ range where .Site.Pages ".File.TranslationBaseName" "values" }}
 		<section class="values-content">
-			<h2>{{ .Title }}</h2>
-			{{ .Content }}
+			<h4>{{ .Title }}</h4>
+			<p>{{ .Content }}</p>
 		</section>
 		{{ end }}
 </article>

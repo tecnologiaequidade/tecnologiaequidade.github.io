@@ -4,22 +4,22 @@
 		{{ range where .Site.Pages ".File.TranslationBaseName" "fakenews" }}
 		<section class="first-project">
 			<div class="first-project__box">
-				<h2>{{ .Title }}</h2>
+				<h3>{{ .Title }}</h3>
 			</div>
 			<a class="nav-link nav-link--plus--orange" href="#">{{ .Title }}</a>
 			<div class="first-project__summary">
-				{{ .Summary }}
+				<p>{{ .Summary }}</p>
 			</div>
 		</section>
 		{{ end }}
 		{{ range where .Site.Pages ".File.TranslationBaseName" "pegabots" }}
 		<section class="second-project">
 			<div class="second-project__box">
-				<h2>{{ .Title }}</h2>
+				<h3>{{ .Title }}</h3>
 			</div>
 			<a class="nav-link nav-link--plus--orange" href="#">{{ .Title }}</a>
 			<div class="second-project__summary">
-				{{ .Summary }}
+				<p>{{ .Summary }}</p>
 			</div>
 		</section>
 		{{ end }}
