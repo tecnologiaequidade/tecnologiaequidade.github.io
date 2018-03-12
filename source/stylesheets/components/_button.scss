@@ -75,15 +75,23 @@ button,
 
 	@extend %button-reset;
 
+	display: block;
+
 	width: 3.125rem;
 	height: 3.125rem;
 
 	padding: o;
+	margin-top: 2rem;
+	margin-right: auto;
+	margin-left: auto;
+
+	text-align: center;
 
 	background-image: image('newsletter.png');
 
 	border: solid 1px palette('white');
 	border-radius: 50%;
+
 
 	&:hover {
 		border: solid 1px palette('blue', 'dark');
