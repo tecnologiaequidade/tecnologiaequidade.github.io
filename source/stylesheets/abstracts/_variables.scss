@@ -23,7 +23,7 @@ $title-font-stack: 'archiaregular', $basic-title-font-stack !default;
 ///
 /// @example scss
 /// $text-font-stack: ComicSans, $native-font-stack;
-$text-font-stack: 'Noto Serif', serif, $native-font-stack !default;
+$text-font-stack: 'Noto Serif', $roboto-condensed-font-stack !default;
 
 
 
