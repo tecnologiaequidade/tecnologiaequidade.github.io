@@ -59,6 +59,8 @@ h6 a,
 legend a,
 caption a,
 dt a {
+	font-weight: normal;
+
 	text-decoration: inherit;
 
 	color: inherit;
@@ -69,37 +71,83 @@ dt a {
 		color: inherit;
 	}
 }
-
 h1 {
 	max-width: 100%;
 
+	font-weight: normal;
 	font-size: ms(1);
 	font-family: 'archiaregular';
-	font-weight: normal;
 
 
 	@media screen and (min-width: breakpoint('phablet')) {
 		max-width: 80%;
+
 		overflow: visible;
 	}
 	@media screen and (min-width: breakpoint('desktop')) {
 		font-size: ms(2);
 	}
 }
-
 h2 {
+	font-size: ms(2);
 	font-family: 'archiabold';
+
+	text-align: center;
+	text-transform: uppercase;
+
+	color: palette('white');
+
+	@media screen and (min-width: breakpoint('phablet')) {
+		font-size: ms(3);
+	}
+	@media screen and (min-width: breakpoint('desktop')) {
+		font-size: ms(4);
+	}
 }
 h3 {
+	font-size: ms(1);
 	font-family: 'archiasemibold';
+
+	text-transform: none;
+
+	color: palette('white');
+
+	@media screen and (min-width: breakpoint('phablet')) {
+		font-size: ms(2);
+	}
+	@media screen and (min-width: breakpoint('desktop')) {
+		font-size: ms(3);
+	}
 }
 h4 {
+	font-size: ms(1);
 	font-family: 'archiasemibold';
+
+	color: palette('white');
+
+	@media screen and (min-width: breakpoint('phablet')) {
+		font-size: ms(1);
+	}
+	@media screen and (min-width: breakpoint('desktop')) {
+		font-size: ms(2);
+	}
+}
+.purpose h4,
+.who-we-are h4 {
+	text-transform: uppercase;
 }
 h5 {
+	font-size: ms(1);
 	font-family: 'archiasemibold';
-}
 
+	color: palette('white');
+	@media screen and (min-width: breakpoint('phablet')) {
+		font-size: ms(2);
+	}
+	@media screen and (min-width: breakpoint('desktop')) {
+		font-size: ms(1);
+	}
+}
 p {
 	padding: 0;
 	/*  -moz-font-feature-settings: 'onum' 1, 'pnum' 1, 'zero' 1;
@@ -109,6 +157,8 @@ p {
 	margin: 0;
 
 	font-family: 'Noto Serif', serif;
+
+	font-weight: normal;
 }
 
 /**
@@ -118,10 +168,8 @@ article p {
 	orphans: 3;
 	widows: 3;
 }
-
 article p + p {
 }
-
 article h1 + p,
 article h2 + p,
 article h3 + p,
@@ -220,7 +268,6 @@ mark {
 
 meter {
 }
-
 /**
  * Address inconsistent and variable font size in all browsers.
  */
@@ -228,7 +275,6 @@ small {
 	font-size: 83.3333%;
 	line-height: inherit;
 }
-
 /**
  * Change the positioning on superscript and subscript elements
  * in all browsers (opinionated).
@@ -243,15 +289,12 @@ sup {
 
 	vertical-align: baseline;
 }
-
 sub {
 	bottom: -0.25em;
 }
-
 sup {
 	top: -0.5em;
 }
-
 time {
 	font-style: italic;
 
@@ -259,7 +302,6 @@ time {
 		cursor: help;
 	}
 }
-
 
 /* codes
 ============================================================================ */
@@ -277,10 +319,8 @@ var {
 	font-size: 1em; /* 1 */
 	font-family: $code-font-stack, monospace, monospace; /* 2 */
 }
-
 code {
 }
-
 kbd {
 }
 
@@ -301,11 +341,9 @@ pre {
 	white-space: pre-wrap; /* CSS 2.1 */
 	white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
 }
-
 samp {
 	font-style: italic;
 }
-
 var {
 	font-style: italic;
 }
@@ -316,11 +354,9 @@ del,
 s {
 	text-decoration: line-through;
 }
-
 s {
 	font-style: italic;
 }
-
 %updated {
 	&::before {
 		font-weight: bold;
@@ -340,7 +376,6 @@ s {
 		content: ' [/update] ';
 	}
 }
-
 ins {
 	@extend %updated;
 
@@ -358,7 +393,6 @@ ins {
 		content: ' [/inserido] ';
 	}
 }
-
 del {
 	@extend %updated;
 
@@ -397,28 +431,34 @@ del {
 ///
 
 blockquote {
-}
+	padding-right: $line-height * 1em;
+	padding-right: $line-height * 1em;
+	margin-top: $line-height * 1em;
+	margin-right: $line-height * 1em;
+	margin-bottom: $line-height * 1em;
 
+	font-weight: normal;
+	font-size: 1.625rem;
+	font-family: 'Noto Serif', serif;
+}
 blockquote > p {
 	&::before {
+		border: solid 2px white;
 	}
 
 	&:last-of-type::after {
 	}
 }
-
 q,
 blockquote {
 	font-style: italic;
 
 	color: palette('quotes');
 }
-
 cite {
 	font-style: italic;
 	font-size: 1em;
 }
-
 blockquote footer {
 	&::before {
 		content: '\2014 \00A0';
