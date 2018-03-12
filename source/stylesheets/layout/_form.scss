@@ -204,9 +204,9 @@ form br {
 	border-bottom: solid 1px palette('blue', 'dark');
 	font-size: 22px;
 	text-align: center;
-	color: palette('white');
 	background-color: transparent;
 	outline: none !important;
+	width: 90%;
 
 	&:focus {
 		background-color: transparent;
