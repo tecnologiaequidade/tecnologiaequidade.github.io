@@ -2,9 +2,28 @@
 	<h2>{{ i18n "whoWeAre" | title }}</h2>
 	{{ range where .Site.Pages ".Params.role" "team" }}
 		<section class="who-we-are__who">
-			<img src="{{ .Params.avatar }}" alt="">
-			<h3>{{ .Title }}</h3>
-			{{ .Summary }}
+			<table>
+				<thead>
+					<tr>
+						<td><img src="{{ .Params.avatar }}" alt></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><h3>{{ .Title }}</h3>{{ .Summary }}</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td>
+							<a class="social-link social-link--medium" href="#">{{ .Title }}</a>
+							<a class="social-link social-link--linkedin" href="#">{{ .Title }}</a>
+							<a class="social-link social-link--facebook" href="#">{{ .Title }}</a>
+							<a class="social-link social-link--twitter" href="#">{{ .Title }}</a>
+						</td>
+					</tr>
+				</tfoot>
+			</table>
 		</section>
 	{{ end }}
 </article>
