@@ -30,7 +30,7 @@
 	background-position: center;
 	background-color: palette('button'); /* 5 */
 
-	border: 0;
+	border: solid 1px ;
 
 	box-sizing: inherit;
 
@@ -62,29 +62,32 @@
 html [type='button'] {
 	@extend %button-reset;
 }
-
 button,
 [role='button'],
 [type='button'] {
 	@extend %button-reset;
 }
-
 [type='reset'] {
 	@extend %button-reset;
 }
-
 [type='submit'] {
 	@include image-replacement;
 
 	@extend %button-reset;
 
-	width: 3rem;
-	height: 3rem;
+	width: 3.125rem;
+	height: 3.125rem;
 
 	padding: o;
 
 	background-image: image('newsletter.png');
-	background-color: transparent;
+
+	border: solid 1px palette('white');
+	border-radius: 50%;
+
+	&:hover {
+		border: solid 1px palette('blue', 'dark');
+	}
 }
 
 /**
