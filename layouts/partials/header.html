@@ -4,7 +4,9 @@
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<meta charset="utf-8">
 	<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
-	<link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+
 	<meta content="width=device-width,initial-scale=1.0" name="viewport">
 
 	<link rel="stylesheet" href="/assets/stylesheets/index.css" media="all">
@@ -15,8 +17,6 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
 <body>
-
-
 <header class="site-header">
 	<div class="content-header">
 		<div role="banner">
@@ -24,9 +24,12 @@
 				{{ .Site.Title }}
 			</a>
 		</div>
-		<h1>{{ .Content | plainify }}</h1>
-
-		<a class="nav-link nav-link--right--orange" href="#">{{ i18n "about" | lower }}</a>
+		<div class="site-header__content">
+			<h1>{{ .Content | plainify }}</h1>
+		</div>
+		<div class="site-header__nav-link">
+			<a class="nav-link nav-link--right--orange" href="#">{{ i18n "about" | lower }}</a>
+		</div>
 	</div>
 </header>
 <div class="content-container">
