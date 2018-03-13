@@ -133,13 +133,63 @@
 
 .navlink-project {
 	margin-top: 1rem;
+	margin-top: 1rem;
 }
 
 // what-we-do section
 .what-we-do {
+	margin: auto;
+
 	color: palette('white');
 
 	background-color: palette('blue', 'pool');
+}
+
+.what-we-do h4 {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+.what-we-do__first-box,
+.what-we-do__second-box,
+.what-we-do__third-box,
+.what-we-do__fourth-box {
+	height: 15rem;
+	min-height: 15rem;
+
+	padding: 1rem;
+	margin: 1rem;
+	@media screen and (min-width: breakpoint('tablet')) {
+		display: inline-grid;
+
+		width: 45%;
+	}
+	@media screen and (min-width: breakpoint('desktop')) {
+		display: inline-grid;
+
+		width: 45%;
+	}
+	@media screen and (min-width: breakpoint('wide')) {
+		display: inline-grid;
+
+		width: 45%;
+	}
+}
+
+.what-we-do__first-box {
+	background-color: palette('red');
+}
+
+.what-we-do__second-box {
+	background-color: palette('orange', 'dark');
+}
+
+.what-we-do__third-box {
+	background-color: palette('orange', 'base');
+}
+
+.what-we-do__fourth-box {
+	background-color: palette('blue', 'fluorescent');
 }
 
 // purpose section
