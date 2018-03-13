@@ -1,7 +1,6 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
-
 .home-page article,
 .newsletter {
 	padding-top: 2rem;
@@ -9,21 +8,18 @@
 	padding-bottom: 2rem;
 	padding-left: 2rem;
 	@media screen and (min-width: breakpoint('phablet')) {
-		padding-top: 3rem;
-		padding-right: 4rem;
-		padding-bottom: 3rem;
-		padding-left: 4rem;
+		padding: 3rem;
 	}
 	@media screen and (min-width: breakpoint('tablet')) {
-		padding-top: 4rem;
+		padding-top: 3rem;
 		padding-right: 5rem;
-		padding-bottom: 4rem;
+		padding-bottom: 3rem;
 		padding-left: 5rem;
 	}
 	@media screen and (min-width: breakpoint('desktop')) {
-		padding-top: 6rem;
+		padding-top: 5rem;
 		padding-right: 10rem;
-		padding-bottom: 6rem;
+		padding-bottom: 5rem;
 		padding-left: 10rem;
 	}
 	@media screen and (min-width: breakpoint('wide')) {
@@ -42,20 +38,26 @@
 
 	background-color: palette('esmerald', 'base');
 }
+
 .newsletter input {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 }
+
 // manifest section
 .manifest {
 	background-color: palette('blue', 'pool');
 }
+
 .manifest__download {
 	margin-top: 5rem;
-	margin-left: auto;
 	margin-right: auto;
-	text-align: center;
+	margin-left: auto;
+
 	font-size: 1rem;
+
+	text-align: center;
+
 	color: palette('white');
 }
 
@@ -66,6 +68,70 @@
 	background-color: palette('blue', 'dark');
 }
 
+.first-project {
+	@media screen and (min-width: breakpoint('tablet')) {
+		display: inline-grid;
+
+		width: 55%;
+
+		margin: 0 1.875rem 1.875rem 0;
+	}
+	@media screen and (min-width: breakpoint('desktop')) {
+		display: inline-grid;
+
+		width: 55%;
+	}
+	@media screen and (min-width: breakpoint('wide')) {
+		display: inline-grid;
+
+		width: 55%;
+	}
+}
+
+.second-project {
+	@media screen and (min-width: breakpoint('tablet')) {
+		display: inline-grid;
+
+		width: 35%;
+	}
+	@media screen and (min-width: breakpoint('desktop')) {
+		display: inline-grid;
+
+		width: 35%;
+	}
+	@media screen and (min-width: breakpoint('wide')) {
+		display: inline-grid;
+
+		width: 35%;
+	}
+}
+
+.projects .first-project__box {
+	padding: 1rem;
+	padding: 1rem;
+
+	border: solid 1px palette('blue', 'pool');
+}
+
+.first-project__box h3 {
+	color: palette('blue', 'pool');
+}
+
+.second-project__box h3 {
+	color: palette('esmerald', 'base');
+}
+
+.projects .second-project__box {
+	padding: 1rem;
+
+	color: palette('esmerald', 'base');
+
+	border: solid 1px palette('esmerald', 'base');
+}
+
+.navlink-project {
+	margin-top: 1rem;
+}
 
 // what-we-do section
 .what-we-do {
