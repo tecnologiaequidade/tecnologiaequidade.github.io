@@ -1,35 +1,32 @@
 <article class="what-we-do">
-	<h2>{{ i18n "whatWeDo" | title }}</h2>
-		{{ range where .Site.Pages ".File.TranslationBaseName" "pesquisa" }}
-		<div class="what-we-do-first-box">
-			<h4>{{ .Title }}</h4>
-			<div class="button-plus">
-				<a class="nav-link nav-link--plus--white" href="#">{{ .Title }}</a>
-			</div>
-		</div>
-		{{ end }}
-		{{ range where .Site.Pages ".File.TranslationBaseName" "incidencia.md" }}
-		<div class="what-we-do-second-box">
-			<h4>{{ .Title }}</h4>
-			<div class="button-plus">
-				<a class="nav-link nav-link--plus--white" href="#">{{ .Title }}</a>
-			</div>
-		</div>
-		{{ end }}
-		{{ range where .Site.Pages ".File.TranslationBaseName" "mobilizacoes" }}
-		<div class="what-we-do-third-box">
-			<h4>{{ .Title }}</h4>
-			<div class="button-plus">
-				<a class="nav-link nav-link--plus--white" href="#">{{ .Title }}</a>
-			</div>
-		</div>
-		{{ end }}
-		{{ range where .Site.Pages ".File.TranslationBaseName" "comunicacao" }}
-		<div class="what-we-do-fourth-box">
-			<h4>{{ .Title }}</h4>
-			<div class="button-plus">
-				<a class="nav-link nav-link--plus--white" href="#">{{ .Title }}</a>
-			</div>
-		</div>
-		{{ end }}
+    <h2>{{ i18n "whatWeDo" | title }}</h2>
+    {{ range where .Site.Pages ".File.TranslationBaseName" "pesquisa" }}
+    <div class="what-we-do__first-box">
+        <h4>{{ .Title }}</h4>
+        <div class="button-plus">
+            <a class="nav-link nav-link--plus--white" href="#">{{ .Title }}</a>
+        </div>
+    </div>
+    {{ end }} {{ range where .Site.Pages ".File.TranslationBaseName" "incidencia" }}
+    <div class="what-we-do__second-box">
+        <h4>{{ .Title }}</h4>
+        <div class="button-plus">
+            <a class="nav-link nav-link--plus--white" href="#">{{ .Title }}</a>
+        </div>
+    </div>
+    {{ end }} {{ range where .Site.Pages ".File.TranslationBaseName" "mobilizacoes" }}
+    <div class="what-we-do__third-box">
+        <h4>{{ .Title }}</h4>
+        <div class="button-plus">
+            <a class="nav-link nav-link--plus--white" href="#">{{ .Title }}</a>
+        </div>
+    </div>
+    {{ end }} {{ range where .Site.Pages ".File.TranslationBaseName" "comunicacao" }}
+    <div class="what-we-do__fourth-box">
+        <h4>{{ .Title }}</h4>
+        <div class="button-plus">
+            <a class="nav-link nav-link--plus--white" href="#">{{ .Title }}</a>
+        </div>
+    </div>
+    {{ end }}
 </article>
