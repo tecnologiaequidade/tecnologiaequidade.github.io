@@ -14,3 +14,27 @@
 - id: returnToHome
   translation: "Retornar para home"
 
+#projects
+- id: projects
+  translation: "Projetos"
+
+#what-we-do
+- id: whatWeDo
+  translation: "O que fazemos"
+
+#purpose
+- id: missionVisionValues
+  translation: "Visão, missão e Valores"
+
+#who-we-are
+- id: whoWeAre
+  translation: "Quem somos"
+#counselors
+- id: counselors
+  translation: "Conselheiros"
+
+#counselors
+- id: midia
+  translation: "Mídia"
+
+
