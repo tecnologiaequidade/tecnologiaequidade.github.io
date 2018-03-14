@@ -5,6 +5,7 @@
   "main": "index.html",
   "scripts": {
     "prebuild": "npm-run-all --parallel lint clean",
+    "clean": "rimraf ./static/assets/**/*.{css,img,js,png,gif,jpg,map}",
     "postbuild": "cross-env NODE_ENV=production hugo --ignoreCache --cleanDestinationDir",
     "autoprefixer": "postcss --use autoprefixer cssnano --safe -r static/assets/stylesheets/**/*.css",
     "nano": "postcss --use cssnano --safe -r static/assets/stylesheets/**/*.css",
@@ -54,6 +55,7 @@
     "npm-run-all": "^4.1.2",
     "onchange": "^3.3.0",
     "postcss-cli": "^5.0.0",
+    "rimraf": "^2.6.2",
     "sass-lint": "^1.12.1",
     "susy": "^3.0.3",
     "svgo": "^1.0.5",
