@@ -77,7 +77,7 @@
 	@media screen and (min-width: breakpoint('wide')) {
 		display: inline-grid;
 
-		width: 55%;
+		width: 60%;
 	}
 }
 
@@ -131,6 +131,7 @@
 	color: palette('esmerald', 'base');
 
 	border: solid 1px palette('esmerald', 'base');
+
 }
 
 .first-project__box .navlink-project {
@@ -246,6 +247,7 @@
 	background-color: palette('blue', 'dark');
 }
 
+
 // counselors section
 .counselors {
 	color: palette('white');
@@ -319,8 +321,9 @@ li.img-content {
 	}
 }
 
-.midia-wrap a {
+li.img-content a {
 	display: block;
+	height: 100%;
 }
 .istoe {
 	background-image: image('istoe.png');
