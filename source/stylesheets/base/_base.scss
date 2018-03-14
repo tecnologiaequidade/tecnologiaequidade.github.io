@@ -448,7 +448,7 @@ a {
 	background-image: image('arrow-right-orange.png');
 	background-position: center center;
 
-	border: solid 1.5px palette('orange', 'dark');
+	border: solid 1px palette('orange', 'dark');
 	border-radius: 50%;
 
 	&:hover {
@@ -460,7 +460,7 @@ a {
 	background-image: image('plus-orange.png');
 	background-position: center center;
 
-	border: solid 1.5px palette('orange', 'dark');
+	border: solid 1px palette('orange', 'dark');
 	border-radius: 50%;
 
 	&:hover {
@@ -476,7 +476,7 @@ a {
 	border-radius: 50%;
 
 	&:hover {
-		border: solid 1.5px palette('blue', 'dark');
+		border: solid 1px palette('blue', 'dark');
 	}
 }
 
@@ -518,13 +518,34 @@ a {
 	width: 3.125rem;
 	height: 3.125rem;
 
-	padding: o;
+	padding: 0;
 	margin-right: 0.2rem;
 	margin-left: 0;
 
 	text-decoration: none;
 
-	border: solid 1.5px palette('blue', 'pool');
+	border: solid 1px palette('blue', 'pool');
+	border-radius: 50%;
+
+	&:hover {
+		border: solid 1px palette('white');
+	}
+}
+.big-social-link {
+	@include image-replacement;
+
+	display: inline-block;
+
+	width: 3.5rem;
+	height: 3.5rem;
+
+	padding: 0;
+	margin-right: 0.2rem;
+	margin-left: 0;
+
+	text-decoration: none;
+
+	border: solid 1px palette('blue', 'pool');
 	border-radius: 50%;
 
 	&:hover {
