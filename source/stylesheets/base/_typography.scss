@@ -10,11 +10,11 @@
 
 	text-decoration: inherit;
 
-/* 1 */
+	/* 1 */
 	vertical-align: inherit;
+
 	/* 2 */
 }
-
 
 /**
  * Basic typography style for copy text
@@ -32,9 +32,7 @@ body {
 	}
 }
 
-
 /* HEADINGS AND TITLES */
-
 
 /**
  * @see https://developer.mozilla.org/en/CSS/-moz-font-feature-settings
@@ -72,6 +70,7 @@ dt a {
 	text-decoration: inherit;
 
 	color: inherit;
+
 	&:link {
 		text-decoration: inherit;
 
@@ -160,7 +159,7 @@ h5 {
 p {
 	padding: 0;
 
-/*  -moz-font-feature-settings: 'onum' 1, 'pnum' 1, 'zero' 1;
+	/*  -moz-font-feature-settings: 'onum' 1, 'pnum' 1, 'zero' 1;
 		-ms-font-feature-settings: 'onum' 1, 'pnum' 1, 'zero' 1;
 		-webkit-font-feature-settings: 'onum' 1, 'pnum' 1, 'zero' 1;
 		font-feature-settings: 'onum' 1, 'pnum' 1, 'zero' 1;*/
@@ -216,13 +215,14 @@ article fieldset> p:first-child {
 
 		cursor: help;
 
-/* 1 */
+		/* 1 */
 
 		border-bottom: 1px dotted;
+
 		@supports (text-decoration: dotted underline) {
 			text-decoration: dotted underline;
 
-/* 2 */
+			/* 2 */
 
 			border-bottom: inherit;
 		}
@@ -245,7 +245,7 @@ dfn {
 
 	font-style: italic;
 
-/* 1 */
+	/* 1 */
 	font-size: 1em;
 }
 
@@ -319,7 +319,7 @@ sup {
 
 	font-size: 83.3333%;
 
-/* 1 */
+	/* 1 */
 	line-height: 0;
 
 	vertical-align: baseline;
@@ -335,6 +335,7 @@ sup {
 
 time {
 	font-style: italic;
+
 	&[pubdate] {
 		cursor: help;
 	}
@@ -359,8 +360,9 @@ samp,
 var {
 	font-size: 1em;
 
-/* 1 */
+	/* 1 */
 	font-family: $code-font-stack, monospace, monospace;
+
 	/* 2 */
 }
 
@@ -386,14 +388,15 @@ pre {
 
 	word-wrap: break-word;
 
-/* IE */
+	/* IE */
 	white-space: pre;
 
-/* CSS2 */
+	/* CSS2 */
 	white-space: pre-wrap;
 
-/* CSS 2.1 */
+	/* CSS 2.1 */
 	white-space: pre-line;
+
 	/* CSS 3 (and 2.1 as well, actually) */
 }
 
@@ -426,9 +429,11 @@ s {
 
 		content: '[update] ';
 	}
+
 	&[datetime]::before {
 		content: '[update\00A0\2192\00A0' attr(datetime) '] ';
 	}
+
 	&::after {
 		text-decoration: none;
 
@@ -440,12 +445,15 @@ ins {
 	@extend %updated;
 
 	text-decoration: underline;
+
 	&:lang(pt)::before {
 		content: ' [inserido] ';
 	}
+
 	&[datetime]:lang(pt)::before {
 		content: ' [inserido\00A0\2192\00A0' attr(datetime) '] ';
 	}
+
 	&:lang(pt)::after {
 		content: ' [/inserido] ';
 	}
@@ -453,12 +461,15 @@ ins {
 
 del {
 	@extend %updated;
+
 	&:lang(pt)::before {
 		content: ' [excluído] ';
 	}
+
 	&[datetime]:lang(pt)::before {
 		content: ' [excluído\00A0\2192\00A0' attr(datetime) '] ';
 	}
+
 	&:lang(pt)::after {
 		content: ' [/excluído] ';
 	}
@@ -503,6 +514,7 @@ blockquote {
 blockquote> p {
 	&::before {
 	}
+
 	&:last-of-type::after {
 	}
 }
@@ -538,12 +550,12 @@ blockquote li {
 	font-size: 1em;
 }
 
-blockquote.verse {
+blockquote .verse {
 	// sass-lint:disable-line no-qualifying-elements
 	text-align: center;
 }
 
-blockquote.verse p {
+blockquote .verse p {
 	// sass-lint:disable-line no-qualifying-elements
 	display: inline-block;
 

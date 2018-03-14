@@ -62,18 +62,22 @@
 html [type='button'] {
 	@extend %button-reset;
 }
+
 button,
 [role='button'],
 [type='button'] {
 	@extend %button-reset;
 }
+
 [type='reset'] {
 	@extend %button-reset;
 }
+
 [type='submit'] {
+	@extend %button-reset;
+
 	@include image-replacement;
 
-	@extend %button-reset;
 
 	display: block;
 

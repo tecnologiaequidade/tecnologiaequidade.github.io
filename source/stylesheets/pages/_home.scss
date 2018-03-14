@@ -131,13 +131,13 @@
 	color: palette('esmerald', 'base');
 
 	border: solid 1px palette('esmerald', 'base');
-
 }
 
 .first-project__box .navlink-project {
 	position: absolute;
 	bottom: 1rem;
 }
+
 .second-project__box .navlink-project {
 	position: absolute;
 	right: 1rem;
@@ -207,9 +207,11 @@
 .what-we-do__fourth-box {
 	background-color: palette('blue', 'fluorescent');
 }
+
 .what-we-do__contentbox {
 	width: 15em;
 }
+
 .button-plus {
 	position: absolute;
 	right: 1rem;
@@ -266,44 +268,14 @@
 
 	background-color: palette('esmerald', 'base');
 }
-li.img-content {
+
+.img-content {
+	@include image-replacement;
+
 	max-width: 12rem;
 	min-height: 12.5rem;
 
 	margin: 2rem auto;
-
-	border: 1px solid white;
-
-	@media screen and (min-width: breakpoint('phablet')) {
-		max-width: 18rem;
-		min-width: 14.375rem;
-
-		border: 1px solid white;
-	}
-	@media screen and (min-width: breakpoint('tablet')) {
-		max-width: 20rem;
-		min-width: 19rem;
-
-		margin: 0rem 0.5rem;
-
-		border: 1px solid white;;
-	}
-	@media screen and (min-width: breakpoint('desktop')) {
-		max-width: 20rem;
-		min-width: 19rem;
-
-		margin: 0rem 0.5rem;
-	}
-	@media screen and (min-width: breakpoint('wide')) {
-		max-width: 19rem;
-		min-width: 18rem;
-
-		margin: 0rem 0.25rem;
-	}
-}
-
-.img-content {
-	@include image-replacement;
 
 	overflow: hidden;
 
@@ -313,26 +285,57 @@ li.img-content {
 	background-position: center;
 	background-repeat: no-repeat;
 
+	border: 1px solid palette('white');
+
 	direction: ltr;
+	@media screen and (min-width: breakpoint('phablet')) {
+		max-width: 18rem;
+		min-width: 14.375rem;
+
+		border: 1px solid palette('white');
+	}
 	@media screen and (min-width: breakpoint('tablet')) {
 		float: none;
 
 		display: inline-block;
+
+		max-width: 20rem;
+		min-width: 19rem;
+
+		margin: 0 0.5rem;
+
+		border: 1px solid palette('white');
+	}
+	@media screen and (min-width: breakpoint('desktop')) {
+		max-width: 20rem;
+		min-width: 19rem;
+
+		margin: 0 0.5rem;
+	}
+	@media screen and (min-width: breakpoint('wide')) {
+		max-width: 19rem;
+		min-width: 18rem;
+
+		margin: 0 0.25rem;
 	}
 }
 
-li.img-content a {
+.img-content a {
 	display: block;
+
 	height: 100%;
 }
+
 .istoe {
 	background-image: image('istoe.png');
 	background-size: auto 40px;
 }
+
 .g1 {
 	background-image: image('g1.png');
 	background-size: auto 40px;
 }
+
 .folha {
 	background-image: image('folha.png');
 	background-size: 160px auto;

@@ -7,6 +7,7 @@
 
 form {
 	margin: 0;
+
 	background-color: transparent;
 }
 
@@ -199,20 +200,28 @@ form br {
 [type='image'] {
 	display: inline-block;
 }
-[type="email"] {
-	border: none;
-	border-bottom: solid 1px palette('blue', 'dark');
-	font-size: 22px;
-	text-align: center;
-	background-color: transparent;
-	outline: none !important;
+
+[type='email'] {
 	width: 90%;
+
+	font-size: ms(1);
+
+	text-align: center;
+
+	background-color: transparent;
+
+	border: 0;
+	border-bottom: solid 1px palette('blue', 'dark');
+
+	outline: none !important; // sass-lint:disable-line no-important
 
 	&:focus {
 		background-color: transparent;
-		border: none;
+
+		border: 0;
 		border-bottom: solid 1px palette('blue', 'dark');
-		outline: none !important;
+
+		outline: none !important; // sass-lint:disable-line no-important
 	}
 }
 
@@ -285,8 +294,10 @@ form br {
 
 	-moz-binding: none; //sass-lint:disable-line no-vendor-prefixes
 }
+
 [type='file'][multiple] {
 }
+
 [type='file'] > [type='text'] {
 	height: inherit;
 
@@ -299,6 +310,7 @@ form br {
 
 	border-color: inherit;
 }
+
 [type='file'] > [type='button'] {
 	height: inherit;
 
@@ -388,7 +400,7 @@ form br {
 
 [required],
 :required {
-	box-shadow: none;
+	box-shadow: 0;
 }
 
 .alert {
