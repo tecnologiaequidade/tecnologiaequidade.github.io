@@ -16,5 +16,41 @@
 .site-footer {
 	color: palette('white');
 
+	margin: auto;
+	text-align: center;
 	background-color: palette('blue', 'dark');
+
+	@media screen and (min-width: breakpoint('tablet')) {
+		margin: 0;
+		text-align: left;
+
+	}
+}
+.content-container__author {
+	@include image-replacement;
+	display: inline-block;
+	width: 18.75rem;
+	height: 4rem;
+	padding: 0;
+	margin-right: 1rem;
+	background-image: image('logo-200w.png');
+	background-position: center;
+	background-size: 12.5rem 4rem;
+	margin-bottom: 2rem;
+
+	@media screen and (min-width: breakpoint('tablet')) {
+		border-right: solid 1px palette('blue', 'pool');
+
+		margin-bottom: 0;
+	}
+}
+
+.content-container__author a {
+	display: block;
+	height: 100%;
+}
+
+.footer__social-link {
+	display: inline;
+	margin-left: 1rem;
 }
