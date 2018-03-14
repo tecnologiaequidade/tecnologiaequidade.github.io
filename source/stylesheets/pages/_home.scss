@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 .home-page article,
 .newsletter,
-.footer-container{
+.footer-container {
 	padding: 3rem 2rem;
 
 	@media screen and (min-width: breakpoint('phablet')) {
@@ -100,20 +100,32 @@
 }
 
 .projects .first-project__box {
+	position: relative;
+
 	padding: 1rem;
 
 	border: solid 1px palette('blue', 'pool');
 }
 
 .first-project__box h3 {
+	padding-top: 0;
+	margin-top: 0;
+	margin-bottom: 5rem;
+
 	color: palette('blue', 'pool');
 }
 
 .second-project__box h3 {
+	padding-top: 0;
+	margin-top: 0;
+	margin-bottom: 5rem;
+
 	color: palette('esmerald', 'base');
 }
 
 .projects .second-project__box {
+	position: relative;
+
 	padding: 1rem;
 
 	color: palette('esmerald', 'base');
@@ -121,9 +133,14 @@
 	border: solid 1px palette('esmerald', 'base');
 }
 
-.navlink-project {
-	margin-top: 1rem;
-	margin-top: 1rem;
+.first-project__box .navlink-project {
+	position: absolute;
+	bottom: 1rem;
+}
+.second-project__box .navlink-project {
+	position: absolute;
+	right: 1rem;
+	bottom: 1rem;
 }
 
 // what-we-do section
@@ -147,6 +164,7 @@
 .what-we-do__third-box,
 .what-we-do__fourth-box {
 	position: relative;
+
 	height: 15rem;
 
 	padding: 1rem;
@@ -189,12 +207,12 @@
 	background-color: palette('blue', 'fluorescent');
 }
 .what-we-do__contentbox {
-	width:	15em;
+	width: 15em;
 }
 .button-plus {
 	position: absolute;
-	bottom: 1rem;
 	right: 1rem;
+	bottom: 1rem;
 }
 
 // purpose section
@@ -255,29 +273,30 @@ li.img-content {
 	border: 1px solid white;
 
 	@media screen and (min-width: breakpoint('phablet')) {
-		min-width: 14.375rem;
 		max-width: 18rem;
+		min-width: 14.375rem;
 
 		border: 1px solid white;
 	}
 	@media screen and (min-width: breakpoint('tablet')) {
-		margin: 0rem 0.5rem;
-		min-width: 19rem;
 		max-width: 20rem;
+		min-width: 19rem;
+
+		margin: 0rem 0.5rem;
 
 		border: 1px solid white;;
 	}
 	@media screen and (min-width: breakpoint('desktop')) {
-		margin: 0rem 0.5rem;
-		min-width: 19rem;
 		max-width: 20rem;
+		min-width: 19rem;
 
+		margin: 0rem 0.5rem;
 	}
 	@media screen and (min-width: breakpoint('wide')) {
-		margin: 0rem 0.25rem;
-		min-width: 18rem;
 		max-width: 19rem;
+		min-width: 18rem;
 
+		margin: 0rem 0.25rem;
 	}
 }
 
@@ -317,7 +336,6 @@ li.img-content {
 	@media screen and (min-width: breakpoint('phablet')) {
 		background-size: 200px auto;
 	}
-
 }
 
 .huffpost {
@@ -326,5 +344,4 @@ li.img-content {
 	@media screen and (min-width: breakpoint('phablet')) {
 		background-size: 200px auto;
 	}
-
 }
