@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 .home-page article,
 .newsletter,
-.footer-container {
+.footer-container{
 	padding: 3rem 2rem;
 
 	@media screen and (min-width: breakpoint('phablet')) {
@@ -13,7 +13,7 @@
 		padding: 3rem 4rem;
 	}
 	@media screen and (min-width: breakpoint('desktop')) {
-		padding: 5rem 8rem;
+		padding: 5rem 9rem;
 	}
 	@media screen and (min-width: breakpoint('wide')) {
 		padding: 7rem 18rem;
@@ -250,27 +250,25 @@ li.img-content {
 		min-width: 14.375rem;
 		max-width: 18rem;
 
-		margin: 1rem auto;
-
 		border: 1px solid white;
 	}
 	@media screen and (min-width: breakpoint('tablet')) {
-		margin: 0rem 1rem;
-		min-width: 18rem;
+		margin: 0rem 0.5rem;
+		min-width: 19rem;
 		max-width: 20rem;
 
 		border: 1px solid white;;
 	}
 	@media screen and (min-width: breakpoint('desktop')) {
 		margin: 0rem 0.5rem;
-		min-width: 14.375rem;
+		min-width: 19rem;
 		max-width: 20rem;
 
 	}
 	@media screen and (min-width: breakpoint('wide')) {
-		margin: 0rem 0.5rem;
-		min-width: 14.375rem;
-		max-width: 20rem;
+		margin: 0rem 0.25rem;
+		min-width: 18rem;
+		max-width: 19rem;
 
 	}
 }
