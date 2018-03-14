@@ -229,7 +229,96 @@
 
 // midia section
 .midia {
+	margin-right: auto;
+	margin-left: auto;
+
+	text-align: center;
+
 	color: palette('white');
 
 	background-color: palette('esmerald', 'base');
+}
+li.img-content {
+	max-width: 12rem;
+	min-height: 12.5rem;
+
+	margin: 2rem auto;
+
+	border: 1px solid white;
+
+	@media screen and (min-width: breakpoint('phablet')) {
+		min-width: 14.375rem;
+		max-width: 18rem;
+
+		margin: 1rem auto;
+
+		border: 1px solid white;
+	}
+	@media screen and (min-width: breakpoint('tablet')) {
+		margin: 0rem 1rem;
+		min-width: 18rem;
+		max-width: 20rem;
+
+		border: 1px solid white;;
+	}
+	@media screen and (min-width: breakpoint('desktop')) {
+		margin: 0rem 0.5rem;
+		min-width: 14.375rem;
+		max-width: 20rem;
+
+	}
+	@media screen and (min-width: breakpoint('wide')) {
+		margin: 0rem 0.5rem;
+		min-width: 14.375rem;
+		max-width: 20rem;
+
+	}
+}
+
+.img-content {
+	@include image-replacement;
+
+	overflow: hidden;
+
+	text-indent: 110%;
+	white-space: nowrap;
+
+	background-position: center;
+	background-repeat: no-repeat;
+
+	direction: ltr;
+	@media screen and (min-width: breakpoint('tablet')) {
+		float: none;
+
+		display: inline-block;
+	}
+}
+
+.midia-wrap a {
+	display: block;
+}
+.istoe {
+	background-image: image('istoe.png');
+	background-size: auto 40px;
+}
+.g1 {
+	background-image: image('g1.png');
+	background-size: auto 40px;
+}
+.folha {
+	background-image: image('folha.png');
+	background-size: 160px auto;
+	@media screen and (min-width: breakpoint('phablet')) {
+		background-size: 200px auto;
+	}
+
+}
+
+.huffpost {
+	background-image: image('huffpost.png');
+	background-size: 160px auto;
+	@media screen and (min-width: breakpoint('phablet')) {
+		background-size: 200px auto;
+	}
+
 }
