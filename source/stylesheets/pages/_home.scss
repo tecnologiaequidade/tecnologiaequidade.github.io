@@ -197,6 +197,23 @@
 	background-color: palette('esmerald', 'base');
 }
 
+.purpose h4 {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.vision-content {
+	padding-bottom: 0;
+
+	border-top: solid 5px palette('orange', 'dark');
+}
+
+.mission-content {
+	padding-bottom: 0;
+
+	border-top: solid 5px palette('orange', 'base');
+}
+
 // who-we-are section
 .who-we-are {
 	color: palette('white');
