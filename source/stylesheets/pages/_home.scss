@@ -5,7 +5,6 @@
 .newsletter,
 .footer-container {
 	padding: 3rem 2rem;
-
 	@media screen and (min-width: breakpoint('phablet')) {
 		padding: 3rem;
 	}
@@ -234,12 +233,98 @@
 	padding-bottom: 0;
 
 	border-top: solid 5px palette('orange', 'dark');
+	@media screen and (min-width: breakpoint('tablet')) {
+		display: inline-grid;
+
+		width: 55%;
+
+		margin: 0 1.875rem 1.875rem 0;
+	}
+	@media screen and (min-width: breakpoint('desktop')) {
+		display: inline-grid;
+
+		width: 55%;
+	}
+	@media screen and (min-width: breakpoint('wide')) {
+		display: inline-grid;
+
+		width: 59%;
+	}
 }
 
 .mission-content {
 	padding-bottom: 0;
 
 	border-top: solid 5px palette('orange', 'base');
+	@media screen and (min-width: breakpoint('tablet')) {
+		display: inline-grid;
+
+		width: 35%;
+	}
+	@media screen and (min-width: breakpoint('desktop')) {
+		display: inline-grid;
+
+		width: 35%;
+	}
+	@media screen and (min-width: breakpoint('wide')) {
+		display: inline-grid;
+
+		width: 35%;
+	}
+}
+
+.values-content h4 {
+	text-align: center;
+}
+
+.values-content ul {
+	@media screen and (min-width: breakpoint('tablet')) {
+		columns: 3;
+	}
+}
+
+.values-content li {
+	&:nth-child(1) {
+		padding-top: 1rem;
+		margin-bottom: 4rem;
+
+		border-top: solid 5px palette('blue', 'fluorescent');
+	}
+
+	&:nth-child(2) {
+		padding-top: 1rem;
+		margin-bottom: 4rem;
+
+		border-top: solid 5px palette('blue', 'pool');
+	}
+
+	&:nth-child(3) {
+		padding-top: 1rem;
+		margin-bottom: 4rem;
+
+		border-top: solid 5px palette('esmerald', 'fluorescent');
+	}
+
+	&:nth-child(4) {
+		padding-top: 1rem;
+		margin-bottom: 4rem;
+
+		border-top: solid 5px palette('orange', 'base');
+	}
+
+	&:nth-child(5) {
+		padding-top: 1rem;
+		margin-bottom: 4rem;
+
+		border-top: solid 5px palette('orange', 'dark');
+	}
+
+	&:nth-child(6) {
+		padding-top: 1rem;
+		margin-bottom: 4rem;
+
+		border-top: solid 5px palette('red');
+	}
 }
 
 // who-we-are section
@@ -248,7 +333,6 @@
 
 	background-color: palette('blue', 'dark');
 }
-
 
 // counselors section
 .counselors {
