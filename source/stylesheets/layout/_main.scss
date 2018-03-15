@@ -8,7 +8,7 @@
  * The `[role='main']` element can be a `main` or an `article`
  */
 .main-container {
-	max-width: $max-width;
+	min-width: 320px;
 
 	margin-right: auto;
 	margin-left: auto;
@@ -17,8 +17,9 @@
 }
 
 .main-container> * {
-	padding: $gutter;
+	padding: 0;
 }
 
 [role='main'] {
+	margin-bottom: 0;
 }
