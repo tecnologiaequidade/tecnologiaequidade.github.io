@@ -96,7 +96,7 @@ tbody th {
 }
 
 tbody td {
-	text-align: right;
+	text-align: left;
 
 	font-variant-numeric: lining-nums oldstyle-nums;
 
@@ -104,7 +104,7 @@ tbody td {
 		text-align: left;
 
 		&[title] {
-			text-align: right;
+			text-align: left;
 
 			&::before {
 				float: left;
