@@ -11,7 +11,7 @@ td {
 	height: auto;
 
 	font-weight: normal;
-	font-size: 1em;
+	font-size: ms(1);
 	font-family: 'Noto Serif', $text-font-stack;
 
 	vertical-align: top;
@@ -70,12 +70,12 @@ td {
 
 thead th,
 thead td {
-	text-align: right;
+	text-align: center;
 	vertical-align: bottom;
 
-	@media screen and (min-width: #{map-get($breakpoints, 'toggle-table-layout')}) {
-		display: none;
-	}
+	// @media screen and (min-width: #{map-get($breakpoints, 'toggle-table-layout')}) {
+	// 	display: none;
+	// }
 }
 
 thead th:first-child,
