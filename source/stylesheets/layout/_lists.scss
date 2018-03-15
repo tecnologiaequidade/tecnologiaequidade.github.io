@@ -45,21 +45,21 @@ article li {
 	}
 }
 
-article ul > li::before {
-	content: '-\a0';
-}
+// article ul > li::before {
+// 	content: '-\a0';
+// }
 
-article ol > li::before {
-	left: 1em;
+// article ol > li::before {
+// 	left: 1em;
 
-	content: counter(li)'.\00a0';
-	counter-increment: li;
-}
+// 	content: counter(li)'.\00a0';
+// 	counter-increment: li;
+// }
 
-li ol,
-li ul {
-	font-family: $text-font-stack;
-}
+// li ol,
+// li ul {
+// 	font-family: $text-font-stack;
+// }
 
 /* definition
 ---------------------------------------------------------------------------- */
