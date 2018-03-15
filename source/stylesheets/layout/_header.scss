@@ -21,53 +21,45 @@
 	background-color: palette('blue', 'dark');
 
 	@media screen and (min-width: breakpoint('phablet')) {
-		background-image: image('illustration-big.png');
-		background-position: 80% bottom;
+		min-height: 95vh;
+
+		background-image: image('illustration-medium.png');
+		background-position: 85% bottom;
 	}
 
 	@media screen and (min-width: breakpoint('tablet')) {
+		background-image: image('illustration-small.png');
+		background-position: 85% bottom;
+	}
+
+	@media screen and (min-width: breakpoint('desktop')) {
 		background-image: image('illustration-big.png');
 		background-position: 85% bottom;
 	}
 
 	@media screen and (min-width: breakpoint('wide')) {
-		background-image: image('illustration-superbig.png');
+		background-image: image('illustration-super-big.png');
 		background-position: 80% bottom;
 		background-size: auto 95%;
 	}
 }
 
 .content-header {
-	padding-top: 2rem;
-	padding-right: 2rem;
-	padding-bottom: 2rem;
-	padding-left: 2rem;
+	padding: 2rem;
 
 	@media screen and (min-width: breakpoint('phablet')) {
-		padding-top: 3rem;
-		padding-right: 4rem;
-		padding-bottom: 3rem;
-		padding-left: 4rem;
+		padding: 3rem 4rem;
 	}
 	@media screen and (min-width: breakpoint('tablet')) {
-		padding-top: 4rem;
-		padding-right: 5rem;
-		padding-bottom: 4rem;
-		padding-left: 5rem;
+		padding: 4rem 5rem;
 	}
 	@media screen and (min-width: breakpoint('desktop')) {
 		max-width: 65em;
 
-		padding-top: 6rem;
-		padding-right: 10rem;
-		padding-bottom: 6rem;
-		padding-left: 10rem;
+		padding: 6rem 10rem;
 	}
 	@media screen and (min-width: breakpoint('wide')) {
-		padding-top: 7rem;
-		padding-right: 20rem;
-		padding-bottom: 7rem;
-		padding-left: 20rem;
+		padding: 7rem 15rem;
 	}
 }
 
