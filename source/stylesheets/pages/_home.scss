@@ -101,17 +101,52 @@
 .projects .first-project__box {
 	position: relative;
 
+	min-height: 22em;
+
 	padding: 1rem;
 
+	background-image: image('illustration-projects-very-small.png');
+	background-position: 95% bottom;
+	background-size: 12rem auto;
+
 	border: solid 1px palette('blue', 'pool');
+	@media screen and (min-width: breakpoint('phablet')) {
+		min-height: 25em;
+
+		background-image: image('illustration-projects-very-small.png');
+		background-size: 12rem auto;
+	}
+	@media screen and (min-width: breakpoint('tablet')) {
+		min-height: 20em;
+
+		background-image: image('illustration-projects-very-small.png');
+		background-size: 13rem auto;
+	}
+
+	@media screen and (min-width: breakpoint('desktop')) {
+		min-height: 21em;
+
+		background-image: image('illustration-projects-small.png');
+		background-size: 11rem auto;
+	}
+	@media screen and (min-width: breakpoint('wide')) {
+		min-height: 25em;
+
+		background-size: 16rem auto;
+	}
 }
 
 .first-project__box h3 {
+	max-width: 14em;
+
 	padding-top: 0;
 	margin-top: 0;
 	margin-bottom: 5rem;
 
 	color: palette('blue', 'pool');
+	@media screen and (min-width: breakpoint('wide')) {
+		max-width: 10em;
+	}
 }
 
 .second-project__box h3 {
