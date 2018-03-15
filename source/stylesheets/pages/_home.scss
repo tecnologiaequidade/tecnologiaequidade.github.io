@@ -230,7 +230,7 @@
 }
 
 .vision-content {
-	padding-bottom: 0;
+	padding-bottom: 1rem;
 
 	border-top: solid 5px palette('orange', 'dark');
 	@media screen and (min-width: breakpoint('tablet')) {
@@ -238,6 +238,7 @@
 
 		width: 55%;
 
+		padding-bottom: 0;
 		margin: 0 1.875rem 1.875rem 0;
 	}
 	@media screen and (min-width: breakpoint('desktop')) {
@@ -253,13 +254,15 @@
 }
 
 .mission-content {
-	padding-bottom: 0;
+	padding-bottom: 1rem;
 
 	border-top: solid 5px palette('orange', 'base');
 	@media screen and (min-width: breakpoint('tablet')) {
 		display: inline-grid;
 
 		width: 35%;
+
+		padding-bottom: 0;
 	}
 	@media screen and (min-width: breakpoint('desktop')) {
 		display: inline-grid;
@@ -274,55 +277,51 @@
 }
 
 .values-content h4 {
-	text-align: center;
+	@media screen and (min-width: breakpoint('tablet')) {
+		text-align: center;
+	}
 }
 
 .values-content ul {
+	padding: 0;
 	@media screen and (min-width: breakpoint('tablet')) {
 		columns: 3;
 	}
 }
 
 .values-content li {
-	&:nth-child(1) {
-		padding-top: 1rem;
-		margin-bottom: 4rem;
+	padding-top: 0.5rem;
+	margin-bottom: 2rem;
 
+	@media screen and (min-width: breakpoint('phablet')) {
+		margin-bottom: 3rem;
+	}
+	@media screen and (min-width: breakpoint('tablet')) {
+		min-height: 8rem;
+		padding-top: 1rem;
+		margin-bottom: 0;
+	}
+
+	&:nth-child(1) {
 		border-top: solid 5px palette('blue', 'fluorescent');
 	}
 
 	&:nth-child(2) {
-		padding-top: 1rem;
-		margin-bottom: 4rem;
-
 		border-top: solid 5px palette('blue', 'pool');
 	}
 
 	&:nth-child(3) {
-		padding-top: 1rem;
-		margin-bottom: 4rem;
-
 		border-top: solid 5px palette('esmerald', 'fluorescent');
 	}
 
 	&:nth-child(4) {
-		padding-top: 1rem;
-		margin-bottom: 4rem;
-
 		border-top: solid 5px palette('orange', 'base');
 	}
 
 	&:nth-child(5) {
-		padding-top: 1rem;
-		margin-bottom: 4rem;
-
 		border-top: solid 5px palette('orange', 'dark');
 	}
-
 	&:nth-child(6) {
-		padding-top: 1rem;
-		margin-bottom: 4rem;
-
 		border-top: solid 5px palette('red');
 	}
 }
