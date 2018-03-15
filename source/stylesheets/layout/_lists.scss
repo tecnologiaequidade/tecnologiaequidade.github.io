@@ -7,12 +7,16 @@ ul,
 ol {
 	@include fallback('margin', 0 0 1.5rem);
 
-	padding-left: 1em;
+	padding: 0;
 	margin: 0;
 
 	font-weight: normal;
 	font-size: ms(0);
 	font-family: 'Noto Serif', $text-font-stack;
+
+	@media screen and (min-width: breakpoint('wide')) {
+		font-size: ms(1);
+	}
 }
 
 ol {
