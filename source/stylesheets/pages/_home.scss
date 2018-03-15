@@ -229,6 +229,14 @@
 	margin-bottom: 0.5rem;
 }
 
+.purpose p {
+	font-size: ms(1);
+
+	@media screen and (min-width: breakpoint('wide')) {
+		font-size: ms(2);
+	}
+}
+
 .vision-content {
 	padding-bottom: 1rem;
 
@@ -285,6 +293,8 @@
 .values-content ul {
 	padding: 0;
 	@media screen and (min-width: breakpoint('tablet')) {
+		column-gap: 1.875rem;
+
 		columns: 3;
 	}
 }
@@ -298,6 +308,7 @@
 	}
 	@media screen and (min-width: breakpoint('tablet')) {
 		min-height: 8rem;
+
 		padding-top: 1rem;
 		margin-bottom: 0;
 	}
