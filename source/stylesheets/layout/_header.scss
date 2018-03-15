@@ -44,25 +44,6 @@
 	}
 }
 
-.content-header {
-	padding: 2rem;
-
-	@media screen and (min-width: breakpoint('phablet')) {
-		padding: 3rem 4rem;
-	}
-	@media screen and (min-width: breakpoint('tablet')) {
-		padding: 4rem 5rem;
-	}
-	@media screen and (min-width: breakpoint('desktop')) {
-		max-width: 65em;
-
-		padding: 6rem 10rem;
-	}
-	@media screen and (min-width: breakpoint('wide')) {
-		padding: 7rem 15rem;
-	}
-}
-
 [role='banner'] {
 	@include image-replacement;
 
