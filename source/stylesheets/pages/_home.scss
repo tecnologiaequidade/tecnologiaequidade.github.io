@@ -1,21 +1,28 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
-.home-page article,
-.newsletter,
-.footer-container {
-	padding: 3rem 2rem;
-	@media screen and (min-width: breakpoint('phablet')) {
-		padding: 3rem;
-	}
+
+.content-header,
+.footer-container,
+.content {
+	max-width: $max-width;
+
+	padding: 2rem;
+	margin-right: auto;
+	margin-left: auto;
+
 	@media screen and (min-width: breakpoint('tablet')) {
-		padding: 3rem 4rem;
+		padding: 3rem 2rem;
 	}
+
 	@media screen and (min-width: breakpoint('desktop')) {
-		padding: 5rem 9rem;
+		padding-top: 4rem;
+		padding-bottom: 4rem;
 	}
+
 	@media screen and (min-width: breakpoint('wide')) {
-		padding: 7rem 18rem;
+		padding-top: 5rem;
+		padding-bottom: 5rem;
 	}
 }
 

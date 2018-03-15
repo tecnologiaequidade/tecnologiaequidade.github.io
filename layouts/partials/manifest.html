@@ -1,13 +1,14 @@
 {{ range where .Site.Pages ".File.TranslationBaseName" "manifest" }}
 	<article class="manifest">
-		<h2>{{ .Title }}</h2>
-		{{ .Content }}
+		<div class="content">
+			<h2>{{ .Title }}</h2>
+			{{ .Content }}
 
-		<div class="manifest__download">
-			<p>{{ .Params.callToDownload }}</p>
-			<a download href="#" class="download-link">PDF</a>
-			<a download href="#" class="download-link">DOC</a>
+			<div class="manifest__download">
+				<p>{{ .Params.callToDownload }}</p>
+				<a download href="#" class="download-link">PDF</a>
+				<a download href="#" class="download-link">DOC</a>
+			</div>
 		</div>
-
 	</article>
 {{ end }}

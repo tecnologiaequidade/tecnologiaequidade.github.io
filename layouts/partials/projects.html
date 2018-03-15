@@ -1,29 +1,31 @@
 <article class="projects">
-    <h2>{{ i18n "projects" | title }}</h2>
+	<div class="content">
+		<h2>{{ i18n "projects" | title }}</h2>
 
-    {{ range where .Site.Pages ".File.TranslationBaseName" "fakenews" }}
-    <section class="first-project">
-        <div class="first-project__box">
-            <h3>{{ .Title }}</h3>
-            <div class="navlink-project">
-                <a class="nav-link nav-link--plus--orange" href="#">{{ .Title }}</a>
-            </div>
-        </div>
-        <div class="first-project__summary">
-            <p>{{ .Params.Summary }}</p>
-        </div>
-    </section>
-    {{ end }} {{ range where .Site.Pages ".File.TranslationBaseName" "pegabots" }}
-    <section class="second-project">
-        <div class="second-project__box">
-            <h3>{{ .Title }}</h3>
-            <div class="navlink-project">
-                <a class="nav-link nav-link--plus--orange" href="#">{{ .Title }}</a>
-            </div>
-        </div>
-        <div class="second-project__summary">
-            <p>{{ .Params.Summary }}</p>
-        </div>
-    </section>
-    {{ end }}
+		{{ range where .Site.Pages ".File.TranslationBaseName" "fakenews" }}
+		<section class="first-project">
+			<div class="first-project__box">
+				<h3>{{ .Title }}</h3>
+				<div class="navlink-project">
+					<a class="nav-link nav-link--plus--orange" href="#">{{ .Title }}</a>
+				</div>
+			</div>
+			<div class="first-project__summary">
+				<p>{{ .Params.Summary }}</p>
+			</div>
+		</section>
+		{{ end }} {{ range where .Site.Pages ".File.TranslationBaseName" "pegabots" }}
+		<section class="second-project">
+			<div class="second-project__box">
+				<h3>{{ .Title }}</h3>
+				<div class="navlink-project">
+					<a class="nav-link nav-link--plus--orange" href="#">{{ .Title }}</a>
+				</div>
+			</div>
+			<div class="second-project__summary">
+				<p>{{ .Params.Summary }}</p>
+			</div>
+		</section>
+		{{ end }}
+	</div>
 </article>

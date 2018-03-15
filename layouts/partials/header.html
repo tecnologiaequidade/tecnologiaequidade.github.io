@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ with .Site.Language.Params.locale }}{{ . }}{{ else }}{{ .Site.LanguageCode }}{{ end }}" class="{{ if .IsHome }}home-page {{ end }}{{ $.Scratch.Get "rootClass" }} {{ .Params.rootClass }} {{ if eq (getenv "NODE_ENV") "development" }}grid-debug{{ end }} no-js">
+<html lang="{{ with .Site.Language.Params.locale }}{{ . }}{{ else }}{{ .Site.LanguageCode }}{{ end }}" class="{{ if .IsHome }}home-page {{ end }}{{ $.Scratch.Get "rootClass" }} {{ .Params.rootClass }} {{ if eq (getenv "NODE_ENV") "development" }}{{ end }} no-js">
 <head>
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<meta charset="utf-8">
@@ -17,19 +17,20 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
 <body>
-<header class="site-header">
-	<div class="content-header">
-		<div role="banner">
-			<a href="/">
-				{{ .Site.Title }}
-			</a>
+<div class="main-container">
+	<header class="site-header">
+		<div class="content-header">
+			<div role="banner">
+				<a href="/">
+					{{ .Site.Title }}
+				</a>
+			</div>
+			<div class="site-header__content">
+				<h1>{{ .Content | plainify }}</h1>
+			</div>
+			<div class="site-header__nav-link">
+				<a class="nav-link nav-link--right--orange" href="#">{{ i18n "about" | lower }}</a>
+			</div>
 		</div>
-		<div class="site-header__content">
-			<h1>{{ .Content | plainify }}</h1>
-		</div>
-		<div class="site-header__nav-link">
-			<a class="nav-link nav-link--right--orange" href="#">{{ i18n "about" | lower }}</a>
-		</div>
-	</div>
-</header>
+	</header>
 <div class="content-container">
