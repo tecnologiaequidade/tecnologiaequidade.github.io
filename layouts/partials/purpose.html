@@ -3,19 +3,19 @@
 		{{ range where .Site.Pages ".File.TranslationBaseName" "vision" }}
 		<section class="vision-content">
 			<h4>{{ .Title }}</h4>
-			<p>{{ .Content }}</p>
+			{{ .Content }}
 		</section>
 		{{ end }}
 		{{ range where .Site.Pages ".File.TranslationBaseName" "mission" }}
 		<section class="mission-content">
 			<h4>{{ .Title }}</h4>
-			<p>{{ .Content }}</p>
+			{{ .Content }}
 		</section>
 		{{ end }}
 		{{ range where .Site.Pages ".File.TranslationBaseName" "values" }}
 		<section class="values-content">
 			<h4>{{ .Title }}</h4>
-			<p>{{ .Content }}</p>
+			{{ .Content }}
 		</section>
 		{{ end }}
 </article>
