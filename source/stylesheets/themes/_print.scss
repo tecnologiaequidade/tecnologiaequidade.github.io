@@ -62,9 +62,13 @@
 
 	pre,
 	blockquote {
+		font-size: ms(0);
 		page-break-inside: avoid;
 
 		border: 1px solid rgb(153, 153, 153);
+		@media screen and (min-width: breakpoint('phablet')) {
+			font-size: ms(0);
+		}
 	}
 
 	/**
