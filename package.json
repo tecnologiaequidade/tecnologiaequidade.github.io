@@ -5,7 +5,9 @@
   "main": "index.html",
   "scripts": {
     "prebuild": "npm-run-all --parallel lint clean",
-    "clean": "rimraf ./static/assets/**/*.{css,img,js,png,gif,jpg,map}",
+    "clean": "npm-run-all --parallel clean:*",
+    "clean:assets": "rimraf ./static/assets/**/*.{css,img,js,png,gif,jpg,map}",
+    "clean:lint": "rimraf ./_testReports/**/*.xml",
     "postbuild": "cross-env NODE_ENV=production hugo --ignoreCache --cleanDestinationDir",
     "autoprefixer": "postcss --use autoprefixer cssnano --safe -r static/assets/stylesheets/**/*.css",
     "nano": "postcss --use cssnano --safe -r static/assets/stylesheets/**/*.css",
