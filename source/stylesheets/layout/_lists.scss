@@ -13,10 +13,6 @@ ol {
 	font-weight: normal;
 	font-size: ms(0);
 	font-family: 'Noto Serif', $text-font-stack;
-
-	@media screen and (min-width: breakpoint('wide')) {
-		font-size: ms(1);
-	}
 }
 
 ol {
