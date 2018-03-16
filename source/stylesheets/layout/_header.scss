@@ -9,7 +9,7 @@
  * Within any `document` or `application`, the author **SHOULD** mark no more than one element with the `banner` role.
  */
 .site-header {
-	min-height: 90vh;
+	padding-bottom: 270px;
 
 	color: palette('blue', 'pool');
 
@@ -19,31 +19,37 @@
 	background-color: palette('blue', 'dark');
 
 	@media screen and (min-width: breakpoint('phablet')) {
+		padding-bottom: 320px;
+
 		background-image: image('illustration-small.png');
-		background-position: 85% bottom;
+		background-position: 90% bottom;
 	}
 
 	@media screen and (min-width: breakpoint('tablet')) {
-		min-height: 90vh;
+		padding-bottom: 330px;
 
 		background-image: image('illustration-medium.png');
-		background-position: 85% bottom;
+		background-position: 95% bottom;
 	}
 
 	@media screen and (min-width: breakpoint('desktop')) {
-		min-height: 95vh;
+		height: 95vh;
+		max-height: 98vh;
+		min-height: 680px;
+
+		padding-bottom: 0;
 
 		background-image: image('illustration-medium.png');
-		background-position: 97% bottom;
+		background-position: 95% bottom;
 	}
 
 	@media screen and (min-width: breakpoint('wide')) {
-		background-image: image('illustration-super-big.png');
+		min-height: 780px;
+
+		background-image: image('illustration-big.png');
 		background-position: 80% bottom;
-		background-size: auto 95%;
 	}
 }
-
 
 [role='banner'] {
 	@include image-replacement;
@@ -66,7 +72,7 @@
 }
 
 .site-header h1 {
-	max-width: 20em;
+	max-width: 17em;
 
 	margin: 2rem 0;
 
@@ -74,7 +80,7 @@
 		margin: 3rem 0;
 	}
 	@media screen and (min-width: breakpoint('wide')) {
-		margin: 4rem 0 3rem;
+		margin: 5rem 0 3rem;
 	}
 }
 
