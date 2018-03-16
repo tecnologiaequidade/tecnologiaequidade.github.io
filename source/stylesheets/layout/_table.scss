@@ -11,7 +11,7 @@ td {
 	height: auto;
 
 	font-weight: normal;
-	font-size: ms(1);
+	font-size: ms(0);
 	font-family: 'Noto Serif', $text-font-stack;
 
 	vertical-align: top;
@@ -38,7 +38,7 @@ table {
 
 table p,
 table li {
-	font-size: 1em;
+	font-size: ms(0);
 }
 
 caption {
