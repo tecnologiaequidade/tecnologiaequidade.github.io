@@ -16,13 +16,21 @@
 	}
 
 	@media screen and (min-width: breakpoint('desktop')) {
-		padding-top: 4rem;
-		padding-bottom: 4rem;
+		padding: 4rem 0;
 	}
 
 	@media screen and (min-width: breakpoint('wide')) {
-		padding-top: 5rem;
-		padding-bottom: 5rem;
+		padding: 7rem 0;
+	}
+}
+
+.content h2 {
+	margin-top: 0;
+	@media screen and (min-width: breakpoint('desktop')) {
+		margin-bottom: 3rem;
+	}
+	@media screen and (min-width: breakpoint('wide')) {
+		margin-bottom: 5rem;
 	}
 }
 
