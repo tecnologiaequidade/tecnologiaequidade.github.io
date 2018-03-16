@@ -387,6 +387,67 @@
 	background-color: palette('blue', 'dark');
 }
 
+.who-we-are__persons {
+	display: table;
+
+	margin: auto;
+
+	@media screen and (min-width: breakpoint('desktop')) {
+		display: table;
+
+		width: 100%;
+
+		table-layout: fixed;
+		border-collapse: collapse;
+	}
+}
+
+.who-we-are__person {
+	@media screen and (min-width: breakpoint('desktop')) {
+		display: table-cell;
+
+		vertical-align: top;
+	}
+}
+
+.who-we-are__box img {
+	display: block;
+
+	height: auto;
+
+	margin: auto;
+
+
+	@media screen and (min-width: breakpoint('desktop')) {
+		width: 100%;
+	}
+}
+
+.who-we-are h4 {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+
+	@media screen and (min-width: breakpoint('desktop')) {
+		margin-top: 1rem;
+	}
+}
+
+.who-we-are p {
+	max-width: 29em;
+
+	@media screen and (min-width: breakpoint('desktop')) {
+		max-width: 100%;
+	}
+}
+
+.person-content {
+	padding-bottom: 1.5rem;
+
+	@media screen and (min-width: breakpoint('desktop')) {
+		padding: 1rem 1rem 1rem 0;
+	}
+}
+
 // counselors section
 .counselors {
 	color: palette('white');
