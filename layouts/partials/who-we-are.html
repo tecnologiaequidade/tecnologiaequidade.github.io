@@ -1,34 +1,20 @@
 <article class="who-we-are">
 	<div class="content">
 		<h2>{{ i18n "whoWeAre" | title }}</h2>
+		<section class="who-we-are__persons">
 			{{ range where .Site.Pages ".Params.role" "team" }}
-		<section class="who-we-are__who">
-			<table>
-				<thead>
-					<tr>
-						<td><img src="{{ .Params.avatar }}" alt=""></td>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>
-							<h4>{{ .Title }}</h4>
-							{{ .Content }}
-						</td>
-					</tr>
-				</tbody>
-				<tfoot>
-					<tr>
-						<td>
-							<a class="social-link social-link--medium" href="{{ .Params.medium }}">{{ .Title }}</a>
-							<a class="social-link social-link--linkedin" href="{{ .Params.linkedin }}">{{ .Title }}</a>
-							<a class="social-link social-link--facebook" href="{{ .Params.facebook }}">{{ .Title }}</a>
-							<a class="social-link social-link--twitter" href="{{ .Params.twitter }}">{{ .Title }}</a>
-						</td>
-					</tr>
-				</tfoot>
-			</table>
+				<div class="who-we-are__person">
+					<img src="{{ .Params.avatar }}" alt="{{ .Title }}">
+					<div class="person-content">
+						<h4>{{ .Title }}</h4>
+						{{ .Content }}
+						<a class="social-link social-link--medium" href="{{ .Params.medium }}">{{ .Title }}</a>
+						<a class="social-link social-link--linkedin" href="{{ .Params.linkedin }}">{{ .Title }}</a>
+						<a class="social-link social-link--facebook" href="{{ .Params.facebook }}">{{ .Title }}</a>
+						<a class="social-link social-link--twitter" href="{{ .Params.twitter }}">{{ .Title }}</a>
+					</div>
+				</div>
+			{{ end }}
 		</section>
-		{{ end }}
 	</div>
 </article>
