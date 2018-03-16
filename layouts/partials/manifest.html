@@ -4,11 +4,14 @@
 			<h2>{{ .Title }}</h2>
 			{{ .Content }}
 
+			{{ if or .Params.pdf .Params.doc }}
+
 			<div class="manifest__download">
 				<p>{{ .Params.callToDownload }}</p>
-				<a download href="#" class="download-link">PDF</a>
-				<a download href="#" class="download-link">DOC</a>
+				<a download href="{{ .Params.pdf }}" class="download-link">PDF</a>
+				<a download href="{{ .Params.doc }}" class="download-link">DOC</a>
 			</div>
+			{{ end }}
 		</div>
 	</article>
 {{ end }}
