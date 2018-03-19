@@ -1,4 +1,4 @@
-// -----------------------------------------------------------------------------
+	// -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 
@@ -505,10 +505,9 @@
 .img-content {
 	@include image-replacement;
 
-	max-width: 12rem;
-	min-height: 12.5rem;
+	width: 100%;
 
-	margin: 2rem auto;
+	margin: 1rem auto;
 
 	overflow: hidden;
 
@@ -521,37 +520,57 @@
 	border: 1px solid palette('white');
 
 	direction: ltr;
-	@media screen and (min-width: breakpoint('phablet')) {
-		max-width: 18rem;
-		min-width: 14.375rem;
 
-		border: 1px solid palette('white');
+	@media screen and (min-width: breakpoint('phablet')) {
+		@include inline-block-item($align: 'top');
+
+		width: calc(50% - 0.5rem);
+
+		margin: 0.5rem;
 	}
 	@media screen and (min-width: breakpoint('tablet')) {
-		float: none;
+		@include inline-block-item($align: 'top');
 
-		display: inline-block;
+		width: calc(50% - 1rem);
 
-		max-width: 20rem;
-		min-width: 19rem;
-
-		margin: 0 0.5rem;
-
-		border: 1px solid palette('white');
+		margin: 0.5rem;
 	}
 	@media screen and (min-width: breakpoint('desktop')) {
-		max-width: 20rem;
-		min-width: 19rem;
+		@include inline-block-item($align: 'top');
 
-		margin: 0 0.5rem;
+		width: calc(25% - 1rem);
+
+		margin: 0.5rem;
 	}
 	@media screen and (min-width: breakpoint('wide')) {
-		max-width: 19rem;
-		min-width: 18rem;
+		@include inline-block-item($align: 'top');
 
-		margin: 0 0.25rem;
+		width: calc(25% - 1rem);
+
+		&:nth-child(1) {
+			margin: 0 1rem 0 0;
+		}
+
+		&:nth-child(2) {
+			margin: 0 1rem 0 0;
+		}
+
+		&:nth-child(3) {
+			margin: 0 1rem 0 0;
+		}
+
+		&:nth-child(4) {
+			margin: 0;
+		}
 	}
 }
+
+.midia-wrap {
+	@include inline-block-wrapper;
+}
+
+
+
 
 .midia-wrap a {
 	display: block;
