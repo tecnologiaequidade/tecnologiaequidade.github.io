@@ -25,7 +25,7 @@
     "start:hugo": "cross-env NODE_ENV=development hugo server --noHTTPCache=true --ignoreCache --templateMetrics --disableFastRender",
     "pretest": "npm run lint",
     "watch": "npm-run-all --parallel watch:*",
-    "watch:sass": "onchange \"/source/stylesheets/**/*.scss\" -- npm run build:sass",
+    "watch:sass": "onchange \"./source/stylesheets/**/*.scss\" -- npm run build:sass",
     "watch:img": "onchange \"./source/images/**/*.{gif,jpg,png,svg}\" -- npm run build:img",
     "watch:fonts": "onchange \"./source/fonts/**/*.*\" -- npm run build:fonts",
     "hashmark": "hashmark -l 8 dist/**/*.{js,css,map} {dir}/{name}-{hash}{ext} --cwd static --asset-map ../data/assets.json",
