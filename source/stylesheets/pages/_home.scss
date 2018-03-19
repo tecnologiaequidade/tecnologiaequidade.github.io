@@ -91,12 +91,12 @@
 }
 
 .second-project {
-	margin-left: 0.5rem;
-
 	@media screen and (min-width: breakpoint('tablet')) {
 		display: inline-block;
 
 		width: calc(40% - 1rem);
+
+		margin-left: 0.5rem;
 
 		vertical-align: top;
 	}
@@ -302,13 +302,14 @@
 
 .mission-content {
 	padding-bottom: 1rem;
-	margin-left: 0.5rem;
 
 	border-top: solid 5px palette('orange', 'base');
 	@media screen and (min-width: breakpoint('tablet')) {
 		display: inline-block;
 
 		width: calc(40% - 1rem);
+
+		margin-left: 0.5rem;
 
 		vertical-align: top;
 	}
