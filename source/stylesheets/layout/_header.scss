@@ -19,14 +19,14 @@
 	background-color: palette('blue', 'dark');
 
 	@media screen and (min-width: breakpoint('phablet')) {
-		padding-bottom: 320px;
+		padding-bottom: 310px;
 
 		background-image: image('illustration-small.png');
 		background-position: 90% bottom;
 	}
 
 	@media screen and (min-width: breakpoint('tablet')) {
-		padding-bottom: 330px;
+		padding-bottom: 300px;
 
 		background-image: image('illustration-medium.png');
 		background-position: 95% bottom;
@@ -44,7 +44,7 @@
 	}
 
 	@media screen and (min-width: breakpoint('wide')) {
-		min-height: 780px;
+		min-height: 820px;
 
 		background-image: image('illustration-big.png');
 		background-position: 80% bottom;
