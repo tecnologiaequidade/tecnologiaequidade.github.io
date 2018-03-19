@@ -4,8 +4,8 @@ date: 2018-03-06T14:55:14-03:00
 draft: false
 medium:
 linkedin:
-facebook:
-twitter:
+facebook: https://facebook.com/kogan.ariel
+twitter: https://twitter.com/arielkogan
 avatar: assets/images/ariel-kogan.png
 weight: 1
 type: person

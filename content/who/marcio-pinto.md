@@ -4,7 +4,7 @@ date: 2018-03-06T14:55:34-03:00
 draft: false
 medium:
 linkedin:
-facebook:
+facebook: https://facebook.com/marciovasconcelospinto
 twitter:
 avatar: assets/images/marcio-pinto.png
 weight: 2

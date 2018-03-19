@@ -4,8 +4,8 @@ date: 2018-03-06T14:55:48-03:00
 draft: false
 medium:
 linkedin:
-facebook:
-twitter:
+facebook: https://facebook.com/thiagorondon
+twitter: https://twitter.com/thiagorondon
 avatar: assets/images/thiago-rondon.png
 weight: 3
 type: person
