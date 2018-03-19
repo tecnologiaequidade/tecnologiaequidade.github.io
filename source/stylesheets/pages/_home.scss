@@ -532,45 +532,17 @@
 		@include inline-block-item($align: 'top');
 
 		width: calc(50% - 1rem);
-
-		margin: 0.5rem;
 	}
 	@media screen and (min-width: breakpoint('desktop')) {
 		@include inline-block-item($align: 'top');
 
 		width: calc(25% - 1rem);
-
-		margin: 0.5rem;
-	}
-	@media screen and (min-width: breakpoint('wide')) {
-		@include inline-block-item($align: 'top');
-
-		width: calc(25% - 1rem);
-
-		&:nth-child(1) {
-			margin: 0 1rem 0 0;
-		}
-
-		&:nth-child(2) {
-			margin: 0 1rem 0 0;
-		}
-
-		&:nth-child(3) {
-			margin: 0 1rem 0 0;
-		}
-
-		&:nth-child(4) {
-			margin: 0;
-		}
 	}
 }
 
 .midia-wrap {
 	@include inline-block-wrapper;
 }
-
-
-
 
 .midia-wrap a {
 	display: block;
