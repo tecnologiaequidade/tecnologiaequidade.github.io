@@ -423,3 +423,8 @@ x-moz-errormessage {
 [type='radio']:-moz-focusring {
 	outline-width: 0;
 }
+
+input:invalid,
+input:required {
+	box-shadow: none !important; // sass-lint:disable-line no-important
+}
