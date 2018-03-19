@@ -79,23 +79,23 @@
 	@media screen and (min-width: breakpoint('tablet')) {
 		display: inline-block;
 
-		width: 55%;
+		width: 60%;
 
-		margin: 0 1.875rem 1.875rem 0;
+		margin: 0 1rem 1rem 0;
 
 		vertical-align: top;
 	}
 	@media screen and (min-width: breakpoint('desktop')) {
 		display: inline-block;
 
-		width: 55%;
+		width: 59%;
 
 		vertical-align: top;
 	}
 	@media screen and (min-width: breakpoint('wide')) {
 		display: inline-block;
 
-		width: 60%;
+		width: 65%;
 
 		vertical-align: top;
 	}
@@ -112,14 +112,14 @@
 	@media screen and (min-width: breakpoint('desktop')) {
 		display: inline-block;
 
-		width: 35%;
+		width: 37%;
 
 		vertical-align: top;
 	}
 	@media screen and (min-width: breakpoint('wide')) {
 		display: inline-block;
 
-		width: 35%;
+		width: 32%;
 
 		vertical-align: top;
 	}
@@ -217,67 +217,67 @@
 }
 
 .what-we-do h4 {
-	margin-top: 0;
-	margin-bottom: 1rem;
+	max-width: 8em;
+
+	margin: 0;
 }
 
-.what-we-do__first-box,
-.what-we-do__second-box,
-.what-we-do__third-box,
-.what-we-do__fourth-box {
+.what-we-do__boxes {
+	@include inline-block-wrapper;
+}
+
+.what-we-do__box {
 	position: relative;
 
-	height: 15rem;
+	min-height: 15rem;
 
 	padding: 1rem;
-	margin: 0.5rem;
+	margin: 1rem;
 
 	text-align: left;
 	@media screen and (min-width: breakpoint('tablet')) {
-		display: inline-block;
-
-		width: 45%;
-
-		vertical-align: top;
+		width: calc(50% - 0.5rem);
 	}
-	@media screen and (min-width: breakpoint('desktop')) {
-		display: inline-block;
 
-		width: 45%;
+	&:nth-child(1) {
+		background-color: palette('red');
 
-		padding: 1rem;
-		margin: 1rem;
+		@media screen and (min-width: breakpoint('tablet')) {
+			@include inline-block-item($align: 'top');
 
-		vertical-align: top;
+			margin: 0 0.5rem 0.5rem 0;
+		}
 	}
-	@media screen and (min-width: breakpoint('wide')) {
-		display: inline-block;
 
-		width: 45%;
+	&:nth-child(2) {
+		background-color: palette('orange', 'dark');
+		@media screen and (min-width: breakpoint('tablet')) {
+			@include inline-block-item($align: 'top');
 
-		vertical-align: top;
+			margin: 0 0 0.5rem 0.5rem;
+		}
+	}
+
+	&:nth-child(3) {
+		background-color: palette('orange', 'base');
+		@media screen and (min-width: breakpoint('tablet')) {
+			@include inline-block-item($align: 'top');
+
+			margin: 0.5rem 0.5rem 0 0;
+		}
+	}
+
+
+	&:nth-child(4) {
+		background-color: palette('blue', 'fluorescent');
+		@media screen and (min-width: breakpoint('tablet')) {
+			@include inline-block-item($align: 'top');
+
+			margin: 0.5rem 0 0 0.5rem;
+		}
 	}
 }
 
-.what-we-do__first-box {
-	background-color: palette('red');
-}
-
-.what-we-do__second-box {
-	background-color: palette('orange', 'dark');
-}
-
-.what-we-do__third-box {
-	background-color: palette('orange', 'base');
-}
-
-.what-we-do__fourth-box {
-	background-color: palette('blue', 'fluorescent');
-}
-
-.what-we-do__contentbox {
-	width: 15em;
-}
 
 .button-plus {
 	position: absolute;
@@ -309,26 +309,23 @@
 	@media screen and (min-width: breakpoint('tablet')) {
 		display: inline-block;
 
-		width: 55%;
+		width: 60%;
 
-		padding-bottom: 0;
-		margin: 0 1.875rem 1.875rem 0;
+		margin: 0 1rem 1rem 0;
 
 		vertical-align: top;
 	}
-
 	@media screen and (min-width: breakpoint('desktop')) {
 		display: inline-block;
 
-		width: 55%;
+		width: 59%;
 
 		vertical-align: top;
 	}
-
 	@media screen and (min-width: breakpoint('wide')) {
 		display: inline-block;
 
-		width: 59%;
+		width: 65%;
 
 		vertical-align: top;
 	}
@@ -343,21 +340,19 @@
 
 		width: 35%;
 
-		padding-bottom: 0;
-
 		vertical-align: top;
 	}
 	@media screen and (min-width: breakpoint('desktop')) {
 		display: inline-block;
 
-		width: 35%;
+		width: 37%;
 
 		vertical-align: top;
 	}
 	@media screen and (min-width: breakpoint('wide')) {
 		display: inline-block;
 
-		width: 35%;
+		width: 32%;
 
 		vertical-align: top;
 	}
