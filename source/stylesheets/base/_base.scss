@@ -62,6 +62,9 @@ textarea,
 }
 
 :target {
+	font-size: ms(0);
+	font-family: $text-font-stack;
+
 	animation: highlight 0.8s ease-out;
 
 	@keyframes highlight {
