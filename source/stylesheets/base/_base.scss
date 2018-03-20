@@ -67,11 +67,11 @@ textarea,
 	@keyframes highlight {
 		// sass-lint:disable-block no-color-literals
 		0% {
-			background-color: rgba(palette('target-highlight'), 1);
+			background-color: transparent;
 		}
 
 		100% {
-			background-color: rgba(palette('target-highlight'), 0);
+			background-color: transparent;
 		}
 	}
 }
@@ -573,6 +573,45 @@ a {
 	background-image: image('twitter.png');
 	background-position: center center;
 }
+
+.next-link {
+	@include image-replacement;
+
+	display: inline-block;
+
+	width: 3.125rem;
+	height: 3.125rem;
+
+	padding: 0;
+	margin-right: 0.2rem;
+	margin-left: 0;
+
+	text-decoration: none;
+
+	border: solid 1px palette('white');
+	border-radius: 50%;
+
+	&:hover {
+		border: solid 1px palette('white');
+	}
+}
+
+.next-link__arrow-left-white {
+	background-image: image('arrow-left-white.png');
+	background-position: center center;
+}
+
+.next-link__arrow-right-white {
+	background-image: image('arrow-right-white.png');
+	background-position: center center;
+}
+
+.next-link__close {
+	background-image: image('minus-white.png');
+	background-position: center center;
+}
+
+
 
 /* Contact info and addresses
 ---------------------------------------------------------------------------- */
