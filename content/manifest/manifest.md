@@ -3,8 +3,8 @@ title: "Nosso Manifesto"
 date: 2018-03-06T16:19:00-03:00
 draft: false
 callToDownload: "Faça download do manifesto completo"
-pdf:
-doc:
+pdf: /downloads/ITE-manifesto.pdf
+doc: /downloads/ITE-manifesto.docx
 ---
 
 Acreditamos que atualmente estamos experimentando processos de imersão de tecnologias digitais que podem trazer impactos positivos e negativos ao mesmo tempo — que estão rapidamente reconfigurando nossa sociedade na medida em que avançam em muitas áreas e setores.
