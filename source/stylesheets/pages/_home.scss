@@ -196,14 +196,11 @@
 	background-color: palette('blue', 'pool');
 }
 
-.what-we-do h4 {
-	max-width: 8em;
-
-	margin: 0;
-}
 
 .what-we-do__boxes {
 	@include inline-block-wrapper;
+
+	position: relative;
 }
 
 .what-we-do__box {
@@ -258,6 +255,11 @@
 	}
 }
 
+.what-we-do__box h4 {
+	max-width: 8em;
+
+	margin: 0;
+}
 
 .button-plus {
 	position: absolute;
@@ -265,11 +267,96 @@
 	bottom: 1rem;
 }
 
-// purpose section
+.modalbox {
+	display: none;
+}
+
+.modalbox:target {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: flex;
+
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+	height: 100%;
+}
+
+.modalbox-content {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+
+	width: 100%;
+}
+
+.pesquisa {
+	background-color: palette('red');
+}
+
+.incidencia {
+	background-color: palette('orange', 'dark');
+}
+
+.mobilizacoes {
+	background-color: palette('orange', 'base');
+}
+
+.comunicacao {
+	background-color: palette('blue', 'fluorescent');
+}
+
+
+
+.modalbox h4 {
+	margin: auto;
+	margin-bottom: 2rem;
+
+	text-align: center;
+}
+
+.modalbox p {
+	font-size: ms(0);
+
+	text-align: left;
+
+	@media screen and (min-width: breakpoint('desktop')) {
+		font-size: ms(1);
+	}
+}
+
+
+
+.modalbox-text {
+	padding: 1rem;
+	@media screen and (min-width: breakpoint('tablet')) {
+		padding: 2rem;
+	}
+
+	@media screen and (min-width: breakpoint('desktop')) {
+		padding: 3rem 4rem;
+	}
+}
+
 .purpose {
 	margin: auto;
 
 	background-color: palette('esmerald', 'base');
+}
+
+.modalbox-buttons {
+	position: absolute;
+	bottom: 1rem;
+
+	display: block;
+
+	width: 100%;
+
+	margin: auto;
 }
 
 .purpose h4 {
