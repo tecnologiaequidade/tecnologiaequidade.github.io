@@ -1,5 +1,5 @@
 <article class="what-we-do">
-	<div class="content">
+	<div class="content" id="o-que-fazemos">
 		<h2>{{ i18n "whatWeDo" | title }}</h2>
 		<div class="what-we-do__boxes">
 			{{ range where .Site.Pages ".Params.role" "whatWeDo" }}
@@ -7,11 +7,30 @@
 				<div class="what-we-do__box__content">
 					<h4>{{ .Title }}</h4>
 					<div class="button-plus">
-						<a class="nav-link nav-link--plus--white" href="#">{{ .Title }}</a>
+						<a class="nav-link nav-link--plus--white" href="#{{ .Params.id }}">{{ .Title }}</a>
 					</div>
 				</div>
 			</div>
 			{{ end }}
+
+			{{ range where .Site.Pages ".Params.role" "whatWeDo" }}
+
+			<div class="modalbox" id="{{ .Params.id }}">
+				<div class="modalbox-content {{ .Params.id }}">
+					<div class="modalbox-text">
+					<h4>{{ .Title }}</h4>
+					{{ .Content }}
+					</div>
+					<div class="modalbox-buttons">
+						<a class="next-link next-link__arrow-left-white" href="#o-que-fazemos">+</a>
+						<a class="next-link next-link__close" href="#o-que-fazemos">+</a>
+						<a class="next-link next-link__arrow-right-white" href="#o-que-fazemos">+</a>
+					</div>
+				</div>
+			</div>
+
+			{{ end }}
+
 		</div>
 	</div>
 </article>
