@@ -11,3 +11,5 @@ weight: 5
 type: person
 role: counselor
 ---
+
+Gabriela Agustini é fundadora e diretora-executiva do Olabi - organização focada em estimular o uso de tecnologias para transformação social. Gabriela é também professora de cultura e tecnologia na Universidade Candido Mendes, curadora do Colaboramerica e membro do conselho do Global Innovation Gathering. Gabriela é coorganizadora da coletânea “De Baixo para Cima” (ed Aeroplano) e foi consultora da UNESCO na área de inovação e criatividade.
