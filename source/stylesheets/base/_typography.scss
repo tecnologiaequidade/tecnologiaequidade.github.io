@@ -60,7 +60,7 @@ h4 a,
 h5 a,
 h6 a,
 legend a,
-caption a,b
+caption a,
 dt a {
 	font-weight: normal;
 
@@ -172,6 +172,7 @@ p {
  */
 
 article p {
+	font-size: ms(0);
 	orphans: 3;
 	widows: 3;
 }
@@ -496,16 +497,16 @@ del {
 ///
 blockquote {
 	padding-left: $line-height * 1em;
-	margin-top: $line-height * 1em;
-	margin-right: $line-height * 1em;
-	margin-bottom: $line-height * 1em;
-	margin-left: 0;
+	margin: $line-height * 1em $line-height * 1em $line-height * 1em 0;
 
 	font-weight: normal;
-	font-size: 1.625rem;
+	font-size: ms(1);
 	font-family: 'Noto Serif', serif;
 
 	border-left: solid 2px palette('white');
+	@media screen and (min-width: breakpoint('tablet')) {
+		font-size: ms(2);
+	}
 }
 
 blockquote> p {
