@@ -42,7 +42,7 @@ $code-font-stack: 'archiaregular', $basic-code-font-stack !default;
 ///
 /// @access public
 /// @type number
-$body-font-size: 1.3em !default;
+$body-font-size: 1em !default;
 
 /// Default Leading
 ///
@@ -81,7 +81,7 @@ $line-lengths: (
 ///
 /// @link http://www.modularscale.com/?1&rem&1.25
 $modularscale: (
-	base: 1rem,
+	base: 1em,
 	ratio: 1.333
 );
 
