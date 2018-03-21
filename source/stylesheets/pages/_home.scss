@@ -7,20 +7,13 @@
 .content {
 	max-width: $max-width;
 
-	padding: 2rem;
+	padding: $gutter;
 	margin-right: auto;
 	margin-left: auto;
 
-	@media screen and (min-width: breakpoint('tablet')) {
-		padding: 3rem 2rem;
-	}
+	@media screen and (min-width: breakpoint('phablet')) {
+		padding: $gutter * 3 $gutter * 2.5;
 
-	@media screen and (min-width: breakpoint('desktop')) {
-		padding: 4rem 2rem;
-	}
-
-	@media screen and (min-width: breakpoint('wide')) {
-		padding: 7rem 2rem;
 	}
 }
 
@@ -272,26 +265,15 @@
 }
 
 .modalbox:target {
-	position: absolute;
-	top: 0;
-	left: 0;
-
-	display: flex;
-
-	align-items: center;
-	justify-content: center;
-
-	width: 100%;
-	height: 100%;
+	display: block;
+	margin-top: 4rem;
 }
 
 .modalbox-content {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-
+	align-items: center;
+	justify-content: center;
 	width: 100%;
+	height: 100%;
 }
 
 .pesquisa {
@@ -314,12 +296,15 @@
 
 .modalbox h4 {
 	margin: auto;
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 
 	text-align: center;
 }
 
 .modalbox p {
+	padding-bottom: 45px;
+	margin-bottom: 2rem;
+
 	font-size: ms(0);
 
 	text-align: left;
@@ -328,8 +313,6 @@
 		font-size: ms(1);
 	}
 }
-
-
 
 .modalbox-text {
 	padding: 1rem;
