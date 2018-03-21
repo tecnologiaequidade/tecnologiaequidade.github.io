@@ -22,14 +22,11 @@
 
 body {
 	font-weight: 700;
-	font-size: 1em;
+	font-size: $body-font-size;
 	line-height: $line-height;
 	font-family: $text-font-stack;
 
 	color: palette('text', 'dark');
-	@media screen and (min-width: breakpoint('tablet')) {
-		font-size: $body-font-size;
-	}
 }
 
 /* HEADINGS AND TITLES */
@@ -63,7 +60,7 @@ h4 a,
 h5 a,
 h6 a,
 legend a,
-caption a,
+caption a,b
 dt a {
 	font-weight: normal;
 
