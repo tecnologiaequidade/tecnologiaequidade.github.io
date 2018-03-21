@@ -33,9 +33,8 @@
 	}
 
 	@media screen and (min-width: breakpoint('desktop')) {
-		height: 95vh;
-		max-height: 98vh;
-		min-height: 680px;
+		height: 85vh;
+		min-height: 780px;
 
 		padding-bottom: 0;
 
@@ -44,8 +43,8 @@
 	}
 
 	@media screen and (min-width: breakpoint('wide')) {
-		min-height: 820px;
-
+		height: 80vh;
+		min-height: 800px;
 		background-image: image('illustration-big.png');
 		background-position: 80% bottom;
 	}
