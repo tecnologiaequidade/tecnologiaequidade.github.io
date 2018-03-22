@@ -12,18 +12,24 @@
 	margin-left: auto;
 
 	@media screen and (min-width: breakpoint('phablet')) {
-		padding: $gutter * 3 $gutter * 2.5;
+		padding: ($gutter * 3) $gutter;
+	}
+}
 
+.manifest .content,
+.newsletter .content {
+	@media screen and (min-width: breakpoint('desktop')) {
+		max-width: $smaller-max-width;
 	}
 }
 
 .content h2 {
 	margin-top: 0;
 	@media screen and (min-width: breakpoint('desktop')) {
-		margin-bottom: 3rem;
+		margin-bottom: $line-height * 1em;
 	}
 	@media screen and (min-width: breakpoint('wide')) {
-		margin-bottom: 5rem;
+		margin-bottom: $line-height * 1em;
 	}
 }
 
@@ -53,8 +59,6 @@
 	margin-top: $line-height * 2em;
 	margin-right: auto;
 	margin-left: auto;
-
-	font-size: ms(1);
 
 	text-align: center;
 
