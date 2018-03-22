@@ -22,14 +22,14 @@
 
 body {
 	font-weight: 700;
-	font-size: $body-font-size;
+	font-size: $small-screen-body-font-size;
 	line-height: $line-height;
 	font-family: $text-font-stack;
 
 	color: palette('text', 'dark');
 
 	@media screen and (min-width: breakpoint('desktop')) {
-		font-size: $big-body-font-size;
+		font-size: $body-font-size;
 	}
 }
 
@@ -90,9 +90,9 @@ h1 {
 
 		overflow: visible;
 	}
-	@media screen and (min-width: breakpoint('desktop')) {
-		font-size: ms(2);
-	}
+	// @media screen and (min-width: breakpoint('desktop')) {
+	// 	font-size: ms(2);
+	// }
 }
 
 h2 {
@@ -508,9 +508,6 @@ blockquote {
 	font-family: 'Noto Serif', serif;
 
 	border-left: solid 2px palette('white');
-	@media screen and (min-width: breakpoint('tablet')) {
-		font-size: ms(2);
-	}
 }
 
 blockquote> p {
