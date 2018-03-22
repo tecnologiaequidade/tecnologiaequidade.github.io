@@ -1,8 +1,8 @@
 <article class="purpose">
 	<div class="content">
 
+		<h2>{{ i18n "missionVisionValues" | title }}</h2>
 		<div class="mission-vision-content">
-			<h2>{{ i18n "missionVisionValues" | title }}</h2>
 			{{ range where .Site.Pages ".File.TranslationBaseName" "vision" }}
 			<section class="vision-content">
 				<h4>{{ .Title }}</h4>
