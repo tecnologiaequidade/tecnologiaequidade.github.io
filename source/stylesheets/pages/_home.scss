@@ -67,6 +67,9 @@
 
 	background-color: palette('blue', 'dark');
 
+}
+
+.project-boxes {
 	@media screen and (min-width: breakpoint('tablet')) {
 		@include inline-block-wrapper;
 	}
@@ -173,6 +176,7 @@
 	right: 1rem;
 	bottom: 1rem;
 }
+
 
 // what-we-do section
 .what-we-do {
