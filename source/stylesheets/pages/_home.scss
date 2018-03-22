@@ -194,156 +194,161 @@
 }
 
 
-.what-we-do__boxes {
-	@include inline-block-wrapper;
-
-	position: relative;
+.what-boxes {
+	@media screen and (min-width: breakpoint('tablet')) {
+		@include inline-block-wrapper;
+	}
 }
 
-.what-we-do__box {
+.what-box {
 	position: relative;
 
-	min-height: 15rem;
+	min-height: 10rem;
 
-	padding: 1rem;
-	margin-bottom: 1rem;
+	margin-bottom: $line-height * 1rem;
 
 	text-align: left;
+
+
 	@media screen and (min-width: breakpoint('tablet')) {
-		width: calc(50% - 0.5rem);
+		@include inline-block-item($align: 'top', $font-size:  1rem);
+
+		width: 50%;
+		min-height: 18rem;
+
+		margin-bottom: $gutter;
 	}
 
 	&:nth-child(1) {
 		background-color: palette('red');
-
-		@media screen and (min-width: breakpoint('tablet')) {
-			@include inline-block-item($align: 'top');
-
-			margin: 0 0.5rem 0.5rem 0;
-		}
 	}
 
 	&:nth-child(2) {
 		background-color: palette('orange', 'dark');
-		@media screen and (min-width: breakpoint('tablet')) {
-			@include inline-block-item($align: 'top');
-
-			margin: 0 0 0.5rem 0.5rem;
-		}
 	}
 
 	&:nth-child(3) {
 		background-color: palette('orange', 'base');
-		@media screen and (min-width: breakpoint('tablet')) {
-			@include inline-block-item($align: 'top');
-
-			margin: 0.5rem 0.5rem 0 0;
-		}
 	}
-
 
 	&:nth-child(4) {
 		background-color: palette('blue', 'fluorescent');
-		@media screen and (min-width: breakpoint('tablet')) {
-			@include inline-block-item($align: 'top');
-
-			margin: 0.5rem 0 0 0.5rem;
-		}
 	}
 }
 
-.what-we-do__box h4 {
-	max-width: 8em;
+.what-box__content {
+	padding-top: $line-height * 1rem;
+	padding-right: $gutter / 2;
+	padding-left: $gutter / 2;
 
+	@media screen and (min-width: breakpoint('tablet')) {
+		padding-top: $line-height * 1rem;
+		padding-right: $line-height * 1rem;
+		padding-left: $line-height * 1rem;
+	}
+}
+
+.what-box h4 {
+	width: 8em;
+
+	padding: 0;
 	margin: 0;
+}
+
+.what-box__text {
+	max-height: 0;
+
+	margin-top: 0;
+
+	overflow: hidden;
+
+	@media screen and (min-width: breakpoint('tablet')) {
+		margin-top: $line-height * 2rem;
+		margin-bottom: $line-height * 2rem;
+
+		font-size: ms(1);
+	}
+
+	.what-box:target & {
+		max-height: 50em;
+	}
+}
+
+
+.what-box__buttons {
+	display: none;
 }
 
 .button-plus {
 	position: absolute;
 	right: 1rem;
-	bottom: 1rem;
+	bottom: $line-height * 1rem;
+
+	display: block;
 }
 
-.modalbox {
+
+.what-box:target {
+	@media screen and (min-width: breakpoint('tablet')) {
+		width: 100%;
+
+		padding-right: $gutter * 2;
+		padding-left: $gutter * 2;
+	}
+}
+
+.what-box:target .what-box__content {
+	padding-bottom: 85px;
+
+	@media screen and (min-width: breakpoint('phablet')) {
+		padding-top: $line-height * 1rem;
+		padding-right: $gutter;
+		padding-left: $gutter;
+	}
+	@media screen and (min-width: breakpoint('tablet')) {
+		padding-top: $line-height * 2rem;
+		padding-right: $line-height * 3rem;
+		padding-left: $line-height * 3rem;
+	}
+}
+
+.what-box:target h4 {
+	@media screen and (min-width: breakpoint('tablet')) {
+		width: 100%;
+
+		font-size: ms(3);
+
+		text-align: center;
+	}
+}
+
+
+.what-box:target .what-box__buttons {
+	position: absolute;
+	bottom: $line-height * 1rem;
+	left: 50%;
+
+	display: block;
+
+	width: 11rem;
+
+	transform: translateX(-50%);
+	@media screen and (min-width: breakpoint('tablet')) {
+		bottom: $line-height * 2rem;
+	}
+}
+
+
+.what-box:target .button-plus {
 	display: none;
 }
 
-.modalbox:target {
-	display: block;
-	margin-top: 4rem;
-}
 
-.modalbox-content {
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	height: 100%;
-}
-
-.pesquisa {
-	background-color: palette('red');
-}
-
-.incidencia {
-	background-color: palette('orange', 'dark');
-}
-
-.mobilizacoes {
-	background-color: palette('orange', 'base');
-}
-
-.comunicacao {
-	background-color: palette('blue', 'fluorescent');
-}
-
-
-
-.modalbox h4 {
-	margin: auto;
-	margin-bottom: 1rem;
-
-	text-align: center;
-}
-
-.modalbox p {
-	padding-bottom: 45px;
-	margin-bottom: 2rem;
-
-	font-size: ms(0);
-
-	text-align: left;
-
-	@media screen and (min-width: breakpoint('desktop')) {
-		font-size: ms(1);
-	}
-}
-
-.modalbox-text {
-	padding: 1rem;
-	@media screen and (min-width: breakpoint('tablet')) {
-		padding: 2rem;
-	}
-
-	@media screen and (min-width: breakpoint('desktop')) {
-		padding: 3rem 4rem;
-	}
-}
-
+// purpose section
 .purpose {
 	margin: auto;
 
 	background-color: palette('esmerald', 'base');
-}
-
-.modalbox-buttons {
-	position: absolute;
-	bottom: 1rem;
-
-	display: block;
-
-	width: 100%;
-
-	margin: auto;
 }
 
 .purpose h4 {
@@ -357,8 +362,8 @@
 
 .mission-vision-content {
 	@media screen and (min-width: breakpoint('tablet')) {
-	@include inline-block-wrapper;
-}
+		@include inline-block-wrapper;
+	}
 }
 
 .vision-content {
@@ -536,7 +541,7 @@
 
 .midia-wrap {
 	@media screen and (min-width: breakpoint('tablet')) {
-	@include inline-block-wrapper;
+		@include inline-block-wrapper;
 
 		margin-right: $gutter / -2;
 		margin-left: $gutter / -2;
@@ -576,7 +581,7 @@
 
 		padding-right: $gutter / 2;
 		padding-left: $gutter / 2;
-}
+	}
 
 	@media screen and (min-width: breakpoint('desktop')) {
 		width: calc(25%);
