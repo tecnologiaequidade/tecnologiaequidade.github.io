@@ -351,22 +351,23 @@
 	font-size: ms(1);
 }
 
+.mission-vision-content {
+	@include inline-block-wrapper;
+}
+
 .vision-content {
 	padding-bottom: 1rem;
 
 	border-top: solid 5px palette('orange', 'dark');
 
 	@media screen and (min-width: breakpoint('tablet')) {
-		display: inline-block;
+		@include inline-block-item($align: 'top', $font-size:  1rem);
 
-		width: calc(60% - 0.5rem);
+		width: calc(66.66% - #{$gutter} / 2);
 
-		margin-right: 0.5rem;
+		margin-right: $gutter;
 
 		vertical-align: top;
-	}
-	@media screen and (min-width: breakpoint('wide')) {
-		width: calc(70% - 0.5rem);
 	}
 }
 
@@ -375,16 +376,11 @@
 
 	border-top: solid 5px palette('orange', 'base');
 	@media screen and (min-width: breakpoint('tablet')) {
-		display: inline-block;
+		@include inline-block-item($align: 'top', $font-size:  1rem);
 
-		width: calc(40% - 1rem);
-
-		margin-left: 0.5rem;
+		width: calc(33.33% - #{$gutter} / 2);
 
 		vertical-align: top;
-	}
-	@media screen and (min-width: breakpoint('wide')) {
-		width: calc(30% - 1rem);
 	}
 }
 
@@ -397,7 +393,7 @@
 .values-content ul {
 	padding: 0;
 	@media screen and (min-width: breakpoint('tablet')) {
-		column-gap: 1.875rem;
+		column-gap: $gutter;
 
 		columns: 3;
 	}
