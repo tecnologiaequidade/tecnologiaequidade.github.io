@@ -27,6 +27,10 @@ body {
 	font-family: $text-font-stack;
 
 	color: palette('text', 'dark');
+
+	@media screen and (min-width: breakpoint('desktop')) {
+		font-size: $big-body-font-size;
+	}
 }
 
 /* HEADINGS AND TITLES */
