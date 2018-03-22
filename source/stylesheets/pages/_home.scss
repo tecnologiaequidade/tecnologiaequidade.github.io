@@ -66,6 +66,10 @@
 	color: palette('white');
 
 	background-color: palette('blue', 'dark');
+
+	@media screen and (min-width: breakpoint('tablet')) {
+		@include inline-block-wrapper;
+	}
 }
 
 .first-project {
@@ -344,7 +348,9 @@
 }
 
 .mission-vision-content {
+	@media screen and (min-width: breakpoint('tablet')) {
 	@include inline-block-wrapper;
+}
 }
 
 .vision-content {
@@ -521,9 +527,9 @@
 }
 
 .midia-wrap {
+	@media screen and (min-width: breakpoint('tablet')) {
 	@include inline-block-wrapper;
 
-	@media screen and (min-width: breakpoint('tablet')) {
 		margin-right: $gutter / -2;
 		margin-left: $gutter / -2;
 	}
