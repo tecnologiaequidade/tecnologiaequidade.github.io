@@ -42,8 +42,8 @@ $code-font-stack: 'archiaregular', $basic-code-font-stack !default;
 ///
 /// @access public
 /// @type number
-$body-font-size: 1em !default;
-$big-body-font-size: 1.333em !default;
+$body-font-size: 1.333em !default;
+$small-screen-body-font-size: 1em !default;
 
 /// Default Leading
 ///
@@ -225,6 +225,7 @@ $breakpoints: map-merge($breakpoints, $toggle-breakpoints);
 /// Container's maximum width
 /// @type number
 $max-width: breakpoint('wide') / 1em * 1rem !default;
+$text-max-width: 62.5em !default;
 
 
 /// Z-indexes map, gathering all Z layers of the application. Avoid to edit it.
