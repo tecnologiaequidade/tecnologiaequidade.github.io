@@ -1,0 +1,14 @@
+<article class="authors">
+	<div class="content">
+		<h2>{{ i18n "authors" | title }}</h2>
+		<section class="authors__wrap">
+		{{ range .Site.Data.authors }}
+			<img src="{{ .image }}" alt="{{ .Title }}">
+			<div class="authors-text-content">
+				<h5>{{ .name }}</h5>
+				<p>{{ .about }}</p>
+			</div>
+		{{ end }}
+		</section>
+	</div>
+</article>
