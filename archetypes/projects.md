@@ -1,10 +1,10 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 date: {{ .Date }}
-image:
+draft: true
+url: "/projetos/{{ replace .TranslationBaseName "-" " " | lower }}"
+image: ""
 summary: ""
 relatedProjects:
-url: "/projetos/{{ replace .TranslationBaseName "-" " " | lower }}"
-draft: true
 weight:
 ---
