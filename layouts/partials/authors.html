@@ -2,15 +2,17 @@
 	<div class="content">
 		<h2>{{ i18n "authors" | title }}</h2>
 		<section class="authors__wrap">
-		{{ with $.Site.Data.authors }}
-			{{ range . }}
-		 	<div class="authors-text-content">
-			<img src="{{ .image }}" alt="{{ .Title }}">
-				<h5>{{ .name }}</h5>
-				<p>{{ .about }}</p>
-			</div>
+			{{ with $.Site.Data.authors.list }}
+				{{ range . }}
+				<section class="authors-image">
+					<img src="{{ .image }}" alt="{{ .Title }}">
+				</section>
+				<section class="authors-about">
+					<h5>{{ .name }}</h5>
+					<p>{{ .about }}</p>
+				</section>
+				{{ end }}
 			{{ end }}
-		{{ end }}
 		</section>
 	</div>
 </article>
