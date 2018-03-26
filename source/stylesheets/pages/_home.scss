@@ -191,7 +191,6 @@
 	background-color: palette('blue', 'pool');
 }
 
-
 .what-boxes {
 	@media screen and (min-width: breakpoint('tablet')) {
 		display: flex;
@@ -218,6 +217,7 @@
 	@media screen and (min-width: breakpoint('tablet')) {
 		flex-basis: 40%;
 		flex-grow: 1;
+
 		flex-shrink: 1;
 
 		min-height: 18rem;
@@ -261,7 +261,6 @@
 	padding-right: $gutter / 2;
 	padding-left: $gutter / 2;
 
-
 	@media screen and (min-width: breakpoint('tablet')) {
 		padding-top: $line-height * 1rem;
 		padding-right: $line-height * 1rem;
@@ -277,7 +276,6 @@
 		}
 	}
 }
-
 
 .what-box h4 {
 	width: 8em;
@@ -295,13 +293,13 @@
 
 	overflow: hidden;
 
-	transition-delay: 1s;
+	transition-delay: 500ms;
 	transition-duration: $transition-duration;
 	transition-property: max-height;
-	transition-timing-function: ease;
+	transition-timing-function: ease-in;
 
 	@media screen and (min-width: breakpoint('tablet')) {
-		margin-top: $line-height * 2rem;
+		margin-top: $line-height * 1rem;
 		margin-bottom: $line-height * 2rem;
 	}
 
@@ -312,6 +310,24 @@
 
 .what-box__buttons {
 	display: none;
+
+	.what-box:target & {
+		position: absolute;
+		bottom: $line-height * 1rem;
+		left: 50%;
+
+		display: block;
+
+		width: 11rem;
+
+		transform: translateX(-50%);
+		animation-name: fadeIn;
+		animation-duration: 4s;
+
+		@media screen and (min-width: breakpoint('tablet')) {
+			bottom: $line-height * 2rem;
+		}
+	}
 }
 
 .button-plus {
@@ -320,25 +336,22 @@
 	bottom: $line-height * 1rem;
 
 	display: block;
-}
 
-.what-box:target .what-box__buttons {
-	position: absolute;
-	bottom: $line-height * 1rem;
-	left: 50%;
+	.what-box:target & {
+		display: none;
 
-	display: block;
-
-	width: 11rem;
-
-	transform: translateX(-50%);
-	@media screen and (min-width: breakpoint('tablet')) {
-		bottom: $line-height * 2rem;
 	}
+
 }
 
-.what-box:target .button-plus {
-	display: none;
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
 }
 
 // purpose section
