@@ -1,0 +1,34 @@
+{{ partial "header.html" . }}
+
+<section class="projects-greetings">
+	<div class="content">
+		<div role="banner">
+			<a href="/">
+				{{ .Title }}
+			</a>
+		</div>
+		<div class="projects-greetings__title">
+			<h1>{{ .Title }}</h1>
+		</div>
+		<div class="projects-greetings__img">
+
+		</div>
+	</div>
+</section>
+<article class="projects-about">
+	<div class="content smaller-width">
+		<h2>{{ .Title }}</h2>
+		{{ .Content }}
+
+	</div>
+</article>
+	{{ partial "authors.html" . }}
+
+	{{ partial "newsletter.html" . }}
+
+	<!-- {{ partial "newsletter.html" . }} -->
+
+{{ partial "footer.html" . }}
+
+
+
