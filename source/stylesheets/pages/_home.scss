@@ -194,7 +194,11 @@
 
 .what-boxes {
 	@media screen and (min-width: breakpoint('tablet')) {
-		@include inline-block-wrapper;
+		display: flex;
+
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
 
 		margin-right: $gutter / -2;
 		margin-left: $gutter / -2;
@@ -211,16 +215,28 @@
 
 	text-align: left;
 
-
 	@media screen and (min-width: breakpoint('tablet')) {
-		@include inline-block-item($align: 'top', $font-size:  1rem);
+		flex-basis: 40%;
+		flex-grow: 1;
+		flex-shrink: 1;
 
-		width: calc(50% - #{$gutter});
 		min-height: 18rem;
 
 		margin-right: $gutter / 2;
 		margin-bottom: $gutter;
 		margin-left: $gutter / 2;
+
+		&:target {
+			flex-basis: 100%;
+
+			& h4 {
+				width: 100%;
+
+				font-size: ms(2);
+
+				text-align: center;
+			}
+		}
 	}
 
 	&:nth-child(1) {
@@ -245,18 +261,31 @@
 	padding-right: $gutter / 2;
 	padding-left: $gutter / 2;
 
+
 	@media screen and (min-width: breakpoint('tablet')) {
 		padding-top: $line-height * 1rem;
 		padding-right: $line-height * 1rem;
 		padding-left: $line-height * 1rem;
 	}
+
+	.what-box:target & {
+		padding-bottom: 80px;
+		@media screen and (min-width: breakpoint('tablet')) {
+			padding-top: $gutter * 2;
+			padding-right: $gutter * 3;
+			padding-left: $gutter * 3;
+		}
+	}
 }
+
 
 .what-box h4 {
 	width: 8em;
 
 	padding: 0;
 	margin: 0;
+
+	font-size: ms(1);
 }
 
 .what-box__text {
@@ -266,11 +295,14 @@
 
 	overflow: hidden;
 
+	transition-delay: 1s;
+	transition-duration: $transition-duration;
+	transition-property: max-height;
+	transition-timing-function: ease;
+
 	@media screen and (min-width: breakpoint('tablet')) {
 		margin-top: $line-height * 2rem;
 		margin-bottom: $line-height * 2rem;
-
-		font-size: ms(1);
 	}
 
 	.what-box:target & {
@@ -280,35 +312,6 @@
 
 .what-box__buttons {
 	display: none;
-}
-
-.what-box:target h4 {
-	@media screen and (min-width: breakpoint('tablet')) {
-		width: 100%;
-
-		font-size: ms(3);
-
-		text-align: center;
-	}
-}
-
-.what-box:target {
-	width: 100%;
-
-	margin-right: 0;
-	margin-left: 0;
-	@media screen and (min-width: breakpoint('tablet')) {
-		width: calc(100% - #{$gutter});
-	}
-}
-
-.what-box:target .what-box__content {
-	padding-bottom: 80px;
-	@media screen and (min-width: breakpoint('tablet')) {
-		padding-top: $gutter * 2;
-		padding-right: $gutter * 3;
-		padding-left: $gutter * 3;
-	}
 }
 
 .button-plus {
@@ -334,11 +337,9 @@
 	}
 }
 
-
 .what-box:target .button-plus {
 	display: none;
 }
-
 
 // purpose section
 .purpose {
