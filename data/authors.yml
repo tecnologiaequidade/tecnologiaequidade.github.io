@@ -1,9 +1,9 @@
 list:
   - name: Thiago Rondon
-    image: ""
+    image: "assets/images/thiago-rondon-author.png"
     about: É desenvolvedor de software que participou de comunidades e desenvolvimento de projetos opensource e dados abertos; trabalhou na criação de algumas empresas de tecnologia, tais elas como a Aware que desenvolvia soluções para empresas baseadas em tecnologias livres. Atualmente é diretor-executivo na startup studio EOKOE; fundador do AppCívico; também é coordenador do Gastos Abertos da Open Knowledge Brasil.
     weight: 1
   - name: Márcio Vasconcelos Pinto
-    image: ""
+    image: "assets/images/marcio-vasconcelos-author.png"
     about: É administrador de empresas (Mestre e Bacharel) com 25 anos de experiência profissional. Na Fundación Avina, foi gestor da área de Tecnologia para Mudança Social; foi Coordenador Geral do Fundo Latino Americano de Inovações Cívicas, coordenador da Iniciativa Latino Americana de Dados Abertos (aliança entre International Development Research Centre do Canadá, CEPAL, OEA); representante da sociedade civil da América Latina no Comitê Executivo do Grupo de Trabalho de Dados Abertos da Aliança de Governo Aberto.
     weight: 2
