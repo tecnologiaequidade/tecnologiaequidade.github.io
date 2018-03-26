@@ -1,5 +1,5 @@
 ---
-title: "Pega-bots."
+title: "Pega-bots"
 date: 2018-03-06T14:48:47-03:00
 draft: false
 url: "/projetos/pega-bots"
