@@ -2,19 +2,22 @@
 
 <section class="projects-greetings">
 	<div class="content">
-		<div role="banner">
-			<a href="/">
-				{{ .Title }}
-			</a>
-		</div>
-		<div class="projects-greetings__title">
-			<h1>{{ .Title }}</h1>
-		</div>
-		<div class="projects-greetings__img">
-
+		<div class="projects-greetings-wrap">
+			<div class="projects-greetings__title">
+				<div role="banner">
+					<a href="/">
+						{{ .Title }}
+					</a>
+				</div>
+				<h1>{{ .Title }}</h1>
+			</div>
+			<div class="projects-greetings__img">
+				<img src="{{ .Params.image }}" alt="{{ .Title }}">
+			</div>
 		</div>
 	</div>
 </section>
+
 <article class="projects-about">
 	<div class="content smaller-width">
 		<h2>{{ .Title }}</h2>
