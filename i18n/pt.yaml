@@ -37,4 +37,8 @@
 - id: midia
   translation: "Mídia"
 
+#projects
+- id: authors
+  translation: "Autores"
+
 
