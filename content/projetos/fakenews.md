@@ -3,7 +3,7 @@ title: "Influência de Robôs e Fake News nas Eleições Brasileiras de 2018"
 date: 2018-03-06T14:48:47-03:00
 draft: false
 url: "/projetos/fake-news"
-image: "assets/images/illustration2.png"
+image: "/assets/images/illustration2.png"
 summary: "Projeto de pesquisa e ação do Instituto Tecnologia & Equidade que busca entender o possível impacto dos perfis não humanos em redes sociais nas eleições de 2018. Além disso, o foco da iniciativa é incidir positivamente nesse cenário, incluindo recomendações para o uso ético dessa tecnologia e a criação de uma plataforma de identificação e denúncias de robôs."
 relatedProjects:
   - pegabots
