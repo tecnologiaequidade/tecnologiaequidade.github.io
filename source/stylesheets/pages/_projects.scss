@@ -1,5 +1,7 @@
 
 .projects-greetings {
+	position: relative;
+
 	color: palette('blue', 'pool');
 
 	background-color: palette('blue', 'dark');
@@ -8,6 +10,8 @@
 .projects-greetings-wrap {
 	@media screen and (min-width: breakpoint('tablet')) {
 		@include inline-block-wrapper;
+
+		min-height: 50vh;
 
 		margin-right: $gutter / -1;
 		margin-left: $gutter / -1;
@@ -28,16 +32,14 @@
 }
 
 .projects-greetings__img {
-	@media screen and (min-width: breakpoint('tablet')) {
-		@include inline-block-item($align: 'top', $font-size:  1rem);
+	position: absolute;
+	right: 0;
+	bottom: 0;
 
-		width: 50%;
+	padding: 0;
+	margin: 0;
 
-		padding-right: $gutter / 1;
-		padding-left: $gutter / 1;
-
-		vertical-align: top;
-	}
+	object-fit: cover;
 }
 
 .projects-greetings__title h1 {
