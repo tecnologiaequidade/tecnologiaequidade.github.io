@@ -12,7 +12,10 @@
 				<h1>{{ .Title }}</h1>
 			</div>
 			<div class="projects-greetings__img">
-				<img src="{{ .Params.image }}" alt="{{ .Title }}">
+				<picture>
+					<source srcset="{{ .Params.image }}" type="image">
+					<img src="{{ .Params.image }}" alt="{{ .Title }}">
+				</picture>
 			</div>
 		</div>
 	</div>
