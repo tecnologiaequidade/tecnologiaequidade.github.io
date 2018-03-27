@@ -562,6 +562,10 @@
 	}
 }
 
+.authors__box {
+	margin-bottom: $gutter * 2;
+}
+
 .logo-box {
 	@include image-replacement;
 
