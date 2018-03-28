@@ -216,12 +216,15 @@ hr {
 	padding: 0;
 	/* 2 */
 
+	margin-top: $line-height * 2rem;
+	margin-bottom: $line-height * -0.5rem;
+
 	overflow: visible;
 
-	color: palette('gray');
+	color: palette('black');
 
 	border: 0;
-	border-top: 1px solid palette('gray');
+	border-top: 1.5px solid palette('black');
 	/* 1 */
 
 	box-sizing: content-box;
