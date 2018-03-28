@@ -1,14 +1,13 @@
 backend:
-  name: tecnologiaequidade.github.io
+  name: github
+  repo: tecnologiaequidade/tecnologiaequidade.github.io # Path to your Github repository
   branch: develop
   accept_roles:
     - admin
     - editor
-
 publish_mode: editorial_workflow
 media_folder: "static/uploads" # Media files will be stored in the repo under images/uploads
 public_folder: "/imagens" # The src attribute for uploaded media will begin with /images/uploads
-
 collections:
   - name: "projetos"
     label: "projetos"
@@ -16,12 +15,47 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Date", name: "date", widget: "datetime", format: "DD-MM-YYYY hh:mma"}
-      - {label: "Draft", name: "draft", widget: "string", default: "true"}
-      - {label: "Url", name: "url", widget: "string", default: "/projetos/"}
-      - {label: "image", name: "image", widget: "image", required: false, tagname: ""}
-      - {label: "Summary", name: "summary", widget: "string"}
-      - {label: "Projetos Relacionados", name: "relatedProjects", widget: "string"}
-      - {label: "Weight", name: "weight", widget: "number"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      -
+        label: "Title"
+        name: "title"
+        widget: "string"
+        tagname: "h1"
+        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
+      -
+        label: "Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-DD-MMThh:mm:ssZ" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: "true"
+      -
+        label: "Url"
+        name: "url"
+        widget: "string"
+        default: "/projetos/"
+      -
+        label: "image"
+        name: "image"
+        widget: "image"
+        required: false
+        tagname: ""
+      -
+        label: "Summary"
+        name: "summary"
+        widget: "text"
+      -
+        label: "Projetos Relacionados"
+        name: "relatedProjects"
+        widget: "list"
+      -
+        label: "Weight"
+        name: "weight"
+        widget: "number"
+        valueType: "int"
+      -
+        label: "Body"
+        name: "body"
+        widget: "markdown"

@@ -21,7 +21,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "npm run lint:sass",
     "lint:sass": "sass-lint \"./source/stylesheets/**/*.scss\" --verbose --no-exit --format junit --output ./_testReports/sassLint.xml",
-    "dev": "npm-run-all --parallel watch start:*",
+    "dev": "npm-run-all build:* --parallel watch start:*",
     "start:hugo": "cross-env NODE_ENV=development hugo server --noHTTPCache=true --ignoreCache --templateMetrics --disableFastRender",
     "pretest": "npm run lint",
     "watch": "npm-run-all --parallel watch:*",
