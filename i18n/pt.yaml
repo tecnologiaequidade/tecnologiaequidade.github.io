@@ -40,5 +40,7 @@
 #projects
 - id: authors
   translation: "Autores"
+- id: seeAlso
+  translation: "Conheça também"
 
 
