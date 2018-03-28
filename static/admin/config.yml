@@ -9,7 +9,8 @@ publish_mode: editorial_workflow
 media_folder: "static/uploads" # Media files will be stored in the repo under images/uploads
 public_folder: "/imagens" # The src attribute for uploaded media will begin with /images/uploads
 collections:
-  - name: "projetos"
+  -
+    name: "projects"
     label: "projetos"
     folder: "content/projetos"
     create: true
