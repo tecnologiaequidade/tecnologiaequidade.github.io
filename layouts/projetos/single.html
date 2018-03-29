@@ -1,21 +1,22 @@
 {{ partial "header.html" . }}
+<style>
+.title-background {
+	background-image: url({{ .Params.titleImage }});
+	background-position: center;
+	background-repeat: repeat;
+}
+</style>
 
-<section class="projects-greetings">
-	<div class="content">
+<section class="projects-greetings {{ if .Params.titleImage }}title-background{{ end }}">
+	<div class="content projects-greetings__content">
 		<div class="projects-greetings-wrap">
 			<div class="projects-greetings__title">
-				<div role="banner">
+				<div class="{{ if and .Params.darkText .Params.titleImage }}logo-dark{{ else }}logo-light{{ end }}">
 					<a href="/">
 						{{ .Title }}
 					</a>
 				</div>
-				<h1>{{ .Title }}</h1>
-			</div>
-			<div class="projects-greetings__img">
-				<picture>
-					<source srcset="{{ .Params.image }}" type="image">
-					<img src="{{ .Params.image }}" alt="{{ .Title }}">
-				</picture>
+					<h1 {{ if .Params.titleImage }}class="{{ if .Params.darkText }}title-dark{{ else }}title-light{{ end }}"{{ end }}>{{ .Title }}</h1>
 			</div>
 		</div>
 	</div>
@@ -24,8 +25,18 @@
 <article class="projects-about">
 	<div class="content smaller-width">
 		<h2>{{ .Title }}</h2>
-		{{ .Content }}
+			{{ if .Params.imageBeforeText }}
+				<img src="{{ .Params.imageBeforeText }}" alt="{{ .Title }}">
+			{{ end }}
 
+			{{ .Content }}
+
+			{{ if .Params.ImageAfterText }}
+				<img src="{{ .Params.ImageAfterText }}" alt="{{ .Title }}"
+
+				class=" {{ if .Params.imageFullSize }} img-full {{ end }}"
+				>
+			{{ end }}
 	</div>
 </article>
 
