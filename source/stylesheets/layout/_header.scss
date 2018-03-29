@@ -50,7 +50,7 @@
 	}
 }
 
-[role='banner'] {
+.logo-light {
 	@include image-replacement;
 
 	height: 6.4375rem;
@@ -64,7 +64,27 @@
 	}
 }
 
-[role='banner'] a {
+.logo-light a {
+	display: block;
+
+	height: 6.4375rem;
+}
+
+.logo-dark {
+	@include image-replacement;
+
+	height: 6.4375rem;
+	max-width: 20rem;
+
+	background-image: image('logo-dark-200w.png');
+	background-position: left;
+
+	@media screen and (min-width: breakpoint('phablet')) {
+		background-image: image('logo-dark-320w.png');
+	}
+}
+
+.logo-dark a {
 	display: block;
 
 	height: 6.4375rem;
