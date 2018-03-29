@@ -1,48 +1,97 @@
 .projects-greetings {
 	position: relative;
 
+	min-height: 40vh;
+
 	color: palette('blue', 'pool');
 
 	background-color: palette('blue', 'dark');
 }
 
-.projects-greetings-wrap {
-	min-height: 60vh;
+.projects-greetings__content {
+	padding-bottom: 0;
+}
+
+.projects-about h2 {
+	margin-bottom: 0;
+}
+
+.projects-about h5 {
+	font-size: 0.8em;
+	font-family: 'archiaregular', $title-font-stack;
+
+	color: palette('black');
+}
+
+.projects-about p {
+	margin-top: $line-height * 1rem;
+	margin-bottom: $line-height * 1rem;
 
 	@media screen and (min-width: breakpoint('tablet')) {
-		@include inline-block-wrapper;
-
-		margin-right: $gutter / -1;
-		margin-left: $gutter / -1;
+		margin-top: $line-height * 2rem;
+		margin-bottom: $line-height * 2rem;
 	}
 }
 
-.projects-greetings__title {
-	@media screen and (min-width: breakpoint('tablet')) {
-		@include inline-block-item($align: 'top', $font-size:  1rem);
-
-		width: 50%;
-
-		padding-right: $gutter / 1;
-		padding-left: $gutter / 1;
-
-		vertical-align: top;
-	}
-}
-
-.projects-greetings__img {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-
-	padding: 0;
+.subtitle {
 	margin: 0;
+
+	font-size: ms(1);
+
+	text-align: center;
+}
+
+.projects-about ul {
+	width: 100%;
+
+	margin-bottom: 0;
+}
+
+.projects-about li {
+	width: 100%;
+
+	padding-right: 1rem;
+	padding-left: 1em;
+	margin-top: 0;
+	margin-bottom: $line-height * 0.5rem;
+	margin-left: 1.5rem;
+
+	list-style: disc;
+}
+
+.projects-about .img-full {
+	position: absolute;
+
+	width: 100%;
+	height: auto;
+
+	margin-top: $line-height * 1rem;
+	margin-bottom: $line-height * 1rem;
 
 	object-fit: cover;
 }
 
+.projects-greetings-wrap {
+	height: auto;
+	min-height: 30vh;
+}
+
 .projects-greetings__title h1 {
-	margin-top: $line-height * 1em;
+	max-width: 100%;
+
+	padding-top: $line-height * 3rem;
+	padding-bottom: $line-height * 3rem;
+	margin: 0;
+
+	text-transform: uppercase;
+}
+
+.title-light {
+	color: palette('white');
+}
+
+.title-dark {
+	color: palette('black');
 }
 
 .projects-about {
@@ -112,7 +161,7 @@
 }
 
 .authors-image img {
-	border-radius: 50%;
+	border-radius: 100%;
 }
 
 .authors-about {
