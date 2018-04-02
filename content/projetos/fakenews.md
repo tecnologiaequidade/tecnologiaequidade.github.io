@@ -9,11 +9,18 @@ url: "/projetos/fakenews"
 summary: "Projeto de pesquisa e ação do Instituto Tecnologia & Equidade que busca entender o possível impacto dos perfis não humanos em redes sociais nas eleições de 2018. Além disso, o foco da iniciativa é incidir positivamente nesse cenário, incluindo recomendações para o uso ético dessa tecnologia e a criação de uma plataforma de identificação e denúncias de robôs."
 imageAfterText: "/assets/images/img-fake-news.jpg"
 imageFullSize: false
+imageGallery:
+  - "/assets/images/bg-fakenews.jpg"
+  - "/assets/images/bg-fakenews.jpg"
+  - "/assets/images/bg-fakenews.jpg"
+  - "/assets/images/bg-fakenews.jpg"
+  - "/assets/images/bg-fakenews.jpg"
+  - "/assets/images/bg-fakenews.jpg"
+  - "/assets/images/bg-fakenews.jpg"
 relatedProjects:
-  - pegabots
+  - pega-bots
 weight: 1
 ---
-
 
 Projeto de pesquisa e ação do Instituto Tecnologia & Equidade que busca entender o possível impacto dos perfis não humanos em redes sociais nas eleições de 2018. Além disso, o foco da iniciativa é incidir positivamente nesse cenário, incluindo recomendações para o uso ético dessa tecnologia e a criação de uma plataforma de identificação e denúncias de robôs.
 
@@ -23,7 +30,6 @@ Projeto de pesquisa e ação do Instituto Tecnologia & Equidade que busca entend
 - Compreender o funcionamento detalhado das principais estratégias e processos usados para manipular pessoas em  eleições - propagandas personalizadas, bots, fake news, ataques sybill, sockpuppets, trolls, personas, shadow ban, hate speech  - incluindo atores, tecnologias, infraestruturas, etc;
 - Identificar e investigar principais mecanismos de combate à manipulação digital (fake news e bots) atuais;
 - Gerar aprendizados que informem o desenvolvimento de novas estratégias e processos de contra-ataque e antídotos anti-manipulação, incluindo sistemas de detecção de bots.
-
 
 ***
 ##### A equipe responsável pela pesquisa é composta por Ellen Aquino e Carlos Júnior, pesquisadores, e Márcio Vasconcelos, codiretor do Instituto Tecnologia & Equidade. #####
