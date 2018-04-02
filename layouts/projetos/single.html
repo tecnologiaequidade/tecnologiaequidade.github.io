@@ -37,46 +37,29 @@
 				class=" {{ if .Params.imageFullSize }} img-full {{ end }}"
 				>
 			{{ end }}
+
+			<div class="carouselGallery"></div>
+				{{ range .Params.imageGallery }}
+					<img src="{{ . }}" alt="image">
+				{{ end }}
+			</div>
+
 	</div>
 </article>
 
 {{ partial "authors.html" . }}
-
 <article class="projects-related">
 	<div class="content">
 		<h2>{{ i18n "seeAlso" | title }}</h2>
-
 		<ul class="projects-related-wrap">
+			{{ range .Params.relatedProjects }}
 			<li class="projects-related-box">
 				<div class="projects-related-box-content">
-					<a href="#"><h4>{{ i18n "Title" }}</h4></a>
+					<a href="../{{ . }}"><h4>{{ . }}</h4></a>
 					<a class="nav-link nav-link--plus--orange" href="#">{{ i18n "Title" }}</a>
 				</div>
 			</li>
-			<li class="projects-related-box">
-				<div class="projects-related-box-content">
-					<a href="#"><h4>{{ i18n "Title" }}</h4></a>
-					<a class="nav-link nav-link--plus--orange" href="#">{{ i18n "Title" }}</a>
-				</div>
-			</li>
-			<li class="projects-related-box">
-				<div class="projects-related-box-content">
-					<a href="#"><h4>{{ i18n "Title" }}</h4></a>
-					<a class="nav-link nav-link--plus--orange" href="#">{{ i18n "Title" }}</a>
-				</div>
-			</li>
-			<li class="projects-related-box">
-				<div class="projects-related-box-content">
-					<a href="#"><h4>{{ i18n "Title" }}</h4></a>
-					<a class="nav-link nav-link--plus--orange" href="#">{{ i18n "Title" }}</a>
-				</div>
-			</li>
-			<li class="projects-related-box">
-				<div class="projects-related-box-content">
-					<a href="#"><h4>{{ i18n "Title" }}</h4></a>
-					<a class="nav-link nav-link--plus--orange" href="#">{{ i18n "Title" }}</a>
-				</div>
-			</li>
+			{{ end }}
 		</ul>
 	</div>
 </article>
