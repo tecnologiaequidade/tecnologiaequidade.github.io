@@ -17,6 +17,8 @@
 #projects
 - id: projects
   translation: "Projetos"
+- id: theProject
+  translation: "O projeto"
 
 #what-we-do
 - id: whatWeDo
