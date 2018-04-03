@@ -40,7 +40,7 @@
 
 			<div class="carouselGallery"></div>
 				{{ range .Params.imageGallery }}
-					<img src="{{ . }}" alt="image">
+					<img src="{{ .image }}" alt="{{ .caption }}">
 				{{ end }}
 			</div>
 
