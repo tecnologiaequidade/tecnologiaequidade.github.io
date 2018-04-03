@@ -28,6 +28,10 @@ collections:
         tagname: "h1"
         pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
       -
+        label: "Slug"
+        name: "slug"
+        widget: "string"
+      -
         label: "Subtitle"
         name: "subtitle"
         widget: "string"
@@ -45,11 +49,6 @@ collections:
         widget: "boolean"
         default: "false"
       -
-        label: "Url"
-        name: "url"
-        widget: "string"
-        default: "/projetos/"
-      -
         label: "Draft"
         name: "draft"
         widget: "boolean"
@@ -58,16 +57,28 @@ collections:
         label: "Summary"
         name: "summary"
         widget: "text"
-      - label: "Related Project"
+      -
+        label: "Related Project"
         name: "relatedProject"
         widget: "list"
         fields:
-          - widget: "relation"
+          - label: "Project"
+            widget: "relation"
             collection: "projects"
             searchFields: ["title", "slug"]
-            valueField: "title"
+            valueField: "slug"
+      # -
+      #   label: "Authors"
+      #   name: "authors"
+      #   widget: "list"
+      #   fields:
+      #     - label: "Author"
+      #       widget: "relation"
+      #       collection: "authors"
+      #       searchFields: ["name", "slug"]
+      #       valueField: "slug"
       -
-        label: "Weight"
+        label: "Order"
         name: "weight"
         widget: "number"
         valueType: "int"
@@ -88,26 +99,26 @@ collections:
     files:
       -
         label: "Authors"
-        name: "list"
+        name: "authors"
         file: "data/authors.yml"
         fields:
           -
-            label: "name"
+            label: "Name"
             name: "name"
             widget: "string"
           -
-            label: "slug"
+            label: "Slug"
             name: "slug"
             widget: "string"
           -
-            label: "image"
+            label: "Avatar"
             name: "image"
             widget: "image"
           -
-            label: "about"
+            label: "About"
             name: "about"
             widget: "text"
           -
-            label: "weight"
+            label: "Order"
             name: "weight"
             widget: "number"
