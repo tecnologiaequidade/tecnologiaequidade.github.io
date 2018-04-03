@@ -59,25 +59,11 @@ collections:
         name: "summary"
         widget: "text"
       -
-        label: "Gallery"
-        name: "imageGallery"
+        label: "Image"
+        name: "image"
         widget: "object"
         fields:
           - {image: "", caption: "", widget: "string"}
-      -
-        label: "Related Project"
-        name: "relatedProjects"
-        widget: "relation"
-        collection: "projects"
-        searchFields: ["title"]
-        valueField: "title"
-      -
-        label: "Authors"
-        name: "authors"
-        widget: "relation"
-        collection: "authors"
-        searchFields: ["slug", "name"]
-        valueField: "slug"
       -
         label: "Weight"
         name: "weight"
@@ -108,6 +94,27 @@ collections:
         label: "about"
         name: "about"
         widget: "text"
+      -
+        label: "weight"
+        name: "weight"
+        widget: "number"
+  -
+    name: "projectsList"
+    label: "Projects list"
+    files: "data/projectsList.yml"
+    fields:
+      -
+        label: "projectName"
+        name: "projectName"
+        widget: "string"
+      -
+        label: "slug"
+        name: "slug"
+        widget: "string"
+      -
+        label: "projectUrl"
+        name: "slug"
+        widget: "slug"
       -
         label: "weight"
         name: "weight"
