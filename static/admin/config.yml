@@ -90,7 +90,7 @@ collections:
   -
     name: "authors"
     label: "authors"
-    file: site/content/about.yml
+    file: data/authors.yml
     fields:
       - {label: name, name: name, widget: string}
       - {label: slug, name: slug, widget: string}
