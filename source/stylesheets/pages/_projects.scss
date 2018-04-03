@@ -33,12 +33,14 @@
 	}
 }
 
-.subtitle {
-	margin: 0;
+.project-subtitle p {
+	margin-top: $line-height * 0.5em;
+	margin-bottom: 0;
 
-	font-size: ms(1);
+	font-size: ms(2);
+	font-family: 'archiabold', $title-font-stack;
 
-	text-align: center;
+	color: palette('black');
 }
 
 .projects-about ul {
