@@ -8,15 +8,11 @@ draft: false
 url: "/projetos/fakenews"
 summary: "Projeto de pesquisa e ação do Instituto Tecnologia & Equidade que busca entender o possível impacto dos perfis não humanos em redes sociais nas eleições de 2018. Além disso, o foco da iniciativa é incidir positivamente nesse cenário, incluindo recomendações para o uso ético dessa tecnologia e a criação de uma plataforma de identificação e denúncias de robôs."
 imageAfterText: "/assets/images/img-fake-news.jpg"
-imageFullSize: false
 imageGallery:
-  - "/assets/images/bg-fakenews.jpg"
-  - "/assets/images/bg-fakenews.jpg"
-  - "/assets/images/bg-fakenews.jpg"
-  - "/assets/images/bg-fakenews.jpg"
-  - "/assets/images/bg-fakenews.jpg"
-  - "/assets/images/bg-fakenews.jpg"
-  - "/assets/images/bg-fakenews.jpg"
+  - image: "/assets/images/bg-fakenews.jpg"
+    caption: Fake News
+  - image: "/assets/images/bg-fakenews.jpg"
+    caption: Fake News
 relatedProjects:
   - pega-bots
 weight: 1
