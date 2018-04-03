@@ -571,6 +571,11 @@ a {
 	background-position: center center;
 }
 
+.social-link--mail {
+	background-image: image('mail.png');
+	background-position: center center;
+}
+
 .next-link {
 	@include image-replacement;
 
