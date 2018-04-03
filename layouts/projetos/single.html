@@ -55,8 +55,8 @@
 			{{ range .Params.relatedProjects }}
 			<li class="projects-related-box">
 				<div class="projects-related-box-content">
-					<a href="../{{ . }}"><h4>{{ . }}</h4></a>
-					<a class="nav-link nav-link--plus--orange" href="#">{{ i18n "Title" }}</a>
+						<a href="{{ .projectUrl }}"><h4>{{ .projectName }}</h4></a>
+						<a class="nav-link nav-link--plus--orange" href="{{ .projectUrl }}">{{ i18n "Title" }}</a>
 				</div>
 			</li>
 			{{ end }}
