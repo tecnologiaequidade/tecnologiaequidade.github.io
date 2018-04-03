@@ -17,16 +17,33 @@ collections:
     slug: "{{slug}}"
     fields:
       -
+        label: "Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-DD-MMThh:mm:ssZ" # date sample 2018-03-06T14:48:47-03:00
+      -
         label: "Title"
         name: "title"
         widget: "string"
         tagname: "h1"
         pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
       -
-        label: "Date"
-        name: "date"
-        widget: "datetime"
-        format: "YYYY-DD-MMThh:mm:ssZ" # date sample 2018-03-06T14:48:47-03:00
+        label: "Subtitle"
+        name: "subtitle"
+        widget: "string"
+        tagname: "h1"
+        pattern: ['.{0,40}', "Must have between 0 and 40 characters"]
+      -
+        label: "Title Image"
+        name: "titleImage"
+        widget: "image"
+        required: false
+        tagname: ""
+      -
+        label: "Dark Text"
+        name: "darkText"
+        widget: "boolean"
+        default: "true"
       -
         label: "Draft"
         name: "draft"
@@ -38,19 +55,17 @@ collections:
         widget: "string"
         default: "/projetos/"
       -
-        label: "image"
-        name: "image"
-        widget: "image"
-        required: false
-        tagname: ""
-      -
         label: "Summary"
         name: "summary"
         widget: "text"
       -
-        label: "Projetos Relacionados"
+        label: "Images"
+        name: "imageGallery"
+        widget: "object"
+      -
+        label: "Related Project"
         name: "relatedProjects"
-        widget: "list"
+        widget: "object"
       -
         label: "Weight"
         name: "weight"
