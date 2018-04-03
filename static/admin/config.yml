@@ -89,11 +89,26 @@ collections:
         widget: "markdown"
   -
     name: "authors"
-    label: "authors"
-    file: data/authors.yml
+    label: "Authors"
+    files: "data/authors.yml"
     fields:
-      - {label: name, name: name, widget: string}
-      - {label: slug, name: slug, widget: string}
-      - {label: image, name: image, widget: string}
-      - {label: about, name: about, widget: string}
-      - {label: weight, name: weight, widget: number}
+      -
+        label: "name"
+        name: "name"
+        widget: "string"
+      -
+        label: "slug"
+        name: "slug"
+        widget: "string"
+      -
+        label: "image"
+        name: "image"
+        widget: "image"
+      -
+        label: "about"
+        name: "about"
+        widget: "text"
+      -
+        label: "weight"
+        name: "weight"
+        widget: "number"
