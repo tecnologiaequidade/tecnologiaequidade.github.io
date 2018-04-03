@@ -8,9 +8,7 @@ draft: false
 url: "/projetos/fakenews"
 summary: "Projeto de pesquisa e ação do Instituto Tecnologia & Equidade que busca entender o possível impacto dos perfis não humanos em redes sociais nas eleições de 2018. Além disso, o foco da iniciativa é incidir positivamente nesse cenário, incluindo recomendações para o uso ético dessa tecnologia e a criação de uma plataforma de identificação e denúncias de robôs."
 imageGallery:
-  - image: "/assets/images/bg-fakenews.jpg"
-    caption: Fake News
-  - image: "/assets/images/bg-fakenews.jpg"
+  - image: "/assets/images/img-fake-news.jpg"
     caption: Fake News
 relatedProjects:
   - projectName: Pega-bots
@@ -31,4 +29,5 @@ Projeto de pesquisa e ação do Instituto Tecnologia & Equidade que busca entend
 - Gerar aprendizados que informem o desenvolvimento de novas estratégias e processos de contra-ataque e antídotos anti-manipulação, incluindo sistemas de detecção de bots.
 
 ***
-##### A equipe responsável pela pesquisa é composta por Ellen Aquino e Carlos Júnior, pesquisadores, e Márcio Vasconcelos, codiretor do Instituto Tecnologia & Equidade. #####
+
+```A equipe responsável pela pesquisa é composta por Ellen Aquino e Carlos Júnior, pesquisadores, e Márcio Vasconcelos, codiretor do Instituto Tecnologia & Equidade.```

@@ -7,7 +7,6 @@ darkText: false
 draft: false
 url: "/projetos/pega-bots"
 summary: "Os bots estão por aí e poucos sabem como eles funcionam, quem os desenvolve e por quem são financiados. A plataforma PegaBot tem o objetivo de ajudar a combater esse problema e deixar o debate sobre bots no Brasil mais transparente e informado. O PegaBot é um projeto do Instituto de Tecnologia e Sociedade do Rio de Janeiro (ITS Rio) e do Instituto Tecnologia & Equidade (IT&E), com desenvolvimento do AppCívico."
-imageAfterText: "/assets/images/img-fake-news.jpg"
 imageGallery:
   - image: ""
     caption:
