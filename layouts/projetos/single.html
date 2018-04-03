@@ -25,29 +25,37 @@
 <article class="projects-about">
 	<div class="content smaller-width">
 		<h2>{{ i18n "theProject" | title }}</h2>
-			{{ if .Params.imageBeforeText }}
-				<img src="{{ .Params.imageBeforeText }}" alt="{{ .Title }}">
+
+		{{ if .Params.subtitle }}
+		<div class="project-subtitle">
+			<p>{{ .Params.subtitle }}</p>
+		</div>
+		{{ end }}
+
+		{{ if .Params.imageBeforeText }}
+			<img src="{{ .Params.imageBeforeText }}" alt="{{ .Title }}">
+		{{ end }}
+
+		{{ .Content }}
+
+		{{ if .Params.ImageAfterText }}
+			<img src="{{ .Params.ImageAfterText }}" alt="{{ .Title }}"
+
+			class=" {{ if .Params.imageFullSize }} img-full {{ end }}"
+			>
+		{{ end }}
+
+		<div class="carouselGallery"></div>
+			{{ range .Params.imageGallery }}
+				<img src="{{ .image }}" alt="{{ .caption }}">
 			{{ end }}
-
-			{{ .Content }}
-
-			{{ if .Params.ImageAfterText }}
-				<img src="{{ .Params.ImageAfterText }}" alt="{{ .Title }}"
-
-				class=" {{ if .Params.imageFullSize }} img-full {{ end }}"
-				>
-			{{ end }}
-
-			<div class="carouselGallery"></div>
-				{{ range .Params.imageGallery }}
-					<img src="{{ .image }}" alt="{{ .caption }}">
-				{{ end }}
-			</div>
+		</div>
 
 	</div>
 </article>
 
 {{ partial "authors.html" . }}
+
 <article class="projects-related">
 	<div class="content">
 		<h2>{{ i18n "seeAlso" | title }}</h2>
@@ -65,7 +73,5 @@
 </article>
 
 {{ partial "newsletter.html" . }}
-
-	<!-- {{ partial "newsletter.html" . }} -->
 
 {{ partial "footer.html" . }}
