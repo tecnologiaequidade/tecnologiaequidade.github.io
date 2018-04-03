@@ -24,7 +24,7 @@
 
 <article class="projects-about">
 	<div class="content smaller-width">
-		<h2>{{ .Title }}</h2>
+		<h2>{{ i18n "theProject" | title }}</h2>
 			{{ if .Params.imageBeforeText }}
 				<img src="{{ .Params.imageBeforeText }}" alt="{{ .Title }}">
 			{{ end }}
@@ -53,12 +53,12 @@
 		<h2>{{ i18n "seeAlso" | title }}</h2>
 		<ul class="projects-related-wrap">
 			{{ range .Params.relatedProjects }}
-			<li class="projects-related-box">
-				<div class="projects-related-box-content">
+				<li class="projects-related-box">
+					<div class="projects-related-box-content">
 						<a href="{{ .projectUrl }}"><h4>{{ .projectName }}</h4></a>
 						<a class="nav-link nav-link--plus--orange" href="{{ .projectUrl }}">{{ i18n "Title" }}</a>
-				</div>
-			</li>
+					</div>
+				</li>
 			{{ end }}
 		</ul>
 	</div>
