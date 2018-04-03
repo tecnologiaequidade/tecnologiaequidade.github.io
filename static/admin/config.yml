@@ -61,19 +61,11 @@ collections:
       - label: "Related Project"
         name: "relatedProject"
         widget: "list"
-        field:
+        fields:
           - widget: "relation"
             collection: "projects"
             searchFields: ["title", "slug"]
             valueField: "title"
-      - label: "Authors"
-        name: "authors"
-        widget: "list"
-        field:
-          - widget: "relation"
-            collection: "authors"
-            searchFields: ["name", "slug"]
-            valueField: "name"
       -
         label: "Weight"
         name: "weight"
