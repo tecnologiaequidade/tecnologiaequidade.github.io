@@ -11,7 +11,7 @@ public_folder: "/imagens" # The src attribute for uploaded media will begin with
 collections:
   -
     name: "projects"
-    label: "projetos"
+    label: "Projects"
     folder: "content/projetos"
     create: true
     slug: "{{slug}}"
@@ -43,79 +43,79 @@ collections:
         label: "Dark Text"
         name: "darkText"
         widget: "boolean"
-        default: "true"
-      -
-        label: "Draft"
-        name: "draft"
-        widget: "boolean"
-        default: "true"
+        default: "false"
       -
         label: "Url"
         name: "url"
         widget: "string"
         default: "/projetos/"
       -
+        label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: "true"
+      -
         label: "Summary"
         name: "summary"
         widget: "text"
-      -
-        label: "Image"
-        name: "image"
-        widget: "object"
-        fields:
-          - {image: "", caption: "", widget: "string"}
+      - label: "Related Project"
+        name: "relatedProject"
+        widget: "list"
+        field:
+          - widget: "relation"
+            collection: "projects"
+            searchFields: ["title", "slug"]
+            valueField: "title"
+      - label: "Authors"
+        name: "authors"
+        widget: "list"
+        field:
+          - widget: "relation"
+            collection: "authors"
+            searchFields: ["name", "slug"]
+            valueField: "name"
       -
         label: "Weight"
         name: "weight"
         widget: "number"
         valueType: "int"
       -
+        label: "Image"
+        name: "image"
+        widget: "object"
+        fields:
+          - {image: "", widget: "image"}
+          - {caption: "", widget: "string"}
+      -
         label: "Body"
         name: "body"
         widget: "markdown"
   -
-    name: "authors"
     label: "Authors"
-    files: "data/authors.yml"
-    fields:
+    name: "authors"
+    files:
       -
-        label: "name"
-        name: "name"
-        widget: "string"
-      -
-        label: "slug"
-        name: "slug"
-        widget: "string"
-      -
-        label: "image"
-        name: "image"
-        widget: "image"
-      -
-        label: "about"
-        name: "about"
-        widget: "text"
-      -
-        label: "weight"
-        name: "weight"
-        widget: "number"
-  -
-    name: "projectsList"
-    label: "Projects list"
-    files: "data/projectsList.yml"
-    fields:
-      -
-        label: "projectName"
-        name: "projectName"
-        widget: "string"
-      -
-        label: "slug"
-        name: "slug"
-        widget: "string"
-      -
-        label: "projectUrl"
-        name: "slug"
-        widget: "slug"
-      -
-        label: "weight"
-        name: "weight"
-        widget: "number"
+        label: "Authors"
+        name: "list"
+        file: "data/authors.yml"
+        fields:
+          -
+            label: "name"
+            name: "name"
+            widget: "string"
+          -
+            label: "slug"
+            name: "slug"
+            widget: "string"
+          -
+            label: "image"
+            name: "image"
+            widget: "image"
+          -
+            label: "about"
+            name: "about"
+            widget: "text"
+          -
+            label: "weight"
+            name: "weight"
+            widget: "number"
