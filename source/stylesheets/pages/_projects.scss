@@ -183,18 +183,18 @@
 	margin-bottom: $gutter * 2;
 }
 
-.projects-related {
+.related-projects {
 	margin-right: auto;
 	margin-left: auto;
 
 	background-color: palette('gray', 'light');
 }
 
-.projects-related h2 {
+.related-projects h2 {
 	color: palette('blue', 'dark');
 }
 
-.projects-related-wrap {
+.related-projects-wrap {
 	@media screen and (min-width: breakpoint('tablet')) {
 		@include inline-block-wrapper;
 
@@ -203,7 +203,7 @@
 	}
 }
 
-.projects-related-box {
+.related-projects-box {
 	margin: 0;
 	margin-bottom: $gutter;
 
@@ -221,7 +221,7 @@
 	}
 }
 
-.projects-related-box-content {
+.related-projects-box-content {
 	position: relative;
 
 	display: block;
@@ -250,7 +250,7 @@
 	}
 }
 
-.projects-related .nav-link--plus--orange {
+.related-projects .nav-link--plus--orange {
 	position: absolute;
 	right: 2rem;
 	bottom: 1rem;
