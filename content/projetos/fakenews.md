@@ -9,8 +9,7 @@ draft: false
 authors:
   - "thiago-rondon"
   - "marcio-pinto"
-relatedProjects:
-  - "fakenews"
+relatedProject:
   - "pega-bot"
 weight: 1
 slug: "fakenews"

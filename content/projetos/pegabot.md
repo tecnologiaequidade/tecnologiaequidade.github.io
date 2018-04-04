@@ -10,9 +10,8 @@ summary: "Os bots estão por aí e poucos sabem como eles funcionam, quem os des
 authors:
   - "thiago-rondon"
   - "marcio-pinto"
-relatedProjects:
+relatedProject:
   - "fakenews"
-  - "pega-bot"
 weight: 2
 ---
 
