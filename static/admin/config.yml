@@ -34,9 +34,8 @@ collections:
       -
         label: "Subtitle"
         name: "subtitle"
+        required: false
         widget: "string"
-        tagname: "h1"
-        pattern: ['.{0,40}', "Must have between 0 and 40 characters"]
       -
         label: "Title Image"
         name: "titleImage"
@@ -60,6 +59,7 @@ collections:
       -
         label: "Related Project"
         name: "relatedProject"
+        required: false
         widget: "list"
         fields:
           - label: "Project"
@@ -83,13 +83,6 @@ collections:
         widget: "number"
         valueType: "int"
       -
-        label: "Image"
-        name: "image"
-        widget: "object"
-        fields:
-          - {image: "", widget: "image"}
-          - {caption: "", widget: "string"}
-      -
         label: "Body"
         name: "body"
         widget: "markdown"
@@ -103,22 +96,27 @@ collections:
         file: "data/authors.yml"
         fields:
           -
-            label: "Name"
-            name: "name"
-            widget: "string"
-          -
-            label: "Slug"
-            name: "slug"
-            widget: "string"
-          -
-            label: "Avatar"
-            name: "image"
-            widget: "image"
-          -
-            label: "About"
-            name: "about"
-            widget: "text"
-          -
-            label: "Order"
-            name: "weight"
-            widget: "number"
+            label: "Authors"
+            name: "authors"
+            widget: "list"
+            fields:
+            -
+              label: "Name"
+              name: "name"
+              widget: "string"
+            -
+              label: "Slug"
+              name: "url"
+              widget: "string"
+            -
+              label: "Avatar"
+              name: "image"
+              widget: "image"
+            -
+              label: "About"
+              name: "about"
+              widget: "text"
+            -
+              label: "Order"
+              name: "weight"
+              widget: "number"
