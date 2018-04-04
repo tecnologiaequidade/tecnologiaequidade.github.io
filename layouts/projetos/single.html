@@ -38,19 +38,6 @@
 
 		{{ .Content }}
 
-		{{ if .Params.ImageAfterText }}
-			<img src="{{ .Params.ImageAfterText }}" alt="{{ .Title }}"
-
-			class=" {{ if .Params.imageFullSize }} img-full {{ end }}"
-			>
-		{{ end }}
-
-		<div class="carouselGallery"></div>
-			{{ range .Params.imageGallery }}
-				<img src="{{ .image }}" alt="{{ .caption }}">
-			{{ end }}
-		</div>
-
 	</div>
 </article>
 
