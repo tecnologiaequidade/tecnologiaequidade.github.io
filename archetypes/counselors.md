@@ -1,5 +1,6 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
+id: ""
 date: {{ .Date }}
 draft: true
 medium:
