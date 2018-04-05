@@ -22,8 +22,8 @@ collections:
         widget: "datetime"
         format: "YYYY-DD-MMThh:mm:ssZ" # date sample 2018-03-06T14:48:47-03:00
       -
-        label: "Box title"
-        name: "boxTitle"
+        label: "Short Title"
+        name: "shortTitle"
         widget: "string"
         tagname: "h1"
         required: false
