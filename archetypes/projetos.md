@@ -1,22 +1,21 @@
 ---
 date: {{ .Date }}
+shortTitle: "{{ replace .TranslationBaseName "-" " " | title }}"
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
-subtitle: ""
+slug: ""
 titleImage: ""
 darkText: false
-draft: true
-url: ""
+draft: false
 summary: ""
-url: "/projetos/{{ replace .TranslationBaseName "-" " " | lower }}"
 image: ""
 summary: ""
 imageGallery:
   - image: ""
     caption:
 relatedProjects:
-  - projectName:
-	projectUrl: ""
+  - project: ""
 authors:
-  -
+  - list: ""
 weight:
 ---
+
