@@ -9,6 +9,9 @@ summary: >-
   egestas, sollicitudin tellus accumsan, elementum quam. Integer in ullamcorper
   dolor, sed accumsan eros. Aliquam viverra neque nisl, non eleifend sem feugiat
   sed.
+relatedProject:
+  - undefined: fakenews
+  - undefined: pega-bot
 weight: 1
 ---
 Sed tincidunt ipsum non dui lobortis consectetur. Vestibulum at ex neque. Fusce at mauris pulvinar, imperdiet ligula nec, tristique tellus. Nulla eleifend, tortor in viverra ultrices, eros felis tristique nunc, a sodales enim orci sed augue. Aliquam vitae dapibus lorem. Curabitur a viverra ex, congue eleifend velit. Suspendisse at venenatis nisi. Vestibulum neque erat, porttitor vitae dictum ut, finibus vitae mauris. Nam malesuada euismod eros eu ullamcorper. Nullam non felis vitae neque facilisis condimentum. Sed enim ante, feugiat sed ullamcorper in, lacinia eu felis. Integer quis dolor at quam mollis imperdiet.
