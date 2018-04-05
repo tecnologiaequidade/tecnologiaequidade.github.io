@@ -1,18 +1,16 @@
 ---
 date: 2018-03-06T14:48:47-03:00
+boxtitle: "FakeNews"
 title: "Influência de Robôs e Fake News nas Eleições Brasileiras de 2018"
+slug: "fakenews"
 subtitle: ""
 titleImage: "/assets/images/bg-fakenews.jpg"
 darkText: false
-summary: "Projeto de pesquisa e ação do Instituto Tecnologia & Equidade que busca entender o possível impacto dos perfis não humanos em redes sociais nas eleições de 2018. Além disso, o foco da iniciativa é incidir positivamente nesse cenário, incluindo recomendações para o uso ético dessa tecnologia e a criação de uma plataforma de identificação e denúncias de robôs."
 draft: false
-authors:
-  - "thiago-rondon"
-  - "marcio-pinto"
-relatedProject:
-  - "pega-bot"
-weight: 1
-slug: "fakenews"
+summary: "Projeto de pesquisa e ação do Instituto Tecnologia & Equidade que busca entender o possível impacto dos perfis não humanos em redes sociais nas eleições de 2018. Além disso, o foco da iniciativa é incidir positivamente nesse cenário, incluindo recomendações para o uso ético dessa tecnologia e a criação de uma plataforma de identificação e denúncias de robôs."
+relatedProjects:
+  - project: "pegabot"
+weight: 2
 ---
 
 Projeto de pesquisa e ação do Instituto Tecnologia & Equidade que busca entender o possível impacto dos perfis não humanos em redes sociais nas eleições de 2018. Além disso, o foco da iniciativa é incidir positivamente nesse cenário, incluindo recomendações para o uso ético dessa tecnologia e a criação de uma plataforma de identificação e denúncias de robôs.

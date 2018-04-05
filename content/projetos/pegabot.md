@@ -1,18 +1,16 @@
 ---
 date: 2018-03-06T14:45:44-05:00
-draft: false
-title: "Pega-bot"
-slug: "pega-bot"
+boxtitle: ""
+title: "Pegabot"
+slug: "Pegabot"
 subtitle: ""
 titleImage: ""
 darkText: false
+draft: false
 summary: "Os bots estão por aí e poucos sabem como eles funcionam, quem os desenvolve e por quem são financiados. A plataforma PegaBot tem o objetivo de ajudar a combater esse problema e deixar o debate sobre bots no Brasil mais transparente e informado. O PegaBot é um projeto do Instituto de Tecnologia e Sociedade do Rio de Janeiro (ITS Rio) e do Instituto Tecnologia & Equidade (IT&E), com desenvolvimento do AppCívico."
-authors:
-  - "thiago-rondon"
-  - "marcio-pinto"
-relatedProject:
-  - "fakenews"
-weight: 2
+relatedProjects:
+  - project: "fakenews"
+weight: 1
 ---
 
 Os bots estão por aí e poucos sabem como eles funcionam, quem os desenvolve e por quem são financiados. A plataforma PegaBot tem o objetivo de ajudar a combater esse problema e deixar o debate sobre bots no Brasil mais transparente e informado. O PegaBot é um projeto do Instituto de Tecnologia e Sociedade do Rio de Janeiro (ITS Rio) e do Instituto Tecnologia & Equidade (IT&E), com desenvolvimento do AppCívico.
