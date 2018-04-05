@@ -68,7 +68,7 @@ collections:
         name: "relatedProjects"
         widget: "list"
         required: false
-        field:
+        fields:
         -
           label: "Project"
           name: "project"
