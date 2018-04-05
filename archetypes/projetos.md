@@ -3,19 +3,14 @@ date: {{ .Date }}
 shortTitle: "{{ replace .TranslationBaseName "-" " " | title }}"
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 slug: ""
+subtitle: ""
 titleImage: ""
 darkText: false
-draft: false
+draft: true
 summary: ""
-image: ""
-summary: ""
-imageGallery:
-  - image: ""
-    caption:
 relatedProjects:
   - project: ""
 authors:
   - list: ""
 weight:
 ---
-
