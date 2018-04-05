@@ -1,8 +1,8 @@
 ---
 date: 2018-03-06T14:45:44-05:00
-boxtitle: ""
+shortTitle: ""
 title: "Pegabot"
-slug: "Pegabot"
+slug: "pegabot"
 subtitle: ""
 titleImage: ""
 darkText: false
