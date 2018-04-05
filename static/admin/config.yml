@@ -53,7 +53,7 @@ collections:
         label: "Dark Text"
         name: "darkText"
         widget: "boolean"
-        default: "false"
+        default: false
       -
         label: "Draft"
         name: "draft"
@@ -75,6 +75,18 @@ collections:
           widget: "relation"
           collection: "projects"
           searchFields: ["slug", "title"]
+          valueField: "slug"
+      -
+        label: "Authors"
+        name: "authors"
+        widget: "list"
+        fields:
+        -
+          label: "Author"
+          name: "list"
+          widget: "relation"
+          collection: "authors"
+          searchFields: ["name", "slug"]
           valueField: "slug"
       -
         label: "Order"
