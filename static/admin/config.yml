@@ -83,10 +83,10 @@ collections:
         fields:
         -
           label: "Author"
-          name: "list"
+          name: "author"
           widget: "relation"
           collection: "authors"
-          searchFields: ["name", "slug"]
+          searchFields: ["slug", "name"]
           valueField: "slug"
       -
         label: "Order"
@@ -100,34 +100,58 @@ collections:
   -
     label: "Authors"
     name: "authors"
-    files:
+    folder: "content/autores"
+    create: true
+    slug: "{{slug}}"
+    fields:
       -
-        label: "Authors"
-        name: "authors"
-        file: "data/authors.yml"
-        fields:
-          -
-            label: "Authors"
-            name: "list"
-            widget: "list"
-            fields:
-            -
-              label: "Name"
-              name: "name"
-              widget: "string"
-            -
-              label: "Slug"
-              name: "slug"
-              widget: "string"
-            -
-              label: "Avatar"
-              name: "image"
-              widget: "image"
-            -
-              label: "About"
-              name: "about"
-              widget: "text"
-            -
-              label: "Order"
-              name: "weight"
-              widget: "number"
+        label: "Name"
+        name: "title"
+        widget: "string"
+      -
+        label: "Date"
+        name: "date"
+        widget: "datetime"
+        required: false
+        format: "YYYY-DD-MMThh:mm:ssZ" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: true
+      -
+        label: "Slug"
+        name: "slug"
+        widget: "string"
+      -
+        label: "Medium"
+        name: "medium"
+        widget: "string"
+        required: false
+      -
+        label: "Linkedin"
+        name: "linkedin"
+        widget: "string"
+        required: false
+      -
+        label: "Facebook"
+        name: "facebook"
+        widget: "string"
+        required: false
+      -
+        label: "Twitter"
+        name: "twitter"
+        widget: "string"
+        required: false
+      -
+        label: "Avatar"
+        name: "image"
+        widget: "image"
+      -
+        label: "Order"
+        name: "weight"
+        widget: "number"
+      -
+        label: "Body"
+        name: "body"
+        widget: "markdown"
