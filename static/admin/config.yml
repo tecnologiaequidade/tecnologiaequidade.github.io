@@ -10,8 +10,8 @@ media_folder: "static/uploads" # Media files will be stored in the repo under im
 public_folder: "/imagens" # The src attribute for uploaded media will begin with /images/uploads
 collections:
   -
-    name: "projects"
     label: "Projects"
+    name: "projects"
     folder: "content/projetos"
     create: true
     slug: "{{slug}}"
@@ -21,6 +21,13 @@ collections:
         name: "date"
         widget: "datetime"
         format: "YYYY-DD-MMThh:mm:ssZ" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Box title"
+        name: "boxTitle"
+        widget: "string"
+        tagname: "h1"
+        required: false
+        pattern: ['.{3,15}', "Must have between 3 and 40 characters"]
       -
         label: "Title"
         name: "title"
@@ -57,26 +64,18 @@ collections:
         name: "summary"
         widget: "text"
       -
-        label: "Related Project"
-        name: "relatedProject"
-        required: false
+        label: "Related Projects"
+        name: "relatedProjects"
         widget: "list"
-        fields:
-          - label: "Project"
-            widget: "relation"
-            collection: "projects"
-            searchFields: ["title", "slug"]
-            valueField: "slug"
-      # -
-      #   label: "Authors"
-      #   name: "authors"
-      #   widget: "list"
-      #   fields:
-      #     - label: "Author"
-      #       widget: "relation"
-      #       collection: "authors"
-      #       searchFields: ["name", "slug"]
-      #       valueField: "slug"
+        required: false
+        field:
+        -
+          label: "Project"
+          name: "project"
+          widget: "relation"
+          collection: "projects"
+          searchFields: ["slug", "title"]
+          valueField: "slug"
       -
         label: "Order"
         name: "weight"
@@ -97,7 +96,7 @@ collections:
         fields:
           -
             label: "Authors"
-            name: "authors"
+            name: "list"
             widget: "list"
             fields:
             -
@@ -106,7 +105,7 @@ collections:
               widget: "string"
             -
               label: "Slug"
-              name: "url"
+              name: "slug"
               widget: "string"
             -
               label: "Avatar"
