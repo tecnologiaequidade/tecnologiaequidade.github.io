@@ -4,8 +4,10 @@
 		<section class="who-we-are__persons">
 			{{ range where .Site.Pages ".Params.role" "team" }}
 				<div class="who-we-are__person">
+					<div class="who-we-are__avatar">
+						<img src="{{ .Params.avatar }}" alt="{{ .Title }}">
+					</div>
 
-					<img src="{{ .Params.avatar }}" alt="{{ .Title }}">
 					<div class="person-content">
 						<h5>{{ .Title }}</h5>
 						{{ .Content }}
