@@ -1,8 +1,10 @@
-#buttons
+#general
 - id: send
   translation: "Enviar"
 - id: yourEmail
   translation: "Seu e-mail"
+- id: email
+  translation: "E-mail"
 
 #header
 - id: headerSubtitle
