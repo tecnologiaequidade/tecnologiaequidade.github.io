@@ -27,7 +27,7 @@ collections:
         widget: "string"
         tagname: "h1"
         required: false
-        pattern: ['.{3,15}', "Must have between 3 and 40 characters"]
+        pattern: ['.{0,15}', "Must have between 0 and 15 characters"]
       -
         label: "Title"
         name: "title"
@@ -106,7 +106,7 @@ collections:
     fields:
       -
         label: "Name"
-        name: "title"
+        name: "name"
         widget: "string"
       -
         label: "Date"
@@ -144,9 +144,14 @@ collections:
         widget: "string"
         required: false
       -
-        label: "Avatar"
-        name: "image"
+        label: "Avatar (350X350px)"
+        name: "avatar"
         widget: "image"
+      -
+        label: "Avatar Home (500X305px)"
+        name: "avatarHome"
+        widget: "image"
+        required: false
       -
         label: "Order"
         name: "weight"
