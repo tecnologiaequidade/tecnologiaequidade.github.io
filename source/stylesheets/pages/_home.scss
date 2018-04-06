@@ -594,7 +594,7 @@ $animated-max-height: 50em;
 	background-image: image('ite-icon.png');
 	background-position: center;
 
-	@media screen and (min-width: breakpoint('tablet')) {
+	@media screen and (min-width: breakpoint('phablet')) {
 		display: flex;
 
 		flex-direction: row;
@@ -614,10 +614,14 @@ $animated-max-height: 50em;
 
 	overflow: hidden;
 
-	@media screen and (min-width: breakpoint('tablet')) {
+	@media screen and (min-width: breakpoint('phablet')) {
 		flex-grow: 0;
 		flex-shrink: 1;
 
+		width: 50%;
+	}
+
+	@media screen and (min-width: breakpoint('tablet')) {
 		width: 33.33%;
 
 		&:nth-child(5) {
@@ -634,12 +638,12 @@ $animated-max-height: 50em;
 	&:target {
 		width: auto;
 
-		padding-top: $line-height * 3rem;
-		padding-right: $gutter * 3;
-		padding-bottom: $line-height * 3rem;
-		padding-left: $gutter * 3;
+		padding-top: $line-height * 2rem;
+		padding-right: $gutter * 1;
+		padding-bottom: $line-height * 2rem;
+		padding-left: $gutter * 1;
 
-		@media screen and (min-width: breakpoint('tablet')) {
+		@media screen and (min-width: breakpoint('phablet')) {
 			position: absolute;
 			top: 0;
 			right: 0;
@@ -648,10 +652,14 @@ $animated-max-height: 50em;
 			z-index: layer('default');
 
 			min-height: 100%;
+
+			padding-top: $line-height * 3rem;
+			padding-right: $gutter * 3;
+			padding-bottom: $line-height * 3rem;
+			padding-left: $gutter * 3;
 		}
 	}
 }
-
 
 .counselors-img {
 	width: 100%;
@@ -660,6 +668,7 @@ $animated-max-height: 50em;
 
 	border-radius: 0;
 
+	will-change: border-radius;
 	transition-duration: $transition-duration;
 	transition-property: border-radius;
 
@@ -676,6 +685,7 @@ $animated-max-height: 50em;
 			float: left;
 
 			margin-right: $gutter;
+			margin-bottom: $gutter;
 		}
 	}
 }
@@ -767,14 +777,15 @@ $animated-max-height: 50em;
 }
 
 .counselors__box:nth-child(4) {
-	background-color: palette('esmerald', 'fluorescent');
+	background-color: palette('esmerald', 'green');
+
 
 	& > a {
 		&:hover,
 		&:focus,
 		&:active {
 			&::after {
-				background-color: palette('esmerald', 'fluorescent');
+				background-color: palette('esmerald', 'green');
 			}
 		}
 	}
@@ -809,14 +820,14 @@ $animated-max-height: 50em;
 }
 
 .counselors__box:nth-child(7) {
-	background-color: palette('blue', 'pool');
+	background-color: palette('blue', 'medium');
 
 	& > a {
 		&:hover,
 		&:focus,
 		&:active {
 			&::after {
-				background-color: palette('blue', 'pool');
+				background-color: palette('blue', 'medium');
 			}
 		}
 	}
@@ -883,7 +894,7 @@ $animated-max-height: 50em;
 .counselors__buttons {
 	text-align: center;
 
-	@media screen and (min-width: breakpoint('tablet')) {
+	@media screen and (min-width: breakpoint('phablet')) {
 		text-align: left;
 	}
 }
