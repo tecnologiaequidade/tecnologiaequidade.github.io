@@ -16,4 +16,6 @@ authors:
   - author: Novo Autor
 weight: 2
 ---
+![img](/uploads/politicians-2831235_640.png)
+
 Adicionando um texto esse projeto de teste novo, para que de para ver como ficará no site (Body).
