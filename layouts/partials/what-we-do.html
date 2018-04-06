@@ -2,28 +2,14 @@
 	<div class="content" id="o-que-fazemos">
 		<h2>{{ i18n "whatWeDo" | title }}</h2>
 		<div class="what-boxes">
-
-			<!-- <pre>
-				debug:
-				{{ range where .Site.Pages ".Section" "what-we-do" }}
-
-				{{ $nextWeight := add (int .Params.weight) 1 }}
-
-				$nextWeight: {{ $nextWeight }}
-
-				{{ .Title }}
-
-					{{ range where (where $.Site.Pages ".Section" "what-we-do") ".Params.weight" (add (int .Params.weight) 1) }}
-						next: {{ .Params.id }}
-					{{ end }}
-				{{ end }}
-			</pre> -->
-
 			{{ range where .Site.Pages ".Params.role" "whatWeDo" }}
+			{{ $nextWeight := add (int .Params.weight) 1 }}
+			{{ $prevWeight := sub (int .Params.weight) 1 }}
+
 			<div class="what-box" id="{{ .Params.id }}">
 				<div class="what-box__content">
 					<div class="what-box__title">
-					<h4>{{ .Title }}</h4>
+						<h4>{{ .Title }}</h4>
 					</div>
 					<div class="button-plus">
 						<a class="nav-link nav-link--plus--white" href="#{{ .Params.id }}">{{ .Title }}</a>
@@ -31,15 +17,22 @@
 					<div class="what-box__text">
 						{{ .Content }}
 						<div class="what-box__buttons">
-							<a class="next-link next-link__arrow-left-white" href="#{{ .Params.id }}">+</a>
+							{{ range where $.Site.Pages ".Params.role" "whatWeDo" }}
+								{{ if eq .Params.weight $prevWeight }}
+								<a class="next-link next-link__arrow-left-white" href="#{{ .Params.id }}">&lt;</a>
+								{{ end }}
+							{{ end }}
 							<a class="next-link next-link__close" href="#o-que-fazemos">+</a>
-							<a class="next-link next-link__arrow-right-white" href="#{{ .Params.id }}">+</a>
+							{{ range where $.Site.Pages ".Params.role" "whatWeDo" }}
+								{{ if eq .Params.weight $nextWeight }}
+								<a class="next-link next-link__arrow-right-white" href="#{{ .Params.id }}">&gt;</a>
+								{{ end }}
+							{{ end }}
 						</div>
 					</div>
 				</div>
 			</div>
 			{{ end }}
-
 		</div>
 	</div>
 </article>
