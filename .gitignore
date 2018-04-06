@@ -2,7 +2,8 @@
 
 ### Hugo ###
 hugo.exe
-/public/
+## disabled for GH Pages deploy
+#/public/
 ### Linux ###
 *~
 
