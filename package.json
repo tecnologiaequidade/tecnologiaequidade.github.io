@@ -31,7 +31,9 @@
     "cachebust": "npm-run-all cachebust:media cachebust:cssAndJs",
     "cachebust:cssAndJs": "hashmark -l 8 assets/**/*.{js,css}           {dir}/{name}-{hash}{ext} --cwd static  | replaceinfiles -s \"layouts/**/*.html\"                                -d \"{dir}/{base}\"",
     "cachebust:media": "hashmark -l 8 assets/**/*.{gif,jpg,png,svg,mp4} {dir}/{name}-{hash}{ext} --cwd static  | replaceinfiles -s \"{content,data,layouts,static}/**/*.{md,html,css}\" -d \"{dir}/{base}\"",
-    "version": "version-changelog CHANGELOG.md && changelog-verify CHANGELOG.md && git add CHANGELOG.md"
+    "preversion": "git checkout master && git merge develop",
+    "version": "version-changelog CHANGELOG.md && changelog-verify CHANGELOG.md && git add CHANGELOG.md",
+    "postversion": "git checkout develop && git merge master"
   },
   "repository": {
     "type": "git",
