@@ -26,8 +26,8 @@
 			{{ range .Data.Pages.ByWeight }}
 				<li class="related-projects-box">
 					<div class="related-projects-box-content">
-						<a href="{{ .Params.slug }}"><h4>{{ if .Params.boxtitle }} {{ .Params.boxtitle }} {{ else }} {{ .Title }} {{ end }}</h4></a>
-						<a class="nav-link nav-link--plus--orange" href="{{ .Params.slug }}">{{ i18n "Title" }}</a>
+						<a href="{{ .Params.slug }}"><h4>{{ if .Params.shortTitle }} {{ .Params.shortTitle }} {{ else }} {{ .Title }} {{ end }}</h4></a>
+						<a class="nav-link nav-link--plus--orange" href="{{ .Params.slug }}">{{ if .Params.shortTitle }} {{ .Params.shortTitle }} {{ else }} {{ .Title }} {{ end }}</a>
 					</div>
 				</li>
 			{{ end }}
