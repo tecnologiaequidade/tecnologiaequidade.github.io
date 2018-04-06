@@ -526,18 +526,19 @@
 
 // counselors section
 .counselors {
-	text-align: center;
-
 	color: palette('white');
 
 	background-color: palette('blue', 'pool');
 }
 
 .counselors-wrap {
+	position: relative;
+
 	margin: auto;
 
 	background-image: image('ite-icon.png');
 	background-position: center;
+
 	@media screen and (min-width: breakpoint('tablet')) {
 		display: flex;
 
@@ -553,41 +554,102 @@
 	display: block;
 
 	width: 100%;
-	height: 13em;
+	min-height: $avatar-height;
 
 	margin: auto;
 
 	overflow: hidden;
 
-	@media screen and (min-width: breakpoint('phablet')) {
-		min-height: 12em;
-	}
-
 	@media screen and (min-width: breakpoint('tablet')) {
-		flex-basis: 33.33%;
-		flex-grow: 1;
+		flex-grow: 0;
 		flex-shrink: 1;
+
+		width: 33.33%;
 
 		&:nth-child(5) {
 			margin-left: 33.33%;
+
+			:target ~ &,
+			&:target {
+				margin-right: 0;
+				margin-left: 0;
+		}
+	}
+}
+
+	&:target {
+		width: auto;
+
+		padding-top: $line-height * 3rem;
+		padding-right: $gutter * 3;
+		padding-bottom: $line-height * 3rem;
+		padding-left: $gutter * 3;
+
+		@media screen and (min-width: breakpoint('tablet')) {
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+
+			z-index: layer('default');
+
+			min-height: 100%;
 		}
 	}
 }
 
 
 .counselors-img {
+	width: 100%;
+
+	overflow: hidden;
+
+	border-radius: 0;
+
+	transition-duration: $transition-duration;
+	transition-property: border-radius;
+
+	.counselors__box:target & {
+		width: $avatar-height;
+		height: $avatar-height;
+
+		margin-right: auto;
+		margin-left: auto;
+
+		border-radius: 50%;
+
+		@media screen and (min-width: breakpoint('tablet')) {
+			float: left;
+
+			margin-right: $gutter;
+		}
+	}
+}
+
+.counselors-img img {
 	display: block;
 
 	width: 100%;
-	height: 100%;
 
-	object-fit: cover;
+	.counselors__box:target & {
+		width: auto;
+	height: 100%;
+		max-width: none;
+
+		margin-left: #{($avatar-width - $avatar-height) / -2};
+
+		filter: grayscale(1);
+	}
 }
 
 .counselors__box > a {
 	position: relative;
 
 	display: block;
+}
+
+.counselors__box:not(:target) > a {
+	overflow: hidden;
 
 	&:hover,
 	&:focus,
@@ -608,7 +670,10 @@
 	}
 }
 
-.counselors__box:nth-child(1) > a {
+.counselors__box:nth-child(1) {
+	background-color: palette('red');
+
+	& > a {
 	&:hover,
 	&:focus,
 	&:active {
@@ -617,8 +682,12 @@
 		}
 	}
 }
+}
 
-.counselors__box:nth-child(2) > a {
+.counselors__box:nth-child(2) {
+	background-color: palette('orange', 'dark');
+
+	& > a {
 	&:hover,
 	&:focus,
 	&:active {
@@ -627,8 +696,12 @@
 		}
 	}
 }
+}
 
-.counselors__box:nth-child(3) > a {
+.counselors__box:nth-child(3) {
+	background-color: palette('orange', 'base');
+
+	& > a {
 	&:hover,
 	&:focus,
 	&:active {
@@ -637,8 +710,12 @@
 		}
 	}
 }
+}
 
-.counselors__box:nth-child(4) > a {
+.counselors__box:nth-child(4) {
+	background-color: palette('esmerald', 'fluorescent');
+
+	& > a {
 	&:hover,
 	&:focus,
 	&:active {
@@ -647,8 +724,12 @@
 		}
 	}
 }
+}
 
-.counselors__box:nth-child(5) > a {
+.counselors__box:nth-child(5) {
+	background-color: palette('esmerald', 'base');
+
+	& > a {
 	&:hover,
 	&:focus,
 	&:active {
@@ -657,8 +738,12 @@
 		}
 	}
 }
+}
 
-.counselors__box:nth-child(6) > a {
+.counselors__box:nth-child(6) {
+	background-color: palette('blue', 'dark');
+
+	& > a {
 	&:hover,
 	&:focus,
 	&:active {
@@ -667,8 +752,12 @@
 		}
 	}
 }
+}
 
-.counselors__box:nth-child(7) > a {
+.counselors__box:nth-child(7) {
+	background-color: palette('blue', 'pool');
+
+	& > a {
 	&:hover,
 	&:focus,
 	&:active {
@@ -677,8 +766,12 @@
 		}
 	}
 }
+}
 
-.counselors__box:nth-child(8) > a {
+.counselors__box:nth-child(8) {
+	background-color: palette('blue', 'fluorescent');
+
+	& > a {
 	&:hover,
 	&:focus,
 	&:active {
@@ -687,19 +780,19 @@
 		}
 	}
 }
+}
 
 .counselors__box h5 {
 	display: none;
 
+	text-align: center;
 	text-transform: uppercase;
 }
 
-.counselors__box > a:hover h5 {
+.counselors__box:not(:target) > a:hover h5 {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-
-	float: left;
 
 	display: block;
 	z-index: #{layer('default') + 1};
@@ -709,18 +802,29 @@
 	transform: translate(-50%, -50%);
 }
 
-
 .counselors__box:target h5 {
-	display: table-cell;
+	display: block;
 
-	vertical-align: middle;
+	text-align: left;
 }
 
 .counselors__text {
 	display: none;
 
+	@media screen and (min-width: breakpoint('desktop')) {
+		overflow: hidden;
+	}
+
 	.counselors__box:target & {
 		display: block;
+	}
+}
+
+.counselors__buttons {
+	text-align: center;
+
+	@media screen and (min-width: breakpoint('tablet')) {
+		text-align: left;
 	}
 }
 
