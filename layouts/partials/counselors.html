@@ -20,6 +20,22 @@
 				</a>
 
 				<div class="counselors__text">
+					{{ if .Params.medium }}
+						<a class="social-link social-link--medium" href="{{ .Params.medium }}">{{ .Title }}</a>
+					{{ end }}
+
+					{{ if .Params.linkedin }}
+						<a class="social-link social-link--linkedin" href="{{ .Params.linkedin }}">{{ .Title }}</a>
+					{{ end }}
+
+					{{ if .Params.facebook }}
+						<a class="social-link social-link--facebook" href="{{ .Params.facebook }}">{{ .Title }}</a>
+					{{ end }}
+
+					{{ if .Params.twitter }}
+						<a class="social-link social-link--twitter" href="{{ .Params.twitter }}">{{ .Title }}</a>
+					{{ end }}
+
 					{{ .Content }}
 
 					<div class="counselors__buttons">

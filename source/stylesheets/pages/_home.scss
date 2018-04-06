@@ -833,6 +833,12 @@ $animated-max-height: 50em;
 	}
 }
 
+.counselors__text .social-link {
+	color: inherit;
+
+	border-color: currentColor;
+}
+
 .counselors__buttons {
 	text-align: center;
 
