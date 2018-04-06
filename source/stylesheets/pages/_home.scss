@@ -458,6 +458,7 @@
 	}
 }
 
+
 // who-we-are section
 .who-we-are {
 	color: palette('white');
@@ -469,6 +470,8 @@
 	display: table;
 
 	margin: auto;
+
+
 	@media screen and (min-width: breakpoint('desktop')) {
 		display: table;
 
@@ -487,15 +490,12 @@
 	}
 }
 
-.who-we-are__box img {
+.who-we-are img {
 	display: block;
 
-	height: auto;
-
-	margin: auto;
-	@media screen and (min-width: breakpoint('desktop')) {
 		width: 100%;
-	}
+
+	object-fit: cover;
 }
 
 .who-we-are h5 {
@@ -557,6 +557,8 @@
 
 	margin: auto;
 
+	overflow: hidden;
+
 	@media screen and (min-width: breakpoint('phablet')) {
 		min-height: 12em;
 	}
@@ -571,6 +573,7 @@
 		}
 	}
 }
+
 
 .counselors-img {
 	display: block;
