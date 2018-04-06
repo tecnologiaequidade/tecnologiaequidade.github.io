@@ -588,3 +588,20 @@ blockquote .verse p {
 
 	text-align: left;
 }
+
+.footnotes {
+	margin-top: 1em;
+	font-size: ms(-1);
+
+	& ol {
+		margin-top: 1rem;
+	}
+}
+
+.projects-about .footnotes li {
+	list-style: decimal;
+}
+
+.footnotes a {
+	color: palette('blue', 'dark');
+}
