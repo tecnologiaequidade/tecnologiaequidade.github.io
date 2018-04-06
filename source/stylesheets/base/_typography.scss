@@ -165,12 +165,6 @@ h5 {
 	font-family: 'archiasemibold', $title-font-stack;
 
 	color: palette('white');
-	@media screen and (min-width: breakpoint('phablet')) {
-		font-size: ms(2);
-	}
-	@media screen and (min-width: breakpoint('desktop')) {
-		font-size: ms(1);
-	}
 }
 
 h6 {
