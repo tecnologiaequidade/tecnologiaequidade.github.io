@@ -7,7 +7,6 @@ medium:
 linkedin:
 facebook: https://facebook.com/thiagorondon
 twitter: https://twitter.com/thiagorondon
-avatarHome: /uploads/thiago-rondon_color.jpg
 avatar: /uploads/thiago-rondon.png
 weight: 3
 type: person

@@ -164,6 +164,8 @@
 
 .authors-image img {
 	border-radius: 100%;
+
+	filter: grayscale(1);
 }
 
 .authors-about {
