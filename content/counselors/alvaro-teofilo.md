@@ -7,7 +7,7 @@ medium:
 linkedin:
 facebook:
 twitter:
-avatar: assets/images/alvaro-teofilo.png
+avatar: /uploads/alvaro-teofilo.png
 weight: 2
 type: person
 role: counselor

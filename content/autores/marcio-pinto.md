@@ -7,8 +7,8 @@ medium:
 linkedin:
 facebook: https://facebook.com/thiagorondon
 twitter: https://twitter.com/thiagorondon
-avatar: assets/images/marcio-pinto.png
-avatarHome: assets/images/marcio-vasconcelos_color.jpg
+avatar: /uploads/marcio-pinto.png
+avatarHome: /uploads/marcio-vasconcelos_color.jpg
 weight: 2
 type: person
 role: team

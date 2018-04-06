@@ -7,7 +7,7 @@ medium:
 linkedin:
 facebook:
 twitter:
-avatar: assets/images/claudia-pires.png
+avatar: /uploads/claudia-pires.png
 weight: 3
 type: person
 role: counselor

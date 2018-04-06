@@ -7,8 +7,8 @@ medium:
 linkedin:
 facebook: https://facebook.com/thiagorondon
 twitter: https://twitter.com/thiagorondon
-avatar: assets/images/ariel-kogan.png
-avatarHome: assets/images/ariel-kogan_color.jpg
+avatar: /uploads/ariel-kogan.png
+avatarHome: /uploads/ariel-kogan_color.jpg
 weight: 1
 type: person
 role: team

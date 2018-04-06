@@ -7,7 +7,7 @@ medium:
 linkedin:
 facebook:
 twitter:
-avatar: assets/images/gabriela-agustini.png
+avatar: /uploads/gabriela-agustini.png
 weight: 5
 type: person
 role: counselor

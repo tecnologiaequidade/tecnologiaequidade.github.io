@@ -7,8 +7,8 @@ medium:
 linkedin:
 facebook: https://facebook.com/thiagorondon
 twitter: https://twitter.com/thiagorondon
-avatar: assets/images/thiagorondon.png
-avatarHome: assets/images/thiago-rondon_color.jpg
+avatarHome: /uploads/thiago-rondon_color.jpg
+avatar: /uploads/thiago-rondon.png
 weight: 3
 type: person
 role: team
