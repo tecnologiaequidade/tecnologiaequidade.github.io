@@ -106,7 +106,7 @@ collections:
     fields:
       -
         label: "Name"
-        name: "name"
+        name: "title"
         widget: "string"
       -
         label: "Date"

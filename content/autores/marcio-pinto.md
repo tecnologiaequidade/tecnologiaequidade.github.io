@@ -1,5 +1,5 @@
 ---
-name: "Márcio Vasconcelos Pinto"
+title: "Márcio Vasconcelos Pinto"
 slug: "marcio-pinto"
 date: 2018-03-06T14:55:48-03:00
 draft: false

@@ -1,5 +1,5 @@
 ---
-name: "Ariel Kogan"
+title: "Ariel Kogan"
 slug: "ariel-kogan"
 date: 2018-03-06T14:55:48-03:00
 draft: false

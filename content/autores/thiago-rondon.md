@@ -1,5 +1,5 @@
 ---
-name: "Thiago Rondon"
+title: "Thiago Rondon"
 slug: "thiago-rondon"
 date: 2018-03-06T14:55:48-03:00
 draft: false

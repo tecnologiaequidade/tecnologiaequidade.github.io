@@ -10,10 +10,10 @@
 				{{ range where $.Site.Pages "Params.slug" .author }}
 				<section class="authors__box">
 					<section class="authors-image">
-						<img src="/{{ .Params.Avatar }}" alt="{{ .Params.Name }}">
+						<img src="/{{ .Params.avatar }}" alt="{{ .Title }}">
 					</section>
 					<section class="authors-about">
-						<h4>{{ .Params.Name }}</h4>
+						<h4>{{ .Title }}</h4>
 						<p>{{ .Content }}</p>
 					</section>
 				</section>
