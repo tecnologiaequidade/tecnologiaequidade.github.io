@@ -1,13 +1,11 @@
 <article class="projects">
 	<div class="content">
-		<a href="/projetos">
-			<h2>{{ i18n "projects" | title }}</h2>
-		</a>
+		<h2>{{ i18n "projects" | title }}</h2>
 		<div class="projects-wrap">
-			{{ range first 2 (where .Data.Pages.ByWeight "Section" "projetos") }}
+			{{ range first 2 (where .Data.Pages.ByDate "Section" "projetos") }}
 				<section class="project-box box">
 					<div class="project-box__content">
-						<h3>{{ .Title }}</h3>
+						<a href="/projetos/{{ .Params.Slug }}"><h3>{{ if .Params.shortTitle }} {{ .Params.shortTitle }} {{ else }} {{ .Title }} {{ end }}</h3></a>
 						<div class="navlink-project">
 							<a class="nav-link nav-link--plus--orange" href="/projetos/{{ .Params.Slug }}">
 								{{ .Title }}
@@ -19,6 +17,10 @@
 					</div>
 				</section>
 			{{ end }}
+
+		</div>
+		<div class="all-projects">
+			<a class="round-button" href="/projetos">...</a>
 		</div>
 	</div>
 </article>
