@@ -602,6 +602,8 @@ blockquote .verse p {
 	list-style: decimal;
 }
 
-.footnotes a {
-	color: palette('blue', 'dark');
+.footnotes a,
+.footnote-ref a {
+	color: palette('blue', 'fluorescent');
+
 }
