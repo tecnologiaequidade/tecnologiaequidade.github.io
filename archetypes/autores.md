@@ -1,5 +1,6 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
+slug: ""
 date: {{ .Date }}
 draft: true
 medium:
@@ -8,7 +9,6 @@ facebook:
 twitter:
 avatar:
 weight:
-type: person
-role: team
-layout: none
+type:
+role:
 ---
