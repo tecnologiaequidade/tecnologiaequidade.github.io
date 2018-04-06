@@ -521,12 +521,12 @@ $animated-max-height: 50em;
 
 		z-index: layer('default');
 
-		background-color: palette('red');
+		background-color: palette('orange', 'dark');
 
 		content: '';
 
 		opacity: 0.5;
-		filter: contrast(200%);
+		filter: contrast(210%);
 
 		.who-we-are__person:nth-child(2) & {
 			background-color: palette('esmerald', 'fluorescent');
@@ -540,7 +540,7 @@ $animated-max-height: 50em;
 
 .who-we-are img {
 	position: absolute;
-	top: $line-height * -2rem;
+	top: $line-height * -1.5rem;
 
 	display: block;
 
@@ -609,7 +609,6 @@ $animated-max-height: 50em;
 	display: block;
 
 	width: 100%;
-	min-height: $avatar-height;
 
 	margin: auto;
 
