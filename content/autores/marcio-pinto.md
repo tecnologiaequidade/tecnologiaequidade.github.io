@@ -1,12 +1,14 @@
 ---
-title: "Márcio Vasconcelos Pinto"
-date: 2018-03-06T14:55:34-03:00
+name: "Márcio Vasconcelos Pinto"
+slug: "marcio-pinto"
+date: 2018-03-06T14:55:48-03:00
 draft: false
 medium:
 linkedin:
-facebook: https://facebook.com/marciovasconcelospinto
-twitter:
+facebook: https://facebook.com/thiagorondon
+twitter: https://twitter.com/thiagorondon
 avatar: assets/images/marcio-pinto.png
+avatarHome: assets/images/marcio-vasconcelos_color.jpg
 weight: 2
 type: person
 role: team

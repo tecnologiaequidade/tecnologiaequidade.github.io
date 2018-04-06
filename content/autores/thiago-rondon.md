@@ -1,5 +1,5 @@
 ---
-title: "Thiago Rondon"
+name: "Thiago Rondon"
 slug: "thiago-rondon"
 date: 2018-03-06T14:55:48-03:00
 draft: false
@@ -7,7 +7,8 @@ medium:
 linkedin:
 facebook: https://facebook.com/thiagorondon
 twitter: https://twitter.com/thiagorondon
-avatar: assets/images/thiago-rondon.png
+avatar: assets/images/thiagorondon.png
+avatarHome: assets/images/thiago-rondon_color.jpg
 weight: 3
 type: person
 role: team
