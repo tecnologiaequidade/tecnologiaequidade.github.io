@@ -1,0 +1,29 @@
+	<footer class="site-footer">
+		<div class="footer-container">
+			{{ with .Site.Params.author }}
+				<div class="content-container__author">
+						<a href="/">Instituto Tecnologia e Equidade</a>
+					</h6>
+				</div>
+				<div class="footer__social-link">
+					<a class="big-social-link social-link--facebook" href="https://facebook.com/tecnologiaequidade" target="_blank">Facebook</a>
+					<a class="big-social-link social-link--twitter" href="https://twitter.com/tecnoequidade" target="_blank">Twitter</a>
+					<a class="big-social-link social-link--mail" href="mailto:contato@tecnologiaequidade.org.br">E-mail</a>
+				</div>
+			{{ end }}
+		</div>
+	</footer>
+</div> <!-- .main-container -->
+<script>
+	if (window.netlifyIdentity) {
+		window.netlifyIdentity.on("init", user => {
+			if (!user) {
+				window.netlifyIdentity.on("login", () => {
+					document.location.href = "/admin/";
+				});
+			}
+		});
+	}
+</script>
+</body>
+</html>

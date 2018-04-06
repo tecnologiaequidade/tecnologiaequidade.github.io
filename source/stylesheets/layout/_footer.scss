@@ -1,0 +1,71 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+
+/**
+ * A large perceivable region that contains information about the parent document.
+ *
+ * Examples of information included in this region of the page are copyrights and links to privacy statements.
+ *
+ * Within any `document` or `application`, the author **SHOULD** mark no more than one element with the `contentinfo` role.
+ */
+[role='contentinfo'] {
+}
+
+.site-footer {
+	margin: auto;
+
+	text-align: center;
+
+	color: palette('white');
+
+	background-color: palette('blue', 'dark');
+
+	@media screen and (min-width: breakpoint('tablet')) {
+		margin: 0;
+
+		text-align: left;
+	}
+}
+
+.content-container__author {
+	@include image-replacement;
+
+	display: inline-block;
+
+	width: 100%;
+	height: 4rem;
+
+	padding: 0;
+	margin-bottom: 2rem;
+
+	background-image: image('ITE-200w.png');
+	background-position: center;
+	background-size: center;
+
+	@media screen and (min-width: breakpoint('tablet')) {
+		width: 19.5rem;
+		height: 5rem;
+
+		margin-right: 3rem;
+		margin-bottom: 0;
+
+		background-image: image('ITE-250w.png');
+		background-position: left;
+
+		border-right: solid 1px palette('blue', 'pool');
+	}
+}
+
+.content-container__author a {
+	display: block;
+
+	height: 100%;
+}
+
+.footer__social-link {
+	display: inline;
+
+	margin-left: 1rem;
+}

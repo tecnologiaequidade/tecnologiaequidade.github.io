@@ -1,0 +1,68 @@
+{{ partial "header.html" . }}
+<style>
+.title-background {
+	background-image: url({{ .Params.titleImage }});
+	background-position: center;
+	background-repeat: repeat;
+}
+</style>
+
+<section class="projects-greetings {{ if .Params.titleImage }}title-background{{ end }}">
+	<div class="content projects-greetings__content">
+		<div class="projects-greetings-wrap">
+			<div class="projects-greetings__title">
+				<div class="{{ if and .Params.darkText .Params.titleImage }}logo-dark{{ else }}logo-light{{ end }}">
+					<a href="/">
+						{{ .Title }}
+					</a>
+				</div>
+					<h1 {{ if .Params.titleImage }}class="{{ if .Params.darkText }}title-dark{{ else }}title-light{{ end }}"{{ end }}>{{ .Title }}</h1>
+			</div>
+		</div>
+	</div>
+</section>
+
+<article class="projects-about">
+	<div class="content smaller-width">
+		<h2>{{ i18n "theProject" | title }}</h2>
+
+		{{ if .Params.subtitle }}
+		<div class="project-subtitle">
+			<p>{{ .Params.subtitle }}</p>
+		</div>
+		{{ end }}
+
+		{{ if .Params.imageBeforeText }}
+			<img src="{{ .Params.imageBeforeText }}" alt="{{ .Title }}">
+		{{ end }}
+
+		{{ .Content }}
+
+	</div>
+</article>
+
+{{ partial "authors.html" . }}
+
+{{ if .Params.relatedProjects }}
+<article class="related-projects">
+	<div class="content">
+		<h2>{{ i18n "seeAlso" | title }}</h2>
+		<ul class="related-projects-wrap">
+				{{ range .Params.relatedProjects }}
+					{{ range where $.Site.Pages "Params.slug" .project }}
+						<li class="related-projects-box">
+							<div class="related-projects-box-content">
+								<a href="../{{ .Params.slug }}"><h4>{{ if .Params.shortTitle }} {{ .Params.shortTitle }} {{ else }} {{ .Title }} {{ end }}</h4></a>
+								<a class="nav-link nav-link--plus--orange" href="../{{ .Params.slug }}">{{ i18n "Title" }}</a>
+							</div>
+						</li>
+				{{ end }}
+			{{ end }}
+			</ul>
+		</div>
+	</article>
+{{ end }}
+
+{{ partial "newsletter.html" . }}
+
+{{ partial "footer.html" . }}

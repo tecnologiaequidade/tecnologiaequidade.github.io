@@ -1,0 +1,29 @@
+{{ partial "header.html" . }}
+
+	<header class="site-header">
+		<div class="content-header">
+			<div class="logo-light">
+				<a href="/">
+					{{ .Site.Title }}
+				</a>
+			</div>
+			<div class="site-header__content">
+				<h1 class="site-title">{{ .Content | plainify }}</h1>
+			</div>
+			<div class="site-header__nav-link">
+				<a class="nav-link nav-link--right--orange" href="#manifesto">{{ i18n "about" | lower }}</a>
+			</div>
+		</div>
+	</header>
+
+<div class="content-container">
+
+	{{ partial "newsletter.html" . }}
+	{{ partial "manifest.html" . }}
+	{{ partial "projects.html" . }}
+	{{ partial "what-we-do.html" . }}
+	{{ partial "purpose.html" . }}
+	{{ partial "who-we-are.html" . }}
+	{{ partial "counselors.html" . }}
+	{{ partial "midia.html" . }}
+{{ partial "footer.html" . }}

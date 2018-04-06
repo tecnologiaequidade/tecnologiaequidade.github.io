@@ -1,0 +1,108 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+/**
+ * A region that contains mostly site-oriented content, rather than page-specific content.
+ *
+ * Site-oriented content typically includes things such as the logo or identity of the site sponsor, and site-specific search tool. A banner usually appears at the top of the page and typically spans the full width.
+ *
+ * Within any `document` or `application`, the author **SHOULD** mark no more than one element with the `banner` role.
+ */
+.site-header {
+	padding-bottom: 270px;
+
+	color: palette('blue', 'pool');
+
+	background-image: image('illustration-very-small.png');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-color: palette('blue', 'dark');
+
+	@media screen and (min-width: breakpoint('phablet')) {
+		padding-bottom: 310px;
+
+		background-image: image('illustration-small.png');
+		background-position: 90% bottom;
+	}
+
+	@media screen and (min-width: breakpoint('tablet')) {
+		padding-bottom: 300px;
+
+		background-image: image('illustration-medium.png');
+		background-position: 95% bottom;
+	}
+
+	@media screen and (min-width: breakpoint('desktop')) {
+		height: 85vh;
+		min-height: 780px;
+
+		padding-bottom: 0;
+
+		background-image: image('illustration-medium.png');
+		background-position: 95% bottom;
+	}
+
+	@media screen and (min-width: breakpoint('wide')) {
+		height: 80vh;
+		min-height: 800px;
+		background-image: image('illustration-big.png');
+		background-position: 80% bottom;
+	}
+}
+
+.logo-light {
+	@include image-replacement;
+
+	height: 6.4375rem;
+	max-width: 20rem;
+
+	background-image: image('logo-200w.png');
+	background-position: left;
+
+	@media screen and (min-width: breakpoint('phablet')) {
+		background-image: image('logo-320w.png');
+	}
+}
+
+.logo-light a {
+	display: block;
+
+	height: 6.4375rem;
+}
+
+.logo-dark {
+	@include image-replacement;
+
+	height: 6.4375rem;
+	max-width: 20rem;
+
+	background-image: image('logo-dark-200w.png');
+	background-position: left;
+
+	@media screen and (min-width: breakpoint('phablet')) {
+		background-image: image('logo-dark-320w.png');
+	}
+}
+
+.logo-dark a {
+	display: block;
+
+	height: 6.4375rem;
+}
+
+.site-header h1 {
+	max-width: 17em;
+
+	margin: 2rem 0;
+
+	@media screen and (min-width: breakpoint('phablet')) {
+		margin: 3rem 0;
+	}
+	@media screen and (min-width: breakpoint('wide')) {
+		margin: 5rem 0 3rem;
+	}
+}
+
+.site-header__nav-link {
+	margin: 0;
+}
