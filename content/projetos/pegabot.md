@@ -7,7 +7,7 @@ subtitle: ""
 titleImage: ""
 darkText: false
 draft: false
-summary: "Os bots estão por aí e poucos sabem como eles funcionam, quem os desenvolve e por quem são financiados. A plataforma PegaBot tem o objetivo de ajudar a combater esse problema e deixar o debate sobre bots no Brasil mais transparente e informado. O PegaBot é um projeto do Instituto de Tecnologia e Sociedade do Rio de Janeiro (ITS Rio) e do Instituto Tecnologia & Equidade (IT&E), com desenvolvimento do AppCívico."
+summary: "É uma iniciativa com o foco de oferecer um serviço qualificado e automatizado para verificar a probabilidade dos perfis em redes sociais serem automatizados ou não humanos - os chamados "bots". Essa Plataforma é uma iniciativa do Instituto Tecnologia e Sociedade (ITS- Rio) e o Instituto Tecnologia & Equidade (IT&E) e está sendo desenvolvido pelo AppCívico."
 relatedProjects:
   - project: "fakenews"
 authors:
