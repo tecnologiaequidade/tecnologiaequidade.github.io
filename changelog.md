@@ -4,6 +4,10 @@ This project follows [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Added
+
+- Missing Google Analytics code
+
 ## [1.0.0][] - 2018-04-06
 
 ### Added

@@ -3,7 +3,7 @@ languageCode:    "pt-br"
 title:           "Instituto Tecnologia & Equidade"
 disableKinds:    ["taxonomy", "taxonomyTerm", "RSS"]
 enableRobotsTXT: true
-googleAnalytics: ""
+googleAnalytics: "UA-117128393-1"
 metaDataFormat:  "yaml"
 enableMissingTranslationPlaceholders: true
 defaultContentLanguage: pt
