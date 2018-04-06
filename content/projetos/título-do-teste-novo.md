@@ -6,7 +6,7 @@ slug: TesteNovo
 subtitle: Testando a inclusão do projeto
 titleImage: /uploads/politicians-2831235_640.png
 darkText: false
-draft: true
+draft: false
 summary: Adicionando um texto esse projeto de teste novo (Summary).
 relatedProjects:
   - project: pegabot
