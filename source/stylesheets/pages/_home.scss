@@ -493,7 +493,7 @@
 .who-we-are img {
 	display: block;
 
-		width: 100%;
+	width: 100%;
 
 	object-fit: cover;
 }
@@ -584,18 +584,108 @@
 	object-fit: cover;
 }
 
-.counselors__box:hover h5 {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-
-	float: left;
+.counselors__box > a {
+	position: relative;
 
 	display: block;
 
-	margin: 0;
+	&:hover,
+	&:focus,
+	&:active {
+		&::after {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
 
-	transform: translate(-50%, -50%);
+			background-color: palette('red');
+
+			content: '';
+
+			opacity: 0.8;
+		}
+	}
+}
+
+.counselors__box:nth-child(1) > a {
+	&:hover,
+	&:focus,
+	&:active {
+		&::after {
+			background-color: palette('red');
+		}
+	}
+}
+
+.counselors__box:nth-child(2) > a {
+	&:hover,
+	&:focus,
+	&:active {
+		&::after {
+			background-color: palette('orange', 'dark');
+		}
+	}
+}
+
+.counselors__box:nth-child(3) > a {
+	&:hover,
+	&:focus,
+	&:active {
+		&::after {
+			background-color: palette('orange', 'base');
+		}
+	}
+}
+
+.counselors__box:nth-child(4) > a {
+	&:hover,
+	&:focus,
+	&:active {
+		&::after {
+			background-color: palette('esmerald', 'fluorescent');
+		}
+	}
+}
+
+.counselors__box:nth-child(5) > a {
+	&:hover,
+	&:focus,
+	&:active {
+		&::after {
+			background-color: palette('esmerald', 'base');
+		}
+	}
+}
+
+.counselors__box:nth-child(6) > a {
+	&:hover,
+	&:focus,
+	&:active {
+		&::after {
+			background-color: palette('blue', 'dark');
+		}
+	}
+}
+
+.counselors__box:nth-child(7) > a {
+	&:hover,
+	&:focus,
+	&:active {
+		&::after {
+			background-color: palette('blue', 'pool');
+		}
+	}
+}
+
+.counselors__box:nth-child(8) > a {
+	&:hover,
+	&:focus,
+	&:active {
+		&::after {
+			background-color: palette('blue', 'fluorescent');
+		}
+	}
 }
 
 .counselors__box h5 {
@@ -603,6 +693,22 @@
 
 	text-transform: uppercase;
 }
+
+.counselors__box > a:hover h5 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	float: left;
+
+	display: block;
+	z-index: #{layer('default') + 1};
+
+	margin: 0;
+
+	transform: translate(-50%, -50%);
+}
+
 
 .counselors__box:target h5 {
 	display: table-cell;
