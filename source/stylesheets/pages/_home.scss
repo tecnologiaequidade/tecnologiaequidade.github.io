@@ -1,6 +1,11 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+
+$avatar-width: 300px;
+$avatar-height: 216px;
+$animated-max-height: 50em;
+
 .content-header,
 .footer-container,
 .content {
@@ -197,6 +202,8 @@
 
 .what-boxes {
 	@media screen and (min-width: breakpoint('tablet')) {
+		position: relative;
+
 		display: flex;
 
 		flex-direction: row;
@@ -217,6 +224,7 @@
 	margin-bottom: $line-height * 1rem;
 
 	text-align: left;
+
 	@media screen and (min-width: breakpoint('tablet')) {
 		flex-basis: 40%;
 		flex-grow: 1;
@@ -229,7 +237,15 @@
 		margin-left: $gutter / 2;
 
 		&:target {
-			flex-basis: 100%;
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+
+			z-index: layer('default');
+
+			width: auto;
+			min-height: 100%;
 
 			& h4 {
 				width: 100%;
@@ -261,18 +277,21 @@
 .what-box__content {
 	padding-top: $line-height * 1rem;
 	padding-right: $gutter / 2;
+	padding-bottom: $line-height * 1rem;
 	padding-left: $gutter / 2;
+
 	@media screen and (min-width: breakpoint('tablet')) {
 		padding-top: $line-height * 1rem;
 		padding-right: $line-height * 1rem;
+		padding-bottom: $line-height * 1rem;
 		padding-left: $line-height * 1rem;
 	}
 
 	.what-box:target & {
-		padding-bottom: 80px;
 		@media screen and (min-width: breakpoint('tablet')) {
 			padding-top: $gutter * 2;
 			padding-right: $gutter * 3;
+			padding-bottom: $gutter * 2;
 			padding-left: $gutter * 3;
 		}
 	}
@@ -298,36 +317,21 @@
 	transition-duration: $transition-duration;
 	transition-property: max-height;
 	transition-timing-function: ease-in;
+
 	@media screen and (min-width: breakpoint('tablet')) {
 		margin-top: $line-height * 1rem;
 		margin-bottom: $line-height * 2rem;
 	}
 
 	.what-box:target & {
-		max-height: 50em;
+		max-height: $animated-max-height;
 	}
 }
 
 .what-box__buttons {
-	display: none;
+	display: block;
 
-	.what-box:target & {
-		position: absolute;
-		bottom: $line-height * 1rem;
-		left: 50%;
-
-		display: block;
-
-		width: 11rem;
-
-		transform: translateX(-50%);
-
-		animation-name: fadeIn;
-		animation-duration: 4s;
-		@media screen and (min-width: breakpoint('tablet')) {
-			bottom: $line-height * 2rem;
-		}
-	}
+	text-align: center;
 }
 
 .button-plus {
@@ -423,9 +427,11 @@
 
 	border-top-width: 5px;
 	border-top-style: solid;
+
 	@media screen and (min-width: breakpoint('phablet')) {
 		margin-bottom: 3rem;
 	}
+
 	@media screen and (min-width: breakpoint('tablet')) {
 		min-height: 8rem;
 
@@ -503,6 +509,7 @@
 	margin-bottom: 0.5rem;
 
 	text-transform: uppercase;
+
 	@media screen and (min-width: breakpoint('desktop')) {
 		width: 11em;
 
@@ -512,6 +519,7 @@
 
 .who-we-are p {
 	max-width: 29em;
+
 	@media screen and (min-width: breakpoint('desktop')) {
 		max-width: 100%;
 	}
@@ -519,6 +527,7 @@
 
 .person-content {
 	padding-bottom: 1.5rem;
+
 	@media screen and (min-width: breakpoint('desktop')) {
 		padding: 1rem 2rem 1rem 0;
 	}
@@ -573,9 +582,9 @@
 			&:target {
 				margin-right: 0;
 				margin-left: 0;
+			}
 		}
 	}
-}
 
 	&:target {
 		width: auto;
@@ -633,7 +642,7 @@
 
 	.counselors__box:target & {
 		width: auto;
-	height: 100%;
+		height: 100%;
 		max-width: none;
 
 		margin-left: #{($avatar-width - $avatar-height) / -2};
@@ -674,112 +683,112 @@
 	background-color: palette('red');
 
 	& > a {
-	&:hover,
-	&:focus,
-	&:active {
-		&::after {
-			background-color: palette('red');
+		&:hover,
+		&:focus,
+		&:active {
+			&::after {
+				background-color: palette('red');
+			}
 		}
 	}
-}
 }
 
 .counselors__box:nth-child(2) {
 	background-color: palette('orange', 'dark');
 
 	& > a {
-	&:hover,
-	&:focus,
-	&:active {
-		&::after {
-			background-color: palette('orange', 'dark');
+		&:hover,
+		&:focus,
+		&:active {
+			&::after {
+				background-color: palette('orange', 'dark');
+			}
 		}
 	}
-}
 }
 
 .counselors__box:nth-child(3) {
 	background-color: palette('orange', 'base');
 
 	& > a {
-	&:hover,
-	&:focus,
-	&:active {
-		&::after {
-			background-color: palette('orange', 'base');
+		&:hover,
+		&:focus,
+		&:active {
+			&::after {
+				background-color: palette('orange', 'base');
+			}
 		}
 	}
-}
 }
 
 .counselors__box:nth-child(4) {
 	background-color: palette('esmerald', 'fluorescent');
 
 	& > a {
-	&:hover,
-	&:focus,
-	&:active {
-		&::after {
-			background-color: palette('esmerald', 'fluorescent');
+		&:hover,
+		&:focus,
+		&:active {
+			&::after {
+				background-color: palette('esmerald', 'fluorescent');
+			}
 		}
 	}
-}
 }
 
 .counselors__box:nth-child(5) {
 	background-color: palette('esmerald', 'base');
 
 	& > a {
-	&:hover,
-	&:focus,
-	&:active {
-		&::after {
-			background-color: palette('esmerald', 'base');
+		&:hover,
+		&:focus,
+		&:active {
+			&::after {
+				background-color: palette('esmerald', 'base');
+			}
 		}
 	}
-}
 }
 
 .counselors__box:nth-child(6) {
 	background-color: palette('blue', 'dark');
 
 	& > a {
-	&:hover,
-	&:focus,
-	&:active {
-		&::after {
-			background-color: palette('blue', 'dark');
+		&:hover,
+		&:focus,
+		&:active {
+			&::after {
+				background-color: palette('blue', 'dark');
+			}
 		}
 	}
-}
 }
 
 .counselors__box:nth-child(7) {
 	background-color: palette('blue', 'pool');
 
 	& > a {
-	&:hover,
-	&:focus,
-	&:active {
-		&::after {
-			background-color: palette('blue', 'pool');
+		&:hover,
+		&:focus,
+		&:active {
+			&::after {
+				background-color: palette('blue', 'pool');
+			}
 		}
 	}
-}
 }
 
 .counselors__box:nth-child(8) {
 	background-color: palette('blue', 'fluorescent');
 
 	& > a {
-	&:hover,
-	&:focus,
-	&:active {
-		&::after {
-			background-color: palette('blue', 'fluorescent');
+		&:hover,
+		&:focus,
+		&:active {
+			&::after {
+				background-color: palette('blue', 'fluorescent');
+			}
 		}
 	}
-}
 }
 
 .counselors__box h5 {
