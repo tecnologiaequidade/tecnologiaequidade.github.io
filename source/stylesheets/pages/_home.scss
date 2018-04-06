@@ -94,6 +94,10 @@ $animated-max-height: 50em;
 		margin: 0;
 
 		vertical-align: top;
+
+		&:only-child {
+			width: 100%;
+		}
 	}
 }
 
@@ -114,7 +118,7 @@ $animated-max-height: 50em;
 	}
 }
 
-.project-box + .box {
+.project-box + .project-box {
 	@media screen and (min-width: breakpoint('tablet')) {
 		@include inline-block-item($align: 'top', $font-size: 1rem);
 
