@@ -8,7 +8,7 @@ linkedin:
 facebook:
 twitter:
 avatar: /uploads/santiago-siri.png
-weight: 8
+weight: 7
 type: person
 role: counselor
 ---
