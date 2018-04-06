@@ -56,11 +56,11 @@
 	height: 6.4375rem;
 	max-width: 20rem;
 
-	background-image: image('logo-200w.png');
+	background-image: image('ITE-200w.png');
 	background-position: left;
 
 	@media screen and (min-width: breakpoint('phablet')) {
-		background-image: image('logo-320w.png');
+		background-image: image('ITE-320w.png');
 	}
 }
 
