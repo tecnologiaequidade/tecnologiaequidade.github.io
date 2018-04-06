@@ -1,21 +1,59 @@
 <article class="counselors">
 	<div class="content">
 		<h2>{{ i18n "counselors" | title }}</h2>
+
+		{{ $firstWeight := 1 }}
+		{{ $lastWeight := len (where .Site.Pages ".Params.role" "counselor") }}
+
 		<div class="counselors-wrap" id="conselheiros">
 		{{ range where .Site.Pages ".Params.role" "counselor" }}
+			{{ $nextWeight := add (int .Params.weight) 1 }}
+			{{ $prevWeight := sub (int .Params.weight) 1 }}
+
 			<section class="counselors__box" id="{{ .Params.id }}">
 				<a href="#{{ .Params.id }}">
-					<h5>{{ .Title }}</h5>
-					<img src="{{ .Params.avatar }}" class="counselors-img">
-					<div class="counselors__text">
-						{{ .Content }}
-						<div class="counselors__buttons">
-							<a class="next-link next-link__arrow-left-white" href="#{{ .Params.id }}">+</a>
-							<a class="next-link next-link__close" href="#conselheiros">+</a>
-							<a class="next-link next-link__arrow-right-white" href="#{{ .Params.id }}">+</a>
-						</div>
+					<div class="counselors-img">
+						<img src="{{ .Params.avatar }}" alt="{{ .Title }}" />
 					</div>
+
+					<h5>{{ .Title }}</h5>
 				</a>
+
+				<div class="counselors__text">
+					{{ .Content }}
+
+					<div class="counselors__buttons">
+						{{ range where $.Site.Pages ".Params.role" "counselor" }}
+							{{ if eq .Params.weight $prevWeight }}
+							<a class="next-link next-link__arrow-left-white" href="#{{ .Params.id }}">&lt;</a>
+							{{ end }}
+						{{ end }}
+
+						{{ if eq .Params.weight $firstWeight }}
+							{{ range where $.Site.Pages ".Params.role" "counselor" }}
+								{{ if eq .Params.weight $lastWeight }}
+									<a class="next-link next-link__arrow-left-white" href="#{{ .Params.id }}">&lt;</a>
+								{{ end }}
+							{{ end }}
+						{{ end }}
+
+						<a class="next-link next-link__close" href="#conselheiros">+</a>
+
+						{{ range where $.Site.Pages ".Params.role" "counselor" }}
+							{{ if eq .Params.weight $nextWeight }}
+							<a class="next-link next-link__arrow-right-white" href="#{{ .Params.id }}">&gt;</a>
+							{{ end }}
+						{{ end }}
+
+						{{ if eq .Params.weight $lastWeight }}
+							{{ range where $.Site.Pages ".Params.role" "counselor" }}
+								{{ if eq .Params.weight $firstWeight }}
+									<a class="next-link next-link__arrow-right-white" href="#{{ .Params.id }}">&gt;</a>
+								{{ end }}
+							{{ end }}
+						{{ end }}
+					</div>
+				</div>
 			</section>
 		{{ end }}
 		</div>
