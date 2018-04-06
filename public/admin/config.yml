@@ -1,0 +1,172 @@
+backend:
+  name: github
+  repo: tecnologiaequidade/tecnologiaequidade.github.io # Path to your Github repository
+  branch: develop
+  accept_roles:
+    - admin
+    - editor
+publish_mode: editorial_workflow
+media_folder: "static/uploads"
+public_folder: "/uploads"
+collections:
+  -
+    label: "Projects"
+    name: "projects"
+    folder: "content/projetos"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      -
+        label: "Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-DD-MMThh:mm:ssZ" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Short Title"
+        name: "shortTitle"
+        widget: "string"
+        tagname: "h1"
+        required: false
+        pattern: ['.{0,15}', "Must have between 0 and 15 characters"]
+      -
+        label: "Title"
+        name: "title"
+        widget: "string"
+        tagname: "h1"
+        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
+      -
+        label: "Slug"
+        name: "slug"
+        widget: "string"
+      -
+        label: "Subtitle"
+        name: "subtitle"
+        required: false
+        widget: "string"
+      -
+        label: "Title Image"
+        name: "titleImage"
+        widget: "image"
+        required: false
+        tagname: ""
+      -
+        label: "Dark Text"
+        name: "darkText"
+        widget: "boolean"
+        default: false
+      -
+        label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: true
+      -
+        label: "Summary"
+        name: "summary"
+        widget: "text"
+      -
+        label: "Related Projects"
+        name: "relatedProjects"
+        widget: "list"
+        required: false
+        fields:
+        -
+          label: "Project"
+          name: "project"
+          widget: "relation"
+          collection: "projects"
+          searchFields: ["slug", "title"]
+          valueField: "slug"
+      -
+        label: "Authors"
+        name: "authors"
+        widget: "list"
+        fields:
+        -
+          label: "Author"
+          name: "author"
+          widget: "relation"
+          collection: "authors"
+          searchFields: ["slug", "name"]
+          valueField: "slug"
+      -
+        label: "Order"
+        name: "weight"
+        widget: "number"
+        valueType: "int"
+      -
+        label: "Body"
+        name: "body"
+        widget: "markdown"
+  -
+    label: "Authors"
+    name: "authors"
+    folder: "content/autores"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      -
+        label: "Name"
+        name: "title"
+        widget: "string"
+      -
+        label: "Date"
+        name: "date"
+        widget: "datetime"
+        required: false
+        format: "YYYY-DD-MMThh:mm:ssZ" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: true
+      -
+        label: "Slug"
+        name: "slug"
+        widget: "string"
+      -
+        label: "Medium"
+        name: "medium"
+        widget: "string"
+        required: false
+      -
+        label: "Linkedin"
+        name: "linkedin"
+        widget: "string"
+        required: false
+      -
+        label: "Facebook"
+        name: "facebook"
+        widget: "string"
+        required: false
+      -
+        label: "Twitter"
+        name: "twitter"
+        widget: "string"
+        required: false
+      -
+        label: "Avatar (350X350px)"
+        name: "avatar"
+        widget: "image"
+      -
+        label: "Avatar Home (500X305px)"
+        name: "avatarHome"
+        widget: "image"
+        required: false
+      -
+        label: "Order"
+        name: "weight"
+        widget: "number"
+      -
+        label: "Type"
+        name: "type"
+        widget: "hidden"
+        required: false
+      -
+        label: "Role"
+        name: "role"
+        widget: "hidden"
+        required: false
+      -
+        label: "Body"
+        name: "body"
+        widget: "markdown"
