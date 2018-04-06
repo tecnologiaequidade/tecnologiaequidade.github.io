@@ -4,7 +4,7 @@
 			<h2>{{ i18n "projects" | title }}</h2>
 		</a>
 		<div class="projects-wrap">
-			{{ range where .Data.Pages.ByWeight "Section" "projetos" }}
+			{{ range first 2 (where .Data.Pages.ByWeight "Section" "projetos") }}
 				<section class="project-box box">
 					<div class="project-box__content">
 						<h3>{{ .Title }}</h3>
