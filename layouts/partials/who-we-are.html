@@ -2,7 +2,8 @@
 	<div class="content">
 		<h2>{{ i18n "whoWeAre" | title }}</h2>
 		<section class="who-we-are__persons">
-			{{ range where .Site.Pages ".Params.role" "team" }}
+			{{ range where .Site.Pages.ByWeight ".Params.role" "team" }}
+
 				<div class="who-we-are__person">
 					<div class="who-we-are__avatar">
 						<img src="{{ .Params.avatar }}" alt="{{ .Title }}">
