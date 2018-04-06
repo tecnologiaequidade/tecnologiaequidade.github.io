@@ -160,8 +160,6 @@ $animated-max-height: 50em;
 	}
 }
 
-
-
 .project-box+ .box .project-box__content {
 	position: relative;
 
@@ -193,9 +191,11 @@ $animated-max-height: 50em;
 }
 
 .all-projects {
-	text-align: center;
 	margin-top: $line-height * 1rem;
+
+	text-align: center;
 }
+
 
 // what-we-do section
 .what-we-do {
