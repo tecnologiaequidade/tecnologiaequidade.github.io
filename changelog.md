@@ -4,6 +4,8 @@ This project follows [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [1.0.0][] - 2018-04-06
+
 ### Added
 
 - `.editorconfig`
@@ -47,3 +49,7 @@ Initial commit
 
 - `README.md`
 - `standardes.md`
+
+
+[Unreleased]: https://github.com/tecnologiaequidade/tecnologiaequidade.github.io/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/tecnologiaequidade/tecnologiaequidade.github.io/tree/v1.0.0
