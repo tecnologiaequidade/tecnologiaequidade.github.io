@@ -157,6 +157,16 @@ collections:
         name: "weight"
         widget: "number"
       -
+        label: "Type"
+        name: "type"
+        widget: "hidden"
+        required: false
+      -
+        label: "Role"
+        name: "role"
+        widget: "hidden"
+        required: false
+      -
         label: "Body"
         name: "body"
         widget: "markdown"
