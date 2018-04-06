@@ -1,0 +1,66 @@
+.not-found-header {
+	min-height: 40vh;
+
+	color: palette('blue', 'pool');
+
+	background-color: palette('blue', 'dark');
+}
+
+.not-found {
+	background-color: palette('blue', 'pool');
+}
+
+.not-found-wrap {
+	@media screen and (min-width: breakpoint('tablet')) {
+		@include inline-block-wrapper;
+
+		margin-right: $gutter / -2;
+		margin-left: $gutter / -2;
+	}
+}
+
+.not-found-text {
+	@media screen and (min-width: breakpoint('tablet')) {
+		@include inline-block-item($align: 'top', $font-size: 1rem);
+
+		width: 50%;
+
+		padding-right: $gutter / 2;
+		padding-left: $gutter / 2;
+		margin: 0;
+
+		vertical-align: top;
+	}
+
+	& p {
+		font-size: ms(1);
+	}
+}
+
+.not-found-img {
+	@media screen and (min-width: breakpoint('tablet')) {
+		@include inline-block-item($align: 'top', $font-size: 1rem);
+
+		width: 50%;
+
+		vertical-align: top;
+	}
+}
+
+.not-found__link {
+	@include image-replacement;
+
+
+	background-image: image('illustration3.png');
+	background-position: center;
+}
+
+.not-found__link a {
+	display: block;
+
+	height: 100%;
+}
+
+.return__nav-link {
+	margin-top: $line-height * 1em;
+}

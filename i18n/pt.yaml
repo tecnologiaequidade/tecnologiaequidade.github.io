@@ -6,15 +6,18 @@
 - id: email
   translation: "E-mail"
 
+
 #header
 - id: headerSubtitle
   translation: "O Instituto Tecnologia e Equidade é uma organização sem fins lucrativos que desenvolve pesquisas e projetos experimentais que contribuem para alcançar a equidade com o uso ético da tecnologia."
 
 #notFoundPage
-- id: notFound
-  translation: "Página não encontrada"
+- id: 404Title
+  translation: "Erro 404"
+- id: 404Text
+  translation: "Essa página não foi encontrada"
 - id: returnToHome
-  translation: "Retornar para home"
+  translation: "Retornar para página inicial."
 
 #projects
 - id: projects

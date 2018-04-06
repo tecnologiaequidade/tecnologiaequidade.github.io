@@ -1,12 +1,37 @@
 {{ partial "header.html" . }}
-<article role="main" id="conteudo">
-	<h1>{{ i18n "notFound" | title }}</h1>
 
-	<p>
-		<a href="/">{{ i18n "returnToHome" }}?</a>
-	</p>
+<section class="not-found-header">
+	<div class="content">
+		<div class="logo-light">
+			<a href="/">
+				{{ .Site.Title }}
+			</a>
+		</div>
+	</div>
+</section>
+
+<article class="not-found">
+	<div class="content">
+		<h2>{{ i18n "404Title" | title }}</h2>
+		<div class="not-found-wrap">
+			<div class="not-found-text">
+				<p>{{ i18n "404Text" | title }}</p>
+
+				<a href="/">{{ i18n "returnToHome" }}</a>
+
+
+				<div class="return__nav-link">
+					<a class="next-link next-link__arrow-left-white" href="/">{{ i18n "returnToHome" }}</a>
+				</div>
+
+			</div>
+			<!-- <div class="not-found-img">
+				<div class="not-found__link">
+					<a href="/">{{ i18n "returnToHome" }}</a>
+				</div>
+			</div> -->
+		</div>
+	</div>
 </article>
-</div>
-</body>
 
-</html>
+{{ partial "footer.html" . }}
