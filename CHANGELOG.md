@@ -17,6 +17,7 @@ This project follows [Semantic Versioning](http://semver.org/).
 
 - Counselor avatar crop on narrow screens
 - Possible empty manifest download links
+- Untranslated markdown footnote return link
 
 ## [1.0.0][] - 2018-04-06
 

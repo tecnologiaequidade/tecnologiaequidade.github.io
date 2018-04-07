@@ -13,6 +13,8 @@ stepAnalysis: true
 templateMetrics: true
 pluralizeListTitles: false
 
+FootnoteReturnLinkContents: "↩"
+
 taxonomies:
   role: "role"
 
