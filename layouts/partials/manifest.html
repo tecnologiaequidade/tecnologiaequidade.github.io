@@ -5,12 +5,15 @@
 			{{ .Content }}
 
 			{{ if or .Params.pdf .Params.doc }}
-
-			<div class="manifest__download">
-				<p>{{ .Params.callToDownload }}</p>
-				<a download href="{{ .Params.pdf }}" class="download-link">PDF</a>
-				<a download href="{{ .Params.doc }}" class="download-link">DOC</a>
-			</div>
+				<div class="manifest__download">
+					<p>{{ .Params.callToDownload }}</p>
+					{{ with .Params.pdf }}
+						<a download href="{{ . }}" class="download-link">PDF</a>
+					{{ end }}
+					{{ with .Params.doc }}
+						<a download href="{{ . }}" class="download-link">DOC</a>
+					{{ end }}
+				</div>
 			{{ end }}
 		</div>
 	</article>

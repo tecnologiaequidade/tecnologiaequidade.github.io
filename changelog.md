@@ -8,6 +8,10 @@ This project follows [Semantic Versioning](http://semver.org/).
 
 - Missing Google Analytics code
 
+### Fixed
+
+- possible empty manifest download links
+
 ## [1.0.0][] - 2018-04-06
 
 ### Added
