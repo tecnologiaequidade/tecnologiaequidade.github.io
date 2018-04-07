@@ -1,12 +1,14 @@
 {{ partial "header.html" . }}
 <article role="main">
+	{{ with .Params.titleImage }}
 	<style>
 		.title-background {
-			background-image: url({{ .Params.titleImage }});
+			background-image: url("{{ . }}");
 			background-position: center;
 			background-repeat: repeat;
 		}
 	</style>
+	{{ end }}
 
 	<section class="projects-greetings {{ if .Params.titleImage }}title-background{{ end }}">
 		<div class="content projects-greetings__content">
