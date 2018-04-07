@@ -1,6 +1,7 @@
 {{ partial "header.html" . }}
 
-<section class="not-found-header">
+<article class="not-found">
+	<header class="not-found-header">
 	<div class="content">
 		<div class="logo-light">
 			<a href="/">
@@ -8,10 +9,9 @@
 			</a>
 		</div>
 	</div>
-</section>
+	</header>
 
-<article class="not-found">
-	<div class="content">
+	<section class="content">
 		<h2>{{ i18n "404Title" | title }}</h2>
 		<div class="not-found-wrap">
 			<div class="not-found-text">
@@ -32,6 +32,7 @@
 			</div> -->
 		</div>
 	</div>
+	</section>
 </article>
 
 {{ partial "footer.html" . }}
