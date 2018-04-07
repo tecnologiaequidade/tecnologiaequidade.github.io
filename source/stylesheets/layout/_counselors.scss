@@ -1,0 +1,247 @@
+// counselors section
+
+$avatar-width: 300px;
+$avatar-height: 216px;
+
+.counselors {
+	color: palette('white');
+
+	background-color: palette('blue', 'pool');
+}
+
+.counselors-wrap {
+	position: relative;
+
+	margin: auto;
+
+	background-image: image('ite-icon.png');
+	background-position: center;
+
+	@media screen and (min-width: breakpoint('phablet')) {
+		display: flex;
+
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+.counselors__box {
+	position: relative;
+
+	display: block;
+
+	width: 100%;
+
+	margin: auto;
+
+	overflow: hidden;
+
+	@media screen and (min-width: breakpoint('phablet')) {
+		flex-grow: 0;
+		flex-shrink: 1;
+
+		width: 50%;
+	}
+
+	@media screen and (min-width: breakpoint('tablet')) {
+		width: 33.33%;
+
+		&:nth-child(5) {
+			margin-left: 33.33%;
+
+			:target ~ &,
+			&:target {
+				margin-right: 0;
+				margin-left: 0;
+			}
+		}
+	}
+
+	&:target {
+		width: auto;
+
+		padding-top: $line-height * 2rem;
+		padding-right: $gutter * 1;
+		padding-bottom: $line-height * 2rem;
+		padding-left: $gutter * 1;
+
+		@media screen and (min-width: breakpoint('phablet')) {
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+
+			z-index: layer('default');
+
+			min-height: 100%;
+
+			padding-top: $line-height * 3rem;
+			padding-right: $gutter * 3;
+			padding-bottom: $line-height * 3rem;
+			padding-left: $gutter * 3;
+		}
+	}
+}
+
+.counselors-img {
+	max-width: 100%;
+
+	overflow: hidden;
+
+	border-radius: 0;
+
+	will-change: border-radius;
+	transition-duration: $transition-duration;
+	transition-property: border-radius;
+
+	.counselors__box:target & {
+		width: $avatar-height;
+		height: $avatar-height;
+
+		margin-right: auto;
+		margin-left: auto;
+
+		border-radius: 50%;
+
+		@media screen and (min-width: breakpoint('tablet')) {
+			float: left;
+
+			margin-right: $gutter;
+			margin-bottom: $gutter;
+		}
+	}
+}
+
+.counselors-img img {
+	display: block;
+
+	width: 100%;
+
+	filter: grayscale(0);
+
+	will-change: filter;
+	transition-duration: $transition-duration;
+	transition-property: filter;
+
+	.counselors__box:target & {
+		width: auto;
+		height: 100%;
+		max-width: none;
+
+		margin-left: #{($avatar-width - $avatar-height) / -2};
+
+		filter: grayscale(1);
+	}
+}
+
+.counselors__box > a {
+	position: relative;
+
+	display: block;
+}
+
+.counselors__box:not(:target) > a {
+	overflow: hidden;
+
+	&:hover,
+	&:focus,
+	&:active {
+		&::after {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+
+			background-color: palette('red');
+
+			content: '';
+
+			opacity: 0.8;
+		}
+	}
+}
+
+$counselors-bg: palette('red'), palette('orange', 'dark'), palette('orange', 'base'), palette('esmerald', 'green'), palette('esmerald', 'base'), palette('blue', 'dark'), palette('blue', 'medium'), palette('blue', 'fluorescent');
+
+@for $i from 1 through length($counselors-bg) {
+	.counselors__box:nth-child(#{$i}) {
+		background-color: nth($counselors-bg, $i);
+
+		& > a {
+			&:hover,
+			&:focus,
+			&:active {
+				&::after {
+					background-color: nth($counselors-bg, $i);
+				}
+			}
+		}
+	}
+}
+
+.counselors__box h5 {
+	display: none;
+
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.counselors__box:not(:target) > a:hover h5 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	display: block;
+	z-index: #{layer('default') + 1};
+
+	margin: 0;
+
+	transform: translate(-50%, -50%);
+}
+
+.counselors__box:target h5 {
+	display: block;
+
+	text-align: left;
+}
+
+.counselors__text {
+	max-height: 0;
+
+	overflow: hidden;
+
+	opacity: 0;
+	visibility: hidden;
+
+	will-change: opacity;
+	transition-duration: $transition-duration;
+	transition-property: opacity;
+	transition-timing-function: ease-in;
+
+	@media screen and (min-width: breakpoint('desktop')) {
+		overflow: hidden;
+	}
+
+	.counselors__box:target & {
+		max-height: $animated-max-height;
+
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+.counselors__text .social-link {
+	color: inherit;
+
+	border-color: currentColor;
+}
+
+.counselors__buttons {
+	text-align: center;
+
+	@media screen and (min-width: breakpoint('phablet')) {
+		text-align: left;
+	}
+}

@@ -1,0 +1,165 @@
+// what-we-do section
+
+.what-we-do {
+	margin: auto;
+
+	text-align: center;
+
+	color: palette('white');
+
+	background-color: palette('blue', 'pool');
+}
+
+.what-boxes {
+	@media screen and (min-width: breakpoint('tablet')) {
+		position: relative;
+
+		display: flex;
+
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		margin-right: $gutter / -2;
+		margin-left: $gutter / -2;
+	}
+}
+
+.what-box {
+	position: relative;
+
+	width: 100%;
+	min-height: 10rem;
+
+	margin-bottom: $line-height * 1rem;
+
+	text-align: left;
+
+	@media screen and (min-width: breakpoint('tablet')) {
+		flex-basis: 40%;
+		flex-grow: 1;
+		flex-shrink: 1;
+
+		min-height: 18rem;
+
+		margin-right: $gutter / 2;
+		margin-bottom: $gutter;
+		margin-left: $gutter / 2;
+
+		&:target {
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+
+			z-index: layer('default');
+
+			width: auto;
+			min-height: 100%;
+
+			& h4 {
+				width: 100%;
+
+				font-size: ms(2);
+
+				text-align: center;
+			}
+		}
+	}
+
+	&:nth-child(1) {
+		background-color: palette('red');
+	}
+
+	&:nth-child(2) {
+		background-color: palette('orange', 'dark');
+	}
+
+	&:nth-child(3) {
+		background-color: palette('orange', 'base');
+	}
+
+	&:nth-child(4) {
+		background-color: palette('blue', 'fluorescent');
+	}
+}
+
+.what-box__title {
+	@include link-undercover;
+
+	&::after {
+		@include nav-links;
+
+		position: absolute;
+		right: 1rem;
+		bottom: 1.45rem;
+
+		background-image: image('plus-white.png');
+
+		content: '';
+
+		section:target & {
+			display: none;
+		}
+	}
+}
+
+.what-box__content {
+	padding-top: $line-height * 1rem;
+	padding-right: $gutter / 2;
+	padding-bottom: $line-height * 1rem;
+	padding-left: $gutter / 2;
+
+	@media screen and (min-width: breakpoint('tablet')) {
+		padding-top: $line-height * 1rem;
+		padding-right: $line-height * 1rem;
+		padding-bottom: $line-height * 1rem;
+		padding-left: $line-height * 1rem;
+	}
+
+	.what-box:target & {
+		@media screen and (min-width: breakpoint('tablet')) {
+			padding-top: $gutter * 2;
+			padding-right: $gutter * 3;
+			padding-bottom: $gutter * 2;
+			padding-left: $gutter * 3;
+		}
+	}
+}
+
+.what-box h4 {
+	width: 8em;
+
+	padding: 0;
+	margin: 0;
+
+	font-size: ms(1);
+}
+
+.what-box__text {
+	max-height: 0;
+
+	margin-top: 0;
+
+	overflow: hidden;
+
+	opacity: 0;
+	visibility: hidden;
+
+	will-change: opacity;
+	transition-duration: $transition-duration;
+	transition-property: opacity;
+	transition-timing-function: ease-in;
+
+	@media screen and (min-width: breakpoint('tablet')) {
+		margin-top: $line-height * 1rem;
+		margin-bottom: $line-height * 2rem;
+	}
+
+	.what-box:target & {
+		max-height: $animated-max-height;
+
+		opacity: 1;
+		visibility: visible;
+	}
+}

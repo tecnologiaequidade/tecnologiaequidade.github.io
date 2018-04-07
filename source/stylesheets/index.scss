@@ -3,6 +3,7 @@
 // 2. Vendors
 @import
 '../../node_modules/modularscale-sass/stylesheets/modularscale';
+
 // '../../node_modules/susy/sass/susy',
 // '../../node_modules/susy/sass/plugins/svg-grid',
 // '../../node_modules/include-media/dist/include-media';
@@ -12,7 +13,8 @@
 'abstracts/font-stacks',
 'abstracts/functions',
 'abstracts/variables',
-'abstracts/mixins';
+'abstracts/mixins',
+'abstracts/project-mixins';
 
 // 3. Base stuff
 @import
@@ -31,6 +33,8 @@
 'layout/main',
 'layout/header',
 'layout/footer',
+'layout/what-we-do',
+'layout/counselors',
 'layout/h-feed';
 
 // 5. Components

@@ -1,0 +1,27 @@
+/// project specific mixins
+
+@mixin nav-links {
+	@include image-replacement;
+
+	display: block;
+
+	width: 3.125rem;
+	height: 3.125rem;
+
+	background-position: center center;
+
+	border-width: $stroke;
+	border-style: solid;
+	border-color: currentColor;
+	border-radius: 50%;
+
+	&,
+	&:link,
+	&:visited {
+		color: inherit;
+	}
+
+	&:hover {
+		border-color: palette('gray', 'dark');
+	}
+}

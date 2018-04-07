@@ -2,12 +2,20 @@
 ---------------------------------------------------------------------------- */
 menu,
 nav {
+	display: table;
+
+	margin-right: auto;
+	margin-left: auto;
+
+	border-spacing: $gutter / 4;
 }
 
 menu ul,
 menu ol,
 nav ul,
 nav ol {
+	display: table-row;
+
 	padding: 0;
 	margin: 0;
 
@@ -16,8 +24,12 @@ nav ol {
 
 menu li,
 nav li {
+	display: table-cell;
+
 	padding: 0;
 	margin: 0;
+
+	vertical-align: middle;
 
 	&::before {
 		content: none;
@@ -27,6 +39,8 @@ nav li {
 menu a,
 nav a {
 	display: block;
+
+	overflow: hidden;
 
 	&:link {
 		text-decoration: none;
@@ -55,4 +69,40 @@ nav a {
 }
 
 .pagination__next {
+}
+
+/* inner section
+---------------------------------------------------------------------------- */
+.inner-section-nav li,
+.inner-section-nav a {
+	padding: 0;
+	margin: 0;
+}
+
+.inner-section-nav {
+	display: none;
+
+	section:target & {
+		display: table;
+	}
+}
+
+.inner-section-nav a {
+	@include nav-links;
+}
+
+.inner-section-nav__item--prev a {
+	background-image: image('arrow-left-white.png');
+}
+
+.inner-section-nav__item--parent a {
+	background-image: image('minus-white.png');
+}
+
+.inner-section-nav__item--current a {
+	background-image: image('plus-white.png');
+}
+
+.inner-section-nav__item--next a {
+	background-image: image('arrow-right-white.png');
 }

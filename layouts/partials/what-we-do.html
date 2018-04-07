@@ -1,5 +1,5 @@
-<article class="what-we-do">
-	<div class="content" id="o-que-fazemos">
+<article class="what-we-do" id="o-que-fazemos">
+	<div class="content">
 		<h2>{{ i18n "whatWeDo" | title }}</h2>
 		{{ $firstWeight := 1 }}
 		{{ $lastWeight := len (where .Site.Pages ".Params.role" "whatWeDo") }}
@@ -7,50 +7,52 @@
 			{{ range where .Site.Pages ".Params.role" "whatWeDo" }}
 				{{ $nextWeight := add (int .Params.weight) 1 }}
 				{{ $prevWeight := sub (int .Params.weight) 1 }}
-			<div class="what-box" id="{{ .Params.id }}">
+			<section class="what-box" id="{{ .Params.id }}">
 				<div class="what-box__content">
-					<div class="what-box__title">
+					<a class="what-box__title" href="#{{ .Params.id }}">
 						<h4>{{ .Title }}</h4>
-					</div>
-					<div class="button-plus">
-						<a class="nav-link nav-link--plus--white" href="#{{ .Params.id }}">{{ .Title }}</a>
-					</div>
+					</a>
+
 					<div class="what-box__text">
 						{{ .Content }}
-						<div class="what-box__buttons">
-							{{ range where $.Site.Pages ".Params.role" "whatWeDo" }}
-								{{ if eq .Params.weight $prevWeight }}
-								<a class="next-link next-link__arrow-left-white" href="#{{ .Params.id }}">&lt;</a>
-								{{ end }}
-							{{ end }}
-
-							{{ if eq .Params.weight $firstWeight }}
-								{{ range where $.Site.Pages ".Params.role" "whatWeDo" }}
-									{{ if eq .Params.weight $lastWeight }}
-										<a class="next-link next-link__arrow-left-white" href="#{{ .Params.id }}">&lt;</a>
-									{{ end }}
-								{{ end }}
-							{{ end }}
-
-							<a class="next-link next-link__close" href="#o-que-fazemos">+</a>
-
-							{{ range where $.Site.Pages ".Params.role" "whatWeDo" }}
-								{{ if eq .Params.weight $nextWeight }}
-								<a class="next-link next-link__arrow-right-white" href="#{{ .Params.id }}">&gt;</a>
-								{{ end }}
-							{{ end }}
-
-							{{ if eq .Params.weight $lastWeight }}
-								{{ range where $.Site.Pages ".Params.role" "whatWeDo" }}
-									{{ if eq .Params.weight $firstWeight }}
-										<a class="next-link next-link__arrow-right-white" href="#{{ .Params.id }}">&gt;</a>
-									{{ end }}
-								{{ end }}
-							{{ end }}
-						</div>
 					</div>
+					{{ if gt $lastWeight 1 }}
+						<nav class="what-box__buttons inner-section-nav">
+							<ul>
+								{{ range where $.Site.Pages ".Params.role" "whatWeDo" }}
+									{{ if eq .Params.weight $prevWeight }}
+									<li class="inner-section-nav__item--prev"><a href="#{{ .Params.id }}">{{ .Title }}</a></li>
+									{{ end }}
+								{{ end }}
+
+								{{ if eq .Params.weight $firstWeight }}
+									{{ range where $.Site.Pages ".Params.role" "whatWeDo" }}
+										{{ if eq .Params.weight $lastWeight }}
+											<li class="inner-section-nav__item--prev"><a href="#{{ .Params.id }}">{{ .Title }}</a></li>
+										{{ end }}
+									{{ end }}
+								{{ end }}
+
+								<li class="inner-section-nav__item--parent"><a href="#o-que-fazemos">{{ i18n "whatWeDo" }}</a></li>
+
+								{{ range where $.Site.Pages ".Params.role" "whatWeDo" }}
+									{{ if eq .Params.weight $nextWeight }}
+									<li class="inner-section-nav__item--next"><a href="#{{ .Params.id }}">{{ .Title }}</a></li>
+									{{ end }}
+								{{ end }}
+
+								{{ if eq .Params.weight $lastWeight }}
+									{{ range where $.Site.Pages ".Params.role" "whatWeDo" }}
+										{{ if eq .Params.weight $firstWeight }}
+											<li class="inner-section-nav__item--next"><a href="#{{ .Params.id }}">{{ .Title }}</a></li>
+										{{ end }}
+									{{ end }}
+								{{ end }}
+							</ul>
+						</nav>
+					{{ end }}
 				</div>
-			</div>
+			</section>
 			{{ end }}
 		</div>
 	</div>

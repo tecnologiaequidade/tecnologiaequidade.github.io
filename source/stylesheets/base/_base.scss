@@ -462,17 +462,7 @@ a {
 	}
 }
 
-.nav-link--plus--white {
-	background-image: image('plus-white.png');
-	background-position: center center;
 
-	border: solid 1px palette('white');
-	border-radius: 50%;
-
-	&:hover {
-		border: solid 1px palette('blue', 'dark');
-	}
-}
 
 .download-link {
 	display: inline-block;
@@ -573,44 +563,6 @@ a {
 
 .social-link--mail {
 	background-image: image('mail.png');
-	background-position: center center;
-}
-
-.next-link {
-	@include image-replacement;
-
-	display: inline-block;
-
-	width: 3.125rem;
-	height: 3.125rem;
-
-	padding: 0;
-	margin-right: 0.2rem;
-	margin-left: 0;
-
-	text-align: center;
-	text-decoration: none;
-
-	border: solid 1px palette('white');
-	border-radius: 50%;
-
-	&:hover {
-		border: solid 1px palette('white');
-	}
-}
-
-.next-link__arrow-left-white {
-	background-image: image('arrow-left-white.png');
-	background-position: center center;
-}
-
-.next-link__arrow-right-white {
-	background-image: image('arrow-right-white.png');
-	background-position: center center;
-}
-
-.next-link__close {
-	background-image: image('minus-white.png');
 	background-position: center center;
 }
 

@@ -8,9 +8,15 @@ This project follows [Semantic Versioning](http://semver.org/).
 
 - Missing Google Analytics code
 
+### Changed
+
+- Improve accessibility on section inner navigations
+- Improve transitions performance
+
 ### Fixed
 
-- possible empty manifest download links
+- Counselor avatar crop on narrow screens
+- Possible empty manifest download links
 
 ## [1.0.0][] - 2018-04-06
 
