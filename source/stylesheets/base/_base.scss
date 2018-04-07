@@ -467,8 +467,8 @@ a {
 .download-link {
 	display: inline-block;
 
-	width: 3.125rem;
-	height: 3.125rem;
+	width: $button-diameter;
+	height: $button-diameter;
 
 	padding: 0.9375rem 0.625rem;
 	margin-right: 0.5rem;
@@ -500,8 +500,8 @@ a {
 
 	display: inline-block;
 
-	width: 3.125rem;
-	height: 3.125rem;
+	width: $button-diameter;
+	height: $button-diameter;
 
 	padding: 0;
 	margin-right: 0.2rem;
