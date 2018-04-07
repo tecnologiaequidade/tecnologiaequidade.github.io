@@ -7,6 +7,9 @@ This project follows [Semantic Versioning](http://semver.org/).
 ### Added
 
 - Missing Google Analytics code
+- OpenGraph meta tags
+- schema meta tags
+- twitter cards meta tags
 
 ### Changed
 

@@ -21,14 +21,19 @@
 			<!-- Global site tag (gtag.js) - Google Analytics -->
 			<script src="https://www.googletagmanager.com/gtag/js?id={{ . }}" async></script>
 			<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
 
-			gtag('config', '{{ . }}');
+				gtag('config', '{{ . }}');
 			</script>
 		{{ end }}
 	{{ end }}
+
+	{{ template "_internal/opengraph.html" . }}
+	{{ template "_internal/schema.html" . }}
+	{{ template "_internal/twitter_cards.html" . }}
+
 </head>
 <body>
 <div class="main-container">
