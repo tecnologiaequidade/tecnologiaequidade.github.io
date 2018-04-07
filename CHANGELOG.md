@@ -12,6 +12,7 @@ This project follows [Semantic Versioning](http://semver.org/).
 
 - Improve accessibility on section inner navigations
 - Improve transitions performance
+- Make media clipping a data file
 
 ### Fixed
 
