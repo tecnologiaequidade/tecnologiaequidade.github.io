@@ -40,7 +40,7 @@
 
 	color: palette('blue', 'dark');
 
-	background-color: palette('esmerald', 'base');
+	background-color: palette('emerald', 'base');
 }
 
 .newsletter-text {
@@ -156,7 +156,7 @@
 	color: palette('blue', 'pool');
 
 	.project-box + & {
-		color: palette('esmerald', 'base');
+		color: palette('emerald', 'base');
 	}
 
 	@media screen and (min-width: breakpoint('wide')) {
@@ -237,11 +237,11 @@
 
 	padding: 1rem;
 
-	color: palette('esmerald', 'base');
+	color: palette('emerald', 'base');
 
 	background: none;
 
-	border: solid 1px palette('esmerald', 'base');
+	border: solid 1px palette('emerald', 'base');
 }
 
 .all-projects {
@@ -254,7 +254,7 @@
 .purpose {
 	margin: auto;
 
-	background-color: palette('esmerald', 'base');
+	background-color: palette('emerald', 'base');
 }
 
 .purpose h4 {
@@ -345,7 +345,7 @@
 	}
 
 	&:nth-child(3) {
-		border-top-color: palette('esmerald', 'fluorescent');
+		border-top-color: palette('emerald', 'fluorescent');
 	}
 
 	&:nth-child(4) {
@@ -417,7 +417,7 @@
 		filter: contrast(210%);
 
 		.who-we-are__person:nth-child(2) & {
-			background-color: palette('esmerald', 'fluorescent');
+			background-color: palette('emerald', 'fluorescent');
 		}
 
 		.who-we-are__person:nth-child(3) & {
@@ -467,8 +467,8 @@
 	}
 }
 
-// midia section
-.midia {
+// media section
+.media {
 	margin-right: auto;
 	margin-left: auto;
 
@@ -476,10 +476,10 @@
 
 	color: palette('white');
 
-	background-color: palette('esmerald', 'base');
+	background-color: palette('emerald', 'base');
 }
 
-.midia-wrap {
+.media-wrap {
 	@media screen and (min-width: breakpoint('tablet')) {
 		@include inline-block-wrapper;
 
@@ -528,7 +528,7 @@
 	}
 }
 
-.midia-wrap a {
+.media-wrap a {
 	display: block;
 
 	height: 12.5rem;

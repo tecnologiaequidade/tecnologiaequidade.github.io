@@ -163,7 +163,7 @@ $avatar-height: 216px;
 	}
 }
 
-$counselors-bg: palette('red'), palette('orange', 'dark'), palette('orange', 'base'), palette('esmerald', 'green'), palette('esmerald', 'base'), palette('blue', 'dark'), palette('blue', 'medium'), palette('blue', 'fluorescent');
+$counselors-bg: palette('red'), palette('orange', 'dark'), palette('orange', 'base'), palette('emerald', 'green'), palette('emerald', 'base'), palette('blue', 'dark'), palette('blue', 'medium'), palette('blue', 'fluorescent');
 
 @for $i from 1 through length($counselors-bg) {
 	.counselors__box:nth-child(#{$i}) {
