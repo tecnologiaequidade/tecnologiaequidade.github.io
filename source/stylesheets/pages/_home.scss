@@ -73,6 +73,47 @@
 	background-color: palette('blue', 'dark');
 }
 
+.projects .content {
+	position: relative;
+}
+
+.projects h2 a {
+	@include link-undercover;
+
+	&::after {
+		@include nav-links;
+
+		position: absolute;
+		bottom: $line-height * 1rem;
+		left: 50%;
+
+		z-index: layer('default');
+
+		font-size: $line-height * 1rem;
+
+		text-align: center;
+		text-indent: 0;
+
+		background-image: none;
+
+		border-color: palette('orange', 'dark');
+
+		content: '...';
+
+		transform: translateX(-50%);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: palette('white');
+
+		&::after {
+			border-color: currentColor;
+		}
+	}
+}
+
 .projects-wrap {
 	@media screen and (min-width: breakpoint('tablet')) {
 		@include inline-block-wrapper;
@@ -92,10 +133,12 @@
 		padding-left: $gutter / 2;
 		margin: 0;
 
-		vertical-align: top;
-
 		&:only-child {
 			width: 100%;
+		}
+
+		.project-box + & {
+			width: 33.33%;
 		}
 	}
 }
@@ -112,18 +155,47 @@
 
 	color: palette('blue', 'pool');
 
+	.project-box + & {
+		color: palette('esmerald', 'base');
+	}
+
 	@media screen and (min-width: breakpoint('wide')) {
 		max-width: 12em;
 	}
 }
 
-.project-box + .project-box {
-	@media screen and (min-width: breakpoint('tablet')) {
-		@include inline-block-item($align: 'top', $font-size: 1rem);
+.project-box h3 a {
+	@include link-undercover;
 
-		width: 33.33%;
+	&::after {
+		@include nav-links;
 
-		vertical-align: top;
+		position: absolute;
+		bottom: 1rem;
+		left: 1rem;
+
+		z-index: layer('default');
+
+		background-image: image('plus-orange.png');
+
+		border-color: palette('orange', 'dark');
+
+		content: '';
+
+		.project-box + & {
+			right: 1rem;
+			bottom: 1rem;
+		}
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: palette('white');
+
+		&::after {
+			border-color: currentColor;
+		}
 	}
 }
 
@@ -158,7 +230,7 @@
 	}
 }
 
-.project-box+ .box .project-box__content {
+.project-box + .box .project-box__content {
 	position: relative;
 
 	min-height: 15em;
@@ -170,21 +242,6 @@
 	background: none;
 
 	border: solid 1px palette('esmerald', 'base');
-}
-
-.project-box + .box .project-box__content h3 {
-	color: palette('esmerald', 'base');
-}
-
-.project-box .navlink-project {
-	position: absolute;
-	bottom: 1rem;
-}
-
-.project-box + .box .project-box__content .navlink-project {
-	position: absolute;
-	right: 1rem;
-	bottom: 1rem;
 }
 
 .all-projects {

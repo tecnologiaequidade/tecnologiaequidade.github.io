@@ -1,26 +1,25 @@
 <article class="projects">
 	<div class="content">
-		<h2>{{ i18n "projects" | title }}</h2>
+		<h2>
+			<a href="/projetos">
+				{{ i18n "projects" | title }}
+			</a>
+		</h2>
 		<div class="projects-wrap">
 			{{ range first 2 (where .Data.Pages.ByDate "Section" "projetos") }}
 				<section class="project-box box">
 					<div class="project-box__content">
-						<a href="/projetos/{{ .Params.Slug }}"><h3>{{ if .Params.shortTitle }} {{ .Params.shortTitle }} {{ else }} {{ .Title }} {{ end }}</h3></a>
-						<div class="navlink-project">
-							<a class="nav-link nav-link--plus--orange" href="/projetos/{{ .Params.Slug }}">
-								{{ .Title }}
+						<h3>
+							<a href="/projetos/{{ .Params.Slug }}">
+								{{ if .Params.shortTitle }} {{ .Params.shortTitle }} {{ else }} {{ .Title }} {{ end }}
 							</a>
-						</div>
+						</h3>
 					</div>
 					<div class="project-box__summary">
 						<p>{{ .Params.Summary }}</p>
 					</div>
 				</section>
 			{{ end }}
-
-		</div>
-		<div class="all-projects">
-			<a class="round-button" href="/projetos">...</a>
 		</div>
 	</div>
 </article>
