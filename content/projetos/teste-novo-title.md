@@ -13,7 +13,7 @@ relatedProjects:
   - {}
 authors:
   - author: thiago-rondon
-weight: 2
+weight: 3
 ---
 Escrevendo aqui a descrição do projeto Teste novo. Vamos adicionando texto para aumentar a descrição.
 
