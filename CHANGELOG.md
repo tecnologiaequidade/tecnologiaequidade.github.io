@@ -11,6 +11,7 @@ This project follows [Semantic Versioning](http://semver.org/).
 - OpenGraph meta tags
 - schema meta tags
 - twitter cards meta tags
+- Media clipping edition on CMS
 
 ### Changed
 

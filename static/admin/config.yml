@@ -168,3 +168,32 @@ collections:
         label: "Body"
         name: "body"
         widget: "markdown"
+  -
+    label: "Media clipping"
+    name: "media"
+    files: "data/mediaClipping.yml"
+    fields:
+      -
+        label: "Media"
+        name: "list"
+        widget: "list"
+        required: true
+        fields:
+          -
+            label: "Name"
+            name: "name"
+            widget: "string"
+          -
+            label: "Slug"
+            name: "slug"
+            widget: "string"
+            pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', "Letters, numbers and hyphens. No special characters."]
+          -
+            label: "Logotype"
+            name: "logotype"
+            widget: "image"
+          -
+            label: "Link"
+            name: "link"
+            widget: "string"
+            pattern: ['https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)', "Valid URL"]
