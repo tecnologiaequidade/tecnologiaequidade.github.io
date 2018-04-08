@@ -25,7 +25,7 @@ collections:
         label: "Short Title"
         name: "shortTitle"
         widget: "string"
-        tagname: "h1"
+        tagname: "h2"
         required: false
         pattern: ['.{0,15}', "Must have between 0 and 15 characters"]
       -
@@ -38,6 +38,7 @@ collections:
         label: "Slug"
         name: "slug"
         widget: "string"
+        pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', "Letters, numbers and hyphens. No special characters."]
       -
         label: "Subtitle"
         name: "subtitle"
@@ -48,7 +49,6 @@ collections:
         name: "titleImage"
         widget: "image"
         required: false
-        tagname: ""
       -
         label: "Dark Text"
         name: "darkText"
@@ -123,6 +123,7 @@ collections:
         label: "Slug"
         name: "slug"
         widget: "string"
+        pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', "Letters, numbers and hyphens. No special characters."]
       -
         label: "Medium"
         name: "medium"
@@ -144,14 +145,9 @@ collections:
         widget: "string"
         required: false
       -
-        label: "Avatar (350X350px)"
+        label: "Avatar (350×350px)"
         name: "avatar"
         widget: "image"
-      -
-        label: "Avatar Home (500X305px)"
-        name: "avatarHome"
-        widget: "image"
-        required: false
       -
         label: "Order"
         name: "weight"
@@ -160,12 +156,14 @@ collections:
         label: "Type"
         name: "type"
         widget: "hidden"
-        required: false
+        default: "person"
+        required: true
       -
         label: "Role"
         name: "role"
         widget: "hidden"
-        required: false
+        default: "team"
+        required: true
       -
         label: "Body"
         name: "body"
