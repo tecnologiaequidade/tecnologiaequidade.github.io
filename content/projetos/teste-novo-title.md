@@ -6,7 +6,7 @@ slug: teste-novo
 subtitle: Testando novamente - subtitle
 titleImage: /uploads/politicians-2831235_640.png
 darkText: false
-draft: false
+draft: true
 summary: Pequeno resumo do teste novo - summary
 relatedProjects:
   - project: pegabot
