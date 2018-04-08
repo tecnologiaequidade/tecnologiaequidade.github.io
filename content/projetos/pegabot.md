@@ -6,7 +6,7 @@ slug: pegabot
 subtitle: ''
 titleImage: ''
 darkText: false
-draft: true
+draft: false
 summary: >-
   É uma iniciativa com o foco de oferecer um serviço qualificado e automatizado
   para verificar a probabilidade dos perfis em redes sociais serem automatizados
