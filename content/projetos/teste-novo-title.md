@@ -1,5 +1,5 @@
 ---
-date: '2018-08-04T02:48:00-03:00'
+date: '2018-05-04T02:48:00-03:00'
 shortTitle: Teste novo - short title
 title: Teste novo - title
 slug: teste-novo
