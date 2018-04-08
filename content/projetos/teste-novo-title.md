@@ -1,12 +1,12 @@
 ---
-date: '2018-05-03T02:48:00-03:00'
+date: '2018-08-04T02:48:00-03:00'
 shortTitle: Teste novo - short title
 title: Teste novo - title
 slug: teste-novo
 subtitle: Testando novamente - subtitle
 titleImage: /uploads/politicians-2831235_640.png
 darkText: false
-draft: true
+draft: false
 summary: Pequeno resumo do teste novo - summary
 relatedProjects:
   - project: pegabot
