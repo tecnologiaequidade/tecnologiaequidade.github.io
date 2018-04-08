@@ -7,7 +7,7 @@ medium: www.google.com
 linkedin: www.globo.com
 facebook: ''
 avatar: /uploads/politicians-2831235_640.png
-weight: '3'
+weight: '4'
 type: person
 role: team
 ---
