@@ -6,6 +6,7 @@ This project follows [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- 404 template
 - Missing Google Analytics code
 - OpenGraph meta tags
 - schema meta tags

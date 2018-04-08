@@ -2,36 +2,23 @@
 
 <article class="not-found">
 	<header class="not-found-header">
-	<div class="content">
-		<div class="logo-light">
-			<a href="/">
-				{{ .Site.Title }}
-			</a>
+		<div class="content">
+			<div class="logo-light">
+				<a href="/">
+					{{ .Site.Title }}
+				</a>
+			</div>
 		</div>
-	</div>
 	</header>
 
 	<section class="content">
 		<h2>{{ i18n "404Title" | title }}</h2>
 		<div class="not-found-wrap">
 			<div class="not-found-text">
-				<p>{{ i18n "404Text" | title }}</p>
-
-				<a href="/">{{ i18n "returnToHome" }}</a>
-
-
-				<div class="return__nav-link">
-					<a class="next-link next-link__arrow-left-white" href="/">{{ i18n "returnToHome" }}</a>
-				</div>
-
+				<p>{{ i18n "404Text" }}. <a href="/">{{ i18n "returnToHome" }}</a>
+				</p>
 			</div>
-			<!-- <div class="not-found-img">
-				<div class="not-found__link">
-					<a href="/">{{ i18n "returnToHome" }}</a>
-				</div>
-			</div> -->
 		</div>
-	</div>
 	</section>
 </article>
 

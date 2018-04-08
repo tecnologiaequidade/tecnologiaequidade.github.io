@@ -13,11 +13,11 @@
 
 #notFoundPage
 - id: 404Title
-  translation: "Erro 404"
+  translation: "Não encontrado"
 - id: 404Text
-  translation: "Essa página não foi encontrada"
+  translation: "Essa página não foi encontrada."
 - id: returnToHome
-  translation: "Retornar para página inicial."
+  translation: "Retornar para página inicial?"
 
 #projects
 - id: projects
