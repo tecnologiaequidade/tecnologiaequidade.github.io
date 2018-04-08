@@ -5,7 +5,7 @@ title: Influência de Robôs e Fake News nas Eleições Brasileiras de 2018
 slug: fakenews
 subtitle: ''
 titleImage: /uploads/bg-fakenews.jpg
-darkText: true
+darkText: false
 draft: false
 summary: >-
   Projeto de pesquisa e ação para entender o possível impacto dos perfis não
