@@ -1,9 +1,9 @@
 ---
-date: 2018-03-05T17:48:47.000Z
+date: '2018-04-03T02:48:47-03:00'
 shortTitle: FakeNews
 title: Influência de Robôs e Fake News nas Eleições Brasileiras de 2018
 slug: fakenews
-subtitle: ''
+subtitle: fakenews subtitle
 titleImage: /uploads/bg-fakenews.jpg
 darkText: false
 draft: false
