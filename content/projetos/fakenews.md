@@ -1,15 +1,20 @@
 ---
-date: 2018-03-05T14:48:47-03:00
-shortTitle: "FakeNews"
-title: "Influência de Robôs e Fake News nas Eleições Brasileiras de 2018"
-slug: "fakenews"
-subtitle: ""
-titleImage: "/uploads/bg-fakenews.jpg"
+date: 2018-03-05T17:48:47.000Z
+shortTitle: FakeNews
+title: Influência de Robôs e Fake News nas Eleições Brasileiras de 2018
+slug: fakenews
+subtitle: ''
+titleImage: /uploads/bg-fakenews.jpg
 darkText: false
-draft: false
-summary: "Projeto de pesquisa e ação para entender o possível impacto dos perfis não humanos em redes sociais nas eleições de 2018. Além disso, a iniciativa busca incidir positivamente nesse cenário, incluindo recomendações para o uso ético dessa tecnologia e a criação de uma plataforma de identificação e denúncias de robôs."
+draft: true
+summary: >-
+  Projeto de pesquisa e ação para entender o possível impacto dos perfis não
+  humanos em redes sociais nas eleições de 2018. Além disso, a iniciativa busca
+  incidir positivamente nesse cenário, incluindo recomendações para o uso ético
+  dessa tecnologia e a criação de uma plataforma de identificação e denúncias de
+  robôs.
 relatedProjects:
-  - project: "pegabot"
+  - project: pegabot
 authors:
   - author: thiago-rondon
   - author: marcio-pinto
