@@ -19,6 +19,7 @@ This project follows [Semantic Versioning](http://semver.org/).
 
 ### Fixed
 
+- Root element background color
 - Counselor avatar crop on narrow screens
 - Misused sectioning elements
 - Possible empty manifest download links
