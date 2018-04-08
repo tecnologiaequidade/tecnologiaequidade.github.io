@@ -23,8 +23,6 @@ Vamos colocar um texto "code block"
 
 > Agora vamos pegar um texto de outra pessoa bla bla bla bla bla.
 
-
-
 `agora chegou a hora de adicionar code`
 
 ![img 2](/uploads/img-fake-news.jpg)
