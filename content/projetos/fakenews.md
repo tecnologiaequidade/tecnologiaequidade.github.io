@@ -6,7 +6,7 @@ slug: fakenews
 subtitle: ''
 titleImage: /uploads/bg-fakenews.jpg
 darkText: true
-draft: true
+draft: false
 summary: >-
   Projeto de pesquisa e ação para entender o possível impacto dos perfis não
   humanos em redes sociais nas eleições de 2018. Além disso, a iniciativa busca
