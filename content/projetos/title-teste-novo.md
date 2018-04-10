@@ -12,6 +12,7 @@ relatedProjects:
   - project: pegabot
 authors:
   - author: thiago-rondon
+  - author: novo-teste
 weight: 1
 ---
 Body 
