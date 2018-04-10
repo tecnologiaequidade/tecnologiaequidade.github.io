@@ -398,34 +398,9 @@
 
 	height: 0;
 
-	padding-bottom: #{(100 / 125 * 100%)};
+	padding-bottom: 50%;
 
 	overflow: hidden;
-
-	&::after {
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-
-		z-index: layer('default');
-
-		background-color: palette('orange', 'dark');
-
-		content: '';
-
-		opacity: 0.5;
-		filter: contrast(210%);
-
-		.who-we-are__person:nth-child(2) & {
-			background-color: palette('emerald', 'fluorescent');
-		}
-
-		.who-we-are__person:nth-child(3) & {
-			background-color: palette('blue', 'pool');
-		}
-	}
 }
 
 .who-we-are img {
@@ -466,5 +441,7 @@
 
 	@media screen and (min-width: breakpoint('desktop')) {
 		padding: 1rem 2rem 1rem 0;
+
+		font-size: ms(-1);
 	}
 }
