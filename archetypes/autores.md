@@ -8,6 +8,7 @@ linkedin:
 facebook:
 twitter:
 avatar:
+avatarDirector:
 weight:
 type:
 role:
