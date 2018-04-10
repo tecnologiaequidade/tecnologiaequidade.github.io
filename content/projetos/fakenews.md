@@ -1,6 +1,6 @@
 ---
 date: '2018-04-03T02:48:47-03:00'
-shortTitle: FakeNews
+shortTitle: Fake News
 title: Influência de Robôs e Fake News nas Eleições Brasileiras de 2018
 slug: fakenews
 subtitle: ''
