@@ -4,6 +4,10 @@ This project follows [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fixed
+
+- Fix date format on CMS config
+
 ## [1.1.0][] - 2018-04-08
 
 ### Added
