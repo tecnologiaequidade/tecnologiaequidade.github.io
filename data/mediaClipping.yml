@@ -18,3 +18,7 @@ list:
     logotype: /uploads/huffpost.png
     name: Huffpost
     slug: huffpost
+  - link: 'https://www.google.com/'
+    logotype: /uploads/politicians-2831235_640.png
+    name: Teste google
+    slug: test-google
