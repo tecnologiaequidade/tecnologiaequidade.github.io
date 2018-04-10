@@ -1,5 +1,5 @@
 ---
-date: '2018-10-04T11:49:14-03:00'
+date: '2018-09-04T11:49:14-03:00'
 shortTitle: teste abc
 title: teste abc
 slug: teste-abc
