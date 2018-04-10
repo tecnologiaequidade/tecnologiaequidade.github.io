@@ -132,7 +132,7 @@ Usually I measure the main pages of a project here.
 - [ ] Correct language set in HTML tag
 - [ ] Charset is set
 - [ ] HTML is valid
-- [ ] 404-page is available
+- [X] 404-page is available
 - [ ] A special print style sheet is in place
 
 ### Server
