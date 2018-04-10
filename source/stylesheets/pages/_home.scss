@@ -230,7 +230,7 @@
 	}
 }
 
-.project-box + .box .project-box__content {
+.project-box + .project-box .project-box__content {
 	position: relative;
 
 	min-height: 15em;
@@ -242,6 +242,10 @@
 	background: none;
 
 	border: solid 1px palette('emerald', 'base');
+}
+
+.project-box + .project-box  .project-box__summary {
+	margin-bottom: $line-height * 3rem;
 }
 
 .all-projects {
