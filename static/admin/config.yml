@@ -160,12 +160,10 @@ collections:
         label: "Type"
         name: "type"
         widget: "hidden"
-        default: "person"
       -
         label: "Role"
         name: "role"
         widget: "hidden"
-        default: "team"
       -
         label: "Body"
         name: "body"
