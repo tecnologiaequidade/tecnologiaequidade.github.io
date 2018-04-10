@@ -1,8 +1,8 @@
 list:
   - link: 'https://istoe.com.br/era-dos-robos-chega-as-eleicoes'
     logotype: /uploads/istoe.png
-    name: Isto é
-    slug: istoeh
+    name: Istoé
+    slug: istoe
   - link: >-
       https://g1.globo.com/economia/tecnologia/noticia/o-que-e-um-robo-na-web-e-como-ele-pode-influenciar-o-debate-nas-redes-especialistas-explicam.ghtml
     logotype: /uploads/g1.png
