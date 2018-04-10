@@ -222,6 +222,8 @@ $counselors-bg: palette('red'), palette('orange', 'dark'), palette('orange', 'ba
 
 	@media screen and (min-width: breakpoint('desktop')) {
 		overflow: hidden;
+
+		font-size: ms(-1);
 	}
 
 	.counselors__box:target & {

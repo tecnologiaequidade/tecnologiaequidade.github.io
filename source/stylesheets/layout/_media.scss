@@ -60,7 +60,10 @@
 
 	height: 12.5rem;
 
+	color: palette('blue', 'dark');
+
 	border: 1px solid palette('white');
+
 
 	@include on-event {
 		border-color: currentColor;

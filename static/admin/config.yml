@@ -20,7 +20,7 @@ collections:
         label: "Date"
         name: "date"
         widget: "datetime"
-        format: "YYYY-DD-MMThh:mm:ssZ" # date sample 2018-03-06T14:48:47-03:00
+        format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
       -
         label: "Short Title"
         name: "shortTitle"
@@ -113,7 +113,7 @@ collections:
         name: "date"
         widget: "datetime"
         required: false
-        format: "YYYY-DD-MMThh:mm:ssZ" # date sample 2018-03-06T14:48:47-03:00
+        format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
       -
         label: "Draft"
         name: "draft"
@@ -149,6 +149,10 @@ collections:
         name: "avatar"
         widget: "image"
       -
+        label: "Director's Avatar"
+        name: "AvatarDirector"
+        widget: "hidden"
+      -
         label: "Order"
         name: "weight"
         widget: "number"
@@ -157,13 +161,11 @@ collections:
         name: "type"
         widget: "hidden"
         default: "person"
-        required: true
       -
         label: "Role"
         name: "role"
         widget: "hidden"
         default: "team"
-        required: true
       -
         label: "Body"
         name: "body"

@@ -5,21 +5,19 @@
 		<div class="authors__title">
 			<p>{{ i18n "authors" | title }}</p>
 		</div>
-		<div class="authors__wrap">
-			{{ range .Params.authors }}
-				{{ range where $.Site.Pages "Params.slug" .author }}
-				<div class="authors__box">
-					<div class="authors-image">
-						<img src="{{ .Params.avatar }}" alt="{{ .Title }}">
-					</div>
-					<div class="authors-about">
-						<h4>{{ .Title }}</h4>
-						<p>{{ .Content }}</p>
-					</div>
+		{{ range .Params.authors }}
+			{{ range where $.Site.Pages "Params.slug" .author }}
+			<div class="authors__wrap">
+				<div class="authors-image">
+					<img src="{{ .Params.avatar }}" alt="{{ .Title }}">
 				</div>
-				{{ end }}
+				<div class="authors-about">
+					<h4>{{ .Title }}</h4>
+					{{ .Content }}
+				</div>
+			</div>
 			{{ end }}
-		</div>
+		{{ end }}
 	</div>
 </footer>
 {{ end }}

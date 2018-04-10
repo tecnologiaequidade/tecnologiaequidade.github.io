@@ -8,6 +8,7 @@ linkedin:
 facebook: https://www.facebook.com/kogan.ariel
 twitter: https://twitter.com/arielkogan
 avatar: /uploads/ariel-kogan.png
+avatarDirector: /uploads/director-ariel-kogan.jpg
 weight: 1
 type: person
 role: team

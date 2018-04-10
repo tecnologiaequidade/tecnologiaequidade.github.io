@@ -6,8 +6,8 @@
 			</a>
 		</h2>
 		<div class="projects-wrap">
-			{{ range first 2 (where .Data.Pages.ByDate "Section" "projetos") }}
-				<section class="project-box box">
+			{{ range first 2 (where .Data.Pages.ByDate "Section" "projetos").Reverse }}
+				<section class="project-box">
 					<div class="project-box__content">
 						<h3>
 							<a href="/projetos/{{ .Params.Slug }}">

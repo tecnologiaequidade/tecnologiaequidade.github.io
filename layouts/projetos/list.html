@@ -27,7 +27,7 @@
 		<div class="content">
 			<h2>{{ i18n "projects" | title }}</h2>
 			<ul class="related-projects-wrap">
-				{{ range .Data.Pages.ByDate }}
+				{{ range .Data.Pages.ByDate.Reverse }}
 					<li class="related-projects-box">
 						<div class="related-projects-box-content">
 							<a href="{{ .Params.slug }}"><h4>{{ if .Params.shortTitle }} {{ .Params.shortTitle }} {{ else }} {{ .Title }} {{ end }}</h4></a>
