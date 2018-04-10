@@ -193,7 +193,7 @@ collections:
                 widget: "string"
                 pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', "Letters, numbers and hyphens. No special characters."]
               -
-                label: "Logotype"
+                label: "Logotype (max width: 220px)"
                 name: "logotype"
                 widget: "image"
               -
