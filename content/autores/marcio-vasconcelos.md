@@ -8,6 +8,7 @@ linkedin:
 facebook: https://www.facebook.com/marciovasconcelospinto
 twitter:
 avatar: /uploads/marcio-pinto.png
+avatarDirector: /uploads/director-marcio-vasconcelos.jpg
 weight: 2
 type: person
 role: team
