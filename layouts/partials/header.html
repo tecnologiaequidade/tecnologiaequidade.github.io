@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.Language.Params.locale }}{{ . }}{{ else }}{{ .Site.LanguageCode }}{{ end }}" class="{{ if .IsHome }}home-page {{ end }}{{ $.Scratch.Get "rootClass" }} {{ .Params.rootClass }} {{ if eq (getenv "NODE_ENV") "development" }}grid-debug{{ end }} no-js">
 <head>
+	<meta content="width=device-width,initial-scale=1.0" name="viewport">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<meta charset="utf-8">
 	<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
-
 	<link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
-
-	<meta content="width=device-width,initial-scale=1.0" name="viewport">
-
 	<link rel="stylesheet" href="/assets/stylesheets/index.css" media="all">
+
+	<!-- FAVICON -->
+	<link type="image/png" href="/favicon-16px.png" rel="icon" sizes="16x16">
+	<link type="image/png" href="/favicon-32px.pngg" rel="icon" sizes="32x32">
+	<link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+	<link href="/site.webmanifest" rel="manifest">
+	<link href="/safari-pinned-tab.svg" rel="mask-icon" color="#333564">
+	<meta name="apple-mobile-web-app-title" content="I&amp;T">
+	<meta name="application-name" content="I&amp;T">
+	<meta name="msapplication-TileColor" content="#333564">
+	<meta name="theme-color" content="#333564">
+	<!-- END FAVICON -->
 
 	<title>{{ if not .IsHome }}{{ .Title }} &middot; {{ end }}{{ .Site.Title }}</title>
 
