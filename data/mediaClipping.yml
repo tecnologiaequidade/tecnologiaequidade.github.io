@@ -18,7 +18,3 @@ list:
     logotype: /uploads/huffpost.png
     name: Huffpost
     slug: huffpost
-  - link: www.teste.com.br
-    logotype: /uploads/folha.png
-    name: teste
-    slug: teste
