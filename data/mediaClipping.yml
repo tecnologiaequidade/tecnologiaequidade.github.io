@@ -1,21 +1,20 @@
 list:
-  -
-    name: "Isto é"
-    slug: "istoeh"
-    link: "https://istoe.com.br/era-dos-robos-chega-as-eleicoes"
-    logotype: "/uploads/istoe.png"
-  -
-    name: "G1"
-    slug: "g1"
-    link: "https://g1.globo.com/economia/tecnologia/noticia/o-que-e-um-robo-na-web-e-como-ele-pode-influenciar-o-debate-nas-redes-especialistas-explicam.ghtml"
-    logotype: "/uploads/g1.png"
-  -
-    name: "Folha"
-    slug: "folha"
-    link: "http://www1.folha.uol.com.br/poder/2017/12/1941961-grupos-combaterao-vale-tudo-eleitoral-na-internet.shtml"
-    logotype: "/uploads/folha.png"
-  -
-    name: "Huffpost"
-    slug: "huffpost"
-    link: "http://www.huffpostbrasil.com/2018/01/06/robos-sao-decisivos-para-definir-eleicao-polarizada-argumenta-especialista_a_23310816/"
-    logotype: "/uploads/huffpost.png"
+  - link: 'https://istoe.com.br/era-dos-robos-chega-as-eleicoes'
+    logotype: /uploads/istoe.png
+    name: Istoé
+    slug: istoe
+  - link: >-
+      https://g1.globo.com/economia/tecnologia/noticia/o-que-e-um-robo-na-web-e-como-ele-pode-influenciar-o-debate-nas-redes-especialistas-explicam.ghtml
+    logotype: /uploads/g1.png
+    name: G1
+    slug: g1
+  - link: >-
+      http://www1.folha.uol.com.br/poder/2017/12/1941961-grupos-combaterao-vale-tudo-eleitoral-na-internet.shtml
+    logotype: /uploads/folha.png
+    name: Folha
+    slug: folha
+  - link: >-
+      http://www.huffpostbrasil.com/2018/01/06/robos-sao-decisivos-para-definir-eleicao-polarizada-argumenta-especialista_a_23310816/
+    logotype: /uploads/huffpost.png
+    name: Huffpost
+    slug: huffpost

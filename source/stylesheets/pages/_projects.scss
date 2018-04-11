@@ -165,7 +165,12 @@
 		text-transform: uppercase;
 
 		color: palette('blue', 'pool');
+
+		&:hover {
+			color: palette('blue', 'dark');
+		}
 	}
+
 }
 
 .related-projects .nav-link--plus--orange {
