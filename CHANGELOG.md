@@ -4,6 +4,8 @@ This project follows [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [1.1.1][] - 2018-04-11
+
 ### Fixed
 
 - Fix date format on CMS config
@@ -80,6 +82,7 @@ Initial commit
 - `standardes.md`
 
 
-[Unreleased]: https://github.com/tecnologiaequidade/tecnologiaequidade.github.io/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/tecnologiaequidade/tecnologiaequidade.github.io/compare/v1.1.1...HEAD
+[1.1.1]: https://github.com/tecnologiaequidade/tecnologiaequidade.github.io/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/tecnologiaequidade/tecnologiaequidade.github.io/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/tecnologiaequidade/tecnologiaequidade.github.io/tree/v1.0.0
