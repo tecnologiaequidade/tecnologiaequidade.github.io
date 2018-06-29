@@ -4,6 +4,10 @@ This project follows [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+
+- Content edition branch to `master`
+
 ## [1.1.1][] - 2018-04-11
 
 ### Added
