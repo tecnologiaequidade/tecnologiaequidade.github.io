@@ -4,6 +4,10 @@ This project follows [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fixed
+
+- `avatarDirector` front matter field broken on NetlifyCMS config
+
 ## [1.1.2][] - 2018-06-29
 
 ### Changed

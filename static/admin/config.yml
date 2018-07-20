@@ -150,7 +150,7 @@ collections:
         widget: "image"
       -
         label: "Director's Avatar"
-        name: "AvatarDirector"
+        name: "avatarDirector"
         widget: "hidden"
       -
         label: "Order"
