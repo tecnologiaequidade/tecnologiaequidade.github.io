@@ -6,6 +6,7 @@ This project follows [Semantic Versioning](http://semver.org/).
 
 ### Fixed
 
+- Thiago Rondon homepage avatar missing
 - `avatarDirector` front matter field broken on NetlifyCMS config
 
 ## [1.1.2][] - 2018-06-29

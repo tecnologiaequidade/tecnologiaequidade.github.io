@@ -6,6 +6,7 @@ slug: thiago-rondon
 facebook: 'https://facebook.com/thiagorondon'
 twitter: 'https://twitter.com/thiagorondon'
 avatar: /uploads/thiago-rondon.png
+avatarDirector: /uploads/director-thiago-rondon.jpg
 weight: 3
 type: person
 role: team
