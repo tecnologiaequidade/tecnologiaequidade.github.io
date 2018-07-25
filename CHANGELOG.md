@@ -4,6 +4,10 @@ This project follows [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Added
+
+- survey newsletter
+
 ## [1.1.3][] - 2018-07-20
 
 ### Fixed
