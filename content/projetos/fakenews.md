@@ -1,8 +1,8 @@
 ---
 date: '2018-04-03T02:48:47-03:00'
-shortTitle: Fake News
-title: Influência de Robôs e Fake News nas Eleições Brasileiras de 2018
-slug: fakenews
+shortTitle: Desinformação em eleições
+title: Desequilíbrios acelerados pela tecnologia
+slug: desinformacao-em-eleicoes
 subtitle: ''
 darkText: false
 draft: false
