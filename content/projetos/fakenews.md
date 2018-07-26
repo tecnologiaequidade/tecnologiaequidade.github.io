@@ -19,13 +19,12 @@ authors:
   - author: marcio-pinto
 weight: 2
 ---
-Projeto de pesquisa[^1] e ação do Instituto Tecnologia & Equidade que busca entender o possível impacto dos perfis não humanos em redes sociais nas eleições de 2018. Além disso, o foco da iniciativa é incidir positivamente nesse cenário, incluindo recomendações para o uso ético dessa tecnologia e a criação de uma plataforma de identificação e denúncias de robôs.
+A pesquisa “Desinformação em Eleições: desequilíbrios acelerados pela tecnologia” e o White Paper "Recomendações Sistêmicas para Combater a Desinformação nas Eleições do Brasil" são iniciativas do Instituto Tecnologia e Equidade (IT&E) publicadas em junho de 2018. 
 
-**A pesquisa conta com os seguintes objetivos principais:**
+Na pesquisa, buscamos explorar dimensões a respeito das fake news e dos bots — suas origens, tipos, características, comportamentos, entornos, antídotos, legislação e iniciativas inspiradoras ao redor do mundo. 
 
-* Compreender a influência psicológica (psicometria, OCEAN model, etc.) da comunicação digital para mudar comportamentos e atitudes em processos eleitorais;
-* Compreender o funcionamento detalhado das principais estratégias e processos usados para manipular pessoas em  eleições - propagandas personalizadas, bots, fake news, ataques sybill, sockpuppets, trolls, personas, shadow ban, hate speech  - incluindo atores, tecnologias, infraestruturas, etc;
-* Identificar e investigar principais mecanismos de combate à manipulação digital (fake news e bots) atuais;
-* Gerar aprendizados que informem o desenvolvimento de novas estratégias e processos de contra-ataque e antídotos anti-manipulação, incluindo sistemas de detecção de bots.
+O White Paper é um dos principais desdobramentos da pesquisa. A partir do Mapa Sistêmico, ele mostra um modelo do Sistema Propaganda Eleitoral na Internet nas Eleições de 2018 no Brasil e propostas de mudanças que denominamos “Pontos de Alavancagem Sistêmica”. 
 
-[^1]: A equipe responsável pela pesquisa é composta por Ellen Aquino e Carlos Júnior, pesquisadores, e Márcio Vasconcelos, codiretor do Instituto Tecnologia &amp; Equidade.
+O objetivo deste projeto é gerar eleições mais justas e equitativas. Que elas possam ter, como propósito central, o ato de oferecer informações aos cidadãos a partir de dados e conteúdos legítimos, reduzindo, ao máximo, a desinformação, o uso malicioso da tecnologia e, principalmente, a manipulação do eleitor.
+
+\[^1]: A equipe responsável pela pesquisa é composta por Ellen Aquino, Carlos Júnior, Ariel Kogan, Márcio Vasconcelos e Thiago Rondon.
