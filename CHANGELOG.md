@@ -4,6 +4,8 @@ This project follows [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [1.2.1][] - 2018-07-25
+
 ### Changed
 
 - Survey text content
@@ -115,7 +117,8 @@ Initial commit
 - `standardes.md`
 
 
-[Unreleased]: https://github.com/tecnologiaequidade/tecnologiaequidade.github.io/compare/v1.2.0...HEAD
+[Unreleased]: https://github.com/tecnologiaequidade/tecnologiaequidade.github.io/compare/v1.2.1...HEAD
+[1.2.1]: https://github.com/tecnologiaequidade/tecnologiaequidade.github.io/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/tecnologiaequidade/tecnologiaequidade.github.io/compare/v1.1.3...v1.2.0
 [1.1.3]: https://github.com/tecnologiaequidade/tecnologiaequidade.github.io/compare/v1.1.2...v1.1.3
 [1.1.2]: https://github.com/tecnologiaequidade/tecnologiaequidade.github.io/compare/v1.1.0...v1.1.2
