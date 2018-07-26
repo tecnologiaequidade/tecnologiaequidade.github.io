@@ -10,6 +10,34 @@ media_folder: "static/uploads"
 public_folder: "/uploads"
 collections:
   -
+    label: "Enquetes"
+    name: "surveys"
+    folder: "content/survey"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      -
+        label: "Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Title"
+        name: "title"
+        widget: "string"
+        tagname: "h1"
+        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
+      -
+        label: "Slug"
+        name: "slug"
+        widget: "string"
+        pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', "Letters, numbers and hyphens. No special characters."]
+      -
+        label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: true
+  -
     label: "Projects"
     name: "projects"
     folder: "content/projetos"

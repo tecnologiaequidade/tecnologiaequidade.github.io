@@ -10,6 +10,7 @@ This project follows [Semantic Versioning](http://semver.org/).
 
 ### Fixed
 
+- missing surveys CMS config
 - projects with list bullets on narrow screens
 
 ## [1.2.0][] - 2018-07-25
