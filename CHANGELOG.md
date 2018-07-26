@@ -8,6 +8,10 @@ This project follows [Semantic Versioning](http://semver.org/).
 
 - Survey text content
 
+### Fixed
+
+- projects with list bullets on narrow screens
+
 ## [1.2.0][] - 2018-07-25
 
 ### Added
