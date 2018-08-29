@@ -1,70 +1,75 @@
 {{ partial "header.html" . }}
-<article role="main">
-	{{ with .Params.titleImage }}
-	<style>
-		.title-background {
-			background-image: url("{{ . }}");
-			background-position: center;
-			background-repeat: repeat;
-		}
-	</style>
-	{{ end }}
+<body>
 
-	<section class="projects-greetings {{ if .Params.titleImage }}title-background{{ end }}">
-		<div class="content projects-greetings__content">
-			<div class="projects-greetings-wrap">
-				<div class="projects-greetings__title">
-					<div class="{{ if and .Params.darkText .Params.titleImage }}logo-dark{{ else }}logo-light{{ end }}">
-						<a href="/">
-							{{ .Title }}
-						</a>
+	<article role="main">
+		{{ with .Params.titleImage }}
+		<style>
+			.title-background {
+				background-image: url("{{ . }}");
+				background-position: center;
+				background-repeat: repeat;
+			}
+		</style>
+		{{ end }}
+
+		<section class="projects-greetings {{ if .Params.titleImage }}title-background{{ end }}">
+			<div class="content projects-greetings__content">
+				<div class="projects-greetings-wrap">
+					<div class="projects-greetings__title">
+						<div class="{{ if and .Params.darkText .Params.titleImage }}logo-dark{{ else }}logo-light{{ end }}">
+							<a href="/">
+								{{ .Title }}
+							</a>
+						</div>
+							<h1 {{ if .Params.titleImage }}class="{{ if .Params.darkText }}title-dark{{ else }}title-light{{ end }}"{{ end }}>{{ .Title }}</h1>
 					</div>
-						<h1 {{ if .Params.titleImage }}class="{{ if .Params.darkText }}title-dark{{ else }}title-light{{ end }}"{{ end }}>{{ .Title }}</h1>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
-	<section class="projects-about">
-		<div class="content smaller-width">
-			<h2>{{ i18n "theProject" | title }}</h2>
+		<section class="projects-about">
+			<div class="content smaller-width">
+				<h2>{{ i18n "theProject" | title }}</h2>
 
-			{{ if .Params.subtitle }}
-			<div class="project-subtitle">
-				<p>{{ .Params.subtitle }}</p>
-			</div>
-			{{ end }}
-
-			{{ if .Params.imageBeforeText }}
-				<img src="{{ .Params.imageBeforeText }}" alt="{{ .Title }}">
-			{{ end }}
-
-			{{ .Content }}
-
-		</div>
-	</section>
-
-	{{ partial "survey.html" . }}
-
-	{{ if .Params.relatedProjects }}
-	<aside class="related-projects">
-		<div class="content">
-			<h2>{{ i18n "seeAlso" | title }}</h2>
-			<ul class="related-projects-wrap">
-					{{ range .Params.relatedProjects }}
-						{{ range where $.Site.Pages "Params.slug" .project }}
-							<li class="related-projects-box">
-								<div class="related-projects-box-content">
-									<a href="../{{ .Params.slug }}"><h4>{{ if .Params.shortTitle }} {{ .Params.shortTitle }} {{ else }} {{ .Title }} {{ end }}</h4></a>
-									<a class="nav-link nav-link--plus--orange" href="../{{ .Params.slug }}">{{ i18n "Title" }}</a>
-								</div>
-							</li>
-					{{ end }}
+				{{ if .Params.subtitle }}
+				<div class="project-subtitle">
+					<p>{{ .Params.subtitle }}</p>
+				</div>
 				{{ end }}
-			</ul>
-		</div>
-	</aside>
-	{{ end }}
-</article>
+
+				{{ if .Params.imageBeforeText }}
+					<img src="{{ .Params.imageBeforeText }}" alt="{{ .Title }}">
+				{{ end }}
+
+				{{ .Content }}
+
+			</div>
+		</section>
+
+		{{ partial "survey.html" . }}
+
+		{{ if .Params.relatedProjects }}
+		<aside class="related-projects">
+			<div class="content">
+				<h2>{{ i18n "seeAlso" | title }}</h2>
+				<ul class="related-projects-wrap">
+						{{ range .Params.relatedProjects }}
+							{{ range where $.Site.Pages "Params.slug" .project }}
+								<li class="related-projects-box">
+									<div class="related-projects-box-content">
+										<a href="../{{ .Params.slug }}"><h4>{{ if .Params.shortTitle }} {{ .Params.shortTitle }} {{ else }} {{ .Title }} {{ end }}</h4></a>
+										<a class="nav-link nav-link--plus--orange" href="../{{ .Params.slug }}">{{ i18n "Title" }}</a>
+									</div>
+								</li>
+						{{ end }}
+					{{ end }}
+				</ul>
+			</div>
+		</aside>
+		{{ end }}
+	</article>
 
 {{ partial "footer.html" . }}
+
+</body>
+</html>

@@ -1,28 +1,29 @@
 {{ with $.Site.Data.mediaClipping }}
-	<article class="media">
-		<style>
+<article class="media">
+	<style>
 
-		{{ range .list }}
-			{{ if .logotype }}
-				.media-clipping__item--{{ .slug }} {
-					background-image: url("{{ .logotype }}");
-				}
-			{{ end }}
+	{{ range .list }}
+		{{ if .logotype }}
+			.media-clipping__item--{{ .slug }} {
+				background-image: url("{{ .logotype }}");
+			}
 		{{ end }}
+	{{ end }}
 
 
-		</style>
+	</style>
 
-		<div class="content">
-			<h2>{{ i18n "media" | title }}</h2>
-			<ul class="media-clipping">
-			{{ range .list }}
-				<li class="media-clipping__item media-clipping__item--{{ .slug }}">
-					<a href="{{ .link }}" target="_blank">
-						{{ .name }}
-					</a>
-				</li>
-			{{ end }}
-		</div>
-	</article>
+	<div class="content">
+		<h2>{{ i18n "media" | title }}</h2>
+		<ul class="media-clipping">
+		{{ range .list }}
+			<li class="media-clipping__item media-clipping__item--{{ .slug }}">
+				<a href="{{ .link }}" target="_blank">
+					{{ .name }}
+				</a>
+			</li>
+		{{ end }}
+		</ul>
+	</div>
+</article>
 {{ end }}

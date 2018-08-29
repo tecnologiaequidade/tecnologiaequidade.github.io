@@ -1,26 +1,26 @@
 <article class="projects">
-	<div class="content">
-		<h2>
-			<a href="/projetos">
-				{{ i18n "projects" | title }}
-			</a>
-		</h2>
-		<div class="projects-wrap">
-			{{ range first 2 (where .Data.Pages.ByDate "Section" "projetos").Reverse }}
-				<section class="project-box">
-					<div class="project-box__content">
-						<h3>
-							<a href="/projetos/{{ .Params.Slug }}">
-								{{ if .Params.shortTitle }} {{ .Params.shortTitle }} {{ else }} {{ .Title }} {{ end }}
-							</a>
-						</h3>
-					</div>
-					<div class="project-box__summary">
-						<p>{{ .Params.Summary }}</p>
-					</div>
-				</section>
-			{{ end }}
-		</div>
+<div class="content">
+	<h2>
+		<a href="/projetos">
+			{{ i18n "projects" | title }}
+		</a>
+	</h2>
+	<div class="projects-wrap">
+		{{ range first 2 (where .Data.Pages.ByDate "Section" "projetos").Reverse }}
+			<section class="project-box">
+				<div class="project-box__content">
+					<h3>
+						<a href="/projetos/{{ .Params.Slug }}">
+							{{ if .Params.shortTitle }} {{ .Params.shortTitle }} {{ else }} {{ .Title }} {{ end }}
+						</a>
+					</h3>
+				</div>
+				<div class="project-box__summary">
+					<p>{{ .Params.Summary }}</p>
+				</div>
+			</section>
+		{{ end }}
 	</div>
+</div>
 </article>
 

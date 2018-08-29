@@ -1,20 +1,20 @@
 {{ range where .Site.Pages ".File.TranslationBaseName" "manifest" }}
-	<article class="manifest">
-		<div class="content smaller-width" id="manifesto">
-			<h2>{{ .Title }}</h2>
-			{{ .Content }}
+<article class="manifest">
+	<div class="content smaller-width" id="manifesto">
+		<h2>{{ .Title }}</h2>
+		{{ .Content }}
 
-			{{ if or .Params.pdf .Params.doc }}
-				<div class="manifest__download">
-					<p>{{ .Params.callToDownload }}</p>
-					{{ with .Params.pdf }}
-						<a download href="{{ . }}" class="download-link">PDF</a>
-					{{ end }}
-					{{ with .Params.doc }}
-						<a download href="{{ . }}" class="download-link">DOC</a>
-					{{ end }}
-				</div>
-			{{ end }}
-		</div>
-	</article>
+		{{ if or .Params.pdf .Params.doc }}
+			<div class="manifest__download">
+				<p>{{ .Params.callToDownload }}</p>
+				{{ with .Params.pdf }}
+					<a download href="{{ . }}" class="download-link">PDF</a>
+				{{ end }}
+				{{ with .Params.doc }}
+					<a download href="{{ . }}" class="download-link">DOC</a>
+				{{ end }}
+			</div>
+		{{ end }}
+	</div>
+</article>
 {{ end }}
