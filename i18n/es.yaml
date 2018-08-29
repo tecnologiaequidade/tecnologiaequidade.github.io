@@ -1,0 +1,53 @@
+#general
+- id: send
+  translation: "Enviar"
+- id: yourEmail
+  translation: "Seu e-mail"
+- id: email
+  translation: "E-mail"
+
+
+#header
+- id: headerSubtitle
+  translation: "O Instituto Tecnologia e Equidade é uma organização sem fins lucrativos que desenvolve pesquisas e projetos experimentais que contribuem para alcançar a equidade com o uso ético da tecnologia."
+
+#notFoundPage
+- id: 404Title
+  translation: "Não encontrado"
+- id: 404Text
+  translation: "Essa página não foi encontrada"
+- id: returnToHome
+  translation: "Retornar para página inicial?"
+
+#projects
+- id: projects
+  translation: "Projetos"
+- id: theProject
+  translation: "O projeto"
+
+#what-we-do
+- id: whatWeDo
+  translation: "O que fazemos"
+
+#purpose
+- id: missionVisionValues
+  translation: "Visão, missão e Valores"
+
+#who-we-are
+- id: whoWeAre
+  translation: "Quem somos"
+#counselors
+- id: counselors
+  translation: "Conselheiros"
+
+#counselors
+- id: media
+  translation: "Mídia"
+
+#projects
+- id: authors
+  translation: "Autores"
+- id: seeAlso
+  translation: "Conheça também"
+
+

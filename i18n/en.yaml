@@ -1,0 +1,53 @@
+#general
+- id: send
+  translation: "Your email"
+- id: yourEmail
+  translation: "Seu e-mail"
+- id: email
+  translation: "email"
+
+
+#header
+- id: headerSubtitle
+  translation: "IT&E is a non-profit organization that develops research and experimental projects that contribute to achieving equity with the ethical use of technology"
+
+#notFoundPage
+- id: 404Title
+  translation: "Error 404"
+- id: 404Text
+  translation: "Page not found"
+- id: returnToHome
+  translation: "Return to home?"
+
+#projects
+- id: projects
+  translation: "Projects"
+- id: theProject
+  translation: "The project"
+
+#what-we-do
+- id: whatWeDo
+  translation: "What we do"
+
+#purpose
+- id: missionVisionValues
+  translation: "Mission, vision and values"
+
+#who-we-are
+- id: whoWeAre
+  translation: "Whoe we are"
+#counselors
+- id: counselors
+  translation: "Counselors"
+
+#counselors
+- id: media
+  translation: "Media"
+
+#projects
+- id: authors
+  translation: "Authors"
+- id: seeAlso
+  translation: "See also"
+
+
