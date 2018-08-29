@@ -1,22 +1,52 @@
-baseURL:         "http://www.tecnologiaequidade.org.br"
+defaultContentLanguage: pt
 languageCode:    "pt-br"
-title:           "Instituto Tecnologia & Equidade"
 disableKinds:    ["taxonomy", "taxonomyTerm", "RSS"]
 enableRobotsTXT: true
-googleAnalytics: "UA-117128393-1"
 metaDataFormat:  "yaml"
 enableMissingTranslationPlaceholders: true
-defaultContentLanguage: pt
 disableFastRender: true
 ignoreFiles: [ "\\.tmp$", "\\.tmp\\-browserify" ]
 stepAnalysis: true
 templateMetrics: true
 pluralizeListTitles: false
+googleAnalytics: "UA-117128393-1"
 
 FootnoteReturnLinkContents: "↩"
 
 taxonomies:
   role: "role"
+
+languages:
+  pt:
+    baseURL: "http://tecnologiaequidade.org.br"
+    contentDir: content/portuguese
+    languageName: Portuguese
+    languageCode: "pt-br"
+    title: "Instituto Tecnologia & Equidade"
+    weight: 1
+    params:
+      description: O Instituto Tecnologia e Equidade é uma organização sem fins lucrativos que desenvolve pesquisas e projetos experimentais que contribuem para alcançar a equidade com o uso ético da tecnologia.
+      subtitle: "Sistema de Avaliação e Gestão Unificado de Informações"
+  en:
+    baseURL: "http://tecnologiaequidade.com"
+    contentDir: content/english
+    languageName: English
+    languageCode: "en-US"
+    title: "Hello"
+    weight: 2
+    params:
+      description: The institute.
+      subtitle: "Hello"
+  es:
+    baseURL: "http://tecnologiaequidade.es"
+    contentDir: content/espanol
+    languageName: Espanol
+    languageCode: "es-MX"
+    title: "Hola"
+    weight: 3
+    params:
+      description: El instituto.
+      subtitle: "Holla"
 
 params:
   authorName:    "tecnologiaequidade"
@@ -28,25 +58,3 @@ params:
       link: "http://tecnologiaequidade.org.br"
       logo: "IT&E.png"
 
-languages:
-  pt:
-    languageName: Portuguese
-    contentDir: content/portuguese
-    params:
-      description: O Instituto Tecnologia e Equidade é uma organização sem fins lucrativos que desenvolve pesquisas e projetos experimentais que contribuem para alcançar a equidade com o uso ético da tecnologia.
-      subtitle:      "Sistema de Avaliação e Gestão Unificado de Informações"
-      weight: 1
-  en:
-    languageName: English
-    contentDir: content/english
-    params:
-      description: O Instituto Tecnologia e Equidade é uma organização sem fins lucrativos que desenvolve pesquisas e projetos experimentais que contribuem para alcançar a equidade com o uso ético da tecnologia.
-      subtitle:      "Sistema de Avaliação e Gestão Unificado de Informações"
-      weight: 2
-  es:
-    languageName: Espanol
-    contentDir: content/espanol
-    params:
-      description: El instituto.
-      subtitle:      "Sistema de Avaliação e Gestão Unificado de Informações"
-      weight: 3
