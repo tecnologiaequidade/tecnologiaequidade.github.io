@@ -19,8 +19,6 @@ taxonomies:
   role: "role"
 
 params:
-  description: O Instituto Tecnologia e Equidade é uma organização sem fins lucrativos que desenvolve pesquisas e projetos experimentais que contribuem para alcançar a equidade com o uso ético da tecnologia.
-  subtitle:      "Sistema de Avaliação e Gestão Unificado de Informações"
   authorName:    "tecnologiaequidade"
   gitHubUser:    "tecnologiaequidade"
 
@@ -29,3 +27,26 @@ params:
       name: "IT & Equidade"
       link: "http://tecnologiaequidade.org.br"
       logo: "IT&E.png"
+
+languages:
+  pt:
+    languageName: Portuguese
+    contentDir: content/portuguese
+    params:
+      description: O Instituto Tecnologia e Equidade é uma organização sem fins lucrativos que desenvolve pesquisas e projetos experimentais que contribuem para alcançar a equidade com o uso ético da tecnologia.
+      subtitle:      "Sistema de Avaliação e Gestão Unificado de Informações"
+      weight: 1
+  en:
+    languageName: English
+    contentDir: content/english
+    params:
+      description: O Instituto Tecnologia e Equidade é uma organização sem fins lucrativos que desenvolve pesquisas e projetos experimentais que contribuem para alcançar a equidade com o uso ético da tecnologia.
+      subtitle:      "Sistema de Avaliação e Gestão Unificado de Informações"
+      weight: 2
+  es:
+    languageName: Espanol
+    contentDir: content/espanol
+    params:
+      description: O Instituto Tecnologia e Equidade é uma organização sem fins lucrativos que desenvolve pesquisas e projetos experimentais que contribuem para alcançar a equidade com o uso ético da tecnologia.
+      subtitle:      "Sistema de Avaliação e Gestão Unificado de Informações"
+      weight: 3
