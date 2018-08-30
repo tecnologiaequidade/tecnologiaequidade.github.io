@@ -1,3 +1,4 @@
+baseURL: "http://tecnologiaequidade.org.br"
 defaultContentLanguage: pt
 languageCode:    "pt-br"
 disableKinds:    ["taxonomy", "taxonomyTerm", "RSS"]
@@ -18,7 +19,6 @@ taxonomies:
 
 languages:
   pt:
-    baseURL: "http://tecnologiaequidade.org.br"
     contentDir: content/portuguese
     languageName: Portuguese
     languageCode: "pt-br"
@@ -28,7 +28,6 @@ languages:
       description: O Instituto Tecnologia e Equidade é uma organização sem fins lucrativos que desenvolve pesquisas e projetos experimentais que contribuem para alcançar a equidade com o uso ético da tecnologia.
       subtitle: "Sistema de Avaliação e Gestão Unificado de Informações"
   en:
-    baseURL: "http://tecnologiaequidade.com"
     contentDir: content/english
     languageName: English
     languageCode: "en-US"
@@ -38,7 +37,6 @@ languages:
       description: The institute.
       subtitle: "Hello"
   es:
-    baseURL: "http://tecnologiaequidade.es"
     contentDir: content/espanol
     languageName: Espanol
     languageCode: "es-MX"
