@@ -1,7 +1,38 @@
-.languages-navlinks li {
-	display: inline-block;
+
+.content-menu {
+	max-width: $max-width;
+	padding-right: $gutter;
+	padding-left: $gutter;
+	margin: 0;
+	margin-right: auto;
+	margin-left: auto;
+
+	@media screen and (min-width: breakpoint('phablet')) {
+		padding-right: ($gutter * 3) $gutter;
+		padding-left: ($gutter * 3) $gutter;
+	}
 }
 
-.languages-navlinks li a {
+
+.languages-navlinks-wrap {
+	margin: 0;
+	margin-top: 1.5em;
+	margin-left: 1.2em;
+
+	font-family: archiaregular;
+}
+
+.languages-navlinks-wrap a {
+	font-weight: normal;
+	font-size: 0.8em;
+
 	color: palette('white');
+}
+
+.languages-navlinks-wrap li {
+	margin-right: 1em;
+}
+
+.languages-navlinks li {
+	display: inline-block;
 }
