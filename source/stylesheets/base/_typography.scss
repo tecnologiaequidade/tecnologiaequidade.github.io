@@ -131,10 +131,8 @@ h4 {
 	font-family: 'archiasemibold', $title-font-stack;
 
 	color: palette('white');
-	@media screen and (min-width: breakpoint('phablet')) {
-		font-size: ms(1);
-	}
-	@media screen and (min-width: breakpoint('desktop')) {
+
+	@media screen and (min-width: breakpoint('wide')) {
 		font-size: ms(2);
 	}
 }
