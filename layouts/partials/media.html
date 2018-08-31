@@ -18,7 +18,7 @@
 		<ul class="media-clipping">
 		{{ range .list }}
 			<li class="media-clipping__item media-clipping__item--{{ .slug }}">
-				<a href="{{ .link }}" target="_blank">
+				<a href="{{ .link }}" target="_blank" alt="{{ .alt }}">
 					{{ .name }}
 				</a>
 			</li>
