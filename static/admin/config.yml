@@ -12,6 +12,46 @@ collections:
 
 # Portuguese configs
   -
+    label: "Manifesto - Portuguese"
+    name: "manifesto"
+    folder: "content/portuguese/manifest"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      -
+        label: "Title"
+        name: "title"
+        widget: "string"
+        tagname: "h1"
+        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
+      -
+        label: "Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Frase de Download"
+        name: "callToDownload"
+        widget: "string"
+        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
+      -
+        label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: true
+      - label: "Doc"
+        name: "doc"
+        widget: "file"
+        default: ""
+      - label: "PDF"
+        name: "pdf"
+        widget: "file"
+        default: ""
+      -
+        label: "Body"
+        name: "body"
+        widget: "markdown"
+  -
     label: "Enquetes - Portuguese"
     name: "enquetes"
     folder: "content/portuguese/survey"
