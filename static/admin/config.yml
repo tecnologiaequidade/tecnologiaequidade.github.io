@@ -39,6 +39,10 @@ collections:
         name: "draft"
         widget: "boolean"
         default: true
+      -
+        label: "Body"
+        name: "body"
+        widget: "markdown"
   -
     label: "Projetos - Portuguese"
     name: "projetos"
@@ -229,6 +233,10 @@ collections:
         name: "draft"
         widget: "boolean"
         default: true
+      -
+        label: "Body"
+        name: "body"
+        widget: "markdown"
   -
     label: "Projects - English"
     name: "projects"
@@ -419,6 +427,10 @@ collections:
         name: "draft"
         widget: "boolean"
         default: true
+      -
+        label: "Body"
+        name: "body"
+        widget: "markdown"
   -
     label: "Proyectos - Español"
     name: "proyectos"
