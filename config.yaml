@@ -20,7 +20,7 @@ taxonomies:
 languages:
   pt:
     contentDir: content/portuguese
-    languageName: Portuguese
+    languageName: Português
     languageCode: "pt-br"
     title: "Instituto Tecnologia & Equidade"
     weight: 1
@@ -38,8 +38,9 @@ languages:
       subtitle: "Hello"
   es:
     contentDir: content/espanol
-    languageName: Espanol
+    languageName: Español
     languageCode: "es-MX"
+    alt: "es-MX"
     title: "Hola"
     weight: 3
     params:
