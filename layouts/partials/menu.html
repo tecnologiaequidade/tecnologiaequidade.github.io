@@ -1,0 +1,11 @@
+<div class="content-container">
+	{{ if .IsTranslated }}
+		<ul class="languages-navlinks">
+			{{ range .Translations }}
+			<li>
+				<a href="{{ .Permalink }}">{{ .Language.LanguageName }} {{ if .IsPage }} ({{ i18n "wordCount" . }}){{ end }}</a>
+			</li>
+			{{ end}}
+		</ul>
+	{{ end }}
+</div>
