@@ -600,6 +600,10 @@ collections:
                 name: "name"
                 widget: "string"
               -
+                label: "Image description"
+                name: "alt"
+                widget: "string"
+              -
                 label: "Slug"
                 name: "slug"
                 widget: "string"
