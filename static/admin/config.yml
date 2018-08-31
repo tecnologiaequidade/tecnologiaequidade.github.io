@@ -1,7 +1,7 @@
 backend:
-  name: git-gateway
+  name: github
   repo: tecnologiaequidade/tecnologiaequidade.github.io # Path to your Github repository
-  branch: master
+  branch: develop
   accept_roles:
     - admin
     - editor
@@ -9,10 +9,12 @@ publish_mode: editorial_workflow
 media_folder: "static/uploads"
 public_folder: "/uploads"
 collections:
+
+# Portuguese configs
   -
-    label: "Enquetes"
-    name: "surveys"
-    folder: "content/survey"
+    label: "Enquetes - Portuguese"
+    name: "enquetes"
+    folder: "content/portuguese/survey"
     create: false
     slug: "{{slug}}"
     fields:
@@ -38,9 +40,199 @@ collections:
         widget: "boolean"
         default: true
   -
-    label: "Projects"
+    label: "Projetos - Portuguese"
+    name: "projetos"
+    folder: "content/portuguese/projetos"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      -
+        label: "Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Short Title"
+        name: "shortTitle"
+        widget: "string"
+        tagname: "h2"
+        required: false
+        pattern: ['.{0,15}', "Must have between 0 and 15 characters"]
+      -
+        label: "Title"
+        name: "title"
+        widget: "string"
+        tagname: "h1"
+        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
+      -
+        label: "Slug"
+        name: "slug"
+        widget: "string"
+        pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', "Letters, numbers and hyphens. No special characters."]
+      -
+        label: "Subtitle"
+        name: "subtitle"
+        required: false
+        widget: "string"
+      -
+        label: "Title Image"
+        name: "titleImage"
+        widget: "image"
+        required: false
+      -
+        label: "Dark Text"
+        name: "darkText"
+        widget: "boolean"
+        default: false
+      -
+        label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: true
+      -
+        label: "Summary"
+        name: "summary"
+        widget: "text"
+      -
+        label: "Related Projects"
+        name: "relatedProjects"
+        widget: "list"
+        required: false
+        fields:
+        -
+          label: "Project"
+          name: "project"
+          widget: "relation"
+          collection: "projetos"
+          searchFields: ["slug", "title"]
+          valueField: "slug"
+      -
+        label: "Authors"
+        name: "authors"
+        widget: "list"
+        fields:
+        -
+          label: "Author"
+          name: "author"
+          widget: "relation"
+          collection: "autores"
+          searchFields: ["slug", "name"]
+          valueField: "slug"
+      -
+        label: "Order"
+        name: "weight"
+        widget: "number"
+        valueType: "int"
+      -
+        label: "Body"
+        name: "body"
+        widget: "markdown"
+  -
+    label: "Autores - Portuguese"
+    name: "autores"
+    folder: "content/portuguese/autores"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      -
+        label: "Name"
+        name: "title"
+        widget: "string"
+      -
+        label: "Date"
+        name: "date"
+        widget: "datetime"
+        required: false
+        format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: true
+      -
+        label: "Slug"
+        name: "slug"
+        widget: "string"
+        pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', "Letters, numbers and hyphens. No special characters."]
+      -
+        label: "Medium"
+        name: "medium"
+        widget: "string"
+        required: false
+      -
+        label: "Linkedin"
+        name: "linkedin"
+        widget: "string"
+        required: false
+      -
+        label: "Facebook"
+        name: "facebook"
+        widget: "string"
+        required: false
+      -
+        label: "Twitter"
+        name: "twitter"
+        widget: "string"
+        required: false
+      -
+        label: "Avatar (350×350px)"
+        name: "avatar"
+        widget: "image"
+      -
+        label: "Director's Avatar"
+        name: "avatarDirector"
+        widget: "hidden"
+      -
+        label: "Order"
+        name: "weight"
+        widget: "number"
+      -
+        label: "Type"
+        name: "type"
+        widget: "hidden"
+      -
+        label: "Role"
+        name: "role"
+        widget: "hidden"
+      -
+        label: "Body"
+        name: "body"
+        widget: "markdown"
+
+
+# English configs
+  -
+    label: "Surveys - English"
+    name: "surveys"
+    folder: "content/english/survey"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      -
+        label: "Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Title"
+        name: "title"
+        widget: "string"
+        tagname: "h1"
+        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
+      -
+        label: "Slug"
+        name: "slug"
+        widget: "string"
+        pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', "Letters, numbers and hyphens. No special characters."]
+      -
+        label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: true
+  -
+    label: "Projects - English"
     name: "projects"
-    folder: "content/projetos"
+    folder: "content/english/projetos"
     create: true
     slug: "{{slug}}"
     fields:
@@ -126,9 +318,9 @@ collections:
         name: "body"
         widget: "markdown"
   -
-    label: "Authors"
+    label: "Authors - English"
     name: "authors"
-    folder: "content/autores"
+    folder: "content/english/autores"
     create: true
     slug: "{{slug}}"
     fields:
@@ -196,6 +388,198 @@ collections:
         label: "Body"
         name: "body"
         widget: "markdown"
+
+
+# Español configs
+  -
+    label: "Encuestas - Español"
+    name: "encuestas"
+    folder: "content/espanol/survey"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      -
+        label: "Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Title"
+        name: "title"
+        widget: "string"
+        tagname: "h1"
+        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
+      -
+        label: "Slug"
+        name: "slug"
+        widget: "string"
+        pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', "Letters, numbers and hyphens. No special characters."]
+      -
+        label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: true
+  -
+    label: "Proyectos - Español"
+    name: "proyectos"
+    folder: "content/espanol/projetos"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      -
+        label: "Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Short Title"
+        name: "shortTitle"
+        widget: "string"
+        tagname: "h2"
+        required: false
+        pattern: ['.{0,15}', "Must have between 0 and 15 characters"]
+      -
+        label: "Title"
+        name: "title"
+        widget: "string"
+        tagname: "h1"
+        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
+      -
+        label: "Slug"
+        name: "slug"
+        widget: "string"
+        pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', "Letters, numbers and hyphens. No special characters."]
+      -
+        label: "Subtitle"
+        name: "subtitle"
+        required: false
+        widget: "string"
+      -
+        label: "Title Image"
+        name: "titleImage"
+        widget: "image"
+        required: false
+      -
+        label: "Dark Text"
+        name: "darkText"
+        widget: "boolean"
+        default: false
+      -
+        label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: true
+      -
+        label: "Summary"
+        name: "summary"
+        widget: "text"
+      -
+        label: "Related Projects"
+        name: "relatedProjects"
+        widget: "list"
+        required: false
+        fields:
+        -
+          label: "Project"
+          name: "project"
+          widget: "relation"
+          collection: "proyectos"
+          searchFields: ["slug", "title"]
+          valueField: "slug"
+      -
+        label: "Authors"
+        name: "autores-es"
+        widget: "list"
+        fields:
+        -
+          label: "Author"
+          name: "author"
+          widget: "relation"
+          collection: "authors"
+          searchFields: ["slug", "name"]
+          valueField: "slug"
+      -
+        label: "Order"
+        name: "weight"
+        widget: "number"
+        valueType: "int"
+      -
+        label: "Body"
+        name: "body"
+        widget: "markdown"
+  -
+    label: "Autores - Español"
+    name: "autores-es"
+    folder: "content/espanol/autores"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      -
+        label: "Name"
+        name: "title"
+        widget: "string"
+      -
+        label: "Date"
+        name: "date"
+        widget: "datetime"
+        required: false
+        format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: true
+      -
+        label: "Slug"
+        name: "slug"
+        widget: "string"
+        pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', "Letters, numbers and hyphens. No special characters."]
+      -
+        label: "Medium"
+        name: "medium"
+        widget: "string"
+        required: false
+      -
+        label: "Linkedin"
+        name: "linkedin"
+        widget: "string"
+        required: false
+      -
+        label: "Facebook"
+        name: "facebook"
+        widget: "string"
+        required: false
+      -
+        label: "Twitter"
+        name: "twitter"
+        widget: "string"
+        required: false
+      -
+        label: "Avatar (350×350px)"
+        name: "avatar"
+        widget: "image"
+      -
+        label: "Director's Avatar"
+        name: "avatarDirector"
+        widget: "hidden"
+      -
+        label: "Order"
+        name: "weight"
+        widget: "number"
+      -
+        label: "Type"
+        name: "type"
+        widget: "hidden"
+      -
+        label: "Role"
+        name: "role"
+        widget: "hidden"
+      -
+        label: "Body"
+        name: "body"
+        widget: "markdown"
+
+# General settings
   -
     label: "Media"
     name: "media"
