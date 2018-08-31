@@ -1,5 +1,6 @@
-<div class="content-container">
+<div class="content-menu">
 	{{ if .IsTranslated }}
+	<div class="languages-navlinks-wrap">
 		<ul class="languages-navlinks">
 			{{ range .Translations }}
 			<li>
@@ -7,5 +8,6 @@
 			</li>
 			{{ end}}
 		</ul>
+	</div>
 	{{ end }}
 </div>
