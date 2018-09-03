@@ -14,6 +14,21 @@
 	margin-left: auto;
 
 	background-color: palette('white');
+
+	@media screen and (max-width: breakpoint('tablet')) {
+		.menu-controller:checked + & {
+			margin-left: $off-canvas-menu-width;
+
+			transition: margin-left 0.5s;
+		}
+
+		.menu-controller:checked + & > * {
+			margin-right: $off-canvas-menu-width * -1;
+
+			transition: margin-right 0.5s;
+		}
+	}
+
 }
 
 .main-container> * {
