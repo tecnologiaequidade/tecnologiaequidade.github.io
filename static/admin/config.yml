@@ -216,6 +216,104 @@ collections:
         name: "body"
         widget: "markdown"
   -
+    label: "O que fazemos - Português"
+    name: "o-que-fazemos"
+    folder: "content/portuguese/what-we-do"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      -
+        label: "Title"
+        name: "title"
+        widget: "string"
+        tagname: "h1"
+        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
+      -
+        label: "Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: true
+      -
+        label: "Slug"
+        name: "id"
+        widget: "string"
+        pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', "Letters, numbers and hyphens. No special characters."]
+      -
+        label: "Order"
+        name: "weight"
+        widget: "number"
+      -
+        label: "Body"
+        name: "body"
+        widget: "markdown"
+  -
+    label: "Valores - Portuguese"
+    name: "valores"
+    folder: "content/portuguese/purpose"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      -
+        label: "Title"
+        name: "title"
+        widget: "string"
+        tagname: "h1"
+        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
+      -
+        label: "Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Body"
+        name: "body"
+        widget: "markdown"
+  -
+    label: "Conselheiros - Português"
+    name: "conselheiros"
+    folder: "content/portuguese/counselors"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      -
+        label: "Title"
+        name: "title"
+        widget: "string"
+        tagname: "h1"
+        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
+      -
+        label: "Slug"
+        name: "id"
+        widget: "string"
+        pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', "Letters, numbers and hyphens. No special characters."]
+      -
+        label: "Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: true
+      -
+        label: "Order"
+        name: "weight"
+        widget: "number"
+      -
+        label: "Avatar (301 × 216)"
+        name: "avatar"
+        widget: "image"
+      -
+        label: "Body"
+        name: "body"
+        widget: "markdown"
+  -
     label: "Autores - Portuguese"
     name: "autores"
     folder: "content/portuguese/autores"
@@ -494,6 +592,104 @@ collections:
         name: "body"
         widget: "markdown"
   -
+    label: "What we Do - English"
+    name: "what-we-do"
+    folder: "content/english/what-we-do"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      -
+        label: "Title"
+        name: "title"
+        widget: "string"
+        tagname: "h1"
+        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
+      -
+        label: "Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: true
+      -
+        label: "Slug"
+        name: "id"
+        widget: "string"
+        pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', "Letters, numbers and hyphens. No special characters."]
+      -
+        label: "Order"
+        name: "weight"
+        widget: "number"
+      -
+        label: "Body"
+        name: "body"
+        widget: "markdown"
+  -
+    label: "Values - English"
+    name: "values"
+    folder: "content/english/purpose"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      -
+        label: "Title"
+        name: "title"
+        widget: "string"
+        tagname: "h1"
+        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
+      -
+        label: "Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Body"
+        name: "body"
+        widget: "markdown"
+  -
+    label: "Counselors - English"
+    name: "counselors"
+    folder: "content/english/counselors"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      -
+        label: "Title"
+        name: "title"
+        widget: "string"
+        tagname: "h1"
+        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
+      -
+        label: "Slug"
+        name: "id"
+        widget: "string"
+        pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', "Letters, numbers and hyphens. No special characters."]
+      -
+        label: "Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: true
+      -
+        label: "Order"
+        name: "weight"
+        widget: "number"
+      -
+        label: "Avatar (301 × 216)"
+        name: "avatar"
+        widget: "image"
+      -
+        label: "Body"
+        name: "body"
+        widget: "markdown"
+  -
     label: "Authors - English"
     name: "authors"
     folder: "content/english/autores"
@@ -767,6 +963,104 @@ collections:
         name: "weight"
         widget: "number"
         valueType: "int"
+      -
+        label: "Body"
+        name: "body"
+        widget: "markdown"
+  -
+    label: "Qué hacemos - Español"
+    name: "que-hacemos"
+    folder: "content/espanol/what-we-do"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      -
+        label: "Title"
+        name: "title"
+        widget: "string"
+        tagname: "h1"
+        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
+      -
+        label: "Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: true
+      -
+        label: "Slug"
+        name: "id"
+        widget: "string"
+        pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', "Letters, numbers and hyphens. No special characters."]
+      -
+        label: "Order"
+        name: "weight"
+        widget: "number"
+      -
+        label: "Body"
+        name: "body"
+        widget: "markdown"
+  -
+    label: "Valores - Español"
+    name: "valores-es"
+    folder: "content/espanol/purpose"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      -
+        label: "Title"
+        name: "title"
+        widget: "string"
+        tagname: "h1"
+        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
+      -
+        label: "Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Body"
+        name: "body"
+        widget: "markdown"
+  -
+    label: "Consejeros - Español"
+    name: "consejeros"
+    folder: "content/espanol/counselors"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      -
+        label: "Title"
+        name: "title"
+        widget: "string"
+        tagname: "h1"
+        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
+      -
+        label: "Slug"
+        name: "id"
+        widget: "string"
+        pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', "Letters, numbers and hyphens. No special characters."]
+      -
+        label: "Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: true
+      -
+        label: "Order"
+        name: "weight"
+        widget: "number"
+      -
+        label: "Avatar (301 × 216)"
+        name: "avatar"
+        widget: "image"
       -
         label: "Body"
         name: "body"
