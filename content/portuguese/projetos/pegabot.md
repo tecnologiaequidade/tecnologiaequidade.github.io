@@ -14,7 +14,7 @@ summary: >-
   Instituto Tecnologia e Sociedade (ITS- Rio) e o Instituto Tecnologia &
   Equidade (IT&E) e está sendo desenvolvido pelo AppCívico.
 relatedProjects:
-  - project: fakenews
+  - project: desinformacao-em-eleicoes
 authors:
   - author: thiago-rondon
   - author: marcio-pinto
