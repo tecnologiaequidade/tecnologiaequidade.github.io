@@ -12,6 +12,23 @@ collections:
 
 # Portuguese configs
   -
+    label: "Introdução - Portuguese"
+    name: "introducao"
+    folder: "content/portuguese/"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      -
+        label: "Title"
+        name: "title"
+        widget: "string"
+        tagname: "h1"
+        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
+      -
+        label: "Body"
+        name: "body"
+        widget: "markdown"
+  -
     label: "Manifesto - Portuguese"
     name: "manifesto"
     folder: "content/portuguese/manifest"
@@ -47,6 +64,33 @@ collections:
         name: "pdf"
         widget: "file"
         default: ""
+      -
+        label: "Body"
+        name: "body"
+        widget: "markdown"
+  -
+    label: "Newsletter - Portuguese"
+    name: "newsletter-pt"
+    folder: "content/portuguese/newsletter"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      -
+        label: "Title"
+        name: "title"
+        widget: "string"
+        tagname: "h1"
+        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
+      -
+        label: "Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: true
       -
         label: "Body"
         name: "body"
@@ -246,6 +290,23 @@ collections:
 
 # English configs
   -
+    label: "Greeting - English"
+    name: "greeting"
+    folder: "content/english/"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      -
+        label: "Title"
+        name: "title"
+        widget: "string"
+        tagname: "h1"
+        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
+      -
+        label: "Body"
+        name: "body"
+        widget: "markdown"
+  -
     label: "Manifest - English"
     name: "manifest"
     folder: "content/english/manifest"
@@ -281,6 +342,33 @@ collections:
         name: "pdf"
         widget: "file"
         default: ""
+      -
+        label: "Body"
+        name: "body"
+        widget: "markdown"
+  -
+    label: "Newsletter - English"
+    name: "newsletter"
+    folder: "content/english/newsletter"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      -
+        label: "Title"
+        name: "title"
+        widget: "string"
+        tagname: "h1"
+        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
+      -
+        label: "Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: true
       -
         label: "Body"
         name: "body"
@@ -480,6 +568,23 @@ collections:
 
 # Español configs
   -
+    label: "Introducción - Español"
+    name: "introduccion"
+    folder: "content/espanol/"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      -
+        label: "Title"
+        name: "title"
+        widget: "string"
+        tagname: "h1"
+        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
+      -
+        label: "Body"
+        name: "body"
+        widget: "markdown"
+  -
     label: "Manifiesto - Español"
     name: "manifiesto"
     folder: "content/espanol/manifest"
@@ -515,6 +620,33 @@ collections:
         name: "pdf"
         widget: "file"
         default: ""
+      -
+        label: "Body"
+        name: "body"
+        widget: "markdown"
+  -
+    label: "Newsletter - Español"
+    name: "newsletter-es"
+    folder: "content/espanol/newsletter"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      -
+        label: "Title"
+        name: "title"
+        widget: "string"
+        tagname: "h1"
+        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
+      -
+        label: "Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: true
       -
         label: "Body"
         name: "body"
