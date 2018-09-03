@@ -27,6 +27,34 @@ languages:
     params:
       description: O Instituto Tecnologia e Equidade é uma organização sem fins lucrativos que desenvolve pesquisas e projetos experimentais que contribuem para alcançar a equidade com o uso ético da tecnologia.
       subtitle: "Sistema de Avaliação e Gestão Unificado de Informações"
+    menu:
+      main:
+          - Name: "Manifesto"
+            Pre: ""
+            Weight: 1
+            Identifier: "manifesto"
+            URL: "/manifesto/"
+          - Name: "Projetos"
+            Pre: ""
+            Weight: 2
+            Identifier: "projetos"
+            URL: "/projetos/"
+          - Name: "O que fazemos"
+            Pre: ""
+            Weight: 3
+            Identifier: "o-que-fazemos"
+            URL: "/o-que-fazemos/"
+          - Name: "Missão, Visão e Valores"
+            Pre: ""
+            Weight: 4
+            Identifier: "valores"
+            URL: "/valores/"
+          - Name: "Conselheiros"
+            Pre: ""
+            Weight: 5
+            Identifier: "valores"
+            URL: "/valores/"
+
   en:
     contentDir: content/english
     languageName: English
@@ -36,6 +64,33 @@ languages:
     params:
       description: The institute.
       subtitle: "Hello"
+    menu:
+      main:
+          - Name: "Manifesto"
+            Pre: ""
+            Weight: 1
+            Identifier: "manifesto"
+            URL: "/manifesto/"
+          - Name: "Projetos"
+            Pre: ""
+            Weight: 2
+            Identifier: "projetos"
+            URL: "/projetos/"
+          - Name: "O que fazemos"
+            Pre: ""
+            Weight: 3
+            Identifier: "o-que-fazemos"
+            URL: "/o-que-fazemos/"
+          - Name: "Missão, Visão e Valores"
+            Pre: ""
+            Weight: 4
+            Identifier: "valores"
+            URL: "/valores/"
+          - Name: "Conselheiros"
+            Pre: ""
+            Weight: 5
+            Identifier: "valores"
+            URL: "/valores/"
   es:
     contentDir: content/espanol
     languageName: Español
@@ -46,6 +101,33 @@ languages:
     params:
       description: El instituto.
       subtitle: "Holla"
+    menu:
+      main:
+          - Name: "Manifesto"
+            Pre: ""
+            Weight: 1
+            Identifier: "manifesto"
+            URL: "/manifesto/"
+          - Name: "Projetos"
+            Pre: ""
+            Weight: 2
+            Identifier: "projetos"
+            URL: "/projetos/"
+          - Name: "O que fazemos"
+            Pre: ""
+            Weight: 3
+            Identifier: "o-que-fazemos"
+            URL: "/o-que-fazemos/"
+          - Name: "Missão, Visão e Valores"
+            Pre: ""
+            Weight: 4
+            Identifier: "valores"
+            URL: "/valores/"
+          - Name: "Conselheiros"
+            Pre: ""
+            Weight: 5
+            Identifier: "valores"
+            URL: "/valores/"
 
 params:
   authorName:    "tecnologiaequidade"
