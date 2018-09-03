@@ -4,7 +4,7 @@
 		<ul class="languages-navlinks">
 			{{ range .Translations }}
 			<li>
-				<a href="/{{ .Language }}">{{ .Language.LanguageName }} {{ if .IsPage }} ({{ i18n "wordCount" . }}){{ end }}</a>
+				<a href="{{ .RelPermalink }}">{{ .Language.LanguageName }} {{ if .IsPage }} ({{ i18n "wordCount" . }}){{ end }}</a>
 			</li>
 			{{ end}}
 		</ul>
