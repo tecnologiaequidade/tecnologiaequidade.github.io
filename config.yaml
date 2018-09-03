@@ -44,7 +44,7 @@ languages:
             Weight: 3
             Identifier: "o-que-fazemos"
             URL: "/o-que-fazemos/"
-          - Name: "Missão, Visão e Valores"
+          - Name: "Valores"
             Pre: ""
             Weight: 4
             Identifier: "valores"
@@ -52,7 +52,7 @@ languages:
           - Name: "Conselheiros"
             Pre: ""
             Weight: 5
-            Identifier: "valores"
+            Identifier: "conselheiros"
             URL: "/valores/"
 
   en:
@@ -81,7 +81,7 @@ languages:
             Weight: 3
             Identifier: "o-que-fazemos"
             URL: "/o-que-fazemos/"
-          - Name: "Missão, Visão e Valores"
+          - Name: "Valores"
             Pre: ""
             Weight: 4
             Identifier: "valores"
@@ -89,7 +89,7 @@ languages:
           - Name: "Conselheiros"
             Pre: ""
             Weight: 5
-            Identifier: "valores"
+            Identifier: "conselheiros"
             URL: "/valores/"
   es:
     contentDir: content/espanol
@@ -118,7 +118,7 @@ languages:
             Weight: 3
             Identifier: "o-que-fazemos"
             URL: "/o-que-fazemos/"
-          - Name: "Missão, Visão e Valores"
+          - Name: "Valores"
             Pre: ""
             Weight: 4
             Identifier: "valores"
@@ -126,7 +126,7 @@ languages:
           - Name: "Conselheiros"
             Pre: ""
             Weight: 5
-            Identifier: "valores"
+            Identifier: "conselheiros"
             URL: "/valores/"
 
 params:
