@@ -1,7 +1,7 @@
 ---
 date: '2018-04-03T02:48:47-03:00'
 shortTitle: Desinformação em eleições
-title: Desequilíbrios acelerados pela tecnologia
+title: Español
 slug: desinformacao-em-eleicoes
 subtitle: ''
 darkText: false
