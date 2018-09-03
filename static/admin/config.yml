@@ -256,7 +256,7 @@ collections:
     name: "valores"
     folder: "content/portuguese/purpose"
     create: false
-    delete: true
+    delete: false
     slug: "{{slug}}"
     fields:
       -
@@ -633,7 +633,7 @@ collections:
     name: "values"
     folder: "content/english/purpose"
     create: false
-    delete: true
+    delete: false
     slug: "{{slug}}"
     fields:
       -
@@ -1010,7 +1010,7 @@ collections:
     name: "valores-es"
     folder: "content/espanol/purpose"
     create: false
-    delete: true
+    delete: false
     slug: "{{slug}}"
     fields:
       -
