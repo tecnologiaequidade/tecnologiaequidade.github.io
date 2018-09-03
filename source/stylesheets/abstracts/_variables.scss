@@ -171,6 +171,10 @@ $palette: (
 		'dark': hsl(0, 0%, 13%),
 		'light': rgb(229, 231, 234),
 	),
+	'shadow': (
+		'inverse': rgba(255, 255, 255, 0.25),
+		'base': rgba(0, 0, 0, 0.2),
+	),
 );
 
 /// Default border-radius
@@ -271,3 +275,7 @@ $base-url: '/assets/' !default;
 $transition-duration: 1s;
 $animated-max-height: $line-height * 40rem;
 $button-diameter: 3.125rem;
+
+
+
+$off-canvas-menu-width: 10em;
