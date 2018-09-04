@@ -7,9 +7,20 @@
 			<li class="to-menu"><a href="#menu">menu</a></li>
 		</ul>
 	</nav>
+	{{ if .IsTranslated }}
+	<nav class="languages-navlinks-wrap">
+		<ul class="languages-navlinks">
+			{{ range .Translations }}
+			<li>
+				<a href="{{ .RelPermalink }}">{{ .Language.LanguageName }} {{ if .IsPage }} ({{ i18n "wordCount" . }}){{ end }}</a>
+			</li>
+			{{ end}}
+		</ul>
+	</nav>
+	{{ end }}
+
 
 	<label for="menu-controller" onclick>menu</label>
-
 	<nav class="main-menu" id="menu">
 		<ul>
 			{{ range .Site.Menus.main }}
@@ -21,23 +32,4 @@
 			{{ end }}
 		</ul>
 	</nav>
-
-
-
-	{{ if .IsTranslated }}
-	<div class="languages-navlinks-wrap">
-		<ul class="languages-navlinks">
-			{{ range .Translations }}
-			<li>
-				<a href="{{ .RelPermalink }}">{{ .Language.LanguageName }} {{ if .IsPage }} ({{ i18n "wordCount" . }}){{ end }}</a>
-			</li>
-			{{ end}}
-		</ul>
-	</div>
-	{{ end }}
-
-
-
-
-
 </div>
