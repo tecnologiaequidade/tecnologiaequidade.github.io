@@ -8,27 +8,25 @@
  * The `[role='main']` element can be a `main` or an `article`
  */
 .main-container {
-	min-width: 320px;
 
-	margin-right: auto;
-	margin-left: auto;
+	overflow: hidden;
 
 	background-color: palette('white');
 
-	@media screen and (max-width: breakpoint('tablet')) {
+	transition-duration: 0.5s;
+	transition-property: margin-left, margin-right;
+
+	@media screen and (max-width: breakpoint('desktop')) {
 		.menu-controller:checked + & {
 			margin-left: $off-canvas-menu-width;
-
-			transition: margin-left 0.5s;
+			overflow: hidden;
 		}
 
 		.menu-controller:checked + & > * {
 			margin-right: $off-canvas-menu-width * -1;
-
-			transition: margin-right 0.5s;
+			overflow: hidden;
 		}
 	}
-
 }
 
 .main-container> * {

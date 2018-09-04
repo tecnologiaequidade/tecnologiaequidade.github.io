@@ -61,6 +61,7 @@ nav a {
 		top: 0;
 		bottom: 0;
 		left: 0;
+
 		display: block;
 
 		width: 0;
@@ -70,19 +71,22 @@ nav a {
 		overflow: hidden;
 
 		white-space: nowrap;
-		transition: width 0.5s;
+
+		background-color: palette('emerald', 'base');
+
+		box-shadow: inset -7px 1px 20px palette('shadow');
+
+		transition-duration: 0.5s, 0.7s;
+		transition-property: width, padding;
 
 		.menu-controller:checked + * & {
-			width: $off-canvas-menu-width;
 			display: block;
+			z-index: 6000;
+
+			width: $off-canvas-menu-width;
 
 			overflow: visible;
-
 			overflow-y: auto;
-
-			box-shadow: inset -7px 1px 20px palette('shadow');
-
-			transition: width 0.5s;
 		}
 	}
 
@@ -122,11 +126,15 @@ nav a {
 	float: none;
 
 	display: block;
+
 	margin-bottom: 0.5rem;
 
 	@media screen and (max-width: breakpoint('desktop')) {
 		max-height: 10em;
 
+		padding-top: 1em;
+		padding-left: 1em;
+		margin-bottom: 0.5em;
 
 		text-align: left;
 	}
@@ -138,6 +146,7 @@ nav a {
 .main-menu a {
 	@include on-event() {
 		text-decoration: none;
+
 		color: palette('red');
 	}
 }
@@ -149,8 +158,6 @@ nav a {
 
 	display: block;
 	z-index: layer('dropdown');
-
-	width: 100%;
 
 	padding: $gutter / 2;
 
@@ -167,12 +174,21 @@ nav a {
 		font-weight: bold;
 		font-size: 2em;
 		line-height: 0.75;
+		font-family: sans-serif;
 
 		vertical-align: middle;
 
 		content: '\20\2261\20';
 
+		transition-duration: 0.5s;
+		transition-property: margin-left;
+
 		.menu-controller:checked ~ * & {
+			padding-left: 0;
+			margin-left: $off-canvas-menu-width;
+
+			overflow: hidden;
+
 			content: '\20\d7\20';
 		}
 	}
