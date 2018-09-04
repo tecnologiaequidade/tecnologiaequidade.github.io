@@ -56,13 +56,12 @@ nav a {
 
 
 .main-menu {
-	@media screen and (max-width: breakpoint('desktop')) {
+	@media (max-width: breakpoint('desktop')) {
 		position: fixed;
 		top: 0;
 		bottom: 0;
 		left: 0;
-
-		display: none;
+		display: block;
 
 		width: 0;
 
@@ -70,13 +69,14 @@ nav a {
 
 		overflow: hidden;
 
-		text-align: left;
 		white-space: nowrap;
-
 		transition: width 0.5s;
 
 		.menu-controller:checked + * & {
 			width: $off-canvas-menu-width;
+			display: block;
+
+			overflow: visible;
 
 			overflow-y: auto;
 
@@ -106,7 +106,6 @@ nav a {
 	width: auto;
 	max-width: none;
 
-
 	@media screen and (min-width: breakpoint('desktop')) {
 		display: block;
 
@@ -123,23 +122,23 @@ nav a {
 	float: none;
 
 	display: block;
+	margin-bottom: 0.5rem;
 
-	@media screen and (min-width: breakpoint('desktop')) {
+	@media screen and (max-width: breakpoint('desktop')) {
 		max-height: 10em;
 
-		margin-bottom: 0.5rem;
 
 		text-align: left;
 	}
 }
 
+
+
+
 .main-menu a {
 	@include on-event() {
-		@media screen and (min-width: breakpoint('desktop')) {
-			text-decoration: none;
-
-			color: palette('red');
-		}
+		text-decoration: none;
+		color: palette('red');
 	}
 }
 
