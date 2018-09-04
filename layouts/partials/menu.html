@@ -1,6 +1,13 @@
 <div class="content-menu">
+	<nav class="skip-links">
+		<ul>
+			<li class="to-content"><a href="#conteudo">conteúdo</a></li>
+			<li class="to-menu"><a href="#menu">menu</a></li>
+		</ul>
+	</nav>
+
 	{{ if .IsTranslated }}
-	<div class="languages-navlinks-wrap">
+	<nav class="languages-navlinks-wrap">
 		<ul class="languages-navlinks">
 			{{ range .Translations }}
 			<li>
@@ -8,6 +15,20 @@
 			</li>
 			{{ end}}
 		</ul>
-	</div>
+	</nav>
 	{{ end }}
+
+
+	<label for="menu-controller" onclick>menu</label>
+	<nav class="main-menu" id="menu">
+		<ul>
+			{{ range .Site.Menus.main }}
+				<li>
+					<a class="sidebar-nav-item" href="{{ .URL }}">
+						{{ .Name }}
+					</a>
+				</li>
+			{{ end }}
+		</ul>
+	</nav>
 </div>

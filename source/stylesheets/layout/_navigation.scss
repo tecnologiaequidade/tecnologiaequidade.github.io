@@ -6,8 +6,6 @@ nav {
 
 	margin-right: auto;
 	margin-left: auto;
-
-	border-spacing: $gutter / 4;
 }
 
 menu ul,
@@ -40,10 +38,15 @@ menu a,
 nav a {
 	display: block;
 
-	overflow: hidden;
+	padding: gutter() / 1em;
 
-	&:link {
-		text-decoration: none;
+	font-size: 0.9em;
+	font-family: 'archiaregular';
+
+	color: palette('white');
+
+	@media screen and (min-width: breakpoint('desktop')) {
+		padding-right: 0;
 	}
 }
 
@@ -52,10 +55,181 @@ nav a {
 }
 
 
+.main-menu {
+	@media (max-width: breakpoint('desktop')) {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+
+		display: block;
+
+		width: 0;
+
+		margin: 0;
+
+		overflow: hidden;
+
+		white-space: nowrap;
+
+		background-color: palette('emerald', 'base');
+
+		box-shadow: inset -7px 1px 20px palette('shadow');
+
+		transition-duration: 0.5s, 0.7s;
+		transition-property: width, padding;
+
+		.menu-controller:checked + * & {
+			display: block;
+			z-index: 6000;
+
+			width: $off-canvas-menu-width;
+
+			overflow: visible;
+			overflow-y: auto;
+		}
+	}
+
+	@media screen and (min-width: breakpoint('desktop')) {
+		position: relative;
+		top: 4em;
+		left: 50%;
+
+		z-index: layer('default');
+
+		padding: 0;
+		padding-left: $gutter / 2;
+		margin: 0;
+	}
+}
+
+
+.main-menu > ul {
+	@include clearfix;
+
+	width: auto;
+	max-width: none;
+
+	@media screen and (min-width: breakpoint('desktop')) {
+		display: block;
+
+		margin: 0;
+
+		column-gap: 3em;
+
+		columns: 2;
+	}
+}
+
+
+.main-menu > ul > li {
+	float: none;
+
+	display: block;
+
+	margin-bottom: 0.5rem;
+
+	@media screen and (max-width: breakpoint('desktop')) {
+		max-height: 10em;
+
+		padding-top: 1em;
+		padding-left: 1em;
+		margin-bottom: 0.5em;
+
+		text-align: left;
+	}
+}
+
+
+
+
+.main-menu a {
+	@include on-event() {
+		text-decoration: none;
+
+		color: palette('red');
+	}
+}
+
+[for='menu-controller'] {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: block;
+	z-index: layer('dropdown');
+
+	padding: $gutter / 2;
+
+	font-size: 1em;
+
+	color: palette('white');
+
+
+	@media screen and (min-width: breakpoint('desktop')) {
+		display: none;
+	}
+
+	&::before {
+		font-weight: bold;
+		font-size: 2em;
+		line-height: 0.75;
+		font-family: sans-serif;
+
+		vertical-align: middle;
+
+		content: '\20\2261\20';
+
+		transition-duration: 0.5s;
+		transition-property: margin-left;
+
+		.menu-controller:checked ~ * & {
+			padding-left: 0;
+			margin-left: $off-canvas-menu-width;
+
+			overflow: hidden;
+
+			content: '\20\d7\20';
+		}
+	}
+}
+
+
 /* access
 ---------------------------------------------------------------------------- */
 .skip-links {
+	@include table-layout-wrapper;
+
+	max-width: $max-width;
 }
+
+.skip-links ul {
+	display: table-row;
+}
+
+.skip-links li {
+	@include table-layout-item;
+}
+
+.skip-links a {
+	@include visually-hidden--focusable;
+}
+
+/* pagination
+---------------------------------------------------------------------------- */
+.pagination {
+}
+
+.pagination__current {
+}
+
+.pagination__previous {
+}
+
+.pagination__next {
+}
+
+
 
 /* pagination
 ---------------------------------------------------------------------------- */
