@@ -44,9 +44,10 @@
 
 	@media screen and (min-width: breakpoint('wide')) {
 		height: 80vh;
-		min-height: 800px;
+		min-height: 930px;
 		background-image: image('illustration-big.png');
-		background-position: 80% bottom;
+		background-position: 60% bottom;
+		background-size: auto 604px;
 	}
 }
 
