@@ -6,7 +6,7 @@
 
 		{{ if or .Params.pdf .Params.doc }}
 			<div class="manifest__download">
-				<p>{{ .Params.callToDownload }}</p>
+				<h2>{{ .Params.callToDownload }}</h2>
 				{{ with .Params.pdf }}
 					<a download href="{{ . }}" class="download-link">PDF</a>
 				{{ end }}

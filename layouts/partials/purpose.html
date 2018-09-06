@@ -1,24 +1,23 @@
 <article class="purpose" id="valores">
 <div class="content">
-
 	<h2>{{ i18n "missionVisionValues" | title }}</h2>
 	<div class="purpose-wrap">
 		{{ range where .Site.Pages ".File.TranslationBaseName" "vision" }}
 		<section class="vision-content">
-			<h4>{{ .Title }}</h4>
+			<h3>{{ .Title }}</h3>
 			{{ .Content }}
 		</section>
 		{{ end }}
 		{{ range where .Site.Pages ".File.TranslationBaseName" "mission" }}
 		<section class="mission-content">
-			<h4>{{ .Title }}</h4>
+			<h3>{{ .Title }}</h3>
 			{{ .Content }}
 		</section>
 		{{ end }}
 	</div>
 	{{ range where .Site.Pages ".File.TranslationBaseName" "values" }}
 	<section class="values-content">
-		<h4>{{ .Title }}</h4>
+		<h3>{{ .Title }}</h3>
 		{{ .Content }}
 	</section>
 	{{ end }}
