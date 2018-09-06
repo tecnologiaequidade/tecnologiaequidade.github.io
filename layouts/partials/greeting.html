@@ -1,4 +1,7 @@
 <header class="site-header">
+	<video autoplay loop width="auto" height="170">
+		<source src="/uploads/ite-video.m4v" type="video/mp4">
+	</video>
 	<div class="content-header">
 		{{ partial "menu.html" . }}
 
@@ -7,6 +10,7 @@
 				{{ .Site.Title }}
 			</a>
 		</div>
+
 		<div class="site-header__content">
 			<h1 class="site-title">{{ .Content | plainify }}</h1>
 		</div>
