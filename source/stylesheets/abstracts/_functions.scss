@@ -9,7 +9,7 @@
 /// @param {String} $path - asset path
 /// @return {Url}
 @function asset($base, $type, $path) {
-	@return url($base + $type + $path);
+	@return url('#{$base}#{$type}#{$path}');
 }
 
 /// Returns URL to an image based on its path
@@ -44,6 +44,65 @@
 	@return $number;
 }
 
+/// @access private
+/// @author Mihai Vaduva
+/// @param {Number} $float - Number to get the square root
+/// @link http://www.antimath.info/css/sass-sqrt-function/
+@function _sqrt($r) {
+	$x0: 1;
+	$x1: $x0;
+
+	@for $i from 1 through 10 {
+		$x1: $x0 - ($x0 * $x0 - abs($r)) / (2 * $x0);
+		$x0: $x1;
+	}
+
+	@return $x1;
+}
+
+
+/// Exponentiation function
+/// @param {Number} $number
+/// @param {Number} $exponent
+/// @access private
+/// @author Hugo Giraudel
+/// @return {Number}
+/// @link https://css-tricks.com/snippets/sass/power-function/
+@function _pow($number, $exponent) {
+	$value: 1;
+
+	@if round($exponent) != $exponent {
+		@error '`$n` must be an integer. This is a simple Exponentiation function. Exponent floats aren\'t supported. `#{$n}` given.`';
+	}
+
+	@if $exponent > 0 {
+		@for $i from 1 through $exponent {
+			$value: $value * $number;
+		}
+	}
+
+	@return $value;
+}
+
+/// toFixed() function in Sass
+/// @author Hugo Giraudel
+/// @param {Number} $float - Number to format
+/// @param {Number} $digits [2] - Number of digits to leave
+/// @access private
+/// @return {Number}
+@function _to-fixed($float, $digits: 2) {
+	$sass-precision: 10;
+
+	@if $digits > $sass-precision {
+		@warn 'Sass sets default precision to #{$sass-precision} digits, and there is no way to change that for now. The returned number will have #{$sass-precision} digits, even if you asked for `#{$digits}`.';
+	}
+
+	$pow: _pow(10, $digits);
+
+	@return round($float * $pow) / $pow;
+}
+
+
 /// Slightly lighten a color
 /// @access public
 /// @group helpers
@@ -64,10 +123,11 @@
 	@return mix(black, $color, $percentage);
 }
 
-///  Calculate the Perceived Brightness of a Color
+/// Calculate the Perceived Brightness of a Color
 /// @access private
 /// @param {color} $color
 /// @link http://www.nbdtech.com/Blog/archive/2008/04/27/Calculating-the-Perceived-Brightness-of-a-Color.aspx
+/// @link http://alienryderflex.com/hsp.html
 @function _brightness($color) {
 	$red-magic-number: 241;
 	$green-magic-number: 691;
@@ -80,25 +140,179 @@
 	$blue-component: blue($color);
 
 	// Calculate a brightness value in 3d color space between 0 and 255
-	$number: sqrt((($red-component * $red-component * $red-magic-number) + ($green-component * $green-component * $green-magic-number) + ($blue-component * $blue-component * $blue-magic-number)) / $brightness-divisor);
+	$number: _sqrt((($red-component * $red-component * $red-magic-number) + ($green-component * $green-component * $green-magic-number) + ($blue-component * $blue-component * $blue-magic-number)) / $brightness-divisor);
 
 	// Convert to percentage and return
 	@return 100% * $number / 255;
 }
 
+/// Calculate the luminance for a color.
+/// @access private
+/// @param {color} $color
+/// @link https://medium.com/dev-channel/using-sass-to-automatically-pick-text-colors-4ba7645d2796
+/// @link https://www.w3.org/TR/WCAG20/#relativeluminancedef
+@function _luminance($color) {
+	$red: red($color) + 1;
+	$green: green($color) + 1;
+	$blue: blue($color) + 1;
 
-/// Choose text color based on background
+	$red: nth($_mdc-linear-channel-values, $red);
+	$green: nth($_mdc-linear-channel-values, $green);
+	$blue: nth($_mdc-linear-channel-values, $blue);
+
+	@return 0.2126 * $red + 0.7152 * $green + 0.0722 * $blue;
+}
+
+/// Calculate the contrast ratio between two colors using their luminance
+/// @access private
+/// @param {color} $color
+/// @link https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
+/// @link https://medium.com/dev-channel/using-sass-to-automatically-pick-text-colors-4ba7645d2796
+@function _contrast($fg-color, $bg-color) {
+	$fore-lum: _luminance($fg-color) + 0.05;
+	$back-lum: _luminance($bg-color) + 0.05;
+
+	@return max($back-lum, $fore-lum) / min($back-lum, $fore-lum);
+}
+
+/// Mix a transparent color with its backgound
+/// @access private
+/// @param {color} $foreground - Foreground transparent color
+/// @param {color} $background - Background opaque color
+/// @link http://thesassway.com/intermediate/mixins-for-semi-transparent-colors
+@function _opacize($foreground, $background) {
+	// browsers round the alpha to 2 decimal place, so we need to do it too
+	$percent: _to-fixed(alpha($foreground), 2) * 100%;
+	$opaque: opacify($foreground, 1);
+
+	@return mix($opaque, $background, $percent);
+}
+
+/// Automagically computes the best equivalent RGBA color.
+/// @access private
+/// @param {color} $desired-color - Desired color to match against background
+/// @param {color} $background-color - Background opaque color
+/// @author Tobia
+/// @link https://stackoverflow.com/a/38265284
+@function _alphaize($desired-color, $background-color) {
+	$r1: red($background-color);
+	$g1: green($background-color);
+	$b1: blue($background-color);
+
+	$r2: red($desired-color);
+	$g2: green($desired-color);
+	$b2: blue($desired-color);
+
+	$alpha: 0;
+	$r: -1;
+	$g: -1;
+	$b: -1;
+
+	@while $alpha < 1 and ($r < 0 or $g < 0 or $b < 0 or $r > 255 or $g > 255 or $b > 255) {
+		$alpha: $alpha + 1/256;
+		$inv: 1 / $alpha;
+		$r: $r2 * $inv + $r1 * (1 - $inv);
+		$g: $g2 * $inv + $g1 * (1 - $inv);
+		$b: $b2 * $inv + $b1 * (1 - $inv);
+	}
+
+	// browsers round the alpha to 2 decimal place, so we need to do it too
+	$alpha: _to-fixed($alpha, 2);
+
+	@return rgba($r, $g, $b, $alpha);
+}
+
+
+$_default-text-color--dark: palette('text', 'dark');
+$_default-text-color--light: palette('text', 'light');
+
+/// Determine whether to use dark or light text on top of given color.
+/// If background preferable color not provide, returns black for dark text and white for light text.
 /// @access public
 /// @group helpers
 /// @param {color} $bg-color - background color
-/// @param {color} $light - light text option
-/// @param {color} $dark - dark text option
+/// @param {color} $fg-color - foreground color
+/// @param {string} $level - WCAG level, being 'AAA' or 'AA'
 /// @return {Color}
-@function contrasting-color($bg-color, $light, $dark) {
-	@if _brightness($bg-color) < 65% {
-		@return $light;
-	} @else {
-		@return $dark;
+/// @link https://www.madebymike.com.au/writing/accessible-contrast-with-less-and-sass/
+/// @link https://medium.com/dev-channel/using-sass-to-automatically-pick-text-colors-4ba7645d2796
+@function text-contrast($bg-color, $fg-color: null, $level: 'AA') {
+	$level: to-upper-case($level);
+	$lightest-color: rgb(255, 255, 255);
+	$darkest-color: rgb(0, 0, 0);
+	$lighter-ratio: 0;
+	$darker-ratio: 0;
+	$light-fg: if($fg-color == null, $lightest-color, $fg-color);
+	$dark-fg: if($fg-color == null, $darkest-color, $fg-color);
+	$threshold: if($level == 'AA', 4.5, 7);
+	$light-fg-has-alpha: false;
+	$dark-fg-has-alpha: false;
+
+	@if type-of($bg-color) != 'color' {
+		@error 'Background must be a color. Value `#{$bg-color}` provided is of type `#{type-of(bg-color)}`';
+	}
+
+	@if type-of($fg-color) != 'color' and $fg-color != null {
+		@error 'Foreground must be a color. Value `#{$fg-color}` provided is of type `#{type-of(fg-color)}`';
+	}
+
+	@if $level != 'AA' and $level != 'AAA' {
+		@warn 'Unknown `$level` submitted. Allowed: `AA`, `AAA`. Assuming `AAA`';
+	}
+
+	@if alpha($bg-color) < 1 {
+		@error 'Background color can\'t have alpha channel. `#{$bg-color}` given';
+	}
+
+	@if alpha($light-fg) < 1 {
+		$light-fg: _opacize($light-fg, $bg-color);
+		$light-fg-has-alpha: true;
+	}
+
+	@if alpha($dark-fg) < 1 {
+		$dark-fg: _opacize($dark-fg, $bg-color);
+		$dark-fg-has-alpha: true;
+	}
+
+	@if variable-exists('$_default-text-color--light') {
+		@if type-of($_default-text-color--light) !='color' {
+			@error '`$_default-text-color--light` must be a color. Value `#{$_default-text-color--light}` provided is of type `#{type-of($_default-text-color--light)}`';
+		} @else {
+			$lightest-color: $_default-text-color--light;
+		}
+	}
+
+	@if variable-exists('$_default-text-color--dark') {
+		@if type-of($_default-text-color--dark) !='color' {
+			@error '`$_default-text-color--dark` must be a color. Value `#{$_default-text-color--dark}` provided is of type `#{type-of($_default-text-color--dark)}`';
+		} @else {
+			$darkest-color: $_default-text-color--dark;
+		}
+	}
+
+	$lighter-ratio: _contrast($bg-color, $light-fg);
+	$darker-ratio: _contrast($bg-color, $dark-fg);
+
+	@if $lighter-ratio >= $threshold {
+		@return if($light-fg-has-alpha, _alphaize($light-fg, $bg-color), $light-fg);
+	} @else if $darker-ratio >= $threshold {
+		@return if($dark-fg-has-alpha, _alphaize($dark-fg, $bg-color), $dark-fg);
+	}
+
+	@for $i from 1 through 10 {
+		$lighter: mix(white, $light-fg, $i * 10%);
+		$darker: mix(black, $dark-fg, $i * 10%);
+
+		$darker-ratio: _contrast($bg-color, $darker);
+		$lighter-ratio: _contrast($bg-color, $lighter);
+
+		@if ($lighter-ratio >= $threshold) {
+			@return if($light-fg-has-alpha, _alphaize($lighter, $bg-color), $lighter);
+		}
+
+		@if ($darker-ratio >= $threshold) {
+			@return if($dark-fg-has-alpha, _alphaize($darker, $bg-color), $darker);
+		}
 	}
 }
 
@@ -141,12 +355,12 @@
 /// @link https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight?v=control#Common_weight_name_mapping
 ///
 /// @example scss
-/// 	h1 {
-/// 		font-weight: font-weight('medium');
-/// 	}
+/// h1 {
+/// 	font-weight: font-weight('medium');
+/// }
 @function font-weight($weight: 'normal') {
 
-	$weights: (
+	$default-weights: (
 		'thin': 100,
 		'hairline': 100,
 		'extralight': 200,
@@ -177,11 +391,15 @@
 
 	$weight: to-lower-case($weight);
 
-	@if not map-has-key($weights, $weight) {
+	@if variable-exists('font-weights') and type-of($font-weights) =='map' {
+		$default-weights: map-merge($default-weights, $font-weights);
+	}
+
+	@if not map-has-key($default-weights, $weight) {
 		@error 'unknown value sent to `font-weight` function-> #{$weight}.';
 	}
 
-	@return map-get($weights, $weight);
+	@return map-get($default-weights, $weight);
 }
 
 
@@ -199,7 +417,7 @@
 /// 		z-index: layer('modal');
 /// 	}
 @function layer($layer: 'default') {
-// sass-lint:disable-block indentation
+	// sass-lint:disable-block indentation
 	$default-layers: (
 		'modal': 5000,
 		'dropdown': 4000,
@@ -238,6 +456,8 @@
 /// 		}
 /// 	}
 @function palette($color-name, $tone: null) {
+	$color: transparent;
+
 	$default-palette: (
 		'white': rgb(255, 255, 255),
 		'black': rgb(0, 0, 0),
@@ -281,8 +501,11 @@
 			'foreground': rgb(51, 51, 51),
 			'background': rgb(215, 255, 90),
 		),
+		'placeholder': (
+			'base': hsl(0, 0%, 34%),
+			'focus': hsl(0, 0%, 56%),
+		),
 		'quotes': hsl(0, 0%, 34%),
-		'placeholder': hsl(0, 0%, 34%),
 		'selection': (
 			'foreground': rgb(255, 255, 255),
 			'background': rgb(20, 105, 140),
@@ -299,16 +522,16 @@
 		$default-palette: map-merge($default-palette, $palette);
 	}
 
-	@if not map-has-key($default-palette, $color-name) {
+	@if map-has-key($default-palette, $color-name) {
+		$color: map-get($default-palette, $color-name);
+	} @else {
 		@error 'unknown color sent to `palette` function-> `#{$color-name}`. Available colors-> `#{map-keys($default-palette)}`';
 	}
-
-	$color: map-get($default-palette, $color-name);
 
 	@if $tone != null {
 		@if type-of($color) == 'color' or $color == 'transparent' {
 			@error 'unknown tone sent to `palette` function-> `#{$tone}`. There is only one tone available for color `#{$color-name}`-> `#{$color}`';
-		} @elseif not map-has-key($color, $tone) {
+		} @else if not map-has-key($color, $tone) {
 			@error 'unknown tone sent to `palette` function-> `#{$tone}`. Available tones for `#{$color-name}`-> `#{map-keys($color)}`';
 		} @else {
 			@return map-get(map-get($default-palette, $color-name), $tone);
@@ -316,7 +539,7 @@
 	} @else {
 		@if type-of($color) == 'color' or $color == 'transparent' {
 			@return $color;
-		} @elseif type-of($color) == 'map' and not map-has-key($color, 'base') {
+		} @else if type-of($color) == 'map' and not map-has-key($color, 'base') {
 			@error 'color `#{$color}` misses `base` tone';
 		} @else {
 			@return map-get($color, 'base');
@@ -395,13 +618,11 @@
 @function grid-image($columns: 1, $gutter: $gutter) {
 	$color: rgba(palette('debug'), 0.35);
 	$grid-image: $color 0, $color $gutter, transparent $gutter;
+
 	@for $i from 1 to $columns {
 		$multiplier: $i / $columns;
-		$grid-image: append($grid-image, ( transparent calc(#{100% * $multiplier} - #{$gutter *      $multiplier }), $color calc(#{100% * $multiplier} - #{$gutter *      $multiplier }), $color calc(#{100% * $multiplier} + #{$gutter * (1 - $multiplier)}), transparent calc(#{100% * $multiplier} + #{$gutter * (1 - $multiplier)})), comma);
+		$grid-image: append($grid-image, ( transparent calc(#{100% * $multiplier} - #{$gutter * $multiplier }), $color calc(#{100% * $multiplier} - #{$gutter * $multiplier }), $color calc(#{100% * $multiplier} + #{$gutter * (1 - $multiplier)}), transparent calc(#{100% * $multiplier} + #{$gutter * (1 - $multiplier)})), comma);
 	}
-	$grid-image: append($grid-image, (transparent calc(100% - #{$gutter}), $color calc(100% - #{$gutter}), $color 100%), comma);
-	$grid-image: linear-gradient(to right, $grid-image);
-	@return $grid-image;
+
+	@return linear-gradient(to right, #{append($grid-image, (transparent calc(100% - #{$gutter}), $color calc(100% - #{$gutter}), $color 100%), comma)});
 }
-
-
