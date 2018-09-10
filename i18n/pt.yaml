@@ -5,6 +5,8 @@
   translation: "Seu e-mail"
 - id: email
   translation: "E-mail"
+- id: menu
+  translation: "Menu"
 
 
 #header
