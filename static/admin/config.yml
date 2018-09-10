@@ -25,6 +25,16 @@ collections:
         tagname: "h1"
         pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
       -
+        label: "Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: false
+      -
         label: "Body"
         name: "body"
         widget: "markdown"
@@ -432,6 +442,16 @@ collections:
         tagname: "h1"
         pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
       -
+        label: "Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: false
+      -
         label: "Body"
         name: "body"
         widget: "markdown"
@@ -838,6 +858,16 @@ collections:
         widget: "string"
         tagname: "h1"
         pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
+      -
+        label: "Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: false
       -
         label: "Body"
         name: "body"
