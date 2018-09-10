@@ -1,10 +1,9 @@
 ---
-title: "Nuestro Manifiesto"
-date: 2018-03-06T16:19:00-03:00
+title: Nuestro Manifiesto
+date: 2018-03-06T19:19:00.000Z
 draft: false
-callToDownload: "Faça download do manifesto completo"
+callToDownload: Faça download do manifesto completo
 pdf: /downloads/ITE-manifesto.pdf
 doc: /downloads/ITE-manifesto.docx
 ---
-
-Hola que tal?
+Hola que tal? Como vai?
