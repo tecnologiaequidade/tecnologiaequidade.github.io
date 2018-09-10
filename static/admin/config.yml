@@ -57,21 +57,21 @@ collections:
         widget: "datetime"
         format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
       -
-        label: "Frase de Download"
-        name: "callToDownload"
-        widget: "string"
-        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
-      -
         label: "Draft"
         name: "draft"
         widget: "boolean"
         default: true
-      - label: "Doc"
-        name: "doc"
-        widget: "file"
-        default: ""
+      -
+        label: "Frase de Download"
+        name: "callToDownload"
+        widget: "string"
+        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
       - label: "PDF"
         name: "pdf"
+        widget: "file"
+        default: ""
+      - label: "Doc"
+        name: "doc"
         widget: "file"
         default: ""
       -
@@ -469,21 +469,21 @@ collections:
         widget: "datetime"
         format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
       -
-        label: "Frase de Download"
-        name: "callToDownload"
-        widget: "string"
-        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
-      -
         label: "Draft"
         name: "draft"
         widget: "boolean"
         default: true
-      - label: "Doc"
-        name: "doc"
-        widget: "file"
-        default: ""
+      -
+        label: "Frase de Download"
+        name: "callToDownload"
+        widget: "string"
+        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
       - label: "PDF"
         name: "pdf"
+        widget: "file"
+        default: ""
+      - label: "Doc"
+        name: "doc"
         widget: "file"
         default: ""
       -
@@ -881,21 +881,21 @@ collections:
         widget: "datetime"
         format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
       -
-        label: "Frase de Download"
-        name: "callToDownload"
-        widget: "string"
-        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
-      -
         label: "Draft"
         name: "draft"
         widget: "boolean"
         default: true
-      - label: "Doc"
-        name: "doc"
-        widget: "file"
-        default: ""
+      -
+        label: "Frase de Download"
+        name: "callToDownload"
+        widget: "string"
+        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
       - label: "PDF"
         name: "pdf"
+        widget: "file"
+        default: ""
+      - label: "Doc"
+        name: "doc"
         widget: "file"
         default: ""
       -
