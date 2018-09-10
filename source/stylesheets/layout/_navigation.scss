@@ -194,7 +194,6 @@ nav a {
 	}
 }
 
-
 /* access
 ---------------------------------------------------------------------------- */
 .skip-links {
@@ -214,22 +213,6 @@ nav a {
 .skip-links a {
 	@include visually-hidden--focusable;
 }
-
-/* pagination
----------------------------------------------------------------------------- */
-.pagination {
-}
-
-.pagination__current {
-}
-
-.pagination__previous {
-}
-
-.pagination__next {
-}
-
-
 
 /* pagination
 ---------------------------------------------------------------------------- */
