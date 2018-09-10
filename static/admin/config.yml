@@ -278,7 +278,6 @@ collections:
     label: "Conselheiros - Português"
     name: "conselheiros"
     folder: "content/portuguese/counselors"
-    create: false
     slug: "{{slug}}"
     fields:
       -
@@ -655,7 +654,6 @@ collections:
     label: "Counselors - English"
     name: "counselors"
     folder: "content/english/counselors"
-    create: false
     slug: "{{slug}}"
     fields:
       -
@@ -1032,7 +1030,6 @@ collections:
     label: "Consejeros - Español"
     name: "consejeros"
     folder: "content/espanol/counselors"
-    create: false
     slug: "{{slug}}"
     fields:
       -
