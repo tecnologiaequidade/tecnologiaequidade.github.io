@@ -13,7 +13,7 @@ collections:
 # Portuguese configs
   -
     label: "Introdução - Portuguese"
-    name: "introducao"
+    name: "greeting_pt"
     folder: "content/portuguese/"
     create: false
     delete: false
@@ -41,7 +41,7 @@ collections:
         widget: "markdown"
   -
     label: "Manifesto - Portuguese"
-    name: "manifesto"
+    name: "manifest_pt"
     folder: "content/portuguese/manifest"
     create: false
     slug: "{{slug}}"
@@ -81,7 +81,7 @@ collections:
         widget: "markdown"
   -
     label: "Newsletter - Portuguese"
-    name: "newsletter-pt"
+    name: "newsletter_pt"
     folder: "content/portuguese/newsletter"
     create: false
     slug: "{{slug}}"
@@ -108,7 +108,7 @@ collections:
         widget: "markdown"
   -
     label: "Enquetes - Portuguese"
-    name: "enquetes"
+    name: "survey_pt"
     folder: "content/portuguese/survey"
     create: false
     slug: "{{slug}}"
@@ -135,7 +135,7 @@ collections:
         widget: "markdown"
   -
     label: "Projetos - Portuguese"
-    name: "projetos"
+    name: "projects_pt"
     folder: "content/portuguese/projetos"
     create: true
     slug: "{{slug}}"
@@ -223,7 +223,7 @@ collections:
         widget: "markdown"
   -
     label: "O que fazemos - Português"
-    name: "o-que-fazemos"
+    name: "what_we_do_pt"
     folder: "content/portuguese/what-we-do"
     create: true
     slug: "{{slug}}"
@@ -269,7 +269,7 @@ collections:
         widget: "markdown"
   -
     label: "Valores - Portuguese"
-    name: "valores"
+    name: "purpose_pt"
     folder: "content/portuguese/purpose"
     create: false
     delete: false
@@ -297,7 +297,7 @@ collections:
         widget: "markdown"
   -
     label: "Conselheiros - Português"
-    name: "conselheiros"
+    name: "counselors_pt"
     folder: "content/portuguese/counselors"
     create: true
     slug: "{{slug}}"
@@ -367,7 +367,7 @@ collections:
         widget: "markdown"
   -
     label: "Autores - Portuguese"
-    name: "autores"
+    name: "authors_pt"
     folder: "content/portuguese/autores"
     create: true
     slug: "{{slug}}"
@@ -441,7 +441,7 @@ collections:
 # English configs
   -
     label: "Greeting - English"
-    name: "greeting"
+    name: "greeting_en"
     folder: "content/english/"
     create: false
     delete: false
@@ -469,7 +469,7 @@ collections:
         widget: "markdown"
   -
     label: "Manifest - English"
-    name: "manifest"
+    name: "manifest_en"
     folder: "content/english/manifest"
     create: false
     slug: "{{slug}}"
@@ -509,7 +509,7 @@ collections:
         widget: "markdown"
   -
     label: "Newsletter - English"
-    name: "newsletter"
+    name: "newsletter_en"
     folder: "content/english/newsletter"
     create: false
     slug: "{{slug}}"
@@ -536,7 +536,7 @@ collections:
         widget: "markdown"
   -
     label: "Surveys - English"
-    name: "surveys"
+    name: "survey_en"
     folder: "content/english/survey"
     create: false
     slug: "{{slug}}"
@@ -563,7 +563,7 @@ collections:
         widget: "markdown"
   -
     label: "Projects - English"
-    name: "projects"
+    name: "projects_en"
     folder: "content/english/projetos"
     create: true
     slug: "{{slug}}"
@@ -651,7 +651,7 @@ collections:
         widget: "markdown"
   -
     label: "What we Do - English"
-    name: "what-we-do"
+    name: "what_we_do_en"
     folder: "content/english/what-we-do"
     create: true
     slug: "{{slug}}"
@@ -697,7 +697,7 @@ collections:
         widget: "markdown"
   -
     label: "Values - English"
-    name: "values"
+    name: "purpose_en"
     folder: "content/english/purpose"
     create: false
     delete: false
@@ -725,7 +725,7 @@ collections:
         widget: "markdown"
   -
     label: "Counselors - English"
-    name: "counselors"
+    name: "counselors_en"
     folder: "content/english/counselors"
     create: true
     slug: "{{slug}}"
@@ -795,7 +795,7 @@ collections:
         widget: "markdown"
   -
     label: "Authors - English"
-    name: "authors"
+    name: "authors_en"
     folder: "content/english/autores"
     create: true
     slug: "{{slug}}"
@@ -869,7 +869,7 @@ collections:
 # Español configs
   -
     label: "Introducción - Español"
-    name: "introduccion"
+    name: "greeting_es"
     folder: "content/espanol/"
     create: false
     delete: false
@@ -897,7 +897,7 @@ collections:
         widget: "markdown"
   -
     label: "Manifiesto - Español"
-    name: "manifiesto"
+    name: "manifest_es"
     folder: "content/espanol/manifest"
     create: false
     slug: "{{slug}}"
@@ -937,7 +937,7 @@ collections:
         widget: "markdown"
   -
     label: "Newsletter - Español"
-    name: "newsletter-es"
+    name: "newsletter_es"
     folder: "content/espanol/newsletter"
     create: false
     slug: "{{slug}}"
@@ -964,7 +964,7 @@ collections:
         widget: "markdown"
   -
     label: "Encuestas - Español"
-    name: "encuestas"
+    name: "survey_es"
     folder: "content/espanol/survey"
     create: false
     slug: "{{slug}}"
@@ -991,7 +991,7 @@ collections:
         widget: "markdown"
   -
     label: "Proyectos - Español"
-    name: "proyectos"
+    name: "projects_es"
     folder: "content/espanol/projetos"
     create: true
     slug: "{{slug}}"
@@ -1079,7 +1079,7 @@ collections:
         widget: "markdown"
   -
     label: "Qué hacemos - Español"
-    name: "que-hacemos"
+    name: "what_we_do_es"
     folder: "content/espanol/what-we-do"
     create: true
     slug: "{{slug}}"
@@ -1125,7 +1125,7 @@ collections:
         widget: "markdown"
   -
     label: "Valores - Español"
-    name: "valores-es"
+    name: "purpose_es"
     folder: "content/espanol/purpose"
     create: false
     delete: false
@@ -1153,7 +1153,7 @@ collections:
         widget: "markdown"
   -
     label: "Consejeros - Español"
-    name: "consejeros"
+    name: "counselors_es"
     folder: "content/espanol/counselors"
     create: true
     slug: "{{slug}}"
@@ -1193,7 +1193,7 @@ collections:
         widget: "markdown"
   -
     label: "Autores - Español"
-    name: "autores-es"
+    name: "authors_es"
     folder: "content/espanol/autores"
     create: true
     slug: "{{slug}}"
