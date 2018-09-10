@@ -1,6 +1,6 @@
 ---
-title: "Instituto Tecnologia e Equidade"
-date: 2018-03-05T18:37:41-03:00
+title: The Technology and Equity
+date: 2018-03-05T21:37:41.000Z
 draft: false
 ---
 
