@@ -16,6 +16,7 @@ collections:
     name: "introducao"
     folder: "content/portuguese/"
     create: false
+    delete: false
     slug: "{{slug}}"
     fields:
       -
@@ -428,6 +429,7 @@ collections:
     name: "greeting"
     folder: "content/english/"
     create: false
+    delete: false
     slug: "{{slug}}"
     fields:
       -
@@ -840,6 +842,7 @@ collections:
     name: "introduccion"
     folder: "content/espanol/"
     create: false
+    delete: false
     slug: "{{slug}}"
     fields:
       -
