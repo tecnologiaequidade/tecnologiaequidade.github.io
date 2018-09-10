@@ -225,7 +225,7 @@ collections:
     label: "O que fazemos - Português"
     name: "o-que-fazemos"
     folder: "content/portuguese/what-we-do"
-    create: false
+    create: true
     slug: "{{slug}}"
     fields:
       -
@@ -254,6 +254,16 @@ collections:
         name: "weight"
         widget: "number"
       -
+        label: "Type"
+        name: "type"
+        widget: "hidden"
+        default: item
+      -
+        label: "Role"
+        name: "role"
+        widget: "hidden"
+        default: whatWeDo
+      -
         label: "Body"
         name: "body"
         widget: "markdown"
@@ -276,6 +286,11 @@ collections:
         name: "date"
         widget: "datetime"
         format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: false
       -
         label: "Body"
         name: "body"
@@ -638,7 +653,7 @@ collections:
     label: "What we Do - English"
     name: "what-we-do"
     folder: "content/english/what-we-do"
-    create: false
+    create: true
     slug: "{{slug}}"
     fields:
       -
@@ -667,6 +682,16 @@ collections:
         name: "weight"
         widget: "number"
       -
+        label: "Type"
+        name: "type"
+        widget: "hidden"
+        default: item
+      -
+        label: "Role"
+        name: "role"
+        widget: "hidden"
+        default: whatWeDo
+      -
         label: "Body"
         name: "body"
         widget: "markdown"
@@ -689,6 +714,11 @@ collections:
         name: "date"
         widget: "datetime"
         format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: false
       -
         label: "Body"
         name: "body"
@@ -1051,7 +1081,7 @@ collections:
     label: "Qué hacemos - Español"
     name: "que-hacemos"
     folder: "content/espanol/what-we-do"
-    create: false
+    create: true
     slug: "{{slug}}"
     fields:
       -
@@ -1080,6 +1110,16 @@ collections:
         name: "weight"
         widget: "number"
       -
+        label: "Type"
+        name: "type"
+        widget: "hidden"
+        default: item
+      -
+        label: "Role"
+        name: "role"
+        widget: "hidden"
+        default: whatWeDo
+      -
         label: "Body"
         name: "body"
         widget: "markdown"
@@ -1102,6 +1142,11 @@ collections:
         name: "date"
         widget: "datetime"
         format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: false
       -
         label: "Body"
         name: "body"
