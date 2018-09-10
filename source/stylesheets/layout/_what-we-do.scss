@@ -102,6 +102,10 @@
 			display: none;
 		}
 	}
+
+	&:focus::after {
+		outline: 1px dotted;
+	}
 }
 
 .what-box__content {

@@ -43,6 +43,10 @@
 			border-color: currentColor;
 		}
 	}
+
+	&:focus::after {
+		outline: 1px dotted;
+	}
 }
 
 .projects-wrap {
