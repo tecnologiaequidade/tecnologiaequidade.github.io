@@ -13,8 +13,7 @@ summary: >-
   ou não humanos - os chamados "bots". Essa Plataforma é uma iniciativa do
   Instituto Tecnologia e Sociedade (ITS- Rio) e o Instituto Tecnologia &
   Equidade (IT&E) e está sendo desenvolvido pelo AppCívico.
-relatedProjects:
-  - project: desinformacao-em-eleicoes
+relatedProjects: []
 authors:
   - author: thiago-rondon
   - author: marcio-pinto
