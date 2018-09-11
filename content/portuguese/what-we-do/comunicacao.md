@@ -3,7 +3,7 @@ title: Comunicação estratégica de causas edit
 date: 2018-03-06T17:52:00.000Z
 draft: false
 id: comunicacao
-weight: '122'
+weight: '4'
 type: item
 role: whatWeDo
 ---
