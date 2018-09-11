@@ -10,3 +10,4 @@ draft: false
 * Entender a complexidade para atingir impacto sistêmico positivo
 * Construir e inovar sobre o conhecimento existente
 * Construir e inovar sobre o conhecimento existente edit1
+*  * Construir e inovar sobre o conhecimento existente edit1
