@@ -1,22 +1,21 @@
 ---
 date: '2018-04-03T02:48:47-03:00'
-shortTitle: Desinformação em eleições
+shortTitle: Espanhol
 title: Español
 slug: desinformacao-em-eleicoes
 subtitle: ''
 darkText: false
 draft: false
 summary: >-
-  Projeto de pesquisa e ação para entender o possível impacto dos perfis não
-  humanos em redes sociais nas eleições de 2018. Além disso, a iniciativa busca
-  incidir positivamente nesse cenário, incluindo recomendações para o uso ético
-  dessa tecnologia e a criação de uma plataforma de identificação e denúncias de
-  robôs.
+  Em espanhol. Projeto de pesquisa e ação para entender o possível impacto dos
+  perfis não humanos em redes sociais nas eleições de 2018. Além disso, a
+  iniciativa busca incidir positivamente nesse cenário, incluindo recomendações
+  para o uso ético dessa tecnologia e a criação de uma plataforma de
+  identificação e denúncias de robôs.
 relatedProjects:
   - project: pegabot
-authors:
-  - author: thiago-rondon
-  - author: marcio-pinto
+autores-es:
+  - author: thiago
 weight: 2
 ---
 Projeto de pesquisa[^1] e ação do Instituto Tecnologia & Equidade que busca entender o possível impacto dos perfis não humanos em redes sociais nas eleições de 2018. Além disso, o foco da iniciativa é incidir positivamente nesse cenário, incluindo recomendações para o uso ético dessa tecnologia e a criação de uma plataforma de identificação e denúncias de robôs.
