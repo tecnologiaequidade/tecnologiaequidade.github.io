@@ -619,7 +619,7 @@ collections:
           label: "Author"
           name: "author"
           widget: "relation"
-          collection: "authors_es"
+          collection: "authors_en"
           searchFields: ["slug", "name"]
           valueField: "slug"
       -
