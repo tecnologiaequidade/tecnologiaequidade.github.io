@@ -35,6 +35,8 @@
 
 	text-align: left;
 
+	background-color: palette('red');
+
 	@media screen and (min-width: breakpoint('tablet')) {
 		flex-basis: 40%;
 		flex-grow: 1;
