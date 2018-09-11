@@ -4,7 +4,7 @@ date: 2018-03-06T19:19:00.000Z
 draft: false
 callToDownload: Faça download do manifesto completo
 pdf: /downloads/ITE-manifesto.pdf
-doc: /downloads/ITE-manifesto.docx
+doc: /uploads/img_city.png
 ---
 Acreditamos que atualmente estamos experimentando processos de imersão de tecnologias digitais que podem trazer impactos positivos e negativos ao mesmo tempo - que estão rapidamente reconfigurando nossa sociedade na medida em que avançam em muitas áreas e setores.
 
