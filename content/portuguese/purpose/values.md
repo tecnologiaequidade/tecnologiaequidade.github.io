@@ -5,6 +5,8 @@ draft: false
 ---
 * Solução de problemas com foco na humanidade (edit)
 * Defender o princípio da precaução como base da inovação. Defender o princípio da precaução como base da inovação. 
+  Defender o princípio da precaução como base da inovação. 
+  Defender o princípio da precaução como base da inovação. 
   Defender o princípio da precaução como base da inovação
 * Promover equidade e inclusão como padrão em nossas atividades
 * Defender a regeneração dos ecossistemas de que todos dependemos
