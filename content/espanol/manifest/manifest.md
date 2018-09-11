@@ -3,7 +3,7 @@ title: Nuestro Manifiesto
 date: 2018-03-06T19:19:00.000Z
 draft: false
 callToDownload: Baixe agora
-pdf: /downloads/ITE-manifesto.pdf
-doc: /downloads/ITE-manifesto.docx
+pdf: /uploads/bg-light.png
+doc: /uploads/ariel-kogan.png
 ---
-Hola que tal? Como vai?
+Teste em espanhol
