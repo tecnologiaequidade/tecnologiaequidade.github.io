@@ -1,7 +1,7 @@
 ---
 title: Camila Costa
 date: '2018-09-11T11:26:22Z'
-draft: true
+draft: false
 slug: camila
 avatar: /uploads/thiago-rondon-author.png
 weight: '3'
