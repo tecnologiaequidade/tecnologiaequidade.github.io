@@ -1,6 +1,6 @@
 ---
-title: "Comunicação estratégica de causas"
-date: 2018-03-06T14:52:00-03:00
+title: Inglês
+date: 2018-03-06T17:52:00.000Z
 draft: false
 id: comunicacao
 weight: 4
