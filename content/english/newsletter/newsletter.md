@@ -1,7 +1,6 @@
 ---
-title: "Newsletter"
-date: 2018-03-06T13:53:20-03:00
+title: This is a test
+date: 2018-03-06T16:53:20.000Z
 draft: false
 ---
-
-Para acompanhar as nossas novidades, insira seu e-mail!
+This is a test
