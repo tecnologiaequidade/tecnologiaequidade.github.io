@@ -26,16 +26,6 @@ collections:
         tagname: "h1"
         pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
       -
-        label: "Date"
-        name: "date"
-        widget: "datetime"
-        format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
-      -
-        label: "Draft"
-        name: "draft"
-        widget: "boolean"
-        default: false
-      -
         label: "Body"
         name: "body"
         widget: "markdown"
@@ -197,19 +187,20 @@ collections:
           label: "Project"
           name: "project"
           widget: "relation"
-          collection: "projetos"
+          collection: "projects_pt"
           searchFields: ["slug", "title"]
           valueField: "slug"
       -
         label: "Authors"
         name: "authors"
         widget: "list"
+        required: false
         fields:
         -
           label: "Author"
           name: "author"
           widget: "relation"
-          collection: "autores"
+          collection: "authors_pt"
           searchFields: ["slug", "name"]
           valueField: "slug"
       -
@@ -299,7 +290,7 @@ collections:
     label: "Conselheiros - Português"
     name: "counselors_pt"
     folder: "content/portuguese/counselors"
-    create: true
+    create: false
     slug: "{{slug}}"
     fields:
       -
@@ -453,16 +444,6 @@ collections:
         widget: "string"
         tagname: "h1"
         pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
-      -
-        label: "Date"
-        name: "date"
-        widget: "datetime"
-        format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
-      -
-        label: "Draft"
-        name: "draft"
-        widget: "boolean"
-        default: false
       -
         label: "Body"
         name: "body"
@@ -625,19 +606,20 @@ collections:
           label: "Project"
           name: "project"
           widget: "relation"
-          collection: "projects"
+          collection: "projects_en"
           searchFields: ["slug", "title"]
           valueField: "slug"
       -
         label: "Authors"
         name: "authors"
         widget: "list"
+        required: false
         fields:
         -
           label: "Author"
           name: "author"
           widget: "relation"
-          collection: "authors"
+          collection: "authors_es"
           searchFields: ["slug", "name"]
           valueField: "slug"
       -
@@ -727,7 +709,7 @@ collections:
     label: "Counselors - English"
     name: "counselors_en"
     folder: "content/english/counselors"
-    create: true
+    create: false
     slug: "{{slug}}"
     fields:
       -
@@ -881,16 +863,6 @@ collections:
         widget: "string"
         tagname: "h1"
         pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
-      -
-        label: "Date"
-        name: "date"
-        widget: "datetime"
-        format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
-      -
-        label: "Draft"
-        name: "draft"
-        widget: "boolean"
-        default: false
       -
         label: "Body"
         name: "body"
@@ -1051,7 +1023,7 @@ collections:
         fields:
         -
           label: "Project"
-          name: "project"
+          name: "project_es"
           widget: "relation"
           collection: "proyectos"
           searchFields: ["slug", "title"]
@@ -1060,12 +1032,13 @@ collections:
         label: "Authors"
         name: "autores-es"
         widget: "list"
+        required: false
         fields:
         -
           label: "Author"
           name: "author"
           widget: "relation"
-          collection: "authors"
+          collection: "authors_es"
           searchFields: ["slug", "name"]
           valueField: "slug"
       -
@@ -1155,7 +1128,7 @@ collections:
     label: "Consejeros - Español"
     name: "counselors_es"
     folder: "content/espanol/counselors"
-    create: true
+    create: false
     slug: "{{slug}}"
     fields:
       -
