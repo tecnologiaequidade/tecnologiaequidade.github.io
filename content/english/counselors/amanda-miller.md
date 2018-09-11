@@ -2,7 +2,7 @@
 title: Amanda Miller
 id: amandinha
 date: '2018-09-11T11:25:05Z'
-draft: true
+draft: false
 avatar: /uploads/gabriela-agustini.png
 weight: '10'
 type: person
