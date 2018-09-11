@@ -201,7 +201,7 @@ collections:
           name: "author"
           widget: "relation"
           collection: "authors_pt"
-          searchFields: ["slug", "name"]
+          searchFields: ["slug", "title"]
           valueField: "slug"
       -
         label: "Order"
@@ -620,7 +620,7 @@ collections:
           name: "author"
           widget: "relation"
           collection: "authors_en"
-          searchFields: ["slug", "name"]
+          searchFields: ["slug", "title"]
           valueField: "slug"
       -
         label: "Order"
@@ -1023,14 +1023,14 @@ collections:
         fields:
         -
           label: "Project"
-          name: "project_es"
+          name: "projects"
           widget: "relation"
-          collection: "proyectos"
+          collection: "project_es"
           searchFields: ["slug", "title"]
           valueField: "slug"
       -
         label: "Authors"
-        name: "autores-es"
+        name: "authors-es"
         widget: "list"
         required: false
         fields:
@@ -1039,7 +1039,7 @@ collections:
           name: "author"
           widget: "relation"
           collection: "authors_es"
-          searchFields: ["slug", "name"]
+          searchFields: ["slug", "title"]
           valueField: "slug"
       -
         label: "Order"
