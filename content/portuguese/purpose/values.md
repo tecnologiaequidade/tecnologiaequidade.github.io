@@ -9,5 +9,4 @@ draft: false
 * Defender a regeneração dos ecossistemas de que todos dependemos
 * Entender a complexidade para atingir impacto sistêmico positivo
 * Construir e inovar sobre o conhecimento existente
-* Construir e inovar sobre o conhecimento existente edit 1
-* Construir e inovar sobre o conhecimento existente edit  2
+* Construir e inovar sobre o conhecimento existente edit1
