@@ -2,7 +2,24 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 
-.content-header,
+.content-header {
+	position: relative;
+
+	max-width: $max-width;
+	padding-top: $gutter * 2;
+	padding-right: $gutter;
+	padding-bottom: $gutter;
+	padding-left: $gutter;
+	margin-right: auto;
+	margin-left: auto;
+
+	@media screen and (min-width: breakpoint('phablet')) {
+		padding: ($gutter * 3) $gutter;
+		padding-top: ($gutter * 3) $gutter;
+	}
+}
+
+
 .footer-container,
 .content {
 	max-width: $max-width;

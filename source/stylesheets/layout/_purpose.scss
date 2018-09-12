@@ -4,9 +4,18 @@
 	background-color: palette('emerald', 'base');
 }
 
-.purpose h4 {
+.purpose h3 {
 	margin-top: 0.5rem;
 	margin-bottom: 0.5rem;
+	text-transform: uppercase;
+
+	@media screen and (min-width: breakpoint('tablet')) {
+		font-size: 2rem;
+	}
+}
+
+.values-content h3 {
+	text-align: center;
 }
 
 .purpose p {
@@ -49,13 +58,6 @@
 	}
 }
 
-.values-content h4 {
-	@media screen and (min-width: breakpoint('tablet')) {
-		font-size: ms(1);
-
-		text-align: center;
-	}
-}
 
 .values-content ul {
 	padding: 0;

@@ -35,6 +35,8 @@
 
 	text-align: left;
 
+	background-color: palette('red');
+
 	@media screen and (min-width: breakpoint('tablet')) {
 		flex-basis: 40%;
 		flex-grow: 1;
@@ -57,7 +59,7 @@
 			width: auto;
 			min-height: 100%;
 
-			& h4 {
+			& h3 {
 				width: 100%;
 
 				font-size: ms(2);
@@ -102,6 +104,10 @@
 			display: none;
 		}
 	}
+
+	&:focus::after {
+		outline: 1px dotted;
+	}
 }
 
 .what-box__content {
@@ -127,7 +133,7 @@
 	}
 }
 
-.what-box h4 {
+.what-box h3 {
 	width: 8em;
 
 	padding: 0;

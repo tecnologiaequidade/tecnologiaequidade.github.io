@@ -1,25 +1,29 @@
 {{ partial "header.html" . }}
 
-<article class="not-found">
-	<header class="not-found-header">
-		<div class="content">
-			<div class="logo-light">
-				<a href="/">
-					{{ .Site.Title }}
-				</a>
+<body>
+	<article class="not-found">
+		<header class="not-found-header">
+			<div class="content">
+				<div class="logo-light">
+					<a href="{{ .LanguagePrefix }}">
+						{{ .Site.Title }}
+					</a>
+				</div>
 			</div>
-		</div>
-	</header>
+		</header>
 
-	<section class="content">
-		<h2>{{ i18n "404Title" | title }}</h2>
-		<div class="not-found-wrap">
-			<div class="not-found-text">
-				<p>{{ i18n "404Text" }}. <a href="/">{{ i18n "returnToHome" }}</a>
-				</p>
+		<section class="content">
+			<h2>{{ i18n "404Title" | title }}</h2>
+			<div class="not-found-wrap">
+				<div class="not-found-text">
+					<p>{{ i18n "404Text" }}. <a href="{{ .LanguagePrefix }}">{{ i18n "returnToHome" }}</a>
+					</p>
+				</div>
 			</div>
-		</div>
-	</section>
-</article>
+		</section>
+	</article>
 
 {{ partial "footer.html" . }}
+
+</body>
+</html>

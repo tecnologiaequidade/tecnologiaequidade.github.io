@@ -9,8 +9,12 @@
 						<img src="{{ .Params.avatarDirector }}" alt="{{ .Title }}">
 					</div>
 					<div class="person-content">
-						<h4>{{ .Title }}</h4>
+						<h3>{{ .Title }}</h3>
 						{{ .Content }}
+
+						{{ if .Params.twitter }}
+							<a class="social-link social-link--twitter" href="{{ .Params.twitter }}" rel="noopener">{{ .Title }}</a>
+						{{ end }}
 					</div>
 				</div>
 			{{ end }}

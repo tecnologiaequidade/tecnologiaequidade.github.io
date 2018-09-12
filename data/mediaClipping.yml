@@ -3,18 +3,22 @@ list:
     logotype: /uploads/istoe.png
     name: Istoé
     slug: istoe
+    alt: logo da revista Istoé
   - link: >-
       https://g1.globo.com/economia/tecnologia/noticia/o-que-e-um-robo-na-web-e-como-ele-pode-influenciar-o-debate-nas-redes-especialistas-explicam.ghtml
     logotype: /uploads/g1.png
     name: G1
     slug: g1
+    alt: Logo do Jornal da Globo G1
   - link: >-
       http://www1.folha.uol.com.br/poder/2017/12/1941961-grupos-combaterao-vale-tudo-eleitoral-na-internet.shtml
     logotype: /uploads/folha.png
     name: Folha
     slug: folha
+    alt: Logo da Folha de São Paulo
   - link: >-
       http://www.huffpostbrasil.com/2018/01/06/robos-sao-decisivos-para-definir-eleicao-polarizada-argumenta-especialista_a_23310816/
     logotype: /uploads/huffpost.png
     name: Huffpost
     slug: huffpost
+    alt: Logo do Huffpost

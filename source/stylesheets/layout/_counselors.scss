@@ -181,14 +181,18 @@ $counselors-bg: palette('red'), palette('orange', 'dark'), palette('orange', 'ba
 	}
 }
 
-.counselors__box h5 {
+.counselors__box h3 {
 	display: none;
 
+	font-size: ms(1);
+	font-family: 'archiasemibold', $title-font-stack;
 	text-align: center;
 	text-transform: uppercase;
+
+	color: palette('white');
 }
 
-.counselors__box:not(:target) > a:hover h5 {
+.counselors__box:not(:target) > a:hover h3 {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -201,7 +205,7 @@ $counselors-bg: palette('red'), palette('orange', 'dark'), palette('orange', 'ba
 	transform: translate(-50%, -50%);
 }
 
-.counselors__box:target h5 {
+.counselors__box:target h3 {
 	display: block;
 
 	text-align: left;

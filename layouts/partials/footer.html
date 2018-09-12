@@ -1,29 +1,36 @@
-	<footer class="site-footer">
-		<div class="footer-container">
-			{{ with .Site.Params.author }}
-				<div class="content-container__author">
-						<a href="/">Instituto Tecnologia e Equidade</a>
-					</h6>
-				</div>
-				<div class="footer__social-link">
-					<a class="big-social-link social-link--facebook" href="https://facebook.com/tecnologiaequidade" target="_blank">Facebook</a>
-					<a class="big-social-link social-link--twitter" href="https://twitter.com/tecnoequidade" target="_blank">Twitter</a>
-					<a class="big-social-link social-link--mail" href="mailto:contato@tecnologiaequidade.org.br">{{ i18n "email" | title }}</a>
-				</div>
+<footer class="site-footer">
+	<div class="footer-container">
+		<div class="content-container__author">
+			<h2>
+				<a href="{{ .LanguagePrefix }}">Instituto Tecnologia e Equidade</a>
+			</h2>
+		</div>
+		<div class="footer__social-link">
+			<a class="big-social-link social-link--facebook" href="https://facebook.com/tecnologiaequidade" target="_blank" rel="noopener">Facebook</a>
+			<a class="big-social-link social-link--twitter" href="https://twitter.com/tecnoequidade" target="_blank" rel="noopener">Twitter</a>
+			<a class="big-social-link social-link--mail" href="mailto:contato@tecnologiaequidade.org.br">{{ i18n "email" | title }}</a>
+		</div>
+		<div class="languages-navlinks-wrap">
+			{{ if .IsTranslated }}
+				<ul class="languages-navlinks">
+					{{ range .Translations }}
+					<li>
+						<a href="{{ .RelPermalink }}">{{ .Language.LanguageName }} {{ if .IsPage }} ({{ i18n "wordCount" . }}){{ end }}</a>
+					</li>
+					{{ end}}
+				</ul>
 			{{ end }}
 		</div>
-	</footer>
-</div> <!-- .main-container -->
+	</div>
+</footer>
 <script>
-	if (window.netlifyIdentity) {
-		window.netlifyIdentity.on("init", user => {
-			if (!user) {
-				window.netlifyIdentity.on("login", () => {
-					document.location.href = "/admin/";
-				});
-			}
-		});
-	}
+		if (window.netlifyIdentity) {
+			window.netlifyIdentity.on("init", user => {
+				if (!user) {
+					window.netlifyIdentity.on("login", () => {
+						document.location.href = "/admin/";
+					});
+				}
+			});
+		}
 </script>
-</body>
-</html>
