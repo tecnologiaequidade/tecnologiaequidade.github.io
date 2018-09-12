@@ -11,6 +11,7 @@ stepAnalysis: true
 templateMetrics: true
 pluralizeListTitles: false
 googleAnalytics: "UA-117128393-1"
+disableLanguages: ["en", "es"]
 
 FootnoteReturnLinkContents: "↩"
 
