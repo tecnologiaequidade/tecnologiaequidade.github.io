@@ -14,4 +14,4 @@ type: person
 role: team
 ---
 
-É administrador de empresas (Mestre e Bacharel) com 25 anos de experiência profissional. Na Fundación Avina, foi gestor da área de Tecnologia para Mudança Social; foi Coordenador Geral do Fundo Latino Americano de Inovações Cívicas, coordenador da Iniciativa Latino Americana de Dados Abertos (aliança entre International Development Research Centre do Canadá, CEPAL, OEA); representante da sociedade civil da América Latina no Comitê Executivo do Grupo de Trabalho de Dados Abertos da Aliança de Governo Aberto.
+Es administrador de empresas (Mestre y Bacharel) con 25 años de experiencia profesional. En la Fundación Avina, fue gestor del área de Tecnología para el Cambio Social; fue Coordinador General del Fondo Latinoamericano de Innovaciones Cívicas, coordinador de la Iniciativa Latinoamericana de Datos Abiertos (alianza entre International Development Research Centre do Canadá, CEPAL, OEA); representante de la sociedad civil de América Latina en el Comité Ejecutivo del Grupo de Trabajo de Datos Abiertos de la Alianza de Gobierno Abierto.

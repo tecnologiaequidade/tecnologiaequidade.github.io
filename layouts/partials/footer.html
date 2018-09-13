@@ -10,17 +10,17 @@
 			<a class="big-social-link social-link--twitter" href="https://twitter.com/tecnoequidade" target="_blank" rel="noopener">Twitter</a>
 			<a class="big-social-link social-link--mail" href="mailto:contato@tecnologiaequidade.org.br">{{ i18n "email" | title }}</a>
 		</div>
-		<div class="languages-navlinks-wrap">
-			{{ if .IsTranslated }}
+		{{ if .IsTranslated }}
+			<div class="languages-navlinks-wrap">
 				<ul class="languages-navlinks">
 					{{ range .Translations }}
 					<li>
-						<a href="{{ .RelPermalink }}">{{ .Language.LanguageName }} {{ if .IsPage }} ({{ i18n "wordCount" . }}){{ end }}</a>
+						<a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
 					</li>
 					{{ end}}
 				</ul>
-			{{ end }}
-		</div>
+			</div>
+		{{ end }}
 	</div>
 </footer>
 <script>

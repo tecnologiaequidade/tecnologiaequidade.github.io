@@ -1,7 +1,7 @@
 ---
-title: "Visão"
+title: "Visión"
 date: 2018-03-06T14:53:40-03:00
 draft: false
 ---
 
-Nossas pesquisas e projetos inspiram centenas de políticas públicas e iniciativas privadas que impactam positivamente a vida de milhões de pessoas, especialmente os mais vulneráveis.
+Nuestras investigaciones y proyectos inspiran cientos de políticas públicas e iniciativas privadas que tienen impacto positivo en la vida de millones de personas, especialmente las más vulnerables.

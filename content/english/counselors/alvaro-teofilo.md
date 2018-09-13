@@ -11,6 +11,7 @@ avatar: /uploads/alvaro-teofilo.png
 weight: 2
 type: person
 role: counselor
+alt: "Álvaro Teófilo smiling. He has short, wavy hair"
 ---
 
-Álvaro Teófilo atuou no mercado financeiro brasileiro nos últimos 20 anos em posições de liderança nos temas de Cyber Security e Prevenção à Fraude. Foi Business Information Security Officer do Citigroup no Brasil, CSO da Caixa Seguradora e Grupo Santander e Superintendente Executivo de Segurança e Fraudes no Banco Original. Atualmente é Diretor de Soluções de Identidade Digital na Tempest Security Intelligence, uma das mais importantes referências em cyber security no Brasil. É formado em administração de empresas pela Universidade Anhembi Morumbi, estudou Inovação na Harvard Business School e graduou-se na Carnegie Mellon University no curso de formação de líderes globais de CyberSecurity.
+Álvaro Teófilo has worked in the Brazilian financial market in the last 20 years in leading positions in the Cyber Security and Fraud Prevention themes. He was Business Information Security Officer of Citigroup in Brazil, CSO of Caixa Seguradora and Santander Group and Executive Superintendent of Security and Fraud at Banco Original. He is currently Director of Digital Identity Solutions at Tempest Security Intelligence, one of the most important references in cyber security in Brazil. He holds a degree in business administration from Anhembi Morumbi University, studied Innovation at Harvard Business School and graduated from Carnegie Mellon University in the CyberSecurity Global Leadership Training course.

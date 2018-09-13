@@ -11,6 +11,7 @@ avatar: /uploads/ricardo-abramovay.png
 weight: 6
 type: person
 role: counselor
+alt: "Ricardo Abramovay. He has gray hair, a short gray beard, and wears glasses"
 ---
 
-Ricardo Abramovay é professor Sênior do Programa de Ciência Ambiental do IEE/USP. Entrou no Departamento de Economia da FEA/USP em 1983, onde é Professor Titular desde 2001. É autor de “Paradigmas do Capitalismo Agrário em Questão” (Prêmio ANPOCS), “Muito Além daEconomia Verde” e coautor de “Lixo Zero: Gestão de Resíduos Sólidos para uma Sociedade mais Próspera” (Planeta Sustentável), entre outras obras. Trabalha atualmente em torno da relação entre desenvolvimento sustentável e revolução digital.
+Ricardo Abramovay is a Senior Lecturer in the Environmental Science Program at IEE / USP. He joined the Economics Department of FEA / USP in 1983, where he has been a Full Professor since 2001. He is the author of "Paradigms of Agrarian Capitalism in Question" (ANPOCS Award), "Beyond the Green Economy" and coauthor of "Zero Rubbish: Solid Waste Management for a Prosperous Society" (Sustainable Planet), among other works. It is currently working on the relationship between sustainable development and digital revolution.

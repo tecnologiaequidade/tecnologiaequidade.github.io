@@ -13,4 +13,4 @@ type: person
 role: counselor
 ---
 
-Ricardo Abramovay é professor Sênior do Programa de Ciência Ambiental do IEE/USP. Entrou no Departamento de Economia da FEA/USP em 1983, onde é Professor Titular desde 2001. É autor de “Paradigmas do Capitalismo Agrário em Questão” (Prêmio ANPOCS), “Muito Além daEconomia Verde” e coautor de “Lixo Zero: Gestão de Resíduos Sólidos para uma Sociedade mais Próspera” (Planeta Sustentável), entre outras obras. Trabalha atualmente em torno da relação entre desenvolvimento sustentável e revolução digital.
+Ricardo Abramovay es profesor senior del Programa de Ciencia Ambiental del IEE / USP. Entró en el Departamento de Economía de la FEA / USP en 1983, donde es Profesor Titular desde 2001. Es autor de "Paradigmas del Capitalismo Agrario en cuestión" (Premio ANPOCS), "Más allá de la Economía Verde" y coautor de "Basura Cero: Gestión de Residuos Sólidos para una Sociedad más próspera "(Planeta Sustentable), entre otras obras. Trabaja actualmente en torno a la relación entre desarrollo sostenible y revolución digital.

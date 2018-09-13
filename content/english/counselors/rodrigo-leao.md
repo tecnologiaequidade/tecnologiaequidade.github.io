@@ -11,6 +11,7 @@ avatar: /uploads/rodrigo-leao.png
 weight: 8
 type: person
 role: counselor
+alt: "Rodrigo Leão serious. He has a red beard and short hair"
 ---
 
-Rodrigo Leão é sócio-fundador da agência de comunicação Casa Darwin e Professor dos MBAs de Marketing, Executivo Internacional e International MBA da FIA (Fundação Instituto de Administração). Fez sua carreira em publicidade atendendo alguns dos maiores clientes do Brasil, como Itaú, Bombril, Sadia, Folha de S. Paulo, Grendene, Melissa e Banco Safra, entre outros. Além da publicidade, trabalhou como jornalista e colunista escrevendo para veículos como Folha de S. Paulo, Metro, Meio & Mensagem, Capricho, Trip, Revista Bizz e Pais & Filhos. Rodrigo é compositor de temas de novela e músicas de sucesso com a banda Skank e sambas com o Clube do Balanço.
+Rodrigo Leão is a founding partner of the Casa Darwin communication agency and Professor of MBAs in Marketing, International Executive and International MBA of FIA (Foundation Institute of Administration). He made his advertising career assisting some of the biggest clients in Brazil, such as Itaú Bank, Bombril, Sadia, Grendene, Melissa, Safra Bank and the newspaper Folha de S. Paulo among others. In addition to advertising, he worked as a journalist and columnist writing for vehicles such as Folha de S. Paulo, Metro, Meio & Mensagem, Capricho, Trip, Bizz Magazine and Parents & Children. Rodrigo is a composer of soap opera themes and successful songs with the band Skank and sambas with the Clube do Balanço.

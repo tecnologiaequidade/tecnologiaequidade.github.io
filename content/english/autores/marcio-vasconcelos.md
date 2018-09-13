@@ -9,9 +9,10 @@ facebook: https://www.facebook.com/marciovasconcelospinto
 twitter:
 avatar: /uploads/marcio-pinto.png
 avatarDirector: /uploads/director-marcio-vasconcelos.jpg
+alt: "He is wearing glasses, has a short beard and has straight and short hair"
 weight: 2
 type: person
 role: team
 ---
 
-É administrador de empresas (Mestre e Bacharel) com 25 anos de experiência profissional. Na Fundación Avina, foi gestor da área de Tecnologia para Mudança Social; foi Coordenador Geral do Fundo Latino Americano de Inovações Cívicas, coordenador da Iniciativa Latino Americana de Dados Abertos (aliança entre International Development Research Centre do Canadá, CEPAL, OEA); representante da sociedade civil da América Latina no Comitê Executivo do Grupo de Trabalho de Dados Abertos da Aliança de Governo Aberto.
+He is a business administrator (Master and Bachelor) with 25 years of professional experience. At Avina Foundation, was manager of the area of Technology for Social Change; was the General Coordinator of the Latin American Fund for Civic Innovations, coordinator of the Latin American Open Data Initiative (alliance among the International Development Research Center of Canada, ECLAC, OAS); representative of Latin American civil society on the Executive Committee of the Open Data Working Group of the Open Government Alliance.

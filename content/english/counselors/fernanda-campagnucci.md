@@ -11,6 +11,7 @@ avatar: /uploads/fernanda-campagnucci.png
 weight: 4
 type: person
 role: counselor
+alt: "Fernanda Campagnucci smiling. She has short black hair"
 ---
 
-Fernanda Campagnucci se formou em Jornalismo pela ECA-USP e mestre em educação pela Universidade de São Paulo (USP). Fernanda atua como analista de políticas públicas e gestão governamental na Prefeitura de São Paulo, onde desenvolve projetos de transparência, integridade pública e tecnologias cívicas desde 2013. Atualmente coordena o Pátio Digital, iniciativa de governo aberto da Secretaria Municipal de Educação. É fellow de governo aberto da Organização dos Estados Americanos e integrante da Rede de Líderes em Dados Abertos do Open Data Institute.
+Fernanda Campagnucci has a degree in Journalism from ECA-USP and a master's degree in education from the University of São Paulo (USP). Fernanda is an analyst of public policies and government management at the São Paulo City Hall, where she has been developing transparency, public integrity and civic technologies projects since 2013. Currently, she coordinates Pátio Digital, an open government initiative of the Municipal Education Department. She is a Fellow of the Open Government of the Organization of American States and a member of Open Data Institute's Open Data Leaders Network.

@@ -1,30 +1,24 @@
 ---
 date: '2018-04-03T02:48:47-03:00'
-shortTitle: Desinformação em eleições
-title: English
-slug: desinformacao-em-eleicoes
+shortTitle: Disinformation in Elections
+title: Disinformation in Elections
+slug: disinformation-in-elections
 subtitle: ''
 darkText: false
 draft: false
 summary: >-
-  Projeto de pesquisa e ação para entender o possível impacto dos perfis não
-  humanos em redes sociais nas eleições de 2018. Além disso, a iniciativa busca
-  incidir positivamente nesse cenário, incluindo recomendações para o uso ético
-  dessa tecnologia e a criação de uma plataforma de identificação e denúncias de
-  robôs.
-relatedProjects:
-  - project: pegabot
-authors:
-  - author: thiago-rondon
-  - author: marcio-pinto
+  Research and action project to understand the possible impact of non-human profiles on social networks in the 2018 elections. In addition, the initiative seeks to have a positive impact on this scenario, including recommendations for the ethical use of this technology and the creation of a platform for Robots identification and denunciation.
 weight: 2
 ---
-A pesquisa “Desinformação em Eleições: desequilíbrios acelerados pela tecnologia” e o White Paper "Recomendações Sistêmicas para Combater a Desinformação nas Eleições do Brasil" são iniciativas do Instituto Tecnologia e Equidade (IT&E) publicadas em junho de 2018.
 
-Na pesquisa, buscamos explorar dimensões a respeito das fake news e dos bots — suas origens, tipos, características, comportamentos, entornos, antídotos, legislação e iniciativas inspiradoras ao redor do mundo.
+The research "Disinformation in Elections: Imbalances Accelerated by Technology" and the White Paper "Systemic Recommendations to Fight Disinformation in Brazilian Elections" are initiatives of the Technology & Equity Institute (T&EI) published in June 2018.
 
-O White Paper é um dos principais desdobramentos da pesquisa. A partir do Mapa Sistêmico, ele mostra um modelo do Sistema Propaganda Eleitoral na Internet nas Eleições de 2018 no Brasil e propostas de mudanças que denominamos “Pontos de Alavancagem Sistêmica”.
+In the research, we sought to explore dimensions regarding fake news and bots - their origins, types, characteristics, behaviors, environments, antidotes, legislation and inspiring initiatives around the world.
 
-O objetivo deste projeto é gerar eleições mais justas e equitativas. Que elas possam ter, como propósito central, o ato de oferecer informações aos cidadãos a partir de dados e conteúdos legítimos, reduzindo, ao máximo, a desinformação, o uso malicioso da tecnologia e, principalmente, a manipulação do eleitor.
+The White Paper is one of the main research developments. From the Systemic Map, it shows a model of the System Electoral Propaganda on the Internet in the 2018 Elections in Brazil and change proposals that we call "Systemic Leverage Points".
 
-\[^1]: A equipe responsável pela pesquisa é composta por Ellen Aquino, Carlos Júnior, Ariel Kogan, Márcio Vasconcelos e Thiago Rondon.
+The goal of this project is to generate more equitable and fair elections. That they may have, as a central purpose, the information provision to citizens based on legitimate data and content, minimizing disinformation, malicious use of technology and, above all, voter manipulation.
+
+[^1]: The research team is made up of Ellen Aquino, Carlos Júnior, Ariel Kogan, Márcio Vasconcelos and Thiago Rondon.
+
+

@@ -11,8 +11,6 @@ stepAnalysis: true
 templateMetrics: true
 pluralizeListTitles: false
 googleAnalytics: "UA-117128393-1"
-disableLanguages: ["en", "es"]
-
 FootnoteReturnLinkContents: "↩"
 
 taxonomies:
@@ -55,16 +53,15 @@ languages:
             Weight: 5
             Identifier: "conselheiros"
             URL: "#conselheiros"
-
   en:
     contentDir: content/english
     languageName: English
     languageCode: "en-US"
-    title: "Hello"
+    title: "The Technology & Equity Institute (T&EI)"
     weight: 2
     params:
-      description: The institute.
-      subtitle: "Hello"
+      description: Is a non-profit organization that develops research and experimental projects that contribute to achieving equity with the ethical use of technology.
+      subtitle: "The Technology & Equity Institute (T&EI)"
     menu:
       main:
           - Name: "Manifesto"
@@ -72,25 +69,25 @@ languages:
             Weight: 1
             Identifier: "manifesto"
             URL: "#manifesto"
-          - Name: "Projetos"
+          - Name: "Projects"
             Pre: ""
             Weight: 2
-            Identifier: "projetos"
+            Identifier: "projects"
             URL: "#projetos"
-          - Name: "O que fazemos"
+          - Name: "What we do"
             Pre: ""
             Weight: 3
-            Identifier: "o-que-fazemos"
+            Identifier: "what-we-do"
             URL: "#o-que-fazemos"
-          - Name: "Valores"
+          - Name: "Values"
             Pre: ""
             Weight: 4
-            Identifier: "valores"
+            Identifier: "mission-vision-values"
             URL: "#valores"
-          - Name: "Conselheiros"
+          - Name: "Counselors"
             Pre: ""
             Weight: 5
-            Identifier: "conselheiros"
+            Identifier: "counselors"
             URL: "#conselheiros"
   es:
     contentDir: content/espanol
@@ -104,30 +101,30 @@ languages:
       subtitle: "Holla"
     menu:
       main:
-          - Name: "Manifesto"
+          - Name: "Manifiesto"
             Pre: ""
             Weight: 1
-            Identifier: "manifesto"
+            Identifier: "manifiesto"
             URL: "#manifesto"
-          - Name: "Projetos"
+          - Name: "Proyectos"
             Pre: ""
             Weight: 2
-            Identifier: "projetos"
+            Identifier: "proyectos"
             URL: "#projetos"
-          - Name: "O que fazemos"
+          - Name: "Qué hacemos?"
             Pre: ""
             Weight: 3
-            Identifier: "o-que-fazemos"
+            Identifier: "que-hacemos"
             URL: "#o-que-fazemos"
           - Name: "Valores"
             Pre: ""
             Weight: 4
-            Identifier: "valores"
+            Identifier: "mision-vision-valores"
             URL: "#valores"
-          - Name: "Conselheiros"
+          - Name: "Consejeros"
             Pre: ""
             Weight: 5
-            Identifier: "conselheiros"
+            Identifier: "consejeros"
             URL: "#conselheiros"
 
 params:

@@ -11,6 +11,7 @@ avatar: /uploads/ana-guerrini.png
 weight: 1
 type: person
 role: counselor
+alt: "Ana Guerrini talking on microphone and smiling. She has curly hair above her shoulders"
 ---
 
-Formada em Economia pela Universidade de São Paulo, com mestrado em Estudos Latino-Americanos na Universidade de Oxford e doutorado em Sociedade da Informação e do Conhecimento pela Universitat Oberta de Catalunya. Desenvolveu trabalhos nos campos de processos participativos, transparência e o uso de tecnologia e dados para tornar o planejamento urbano e políticas públicas mais democráticas e efetivas. Hoje é Head de Políticas Públicas e Pesquisa da 99 e trabalha com organizações governamentais, sociedade civil e academia em iniciativas de transformação da mobilidade urbana.
+Graduated in Economics from the University of São Paulo, with a Master's Degree in Latin American Studies at the University of Oxford and a Doctorate in Information and Knowledge Society from the Universitat Oberta de Catalunya. She has developed works in the fields of participatory processes, transparency and the use of technology and data to make urban planning and public policies more democratic and effective. Today she is Head of Public Policy and Research at 99 and works with governmental organizations, civil society and academia in initiatives to transform urban mobility.
