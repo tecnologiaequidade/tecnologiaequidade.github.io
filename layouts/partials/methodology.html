@@ -1,0 +1,8 @@
+{{ range where .Site.Pages ".File.TranslationBaseName" "methodology" }}
+<section class="methodology">
+	<div class="content smaller-width" id="metodologia decimal">
+		<h2>{{ .Title }}</h2>
+		{{ .Content }}
+	</div>
+</section>
+{{ end }}
