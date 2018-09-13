@@ -11,4 +11,5 @@ weight: 3
 type: person
 role: team
 ---
-Empreendedor que atua para reconstruir negócios e a sociedade com o uso positivo da tecnologia. Atualmente é diretor executivo na EOKOE que apoia organizações na exploração de novos propósitos e no APPCÍVICO que atua com tecnologias cívicas junto de políticos, governos e sociedade civil. Escreve semanalmente na coluna "Multidões" na Época Negócios sobre "tecnologia, organismos e poder". Entusiasta e colaborador de projetos de software livre e o movimento de dados abertos.
+
+Empreendedor que atua para reconstruir negócios e a sociedade com o uso positivo da tecnologia. Atualmente é diretor executivo na EOKOE que apoia organizações na exploração de novos propósitos e no AppCívico que atua com tecnologias cívicas junto de políticos, governos e sociedade civil. Escreve semanalmente na coluna “Multidões” na Época Negócios sobre “tecnologia, organismos e poder”. Entusiasta e colaborador de projetos de software livre e o movimento de dados abertos.
