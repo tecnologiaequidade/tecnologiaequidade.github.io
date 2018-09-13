@@ -4,9 +4,9 @@ date: 2018-03-06T14:54:39-03:00
 draft: false
 ---
 
-- Solução de problemas com foco na humanidade
-- Defender o princípio da precaução como base da inovação
-- Promover equidade e inclusão como padrão em nossas atividades
-- Defender a regeneração dos ecossistemas de que todos dependemos
-- Entender a complexidade para atingir impacto sistêmico positivo
-- Construir e inovar sobre o conhecimento existente
+- Solución de problemas con foco en la humanidad.
+- Defender el principio de precaución como base de la innovación.
+- Promover equidad e inclusión en todas nuestras actividades.
+- Defender la regeneración de los ecosistemas de los que todos dependemos.
+- Entender la complejidad para lograr un impacto sistémico positivo.
+- Construir e innovar sobre el conocimiento existente.

@@ -8,21 +8,16 @@ titleImage: ''
 darkText: false
 draft: false
 summary: >-
-  É uma iniciativa com o foco de oferecer um serviço qualificado e automatizado
-  para verificar a probabilidade dos perfis em redes sociais serem automatizados
-  ou não humanos - os chamados "bots". Essa Plataforma é uma iniciativa do
-  Instituto Tecnologia e Sociedade (ITS- Rio) e o Instituto Tecnologia &
-  Equidade (IT&E) e está sendo desenvolvido pelo AppCívico.
+  Es una iniciativa que tiene como objetivo ofrecer un servicio calificado y automatizado para verificar la probabilidad de que determinados perfiles de redes sociales sean automatizados o no humanos - los llamados "bots". Esta Plataforma es una iniciativa del Instituto Tecnología y Sociedad (ITS-Rio) y del Instituto Tecnología y Equidad (IT&E) y la plataforma fue desarrollada por la empresa social de tecnologías cívicas, AppCívico.
+
 relatedProjects:
-  - project: desinformacao-em-eleicoes
-authors:
-  - author: thiago-rondon
+  - project: desinformacion-en-elecciones
   - author: marcio-pinto
 weight: 1
 ---
 
-Os bots estão por aí e poucos sabem como eles funcionam, quem os desenvolve e por quem são financiados. A plataforma PegaBot tem o objetivo de ajudar a combater esse problema e deixar o debate sobre bots no Brasil mais transparente e informado. O PegaBot é um projeto do Instituto de Tecnologia e Sociedade do Rio de Janeiro (ITS Rio) e do Instituto Tecnologia & Equidade (IT&E), com desenvolvimento do AppCívico.
+Los bots están por ahí y pocos saben cómo funcionan, quién los desarrolla y por quién son financiados. La plataforma PegaBot tiene el objetivo de ayudar a combatir este problema y dejar el debate sobre bots en Brasil más transparente e informado. PegaBot es un proyecto del Instituto Tecnología y Sociedad (ITS-Rio) y del Instituto Tecnología y Equidad (IT&E), la plataforma fue desarrollada por la empresa social de tecnologías cívicas, AppCívico.
 
-> Nesta plataforma, o usuário pode verificar a probabilidade de um perfil de rede social ser controlado por  um bot. Por enquanto, a plataforma é integrada ao Twitter, mas, em breve, estará integrada a outras mídias sociais.
+> En esta plataforma, el usuario puede verificar la probabilidad de que un perfil de red social sea controlado por un bot. Por el momento, la plataforma se integra a Twitter, pero pronto estará integrada a otras redes sociales.
 
-O projeto foi construído a partir da plataforma Botometer, criada pela Indiana University Network Science Institute (IUNI) e Center for Complex Networks and Systems Research (CNetS). A equipe do PegaBot trabalhou e incrementou o código aberto e o treinou para análise em Pt-Br.
+El proyecto fue construido a partir de la plataforma Botometer, creada por la  Indiana University Network Science Institute (IUNI) y Center for Complex Networks and Systems Research (CNetS). El equipo de PegaBot trabajó e incrementó el código abierto y lo entrenó para análisis en Pt-Br.

@@ -1,31 +1,24 @@
 ---
 date: '2018-04-03T02:48:47-03:00'
-shortTitle: Desinformação em eleições
+shortTitle: Desinformación en Elecciones
 title: Español
-slug: desinformacao-em-eleicoes
+slug: desinformacion-en-elecciones
 subtitle: ''
 darkText: false
 draft: false
 summary: >-
-  Projeto de pesquisa e ação para entender o possível impacto dos perfis não
-  humanos em redes sociais nas eleições de 2018. Além disso, a iniciativa busca
-  incidir positivamente nesse cenário, incluindo recomendações para o uso ético
-  dessa tecnologia e a criação de uma plataforma de identificação e denúncias de
-  robôs.
+  Proyecto de investigación y acción para entender el posible impacto de los perfiles no humanos en redes sociales en las elecciones de 2018. Además, la iniciativa busca incidir positivamente en ese escenario, incluyendo recomendaciones para el uso ético de esa tecnología y la creación de una plataforma de identificación y denuncias de robots.
 relatedProjects:
   - project: pegabot
-authors:
-  - author: thiago-rondon
-  - author: marcio-pinto
 weight: 2
 ---
-Projeto de pesquisa[^1] e ação do Instituto Tecnologia & Equidade que busca entender o possível impacto dos perfis não humanos em redes sociais nas eleições de 2018. Além disso, o foco da iniciativa é incidir positivamente nesse cenário, incluindo recomendações para o uso ético dessa tecnologia e a criação de uma plataforma de identificação e denúncias de robôs.
 
-**A pesquisa conta com os seguintes objetivos principais:**
+La investigación "Desinformación en Elecciones: desequilibrios acelerados por la tecnología" y el White Paper "Recomendaciones Sistémicas para Combatir la Desinformación en las Elecciones de Brasil" son iniciativas del Instituto Tecnología y Equidad (IT&E) publicadas en junio de 2018.
 
-* Compreender a influência psicológica (psicometria, OCEAN model, etc.) da comunicação digital para mudar comportamentos e atitudes em processos eleitorais;
-* Compreender o funcionamento detalhado das principais estratégias e processos usados para manipular pessoas em  eleições - propagandas personalizadas, bots, fake news, ataques sybill, sockpuppets, trolls, personas, shadow ban, hate speech  - incluindo atores, tecnologias, infraestruturas, etc;
-* Identificar e investigar principais mecanismos de combate à manipulação digital (fake news e bots) atuais;
-* Gerar aprendizados que informem o desenvolvimento de novas estratégias e processos de contra-ataque e antídotos anti-manipulação, incluindo sistemas de detecção de bots.
+En la investigación, buscamos explorar dimensiones acerca de las fake news y de los bots - sus orígenes, tipos, características, comportamientos, entornos, antídotos, legislación e iniciativas inspiradoras alrededor del mundo.
 
-[^1]: A equipe responsável pela pesquisa é composta por Ellen Aquino e Carlos Júnior, pesquisadores, e Márcio Vasconcelos, codiretor do Instituto Tecnologia &amp; Equidade.
+El White Paper es uno de los principales resultados de la investigación. A partir del Mapa Sistémico, muestra un modelo del Sistema Propaganda Electoral en Internet en las Elecciones de 2018 en Brasil y propuestas de cambios que denominamos "Puntos de apalancamiento sistémico".
+
+El objetivo de este proyecto es generar elecciones más justas y equitativas. Que puedan tener, como propósito central, el acto de ofrecer informaciones a los ciudadanos a partir de datos y contenidos legítimos, reduciendo al máximo la desinformación, el uso malicioso de la tecnología y, principalmente, la manipulación del elector.
+
+[^ 1]: El equipo responsable por la investigación está compuesto por Ellen Aquino, Carlos Júnior, Ariel Kogan, Márcio Vasconcelos y Thiago Rondon.

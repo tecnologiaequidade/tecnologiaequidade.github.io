@@ -14,4 +14,4 @@ type: person
 role: team
 ---
 
-É diretor-executivo da Open Knowledge Brasil. Coordenador do Voto Legal. Diretor da Fundação Tikun (Argentina). Engenheiro industrial pela Universidad Nacional de Cuyo (Argentina) e ENISE (França). Sócio da empresa Sinapsis. Consultor do AppCívico. Membro do Conselho Criativo do Minha Sampa. Membro do Conselho Consultivo das iniciativas: Rede Nossa São Paulo, ICLEI Brasil, Gênero e Número e Muove Brasil.
+Ingeniero industrial por la Universidad Nacional de Cuyo (Argentina) y ENISE (Francia). Director de la Fundación Tikun (Argentina). Fue director ejecutivo de Open Knowledge Brasil. Miembro del Consejo Creativo de mi Sampa. Miembro del Consejo Consultivo de las iniciativas: Rede Nossa São Paulo, ICLEI Brasil, Gênero e Número e Muove Brasil.

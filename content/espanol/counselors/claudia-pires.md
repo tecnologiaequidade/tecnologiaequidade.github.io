@@ -13,4 +13,6 @@ type: person
 role: counselor
 ---
 
-Pós-graduada em Marketing em Berkeley, com MBA em Negócios e em Gestão Sustentável. Experiência de 20 anos desenvolvida nas áreas de Marketing, Gestão Empresarial e Sustentabilidade de multinacionais, como PepsiCo, Quaker, Dana e Basf. Realizou projetos especiais para Santander Bank, Grupo Pão de Açúcar, Natura, Nestlé, Heineken e Brasil Kirin. Fundou a so+ma em janeiro de 2015. Em 2017, foi reconhecida como profissional que melhor representou a ODS 12 (consumo responsável e produção) da agenda da ONU para 2030 com o Prêmio Abraps e "Virada Sustentável".
+Posgrado en Marketing en Berkeley, con MBA en Negocios y en Gestión Sostenible. Experiencia de 20 años desarrollada en las áreas de Marketing, Gestión Empresarial y Sustentabilidad de multinacionales, como PepsiCo, Quaker, Dana y Basf. Realizó proyectos especiales para Santander Bank, Grupo Pão de Açúcar, Natura, Nestlé, Heineken e Brasil Kirin.
+Fundó la empresa a so+ma en enero de 2015. En 2017, fue reconocida como profesional que mejor representó a la ODS 12 (consumo responsable y producción) de la agenda de la ONU para 2030 con el Premio Abraps y la "Virada Sustentable".
+

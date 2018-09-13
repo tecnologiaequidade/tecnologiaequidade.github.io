@@ -16,3 +16,4 @@ Entendemos que necesitamos cada vez más de investigaciones enfocadas en los efe
 Queremos aprovechar las oportunidades que estas innovaciones están creando en los ámbitos social, ambiental, económico, político y cultural e impactar en la elaboración de políticas públicas, prácticas comerciales y jurisprudencias enfocadas en la justicia y en oportunidades para todos.
 
 Adoptamos el pensamiento complejo como una metodología necesaria para para compreender y proponer cambios en la dirección en que la humanidad está tomando al implementar tecnologías disruptivas.
+
