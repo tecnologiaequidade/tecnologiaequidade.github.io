@@ -1,7 +1,7 @@
 ---
 date: '2018-04-03T02:48:47-03:00'
 shortTitle: Desinformação em eleições
-title: Desequilíbrios acelerados pela tecnologia
+title: Desinformação em eleições
 slug: desinformacao-em-eleicoes
 subtitle: ''
 darkText: false
@@ -10,9 +10,6 @@ summary: >-
   Projeto de pesquisa e ação para entender o possível impacto dos perfis não humanos em redes sociais nas eleições de 2018. Além disso, a iniciativa busca incidir positivamente nesse cenário, incluindo recomendações para o uso ético dessa tecnologia e a criação de uma plataforma de identificação e denúncias de robôs.
 relatedProjects:
   - project: pegabot
-authors:
-  - author: thiago-rondon
-  - author: marcio-pinto
 weight: 2
 ---
 
