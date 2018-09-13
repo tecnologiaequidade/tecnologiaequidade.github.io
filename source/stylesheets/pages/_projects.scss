@@ -160,12 +160,11 @@
 	border: 1px solid palette('blue', 'pool');
 
 	& h4 {
-		width: 6em;
+		width: 100%;
 
 		margin: 0;
 
-		text-transform: uppercase;
-
+		hyphens: auto;
 		word-wrap: normal;
 		color: palette('blue', 'pool');
 
