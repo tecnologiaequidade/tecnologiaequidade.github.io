@@ -1,6 +1,6 @@
 ---
 date: 2018-03-05T17:48:47.000Z
-shortTitle: ''
+shortTitle: 'Pegabot'
 title: Pegabot
 slug: pegabot
 subtitle: ''
@@ -9,10 +9,6 @@ darkText: false
 draft: false
 summary: >-
   Es una iniciativa que tiene como objetivo ofrecer un servicio calificado y automatizado para verificar la probabilidad de que determinados perfiles de redes sociales sean automatizados o no humanos - los llamados "bots". Esta Plataforma es una iniciativa del Instituto Tecnología y Sociedad (ITS-Rio) y del Instituto Tecnología y Equidad (IT&E) y la plataforma fue desarrollada por la empresa social de tecnologías cívicas, AppCívico.
-
-relatedProjects:
-  - project: desinformacion-en-elecciones
-  - author: marcio-pinto
 weight: 1
 ---
 

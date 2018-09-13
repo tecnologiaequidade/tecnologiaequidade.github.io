@@ -1,7 +1,7 @@
 ---
 date: '2018-04-03T02:48:47-03:00'
 shortTitle: Desinformación en Elecciones
-title: Español
+title: Desinformación en Elecciones
 slug: desinformacion-en-elecciones
 subtitle: ''
 darkText: false
