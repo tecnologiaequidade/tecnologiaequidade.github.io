@@ -11,6 +11,7 @@ avatar: /uploads/gabriela-agustini.png
 weight: 5
 type: person
 role: counselor
+alt: "Gabriela Agustini smiling. There are buildings in the background and a cloudy sky"
 ---
 
-Gabriela Agustini é fundadora e diretora-executiva do Olabi - organização focada em estimular o uso de tecnologias para transformação social. Gabriela é também professora de cultura e tecnologia na Universidade Candido Mendes, curadora do Colaboramerica e membro do conselho do Global Innovation Gathering. Gabriela é coorganizadora da coletânea “De Baixo para Cima” (ed Aeroplano) e foi consultora da UNESCO na área de inovação e criatividade.
+Gabriela Agustini is founder and executive director of Olabi - an organization focused on stimulating the use of technologies for social transformation. Gabriela is also a professor of culture and technology at Candido Mendes University, curator of Colaboramerica and board member of Global Innovation Gathering. Gabriela is a co-organizer of the collection "De Baixo para Cima" (Publ. Aeroplano) and was a UNESCO consultant in the area of innovation and creativity.

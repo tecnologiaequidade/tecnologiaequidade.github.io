@@ -11,6 +11,7 @@ avatar: /uploads/claudia-pires.png
 weight: 3
 type: person
 role: counselor
+alt: "Cláudia Pires smiling. She has shoulder length straight hair"
 ---
 
-Pós-graduada em Marketing em Berkeley, com MBA em Negócios e em Gestão Sustentável. Experiência de 20 anos desenvolvida nas áreas de Marketing, Gestão Empresarial e Sustentabilidade de multinacionais, como PepsiCo, Quaker, Dana e Basf. Realizou projetos especiais para Santander Bank, Grupo Pão de Açúcar, Natura, Nestlé, Heineken e Brasil Kirin. Fundou a so+ma em janeiro de 2015. Em 2017, foi reconhecida como profissional que melhor representou a ODS 12 (consumo responsável e produção) da agenda da ONU para 2030 com o Prêmio Abraps e "Virada Sustentável".
+Postgraduate in Marketing in Berkeley, with an MBA in Business and Sustainable Management. 20 years experience developed in the areas of Marketing, Business Management and Sustainability of multinationals, such as PepsiCo, Quaker, Dana and Basf. She has carried out special projects for Santander Bank, Grupo Pão de Açúcar, Natura, Nestlé, Heineken and Brasil Kirin. She founded so+ma in January 2015. In 2017 she was recognized as the professional who best represented ODS 12 (Responsible Consumption and Production) of the UN Agenda for 2030 with the Abraps Prize and "Virada Sustentável” (Sustainable Turnaround).
