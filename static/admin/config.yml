@@ -62,14 +62,17 @@ collections:
         name: "callToDownload"
         widget: "string"
         pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
+        required: false
       - label: "PDF"
         name: "pdf"
         widget: "file"
         default: ""
+        required: false
       - label: "Doc"
         name: "doc"
         widget: "file"
         default: ""
+        required: false
       -
         label: "Body"
         name: "body"
@@ -490,14 +493,17 @@ collections:
         name: "callToDownload"
         widget: "string"
         pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
+        required: false
       - label: "PDF"
         name: "pdf"
         widget: "file"
         default: ""
+        required: false
       - label: "Doc"
         name: "doc"
         widget: "file"
         default: ""
+        required: false
       -
         label: "Body"
         name: "body"
@@ -918,14 +924,17 @@ collections:
         name: "callToDownload"
         widget: "string"
         pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
+        required: false
       - label: "PDF"
         name: "pdf"
         widget: "file"
         default: ""
+        required: false
       - label: "Doc"
         name: "doc"
         widget: "file"
         default: ""
+        required: false
       -
         label: "Body"
         name: "body"
