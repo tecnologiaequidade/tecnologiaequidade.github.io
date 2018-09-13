@@ -73,22 +73,22 @@ languages:
             Pre: ""
             Weight: 2
             Identifier: "projects"
-            URL: "#projects"
+            URL: "#projetos"
           - Name: "What we do"
             Pre: ""
             Weight: 3
             Identifier: "what-we-do"
-            URL: "#what-we-do"
-          - Name: "Mission, vision and values"
+            URL: "#o-que-fazemos"
+          - Name: "Values"
             Pre: ""
             Weight: 4
             Identifier: "mission-vision-values"
-            URL: "#mission-vision-values"
+            URL: "#valores"
           - Name: "Counselors"
             Pre: ""
             Weight: 5
             Identifier: "counselors"
-            URL: "#counselors"
+            URL: "#conselheiros"
   es:
     contentDir: content/espanol
     languageName: Español
@@ -105,27 +105,27 @@ languages:
             Pre: ""
             Weight: 1
             Identifier: "manifiesto"
-            URL: "#manifiesto"
+            URL: "#manifesto"
           - Name: "Proyectos"
             Pre: ""
             Weight: 2
             Identifier: "proyectos"
-            URL: "#proyectos"
+            URL: "#projetos"
           - Name: "Qué hacemos?"
             Pre: ""
             Weight: 3
             Identifier: "que-hacemos"
-            URL: "#que-hacemos"
-          - Name: "Misión, Visión y Valores"
+            URL: "#o-que-fazemos"
+          - Name: "Valores"
             Pre: ""
             Weight: 4
             Identifier: "mision-vision-valores"
-            URL: "#mision-vision-valores"
+            URL: "#valores"
           - Name: "Consejeros"
             Pre: ""
             Weight: 5
             Identifier: "consejeros"
-            URL: "#consejeros"
+            URL: "#conselheiros"
 
 params:
   authorName:    "tecnologiaequidade"
