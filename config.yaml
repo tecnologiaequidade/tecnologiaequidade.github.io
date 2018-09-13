@@ -11,8 +11,6 @@ stepAnalysis: true
 templateMetrics: true
 pluralizeListTitles: false
 googleAnalytics: "UA-117128393-1"
-disableLanguages: ["en", "es"]
-
 FootnoteReturnLinkContents: "↩"
 
 taxonomies:
@@ -28,6 +26,12 @@ languages:
     params:
       description: O Instituto Tecnologia e Equidade é uma organização sem fins lucrativos que desenvolve pesquisas e projetos experimentais que contribuem para alcançar a equidade com o uso ético da tecnologia.
       subtitle: "Sistema de Avaliação e Gestão Unificado de Informações"
+    ids:
+        - Manifesto: "manifesto"
+          Projetos: "projetos"
+          O-que-fazemos: "o-que-fazemos"
+          Valores: "valores"
+          Conselheiros: "conselheiros"
     menu:
       main:
           - Name: "Manifesto"
@@ -60,11 +64,17 @@ languages:
     contentDir: content/english
     languageName: English
     languageCode: "en-US"
-    title: "Hello"
+    title: "The Technology & Equity Institute (T&EI)"
     weight: 2
     params:
-      description: The institute.
-      subtitle: "Hello"
+      description: Is a non-profit organization that develops research and experimental projects that contribute to achieving equity with the ethical use of technology.
+      subtitle: "The Technology & Equity Institute (T&EI)"
+    ids:
+        - Manifesto: "manifesto"
+          Projetos: "projects"
+          O-que-fazemos: "what-we-do"
+          Valores: "values"
+          Conselheiros: "counselors"
     menu:
       main:
           - Name: "Manifesto"
@@ -81,17 +91,17 @@ languages:
             Pre: ""
             Weight: 3
             Identifier: "o-que-fazemos"
-            URL: "#o-que-fazemos"
+            URL: "#what-we-do"
           - Name: "Valores"
             Pre: ""
             Weight: 4
             Identifier: "valores"
-            URL: "#valores"
+/            URL: "#values"
           - Name: "Conselheiros"
             Pre: ""
             Weight: 5
             Identifier: "conselheiros"
-            URL: "#conselheiros"
+            URL: "#couselors"
   es:
     contentDir: content/espanol
     languageName: Español
@@ -102,6 +112,12 @@ languages:
     params:
       description: El instituto.
       subtitle: "Holla"
+    ids:
+        - Manifesto: "manifesto"
+          Projetos: "projects"
+          O-que-fazemos: "what-we-do"
+          Valores: "values"
+          Conselheiros: "counselors"
     menu:
       main:
           - Name: "Manifesto"
