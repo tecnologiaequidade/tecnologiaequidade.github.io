@@ -7,8 +7,10 @@ facebook: 'https://facebook.com/thiagorondon'
 twitter: 'https://twitter.com/thiagorondon'
 avatar: /uploads/thiago-rondon.png
 avatarDirector: /uploads/director-thiago-rondon.jpg
+alt: "He has short, straight hair"
 weight: 3
 type: person
 role: team
 ---
-Empreendedor que atua para reconstruir negócios e a sociedade com o uso positivo da tecnologia. Atualmente é diretor executivo na EOKOE que apoia organizações na exploração de novos propósitos e no APPCÍVICO que atua com tecnologias cívicas junto de políticos, governos e sociedade civil. Escreve semanalmente na coluna "Multidões" na Época Negócios sobre "tecnologia, organismos e poder". Entusiasta e colaborador de projetos de software livre e o movimento de dados abertos.
+
+Entrepreneur who works to rebuild business and society with the positive use of technology. He is currently the Executive Director of EOKOE, which supports organizations in the exploration of new purposes and in the AppCívico that works with civic technologies among politicians, governments and civil society. He writes weekly in the column Multidões (Crowds) in Época Negócios Magazine about "technology, organisms and power". Enthusiast and collaborator of free software projects and the movement of open data.
