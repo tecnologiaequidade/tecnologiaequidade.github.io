@@ -1,6 +1,7 @@
 {{ range where .Site.Pages ".File.TranslationBaseName" "manifest" }}
 <article class="manifest">
-	<div class="content smaller-width" id="manifesto">
+
+	<div class="content smaller-width" id="{{ .Params.id }}">
 		<h2>{{ .Title }}</h2>
 		{{ .Content }}
 
