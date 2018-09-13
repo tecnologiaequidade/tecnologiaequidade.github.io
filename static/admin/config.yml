@@ -29,6 +29,11 @@ collections:
         label: "Body"
         name: "body"
         widget: "markdown"
+      -
+        label: "id"
+        name: "id"
+        widget: "hidden"
+        default: manifesto
   -
     label: "Manifesto - Portuguese"
     name: "manifest_pt"
@@ -412,6 +417,10 @@ collections:
         name: "avatarDirector"
         widget: "hidden"
       -
+        label: "Image description"
+        name: "alt"
+        widget: "string"
+      -
         label: "Order"
         name: "weight"
         widget: "number"
@@ -448,6 +457,11 @@ collections:
         label: "Body"
         name: "body"
         widget: "markdown"
+      -
+        label: "id"
+        name: "id"
+        widget: "hidden"
+        default: manifesto
   -
     label: "Manifest - English"
     name: "manifest_en"
@@ -831,6 +845,10 @@ collections:
         name: "avatarDirector"
         widget: "hidden"
       -
+        label: "Image description"
+        name: "alt"
+        widget: "string"
+      -
         label: "Order"
         name: "weight"
         widget: "number"
@@ -867,6 +885,11 @@ collections:
         label: "Body"
         name: "body"
         widget: "markdown"
+      -
+        label: "id"
+        name: "id"
+        widget: "hidden"
+        default: manifesto
   -
     label: "Manifiesto - Español"
     name: "manifest_es"
@@ -1219,6 +1242,10 @@ collections:
         label: "Director's Avatar"
         name: "avatarDirector"
         widget: "hidden"
+      -
+        label: "Image description"
+        name: "alt"
+        widget: "string"
       -
         label: "Order"
         name: "weight"
