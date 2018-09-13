@@ -2,10 +2,6 @@
 title: "OUR MANIFESTO"
 date: 2018-03-06T16:19:00-03:00
 draft: false
-callToDownload: "Download the Manifesto"
-pdf: /downloads/ITE-manifesto.pdf
-doc: /downloads/ITE-manifesto.docx
-id: manifesto
 ---
 
 We believe that we are currently experiencing immersion processes in digital technologies that can bring positive and negative impacts at the same time - that are rapidly reconfiguring our society as they advance in many areas and sectors.
