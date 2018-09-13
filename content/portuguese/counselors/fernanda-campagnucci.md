@@ -11,7 +11,7 @@ avatar: /uploads/fernanda-campagnucci.png
 weight: 4
 type: person
 role: counselor
-alt: "Fotografia de Fernanda Campagnucci"
+alt: "Fernanda Campagnucci sorrindo. Ela tem cabelos curtos e pretos."
 ---
 
 Fernanda Campagnucci se formou em Jornalismo pela ECA-USP e mestre em educação pela Universidade de São Paulo (USP). Fernanda atua como analista de políticas públicas e gestão governamental na Prefeitura de São Paulo, onde desenvolve projetos de transparência, integridade pública e tecnologias cívicas desde 2013. Atualmente coordena o Pátio Digital, iniciativa de governo aberto da Secretaria Municipal de Educação. É fellow de governo aberto da Organização dos Estados Americanos e integrante da Rede de Líderes em Dados Abertos do Open Data Institute.
