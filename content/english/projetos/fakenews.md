@@ -8,6 +8,8 @@ darkText: false
 draft: false
 summary: >-
   Research and action project to understand the possible impact of non-human profiles on social networks in the 2018 elections. In addition, the initiative seeks to have a positive impact on this scenario, including recommendations for the ethical use of this technology and the creation of a platform for Robots identification and denunciation.
+relatedProjects:
+  - project: pegabot
 weight: 2
 ---
 
