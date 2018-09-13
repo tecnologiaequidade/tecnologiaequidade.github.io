@@ -38,19 +38,24 @@ languages:
             Weight: 2
             Identifier: "projetos"
             URL: "#projetos"
-          - Name: "O que fazemos"
+          - Name: "Metodologia"
             Pre: ""
             Weight: 3
+            Identifier: "methodology"
+            URL: "#metodologia"
+          - Name: "O que fazemos"
+            Pre: ""
+            Weight: 4
             Identifier: "o-que-fazemos"
             URL: "#o-que-fazemos"
           - Name: "Valores"
             Pre: ""
-            Weight: 4
+            Weight: 5
             Identifier: "valores"
             URL: "#valores"
           - Name: "Conselheiros"
             Pre: ""
-            Weight: 5
+            Weight: 6
             Identifier: "conselheiros"
             URL: "#conselheiros"
   en:
@@ -74,19 +79,24 @@ languages:
             Weight: 2
             Identifier: "projects"
             URL: "#projetos"
-          - Name: "What we do"
+          - Name: "Methodology"
             Pre: ""
             Weight: 3
+            Identifier: "methodology"
+            URL: "#metodologia"
+          - Name: "What we do"
+            Pre: ""
+            Weight: 4
             Identifier: "what-we-do"
             URL: "#o-que-fazemos"
           - Name: "Values"
             Pre: ""
-            Weight: 4
+            Weight: 5
             Identifier: "mission-vision-values"
             URL: "#valores"
           - Name: "Counselors"
             Pre: ""
-            Weight: 5
+            Weight: 6
             Identifier: "counselors"
             URL: "#conselheiros"
   es:
@@ -111,19 +121,24 @@ languages:
             Weight: 2
             Identifier: "proyectos"
             URL: "#projetos"
-          - Name: "Qué hacemos?"
+          - Name: "Metodología"
             Pre: ""
             Weight: 3
+            Identifier: "methodology"
+            URL: "#metodologia"
+          - Name: "Qué hacemos?"
+            Pre: ""
+            Weight: 4
             Identifier: "que-hacemos"
             URL: "#o-que-fazemos"
           - Name: "Valores"
             Pre: ""
-            Weight: 4
+            Weight: 5
             Identifier: "mision-vision-valores"
             URL: "#valores"
           - Name: "Consejeros"
             Pre: ""
-            Weight: 5
+            Weight: 6
             Identifier: "consejeros"
             URL: "#conselheiros"
 
