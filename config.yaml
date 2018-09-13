@@ -26,12 +26,6 @@ languages:
     params:
       description: O Instituto Tecnologia e Equidade é uma organização sem fins lucrativos que desenvolve pesquisas e projetos experimentais que contribuem para alcançar a equidade com o uso ético da tecnologia.
       subtitle: "Sistema de Avaliação e Gestão Unificado de Informações"
-    ids:
-        - Manifesto: "manifesto"
-          Projetos: "projetos"
-          O-que-fazemos: "o-que-fazemos"
-          Valores: "valores"
-          Conselheiros: "conselheiros"
     menu:
       main:
           - Name: "Manifesto"
@@ -59,7 +53,6 @@ languages:
             Weight: 5
             Identifier: "conselheiros"
             URL: "#conselheiros"
-
   en:
     contentDir: content/english
     languageName: English
@@ -69,12 +62,6 @@ languages:
     params:
       description: Is a non-profit organization that develops research and experimental projects that contribute to achieving equity with the ethical use of technology.
       subtitle: "The Technology & Equity Institute (T&EI)"
-    ids:
-        - Manifesto: "manifesto"
-          Projetos: "projects"
-          O-que-fazemos: "what-we-do"
-          Valores: "values"
-          Conselheiros: "counselors"
     menu:
       main:
           - Name: "Manifesto"
@@ -82,26 +69,26 @@ languages:
             Weight: 1
             Identifier: "manifesto"
             URL: "#manifesto"
-          - Name: "Projetos"
+          - Name: "Projects"
             Pre: ""
             Weight: 2
-            Identifier: "projetos"
-            URL: "#projetos"
-          - Name: "O que fazemos"
+            Identifier: "projects"
+            URL: "#projects"
+          - Name: "What we do"
             Pre: ""
             Weight: 3
-            Identifier: "o-que-fazemos"
+            Identifier: "what-we-do"
             URL: "#what-we-do"
-          - Name: "Valores"
+          - Name: "Mission, vision and values"
             Pre: ""
             Weight: 4
-            Identifier: "valores"
-/            URL: "#values"
-          - Name: "Conselheiros"
+            Identifier: "mission-vision-values"
+            URL: "#mission-vision-values"
+          - Name: "Counselors"
             Pre: ""
             Weight: 5
-            Identifier: "conselheiros"
-            URL: "#couselors"
+            Identifier: "counselors"
+            URL: "#counselors"
   es:
     contentDir: content/espanol
     languageName: Español
@@ -112,39 +99,33 @@ languages:
     params:
       description: El instituto.
       subtitle: "Holla"
-    ids:
-        - Manifesto: "manifesto"
-          Projetos: "projects"
-          O-que-fazemos: "what-we-do"
-          Valores: "values"
-          Conselheiros: "counselors"
     menu:
       main:
-          - Name: "Manifesto"
+          - Name: "Manifiesto"
             Pre: ""
             Weight: 1
-            Identifier: "manifesto"
-            URL: "#manifesto"
-          - Name: "Projetos"
+            Identifier: "manifiesto"
+            URL: "#manifiesto"
+          - Name: "Proyectos"
             Pre: ""
             Weight: 2
-            Identifier: "projetos"
-            URL: "#projetos"
-          - Name: "O que fazemos"
+            Identifier: "proyectos"
+            URL: "#proyectos"
+          - Name: "Qué hacemos?"
             Pre: ""
             Weight: 3
-            Identifier: "o-que-fazemos"
-            URL: "#o-que-fazemos"
-          - Name: "Valores"
+            Identifier: "que-hacemos"
+            URL: "#que-hacemos"
+          - Name: "Misión, Visión y Valores"
             Pre: ""
             Weight: 4
-            Identifier: "valores"
-            URL: "#valores"
-          - Name: "Conselheiros"
+            Identifier: "mision-vision-valores"
+            URL: "#mision-vision-valores"
+          - Name: "Consejeros"
             Pre: ""
             Weight: 5
-            Identifier: "conselheiros"
-            URL: "#conselheiros"
+            Identifier: "consejeros"
+            URL: "#consejeros"
 
 params:
   authorName:    "tecnologiaequidade"
