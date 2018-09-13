@@ -1,23 +1,23 @@
 #general
 - id: send
-  translation: "Your email"
+  translation: "Send"
 - id: yourEmail
-  translation: "Seu e-mail"
+  translation: "Your email"
 - id: email
-  translation: "email"
+  translation: "Email"
 
 
 #header
 - id: headerSubtitle
-  translation: "IT&E is a non-profit organization that develops research and experimental projects that contribute to achieving equity with the ethical use of technology"
+  translation: "The Technology and Equity Institute is a non-profit organization that develops research and experimental projects that contribute to achieving equity with the ethical use of technology."
 
 #notFoundPage
 - id: 404Title
   translation: "Error 404"
 - id: 404Text
-  translation: "Page not found"
+  translation: "This page could not be found"
 - id: returnToHome
-  translation: "Return to home?"
+  translation: "Return to home page?"
 
 #projects
 - id: projects
