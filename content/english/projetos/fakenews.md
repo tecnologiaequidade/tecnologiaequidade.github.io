@@ -21,6 +21,4 @@ The goal of this project is to generate more equitable and fair elections. That 
 
 [^1]: The research team is made up of Ellen Aquino, Carlos Júnior, Ariel Kogan, Márcio Vasconcelos and Thiago Rondon.
 
-Enter your email to receive the full research and the White Paper content!
-Your email
 
