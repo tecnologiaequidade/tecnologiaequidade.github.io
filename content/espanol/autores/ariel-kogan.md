@@ -9,7 +9,7 @@ facebook: https://www.facebook.com/kogan.ariel
 twitter: https://twitter.com/arielkogan
 avatar: /uploads/ariel-kogan.png
 avatarDirector: /uploads/director-ariel-kogan.jpg
-alt: "Foto Ariel Kogan"
+alt: "Ariel Kogan está sonriendo. Él tiene cabellos cortos y está con barba rala."
 weight: 1
 type: person
 role: team
