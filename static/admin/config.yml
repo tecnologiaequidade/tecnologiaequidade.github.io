@@ -5,7 +5,6 @@ backend:
   accept_roles:
     - admin
     - editor
-publish_mode: editorial_workflow
 media_folder: "static/uploads"
 public_folder: "/uploads"
 collections:
