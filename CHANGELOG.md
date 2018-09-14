@@ -3,6 +3,22 @@
 This project follows [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Added
+- Menu
+- Multilingual Mode
+- English content
+- Spanish content
+- Allow edit any content in admin CMS
+
+### Fixed
+
+- Skipped heading level
+- Images description
+
+### Changed
+
+- Update netlify CMS to v2.0
+
 
 ## [1.2.1][] - 2018-07-25
 
