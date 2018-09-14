@@ -104,6 +104,24 @@
 	}
 }
 
+.logo-dark-en {
+
+	background-image: image('logo-dark-200w.en.png');
+
+	@media screen and (min-width: breakpoint('phablet')) {
+		background-image: image('logo-dark-320w.en.png');
+	}
+}
+
+.logo-dark-es {
+
+	background-image: image('logo-dark-200w.es.png');
+
+	@media screen and (min-width: breakpoint('phablet')) {
+		background-image: image('logo-dark-320w.es.png');
+	}
+}
+
 .logo-dark a {
 	display: block;
 
