@@ -13,7 +13,7 @@ relatedProjects:
 weight: 2
 ---
 
-The research "Disinformation in Elections: Imbalances Accelerated by Technology" and the White Paper "Systemic Recommendations to Fight Disinformation in Brazilian Elections" are initiatives of the Technology & Equity Institute (T&EI) published in June 2018.
+The research "Disinformation in Elections: Imbalances Accelerated by Technology" [^1] and the White Paper "Systemic Recommendations to Fight Disinformation in Brazilian Elections" are initiatives of the Technology & Equity Institute (T&EI) published in June 2018.
 
 In the research, we sought to explore dimensions regarding fake news and bots - their origins, types, characteristics, behaviors, environments, antidotes, legislation and inspiring initiatives around the world.
 
