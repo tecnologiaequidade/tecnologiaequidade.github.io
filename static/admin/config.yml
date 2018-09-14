@@ -161,7 +161,7 @@ collections:
   -
     label: "Projetos - Portuguese"
     name: "projects_pt"
-    folder: "content/portuguese/projetos"
+    folder: "content/portuguese/projects"
     create: true
     slug: "{{slug}}"
     fields:
@@ -618,7 +618,7 @@ collections:
   -
     label: "Projects - English"
     name: "projects_en"
-    folder: "content/english/projetos"
+    folder: "content/english/projects"
     create: true
     slug: "{{slug}}"
     fields:
@@ -1076,7 +1076,7 @@ collections:
   -
     label: "Proyectos - Español"
     name: "projects_es"
-    folder: "content/espanol/projetos"
+    folder: "content/espanol/projects"
     create: true
     slug: "{{slug}}"
     fields:
