@@ -11,6 +11,7 @@ avatar: /uploads/claudia-pires.png
 weight: 3
 type: person
 role: counselor
+alt: "Cláudia Pires está sonriendo. Ella tiene cabellos lisos encima de los hombros"
 ---
 
 Posgrado en Marketing en Berkeley, con MBA en Negocios y en Gestión Sostenible. Experiencia de 20 años desarrollada en las áreas de Marketing, Gestión Empresarial y Sustentabilidad de multinacionales, como PepsiCo, Quaker, Dana y Basf. Realizó proyectos especiales para Santander Bank, Grupo Pão de Açúcar, Natura, Nestlé, Heineken e Brasil Kirin.

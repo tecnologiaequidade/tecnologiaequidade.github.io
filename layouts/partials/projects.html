@@ -1,16 +1,16 @@
-<article class="projects" id="projetos">
+<article class="projects" id="projects">
 <div class="content">
 	<h2>
-		<a href="{{ .LanguagePrefix }}">
+		<a href="{{ .LanguagePrefix }}/projects/">
 			{{ i18n "projects" | title }}
 		</a>
 	</h2>
 	<div class="projects-wrap">
-		{{ range first 2 (where .Data.Pages.ByDate "Section" "projetos").Reverse }}
+		{{ range first 2 (where .Data.Pages.ByDate "Section" "projects").Reverse }}
 			<section class="project-box">
 				<div class="project-box__content">
 					<h3>
-						<a href="{{ .LanguagePrefix }}/projetos/{{ .Params.Slug }}">
+						<a href="{{ .LanguagePrefix }}/projects/{{ .Params.Slug }}">
 							{{ if .Params.shortTitle }} {{ .Params.shortTitle }} {{ else }} {{ .Title }} {{ end }}
 						</a>
 					</h3>

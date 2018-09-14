@@ -1,11 +1,10 @@
 backend:
   name: git-gateway
   repo: tecnologiaequidade/tecnologiaequidade.github.io # Path to your Github repository
-  branch: develop
+  branch: master
   accept_roles:
     - admin
     - editor
-publish_mode: editorial_workflow
 media_folder: "static/uploads"
 public_folder: "/uploads"
 collections:
@@ -78,6 +77,33 @@ collections:
         name: "body"
         widget: "markdown"
   -
+    label: "Metodologia - Portuguese"
+    name: "methodology_pt"
+    folder: "content/portuguese/methodology"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      -
+        label: "Title"
+        name: "title"
+        widget: "string"
+        tagname: "h1"
+        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
+      -
+        label: "Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: true
+      -
+        label: "Body"
+        name: "body"
+        widget: "markdown"
+  -
     label: "Newsletter - Portuguese"
     name: "newsletter_pt"
     folder: "content/portuguese/newsletter"
@@ -134,7 +160,7 @@ collections:
   -
     label: "Projetos - Portuguese"
     name: "projects_pt"
-    folder: "content/portuguese/projetos"
+    folder: "content/portuguese/projects"
     create: true
     slug: "{{slug}}"
     fields:
@@ -440,7 +466,6 @@ collections:
         name: "body"
         widget: "markdown"
 
-
 # English configs
   -
     label: "Greeting - English"
@@ -509,6 +534,33 @@ collections:
         name: "body"
         widget: "markdown"
   -
+    label: "Methodology - English"
+    name: "methodology_en"
+    folder: "content/english/methodology"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      -
+        label: "Title"
+        name: "title"
+        widget: "string"
+        tagname: "h1"
+        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
+      -
+        label: "Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: true
+      -
+        label: "Body"
+        name: "body"
+        widget: "markdown"
+  -
     label: "Newsletter - English"
     name: "newsletter_en"
     folder: "content/english/newsletter"
@@ -565,7 +617,7 @@ collections:
   -
     label: "Projects - English"
     name: "projects_en"
-    folder: "content/english/projetos"
+    folder: "content/english/projects"
     create: true
     slug: "{{slug}}"
     fields:
@@ -940,6 +992,33 @@ collections:
         name: "body"
         widget: "markdown"
   -
+    label: "Metodología - Español"
+    name: "methodology_es"
+    folder: "content/espanol/methodology"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      -
+        label: "Title"
+        name: "title"
+        widget: "string"
+        tagname: "h1"
+        pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
+      -
+        label: "Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DDTHH:mm:ss[Z]" # date sample 2018-03-06T14:48:47-03:00
+      -
+        label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: true
+      -
+        label: "Body"
+        name: "body"
+        widget: "markdown"
+  -
     label: "Newsletter - Español"
     name: "newsletter_es"
     folder: "content/espanol/newsletter"
@@ -996,7 +1075,7 @@ collections:
   -
     label: "Proyectos - Español"
     name: "projects_es"
-    folder: "content/espanol/projetos"
+    folder: "content/espanol/projects"
     create: true
     slug: "{{slug}}"
     fields:

@@ -8,10 +8,12 @@ darkText: false
 draft: false
 summary: >-
   Research and action project to understand the possible impact of non-human profiles on social networks in the 2018 elections. In addition, the initiative seeks to have a positive impact on this scenario, including recommendations for the ethical use of this technology and the creation of a platform for Robots identification and denunciation.
+relatedProjects:
+  - project: pegabot
 weight: 2
 ---
 
-The research "Disinformation in Elections: Imbalances Accelerated by Technology" and the White Paper "Systemic Recommendations to Fight Disinformation in Brazilian Elections" are initiatives of the Technology & Equity Institute (T&EI) published in June 2018.
+The research "Disinformation in Elections: Imbalances Accelerated by Technology" [^1] and the White Paper "Systemic Recommendations to Fight Disinformation in Brazilian Elections" are initiatives of the Technology & Equity Institute (T&EI) published in June 2018.
 
 In the research, we sought to explore dimensions regarding fake news and bots - their origins, types, characteristics, behaviors, environments, antidotes, legislation and inspiring initiatives around the world.
 

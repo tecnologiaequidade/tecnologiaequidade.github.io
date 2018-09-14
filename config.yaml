@@ -24,8 +24,8 @@ languages:
     title: "Instituto Tecnologia & Equidade"
     weight: 1
     params:
-      description: O Instituto Tecnologia e Equidade é uma organização sem fins lucrativos que desenvolve pesquisas e projetos experimentais que contribuem para alcançar a equidade com o uso ético da tecnologia.
-      subtitle: "Sistema de Avaliação e Gestão Unificado de Informações"
+      description: "O Instituto Tecnologia e Equidade é uma organização sem fins lucrativos que desenvolve pesquisas e projetos experimentais que contribuem para alcançar a equidade com o uso ético da tecnologia.
+      subtitle: "Sistema de Avaliação e Gestão Unificado de Informações"."
     menu:
       main:
           - Name: "Manifesto"
@@ -36,23 +36,28 @@ languages:
           - Name: "Projetos"
             Pre: ""
             Weight: 2
-            Identifier: "projetos"
-            URL: "#projetos"
-          - Name: "O que fazemos"
+            Identifier: "projects"
+            URL: "#projects"
+          - Name: "Metodologia"
             Pre: ""
             Weight: 3
-            Identifier: "o-que-fazemos"
-            URL: "#o-que-fazemos"
-          - Name: "Valores"
+            Identifier: "methodology"
+            URL: "#methodology"
+          - Name: "O que fazemos"
             Pre: ""
             Weight: 4
-            Identifier: "valores"
-            URL: "#valores"
-          - Name: "Conselheiros"
+            Identifier: "o-que-fazemos"
+            URL: "#what-we-do"
+          - Name: "Valores"
             Pre: ""
             Weight: 5
+            Identifier: "valores"
+            URL: "#values"
+          - Name: "Conselheiros"
+            Pre: ""
+            Weight: 6
             Identifier: "conselheiros"
-            URL: "#conselheiros"
+            URL: "#counselors"
   en:
     contentDir: content/english
     languageName: English
@@ -60,7 +65,7 @@ languages:
     title: "The Technology & Equity Institute (T&EI)"
     weight: 2
     params:
-      description: Is a non-profit organization that develops research and experimental projects that contribute to achieving equity with the ethical use of technology.
+      description: "Is a non-profit organization that develops research and experimental projects that contribute to achieving equity with the ethical use of technology."
       subtitle: "The Technology & Equity Institute (T&EI)"
     menu:
       main:
@@ -73,32 +78,37 @@ languages:
             Pre: ""
             Weight: 2
             Identifier: "projects"
-            URL: "#projetos"
-          - Name: "What we do"
+            URL: "#projects"
+          - Name: "Methodology"
             Pre: ""
             Weight: 3
-            Identifier: "what-we-do"
-            URL: "#o-que-fazemos"
-          - Name: "Values"
+            Identifier: "methodology"
+            URL: "#methodology"
+          - Name: "What we do"
             Pre: ""
             Weight: 4
-            Identifier: "mission-vision-values"
-            URL: "#valores"
-          - Name: "Counselors"
+            Identifier: "what-we-do"
+            URL: "#what-we-do"
+          - Name: "Values"
             Pre: ""
             Weight: 5
+            Identifier: "mission-vision-values"
+            URL: "#values"
+          - Name: "Counselors"
+            Pre: ""
+            Weight: 6
             Identifier: "counselors"
-            URL: "#conselheiros"
+            URL: "#counselors"
   es:
     contentDir: content/espanol
     languageName: Español
     languageCode: "es-MX"
     alt: "es-MX"
-    title: "Hola"
+    title: "Instituto Tecnología y Equidad"
     weight: 3
     params:
-      description: El instituto.
-      subtitle: "Holla"
+      description: "El Instituto Tecnologia y Equidad es una organización sin fines de lucro que desarrolla investigaciones y proyectos experimentales que contribuyen para alcanzar la equidad con el uso ético de la tecnología."
+      subtitle: "Instituto Tecnología y Equidad"
     menu:
       main:
           - Name: "Manifiesto"
@@ -110,22 +120,27 @@ languages:
             Pre: ""
             Weight: 2
             Identifier: "proyectos"
-            URL: "#projetos"
-          - Name: "Qué hacemos?"
+            URL: "#projects"
+          - Name: "Metodología"
             Pre: ""
             Weight: 3
-            Identifier: "que-hacemos"
-            URL: "#o-que-fazemos"
-          - Name: "Valores"
+            Identifier: "methodology"
+            URL: "#methodology"
+          - Name: "Qué hacemos?"
             Pre: ""
             Weight: 4
-            Identifier: "mision-vision-valores"
-            URL: "#valores"
-          - Name: "Consejeros"
+            Identifier: "que-hacemos"
+            URL: "#what-we-do"
+          - Name: "Valores"
             Pre: ""
             Weight: 5
+            Identifier: "mision-vision-valores"
+            URL: "#values"
+          - Name: "Consejeros"
+            Pre: ""
+            Weight: 6
             Identifier: "consejeros"
-            URL: "#conselheiros"
+            URL: "#counselors"
 
 params:
   authorName:    "tecnologiaequidade"
