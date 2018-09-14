@@ -1,6 +1,9 @@
 <footer class="site-footer">
 	<div class="footer-container">
-		<div class="content-container__author">
+
+
+
+		<div class="content-container__author {{ if eq (.LanguagePrefix) "/es" }} content-container__author-es {{end }}{{ if eq (.LanguagePrefix) "/en" }} content-container__author-en {{ end }}">
 			<h2>
 				<a href="{{ "/" | relLangURL }}">Instituto Tecnologia e Equidade</a>
 			</h2>

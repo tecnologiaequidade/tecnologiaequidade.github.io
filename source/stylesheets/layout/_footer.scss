@@ -58,6 +58,23 @@
 	}
 }
 
+.content-container__author-en {
+	background-image: image('ITE-200w.en.png');
+
+	@media screen and (min-width: breakpoint('tablet')) {
+		background-image: image('ITE-250w.en.png');
+	}
+}
+
+.content-container__author-es {
+	background-image: image('ITE-200w.es.png');
+
+	@media screen and (min-width: breakpoint('tablet')) {
+		background-image: image('ITE-250w.es.png');
+	}
+}
+
+
 .content-container__author a {
 	display: block;
 

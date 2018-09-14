@@ -16,7 +16,7 @@
 		<div class="content projects-greetings__content">
 			<div class="projects-greetings-wrap">
 				<div class="projects-greetings__title">
-					<div class="{{ if and .Params.darkText .Params.titleImage }}logo-dark{{ else }}logo-light{{ end }}">
+					<div class="{{ if and .Params.darkText .Params.titleImage }}logo-dark {{ if eq (.LanguagePrefix) "/es" }} logo-dark-es {{end }}{{ if eq (.LanguagePrefix) "/en" }} logo-dark-en {{end }} {{ else }}logo-light {{ if eq (.LanguagePrefix) "/es" }} logo-light-es {{end }}{{ if eq (.LanguagePrefix) "/en" }} logo-light-en {{end }} {{ end }}">
 						<a href="{{ "/" | relLangURL }}">
 							{{ .Title }}
 						</a>
