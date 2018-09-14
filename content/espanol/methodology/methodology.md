@@ -1,6 +1,6 @@
 ---
-title: "METODOLOGIA IT&E"
-date: 2018-03-06T16:19:00-03:00
+title: METODOLOGIA IT&E
+date: 2018-03-06T19:19:00.000Z
 draft: false
 ---
 
@@ -15,6 +15,8 @@ En el mundo complejo que vivimos, consideramos el pensamiento sistémico como el
 	* Articulación de actores para implementar puntos de apalancamiento;
 	* Capacitación en Pensamiento Sistémico;
 	* Consultoría para la implementación de Puntos de apalancamiento.
+
+Testando 123
 
 
 [^1]: **Mapa sistémico:** Modelo gráfico que representa, de forma simplificada, la realidad de un sistema complejo, incluyendo conjuntos mensurables, procesos, flujos y actores.
