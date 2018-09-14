@@ -4,8 +4,7 @@
 	</video> -->
 	<div class="content-header">
 		{{ partial "menu.html" . }}
-
-		<div class="logo-light {{ if eq (.LanguagePrefix) "/es" }} logo-light-es {{end }}{{ if eq (.LanguagePrefix) "/en" }} logo-light-en {{end }}">
+		<div class="logo-light logo-light-{{ .Site.LanguageCode  | lower }}">
 			<a href="{{ .LanguagePrefix }}">
 				{{ .Site.Title }}
 			</a>

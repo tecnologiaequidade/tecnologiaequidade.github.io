@@ -1,9 +1,6 @@
 <footer class="site-footer">
 	<div class="footer-container">
-
-
-
-		<div class="content-container__author {{ if eq (.LanguagePrefix) "/es" }} content-container__author-es {{end }}{{ if eq (.LanguagePrefix) "/en" }} content-container__author-en {{ end }}">
+		<div class="content-container__author content-container__author-{{ .Site.LanguageCode | lower }}">
 			<h2>
 				<a href="{{ "/" | relLangURL }}">Instituto Tecnologia e Equidade</a>
 			</h2>
@@ -27,13 +24,13 @@
 	</div>
 </footer>
 <script>
-		if (window.netlifyIdentity) {
-			window.netlifyIdentity.on("init", user => {
-				if (!user) {
-					window.netlifyIdentity.on("login", () => {
-						document.location.href = "/admin/";
-					});
-				}
-			});
-		}
+	if (window.netlifyIdentity) {
+		window.netlifyIdentity.on("init", user => {
+			if (!user) {
+				window.netlifyIdentity.on("login", () => {
+					document.location.href = "/admin/";
+				});
+			}
+		});
+	}
 </script>

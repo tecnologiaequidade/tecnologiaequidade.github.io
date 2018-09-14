@@ -68,7 +68,7 @@
 }
 
 
-.logo-light-en {
+.logo-light-en-us {
 	background-image: image('ITE-200w.en.png');
 
 	@media screen and (min-width: breakpoint('phablet')) {
@@ -76,7 +76,7 @@
 	}
 }
 
-.logo-light-es {
+.logo-light-es-mx {
 	background-image: image('ITE-200w.es.png');
 
 	@media screen and (min-width: breakpoint('phablet')) {
@@ -104,7 +104,7 @@
 	}
 }
 
-.logo-dark-en {
+.logo-dark-en-us {
 
 	background-image: image('logo-dark-200w.en.png');
 
@@ -113,7 +113,7 @@
 	}
 }
 
-.logo-dark-es {
+.logo-dark-es-mx {
 
 	background-image: image('logo-dark-200w.es.png');
 
