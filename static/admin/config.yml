@@ -993,7 +993,7 @@ collections:
         name: "body"
         widget: "markdown"
   -
-    label: "Metodología - Spanish"
+    label: "Metodología - Español"
     name: "methodology_es"
     folder: "content/espanol/methodology"
     create: false
