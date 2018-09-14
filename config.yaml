@@ -36,28 +36,28 @@ languages:
           - Name: "Projetos"
             Pre: ""
             Weight: 2
-            Identifier: "projetos"
-            URL: "#projetos"
+            Identifier: "projects"
+            URL: "#projects"
           - Name: "Metodologia"
             Pre: ""
             Weight: 3
             Identifier: "methodology"
-            URL: "#metodologia"
+            URL: "#methodology"
           - Name: "O que fazemos"
             Pre: ""
             Weight: 4
             Identifier: "o-que-fazemos"
-            URL: "#o-que-fazemos"
+            URL: "#what-we-do"
           - Name: "Valores"
             Pre: ""
             Weight: 5
             Identifier: "valores"
-            URL: "#valores"
+            URL: "#values"
           - Name: "Conselheiros"
             Pre: ""
             Weight: 6
             Identifier: "conselheiros"
-            URL: "#conselheiros"
+            URL: "#counselors"
   en:
     contentDir: content/english
     languageName: English
@@ -78,27 +78,27 @@ languages:
             Pre: ""
             Weight: 2
             Identifier: "projects"
-            URL: "#projetos"
+            URL: "#projects"
           - Name: "Methodology"
             Pre: ""
             Weight: 3
             Identifier: "methodology"
-            URL: "#metodologia"
+            URL: "#methodology"
           - Name: "What we do"
             Pre: ""
             Weight: 4
             Identifier: "what-we-do"
-            URL: "#o-que-fazemos"
+            URL: "#what-we-do"
           - Name: "Values"
             Pre: ""
             Weight: 5
             Identifier: "mission-vision-values"
-            URL: "#valores"
+            URL: "#values"
           - Name: "Counselors"
             Pre: ""
             Weight: 6
             Identifier: "counselors"
-            URL: "#conselheiros"
+            URL: "#counselors"
   es:
     contentDir: content/espanol
     languageName: Español
@@ -120,27 +120,27 @@ languages:
             Pre: ""
             Weight: 2
             Identifier: "proyectos"
-            URL: "#projetos"
+            URL: "#projects"
           - Name: "Metodología"
             Pre: ""
             Weight: 3
             Identifier: "methodology"
-            URL: "#metodologia"
+            URL: "#methodology"
           - Name: "Qué hacemos?"
             Pre: ""
             Weight: 4
             Identifier: "que-hacemos"
-            URL: "#o-que-fazemos"
+            URL: "#what-we-do"
           - Name: "Valores"
             Pre: ""
             Weight: 5
             Identifier: "mision-vision-valores"
-            URL: "#valores"
+            URL: "#values"
           - Name: "Consejeros"
             Pre: ""
             Weight: 6
             Identifier: "consejeros"
-            URL: "#conselheiros"
+            URL: "#counselors"
 
 params:
   authorName:    "tecnologiaequidade"
