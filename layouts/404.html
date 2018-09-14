@@ -4,26 +4,26 @@
 	<article class="not-found">
 		<header class="not-found-header">
 			<div class="content">
-				<div class="logo-light {{ if eq (.LanguagePrefix) "/es" }} logo-light-es {{end }}{{ if eq (.LanguagePrefix) "/en" }} logo-light-en {{end }}">
-					<a href="{{ .LanguagePrefix }}">
+				<div class="logo-light logo-light-{{ .Site.LanguageCode}}">
+					<a href="{{ "/" | relLangURL }}">
 						{{ .Site.Title }}
 					</a>
 				</div>
 			</div>
 		</header>
-
 		<section class="content">
 			<h2>{{ i18n "404Title" | title }}</h2>
 			<div class="not-found-wrap">
 				<div class="not-found-text">
-					<p>{{ i18n "404Text" }}. <a href="{{ .LanguagePrefix }}">{{ i18n "returnToHome" }}</a>
+					<p>{{ i18n "404Text" }}. <a href="{{ "/" | relLangURL }}">{{ i18n "returnToHome" }}</a>
 					</p>
 				</div>
 			</div>
 		</section>
 	</article>
 
-{{ partial "footer.html" . }}
+	{{ partial "footer.html" . }}
 
 </body>
+
 </html>
