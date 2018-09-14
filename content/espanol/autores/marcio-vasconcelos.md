@@ -9,6 +9,7 @@ facebook: https://www.facebook.com/marciovasconcelospinto
 twitter:
 avatar: /uploads/marcio-pinto.png
 avatarDirector: /uploads/director-marcio-vasconcelos.jpg
+alt: "Márcio Vasconcelos está sonriendo. Él está usando lentes, tiene barba rala y tiene cabellos lisos y cortos"
 weight: 2
 type: person
 role: team

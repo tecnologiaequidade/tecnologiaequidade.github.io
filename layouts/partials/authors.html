@@ -9,7 +9,7 @@
 			{{ range where $.Site.Pages "Params.slug" .author }}
 			<div class="authors__wrap">
 				<div class="authors-image">
-					<img src="{{ .Params.avatar }}" alt="{{ .Title }}">
+					<img src="{{ .Params.avatar }}" alt="{{ .Params.alt }}">
 				</div>
 				<div class="authors-about">
 					<h4>{{ .Title }}</h4>
