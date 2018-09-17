@@ -102,8 +102,7 @@ languages:
   es:
     contentDir: content/espanol
     languageName: Español
-    languageCode: "es-MX"
-    alt: "es-MX"
+    languageCode: "es-ar"
     title: "Instituto Tecnología y Equidad"
     weight: 3
     params:
