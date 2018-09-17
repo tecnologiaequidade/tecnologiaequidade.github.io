@@ -22,7 +22,7 @@ $avatar-height: 216px;
 
 		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: center;
+		justify-content: flex-start;
 	}
 }
 
@@ -32,8 +32,6 @@ $avatar-height: 216px;
 	display: block;
 
 	width: 100%;
-
-	margin: auto;
 
 	overflow: hidden;
 
@@ -47,7 +45,7 @@ $avatar-height: 216px;
 	@media screen and (min-width: breakpoint('tablet')) {
 		width: 33.33%;
 
-		&:nth-child(5) {
+		&:nth-child(8n + 5) {
 			margin-left: 33.33%;
 
 			:target ~ &,
@@ -166,7 +164,7 @@ $avatar-height: 216px;
 $counselors-bg: palette('red'), palette('orange', 'dark'), palette('orange', 'base'), palette('emerald', 'green'), palette('emerald', 'base'), palette('blue', 'dark'), palette('blue', 'medium'), palette('blue', 'fluorescent');
 
 @for $i from 1 through length($counselors-bg) {
-	.counselors__box:nth-child(#{$i}) {
+	.counselors__box:nth-child(8n + #{$i}) {
 		background-color: nth($counselors-bg, $i);
 
 		& > a {
