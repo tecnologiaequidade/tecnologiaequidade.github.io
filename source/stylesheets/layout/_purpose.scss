@@ -87,27 +87,27 @@
 		margin-bottom: 0;
 	}
 
-	&:nth-child(1) {
+	&:nth-child(6n + 1) {
 		border-top-color: palette('blue', 'fluorescent');
 	}
 
-	&:nth-child(2) {
+	&:nth-child(6n + 2) {
 		border-top-color: palette('blue', 'pool');
 	}
 
-	&:nth-child(3) {
+	&:nth-child(6n + 3) {
 		border-top-color: palette('emerald', 'fluorescent');
 	}
 
-	&:nth-child(4) {
+	&:nth-child(6n + 4) {
 		border-top-color: palette('orange', 'base');
 	}
 
-	&:nth-child(5) {
+	&:nth-child(6n + 5) {
 		border-top-color: palette('orange', 'dark');
 	}
 
-	&:nth-child(6) {
+	&:nth-child(6n + 6) {
 		border-top-color: palette('red');
 	}
 }
