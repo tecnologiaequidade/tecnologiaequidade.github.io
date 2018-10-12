@@ -165,6 +165,10 @@ nav a {
 
 	color: palette('white');
 
+	& label {
+		font-size: 0;
+	}
+
 
 	@media screen and (min-width: breakpoint('desktop')) {
 		display: none;
@@ -185,6 +189,7 @@ nav a {
 		transition-property: margin-left;
 
 		.menu-controller:checked ~ * & {
+			position: fixed;
 			padding-left: 0;
 
 			overflow: hidden;
