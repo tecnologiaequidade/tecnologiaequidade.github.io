@@ -11,7 +11,7 @@
 
 .site-header {
 	position: relative;
-	padding-bottom: 270px;
+	padding-bottom: 350px;
 
 	color: palette('blue', 'pool');
 
@@ -21,22 +21,22 @@
 	background-color: palette('blue', 'darkness');
 
 	@media screen and (min-width: breakpoint('phablet')) {
-		padding-bottom: 310px;
+		padding-bottom: 250px;
 
 		background-image: image('illustration-small.png');
 		background-position: 90% bottom;
 	}
 
 	@media screen and (min-width: breakpoint('tablet')) {
-		padding-bottom: 300px;
+		padding-bottom: 270px;
 
 		background-image: image('illustration-medium.png');
 		background-position: 95% bottom;
 	}
 
 	@media screen and (min-width: breakpoint('desktop')) {
-		height: 85vh;
-		min-height: 780px;
+		height: 70vh;
+		min-height: 950px;
 
 		padding-bottom: 0;
 
