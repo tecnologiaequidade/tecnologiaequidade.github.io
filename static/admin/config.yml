@@ -25,14 +25,34 @@ collections:
         tagname: "h1"
         pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
       -
+        label: "Facebook"
+        name: "facebook"
+        widget: "string"
+        required: false
+      -
+        label: "Twitter"
+        name: "twitter"
+        widget: "string"
+        required: false
+      -
+        label: "Medium"
+        name: "medium"
+        widget: "string"
+        required: false
+      -
+        label: "Linkedin"
+        name: "linkedin"
+        widget: "string"
+        required: false
+      -
+        label: "Email"
+        name: "email"
+        widget: "string"
+        required: false
+      -
         label: "Body"
         name: "body"
         widget: "markdown"
-      -
-        label: "id"
-        name: "id"
-        widget: "hidden"
-        default: manifesto
   -
     label: "Manifesto - Portuguese"
     name: "manifest_pt"
@@ -482,14 +502,34 @@ collections:
         tagname: "h1"
         pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
       -
+        label: "Facebook"
+        name: "facebook"
+        widget: "string"
+        required: false
+      -
+        label: "Twitter"
+        name: "twitter"
+        widget: "string"
+        required: false
+      -
+        label: "Medium"
+        name: "medium"
+        widget: "string"
+        required: false
+      -
+        label: "Linkedin"
+        name: "linkedin"
+        widget: "string"
+        required: false
+      -
+        label: "Email"
+        name: "email"
+        widget: "string"
+        required: false
+      -
         label: "Body"
         name: "body"
         widget: "markdown"
-      -
-        label: "id"
-        name: "id"
-        widget: "hidden"
-        default: manifesto
   -
     label: "Manifest - English"
     name: "manifest_en"
@@ -940,14 +980,34 @@ collections:
         tagname: "h1"
         pattern: ['.{3,40}', "Must have between 3 and 40 characters"]
       -
+        label: "Facebook"
+        name: "facebook"
+        widget: "string"
+        required: false
+      -
+        label: "Twitter"
+        name: "twitter"
+        widget: "string"
+        required: false
+      -
+        label: "Medium"
+        name: "medium"
+        widget: "string"
+        required: false
+      -
+        label: "Linkedin"
+        name: "linkedin"
+        widget: "string"
+        required: false
+      -
+        label: "Email"
+        name: "email"
+        widget: "string"
+        required: false
+      -
         label: "Body"
         name: "body"
         widget: "markdown"
-      -
-        label: "id"
-        name: "id"
-        widget: "hidden"
-        default: manifesto
   -
     label: "Manifiesto - Español"
     name: "manifest_es"

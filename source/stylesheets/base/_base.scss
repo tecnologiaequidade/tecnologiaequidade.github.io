@@ -482,16 +482,15 @@ a {
 
 	text-align: center;
 	text-decoration: none;
+	color: palette('blue', 'darkness');
 
-	color: palette('white');
-
-	border: solid 1px palette('white');
+	border: solid 1px palette('blue', 'darkness');
 	border-radius: 50%;
 
 	&:hover {
-		color: palette('blue', 'dark');
+		color: palette('white');
 
-		border-color: palette('blue', 'dark');
+		border-color: palette('white');
 	}
 }
 
@@ -512,6 +511,15 @@ a {
 
 	border: solid 1px palette('blue', 'pool');
 	border-radius: 50%;
+
+	&:hover {
+		border: solid 1px palette('white');
+	}
+}
+
+.site-header .social-link {
+
+	border: solid 1px palette('orange', 'dark');
 
 	&:hover {
 		border: solid 1px palette('white');
@@ -563,6 +571,31 @@ a {
 
 .social-link--mail {
 	background-image: image('mail.png');
+	background-position: center center;
+}
+
+.social-link--medium--orange {
+	background-image: image('medium-orange.png');
+	background-position: center center;
+}
+
+.social-link--linkedin--orange {
+	background-image: image('linkedin-orange.png');
+	background-position: center center;
+}
+
+.social-link--facebook--orange {
+	background-image: image('facebook-orange.png');
+	background-position: center center;
+}
+
+.social-link--twitter--orange {
+	background-image: image('twitter-orange.png');
+	background-position: center center;
+}
+
+.social-link--mail--orange {
+	background-image: image('mail-orange.png');
 	background-position: center center;
 }
 

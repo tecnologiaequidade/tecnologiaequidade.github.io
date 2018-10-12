@@ -18,7 +18,7 @@
 	background-image: image('illustration-very-small.png');
 	background-position: center bottom;
 	background-repeat: no-repeat;
-	background-color: palette('blue', 'dark');
+	background-color: palette('blue', 'darkness');
 
 	@media screen and (min-width: breakpoint('phablet')) {
 		padding-bottom: 310px;

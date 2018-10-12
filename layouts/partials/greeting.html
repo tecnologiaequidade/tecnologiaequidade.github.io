@@ -9,12 +9,27 @@
 				{{ .Site.Title }}
 			</a>
 		</div>
-
 		<div class="site-header__content">
 			<h1 class="site-title">{{ .Content | plainify }}</h1>
 		</div>
 		<div class="site-header__nav-link">
-			<a class="nav-link nav-link--right--orange" href="#manifesto">{{ i18n "about" | lower }}</a>
+			{{ if .Params.facebook }}
+				<a class="social-link social-link--facebook--orange" href="{{ .Params.facebook }}" target="_blank" rel="noopener">{{ .Title }}</a>
+			{{ end }}
+			{{ if .Params.twitter }}
+				<a class="social-link social-link--twitter--orange" href="{{ .Params.twitter }}" target="_blank" rel="noopener">{{ .Title }}</a>
+			{{ end }}
+			{{ if .Params.medium }}
+				<a class="social-link social-link--medium--orange" href="{{ .Params.medium }}" target="_blank" rel="noopener">{{ .Title }}</a>
+			{{ end }}
+			{{ if .Params.linkedin }}
+				<a class="social-link social-link--linkedin--orange" href="{{ .Params.linkedin }}" target="_blank" rel="noopener">{{ .Title }}</a>
+			{{ end }}
+			{{ if .Params.email }}
+				<a class="social-link social-link--mail--orange" href="{{ .Params.email }}" target="_blank">{{ i18n "email" | title }}</a>
+			{{ end }}
 		</div>
+
+
 	</div>
 </header>

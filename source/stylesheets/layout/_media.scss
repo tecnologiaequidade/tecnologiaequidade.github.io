@@ -10,6 +10,10 @@
 	background-color: palette('emerald', 'base');
 }
 
+.media h2 {
+	color: palette('blue', 'darkness');
+}
+
 .media-clipping {
 	@media screen and (min-width: breakpoint('tablet')) {
 		@include inline-block-wrapper;

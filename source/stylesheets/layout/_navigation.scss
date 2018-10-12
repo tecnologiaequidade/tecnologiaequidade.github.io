@@ -147,7 +147,7 @@ nav a {
 	@include on-event() {
 		text-decoration: none;
 
-		color: palette('red');
+		color: palette('orange', 'dark');
 	}
 }
 

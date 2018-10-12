@@ -10,6 +10,11 @@
 	background-color: palette('blue', 'pool');
 }
 
+.what-we-do h2 {
+	color: palette('blue', 'darkness');
+}
+
+
 .what-boxes {
 	@media screen and (min-width: breakpoint('tablet')) {
 		position: relative;
@@ -78,7 +83,7 @@
 	}
 
 	&:nth-child(4n+3) {
-		background-color: palette('orange', 'base');
+		background-color: palette('orange', 'burned');
 	}
 
 	&:nth-child(4n+4) {
