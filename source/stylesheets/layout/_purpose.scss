@@ -1,7 +1,7 @@
 .purpose {
 	margin: auto;
 
-	background-color: palette('emerald', 'base');
+	background-color: palette('blue', 'darkness');
 }
 
 .purpose h3 {
@@ -20,6 +20,7 @@
 
 .purpose p {
 	font-size: ms(1);
+	color: palette('blue', 'pool');
 }
 
 .purpose-wrap {
@@ -75,6 +76,7 @@
 
 	border-top-width: 5px;
 	border-top-style: solid;
+	color: palette('blue', 'pool');
 
 	@media screen and (min-width: breakpoint('phablet')) {
 		margin-bottom: 3rem;

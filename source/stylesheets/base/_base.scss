@@ -482,16 +482,15 @@ a {
 
 	text-align: center;
 	text-decoration: none;
+	color: palette('blue', 'darkness');
 
-	color: palette('white');
-
-	border: solid 1px palette('white');
+	border: solid 1px palette('blue', 'darkness');
 	border-radius: 50%;
 
 	&:hover {
-		color: palette('blue', 'dark');
+		color: palette('white');
 
-		border-color: palette('blue', 'dark');
+		border-color: palette('white');
 	}
 }
 

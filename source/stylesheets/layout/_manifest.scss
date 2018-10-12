@@ -2,6 +2,14 @@
 	background-color: palette('blue', 'pool');
 }
 
+.manifest h2 {
+	color: palette('blue', 'darkness');
+}
+
+.manifest blockquote {
+	border-color: palette('blue', 'darkness');
+}
+
 .manifest__download {
 	margin-top: $line-height * 2em;
 	margin-right: auto;
@@ -9,13 +17,15 @@
 
 	text-align: center;
 
-	color: palette('white');
+	color: palette('blue', 'darkness');
+
 }
 
 .manifest__download h2 {
 	font-weight: normal;
 	font-size: 1em;
 	font-family: 'Noto Serif', serif;
+	color: palette('blue', 'darkness');
 
 	text-transform: none;
 }
