@@ -61,6 +61,7 @@
 
 	background-image: image('ITE-200w.png');
 	background-position: left;
+	color: palette('blue', 'pool');
 
 	@media screen and (min-width: breakpoint('phablet')) {
 		background-image: image('ITE-320w.png');
@@ -88,6 +89,7 @@
 	display: block;
 
 	height: 6.4375rem;
+	color: palette('blue', 'pool');
 }
 
 .logo-dark {
