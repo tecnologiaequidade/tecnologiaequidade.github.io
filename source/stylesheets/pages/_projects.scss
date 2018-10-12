@@ -14,6 +14,7 @@
 
 .projects-about h2 {
 	margin-bottom: 0;
+	color: palette('blue', 'darkness');
 }
 
 .projects-about h5 {
@@ -166,7 +167,7 @@
 		font-size: ms(1);
 		hyphens: auto;
 		word-wrap: normal;
-		color: palette('blue', 'pool');
+		color: palette('blue', 'dark');
 
 		&:hover {
 			color: palette('blue', 'dark');
