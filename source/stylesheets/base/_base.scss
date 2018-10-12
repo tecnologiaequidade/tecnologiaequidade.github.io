@@ -517,6 +517,15 @@ a {
 	}
 }
 
+.site-header .social-link {
+
+	border: solid 1px palette('orange', 'dark');
+
+	&:hover {
+		border: solid 1px palette('white');
+	}
+}
+
 .big-social-link {
 	@include image-replacement;
 
@@ -562,6 +571,31 @@ a {
 
 .social-link--mail {
 	background-image: image('mail.png');
+	background-position: center center;
+}
+
+.social-link--medium--orange {
+	background-image: image('medium-orange.png');
+	background-position: center center;
+}
+
+.social-link--linkedin--orange {
+	background-image: image('linkedin-orange.png');
+	background-position: center center;
+}
+
+.social-link--facebook--orange {
+	background-image: image('facebook-orange.png');
+	background-position: center center;
+}
+
+.social-link--twitter--orange {
+	background-image: image('twitter-orange.png');
+	background-position: center center;
+}
+
+.social-link--mail--orange {
+	background-image: image('mail-orange.png');
 	background-position: center center;
 }
 
