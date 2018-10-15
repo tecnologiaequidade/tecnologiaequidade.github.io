@@ -22,9 +22,3 @@ list:
     logotype: /uploads/huffpost.png
     name: Huffpost
     slug: huffpost
-  - alt: Logo da Época Negócios
-    link: >-
-      https://epocanegocios.globo.com/colunas/Multidoes/noticia/2018/10/desculpem-criancas-mas-estamos-perdidos-com-tanto-odio.html
-    logotype: /uploads/logo-epoca-negócios.png
-    name: Época Negócios
-    slug: epocanegocios
