@@ -28,27 +28,9 @@ list:
     logotype: /uploads/agencialupa.png
     name: Agência Lupa
     slug: agencialupa
-  - alt: Logo da Agência Brasil
+  - alt: 'logo da Agência Brasil '
     link: >-
       http://agenciabrasil.ebc.com.br/politica/noticia/2018-08/tse-do-mexico-monitorou-e-desmentiu-fake-news-durante-eleicoes-do-pais
     logotype: /uploads/agenciabrasil.png
-    name: Agência Brasil
+    name: 'Agência Brasil '
     slug: agenciabrasil
-  - alt: Logo da VICE
-    link: >-
-      https://www.vice.com/pt_br/article/qvm9pm/pesquisadores-afirmam-que-bots-farao-grande-estrago-nas-eleicoes-de-2018
-    logotype: /uploads/vice.png
-    name: VICE
-    slug: vice
-  - alt: Logo da Época Negócios
-    link: >-
-      https://epocanegocios.globo.com/colunas/Multidoes/noticia/2018/10/desculpem-criancas-mas-estamos-perdidos-com-tanto-odio.html
-    logotype: /uploads/epocanegocios.png
-    name: Época Negócios
-    slug: epocanegocios
-  - alt: logo da democraciaabierta
-    link: >-
-      https://www.opendemocracy.net/democraciaabierta/ariel-kogan-marcio-vasconcelos/recomenda-es-para-combater-desinforma-o-na-propagan
-    logotype: /uploads/democraciaabierta.png
-    name: 'democraciaAbierta '
-    slug: democraciaabierta
