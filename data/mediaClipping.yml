@@ -28,3 +28,9 @@ list:
     logotype: /uploads/agencialupa.png
     name: Agência Lupa
     slug: agencialupa
+  - alt: Logo da Agência Brasil
+    link: >-
+      http://agenciabrasil.ebc.com.br/politica/noticia/2018-08/tse-do-mexico-monitorou-e-desmentiu-fake-news-durante-eleicoes-do-pais
+    logotype: /uploads/agenciabrasil.png
+    name: Agência Brasil
+    slug: agenciabrasil
