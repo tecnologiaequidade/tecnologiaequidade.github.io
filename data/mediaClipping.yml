@@ -40,3 +40,9 @@ list:
     logotype: /uploads/vice.png
     name: VICE
     slug: vice
+  - alt: Logo da Época Negócios
+    link: >-
+      https://epocanegocios.globo.com/colunas/Multidoes/noticia/2018/10/desculpem-criancas-mas-estamos-perdidos-com-tanto-odio.html
+    logotype: /uploads/epocanegocios.png
+    name: Época Negócios
+    slug: epocanegocios
