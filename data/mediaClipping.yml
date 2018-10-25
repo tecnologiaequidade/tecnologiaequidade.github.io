@@ -1,24 +1,36 @@
 list:
-  - link: 'https://istoe.com.br/era-dos-robos-chega-as-eleicoes'
+  - alt: logo da revista Istoé
+    link: 'https://istoe.com.br/era-dos-robos-chega-as-eleicoes'
     logotype: /uploads/istoe.png
     name: Istoé
     slug: istoe
-    alt: logo da revista Istoé
-  - link: >-
+  - alt: Logo do Jornal da Globo G1
+    link: >-
       https://g1.globo.com/economia/tecnologia/noticia/o-que-e-um-robo-na-web-e-como-ele-pode-influenciar-o-debate-nas-redes-especialistas-explicam.ghtml
     logotype: /uploads/g1.png
     name: G1
     slug: g1
-    alt: Logo do Jornal da Globo G1
-  - link: >-
+  - alt: Logo da Folha de São Paulo
+    link: >-
       http://www1.folha.uol.com.br/poder/2017/12/1941961-grupos-combaterao-vale-tudo-eleitoral-na-internet.shtml
     logotype: /uploads/folha.png
     name: Folha
     slug: folha
-    alt: Logo da Folha de São Paulo
-  - link: >-
+  - alt: Logo do Huffpost
+    link: >-
       http://www.huffpostbrasil.com/2018/01/06/robos-sao-decisivos-para-definir-eleicao-polarizada-argumenta-especialista_a_23310816/
     logotype: /uploads/huffpost.png
     name: Huffpost
     slug: huffpost
-    alt: Logo do Huffpost
+  - alt: Logo da Agência Lupa
+    link: >-
+      https://piaui.folha.uol.com.br/lupa/2018/10/04/documentario-lupa-debate-tv-globo/
+    logotype: /uploads/agencialupa.png
+    name: Agência Lupa
+    slug: agencialupa
+  - alt: 'logo da Agência Brasil '
+    link: >-
+      http://agenciabrasil.ebc.com.br/politica/noticia/2018-08/tse-do-mexico-monitorou-e-desmentiu-fake-news-durante-eleicoes-do-pais
+    logotype: /uploads/agenciabrasil.png
+    name: 'Agência Brasil '
+    slug: agenciabrasil
