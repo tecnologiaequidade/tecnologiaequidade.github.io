@@ -12,6 +12,8 @@
 		<div class="site-header__content">
 			<h1 class="site-title">{{ .Content | plainify }}</h1>
 		</div>
+
+		{{ if (or (.Params.facebook)  (.Params.twitter)  (.Params.medium ) (.Params.linkedin) (.Params.email )) }}
 		<div class="site-header__nav-link">
 			{{ if .Params.facebook }}
 				<a class="social-link social-link--facebook--orange" href="{{ .Params.facebook }}" target="_blank" rel="noopener">{{ .Title }}</a>
@@ -29,7 +31,7 @@
 				<a class="social-link social-link--mail--orange" href="{{ .Params.email }}" target="_blank">{{ i18n "email" | title }}</a>
 			{{ end }}
 		</div>
-
+		{{ end }}
 
 	</div>
 </header>
