@@ -5,12 +5,28 @@
 				<a href="{{ "/" | relLangURL }}">Instituto Tecnologia e Equidade</a>
 			</h2>
 		</div>
+
+		{{ if (or (.Params.facebook)  (.Params.twitter)  (.Params.medium ) (.Params.linkedin) (.Params.email )) }}
 		<div class="footer__social-link">
-			<a class="big-social-link social-link--facebook" href="https://facebook.com/tecnologiaequidade" target="_blank" rel="noopener">Facebook</a>
-			<a class="big-social-link social-link--twitter" href="https://twitter.com/tecnoequidade" target="_blank" rel="noopener">Twitter</a>
-			<a class="big-social-link social-link--medium" href="https://medium.com/@tecnoequidade" target="_blank" rel="noopener">Medium</a>
-			<a class="big-social-link social-link--mail" href="mailto:contato@tecnologiaequidade.org.br">{{ i18n "email" | title }}</a>
+			{{ if .Params.facebook }}
+				<a class="big-social-link social-link--facebook" href="{{ .Params.facebook }}" target="_blank" rel="noopener">{{ .Title }}</a>
+			{{ end }}
+			{{ if .Params.twitter }}
+				<a class="big-social-link social-link--twitter" href="{{ .Params.twitter }}" target="_blank" rel="noopener">{{ .Title }}</a>
+			{{ end }}
+			{{ if .Params.medium }}
+				<a class="big-social-link social-link--medium" href="{{ .Params.medium }}" target="_blank" rel="noopener">{{ .Title }}</a>
+			{{ end }}
+			{{ if .Params.linkedin }}
+				<a class="big-social-link social-link--linkedin" href="{{ .Params.linkedin }}" target="_blank" rel="noopener">{{ .Title }}</a>
+			{{ end }}
+			{{ if .Params.email }}
+				<a class="big-social-link social-link--mail" href="{{ .Params.email }}" target="_blank">{{ i18n "email" | title }}</a>
+			{{ end }}
 		</div>
+		{{ end }}
+
+
 		{{ if .IsTranslated }}
 			<div class="languages-navlinks-wrap">
 				<ul class="languages-navlinks">
