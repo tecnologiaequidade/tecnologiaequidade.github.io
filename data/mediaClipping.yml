@@ -46,3 +46,9 @@ list:
     logotype: /uploads/epocanegocios.png
     name: Época Negócios
     slug: epocanegocios
+  - alt: logo da DemocraciaAbierta
+    link: >-
+      https://www.opendemocracy.net/democraciaabierta/ariel-kogan-marcio-vasconcelos/recomenda-es-para-combater-desinforma-o-na-propagan
+    logotype: /uploads/democraciaabierta.png
+    name: DemocraciaAbierta
+    slug: DemocraciaAbierta
