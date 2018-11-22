@@ -34,3 +34,9 @@ list:
     logotype: /uploads/agenciabrasil.png
     name: 'Agência Brasil '
     slug: agenciabrasil
+  - alt: logo da VICE
+    link: >-
+      https://www.vice.com/pt_br/article/qvm9pm/pesquisadores-afirmam-que-bots-farao-grande-estrago-nas-eleicoes-de-2018
+    logotype: /uploads/vice.png
+    name: VICE
+    slug: vice
