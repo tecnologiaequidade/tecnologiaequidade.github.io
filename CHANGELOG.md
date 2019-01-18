@@ -2,6 +2,9 @@
 
 This project follows [Semantic Versioning](http://semver.org/).
 
+### Added
+- Open graph tags and social sharing related tags
+
 ## [Unreleased]
 ### Added
 - Menu
