@@ -151,3 +151,8 @@ params:
       link: "http://tecnologiaequidade.org.br"
       logo: "IT&E.png"
 
+params:
+  shareImages:
+    default: "assets/images/compartilhamento.jpg"
+    twitter: "assets/images/compartilhamento.jpg"
+    facebook: "assets/images/compartilhamento.jpg"
