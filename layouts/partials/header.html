@@ -21,7 +21,7 @@
 	<!-- END FAVICON -->
 
 	{{ with $.Site.Params.shareImages.default }}
-	<meta name="image" content="{{ . }}">
+	<meta name="image" content="{{ . | absURL }}">
 	{{ end }}
 
 	<!-- Schema.org for Google -->
@@ -32,7 +32,7 @@
 	{{ end }}
 
 	{{ with $.Site.Params.shareImages.default }}
-	<meta itemprop="image" content="{{ . }}">
+	<meta itemprop="image" content="{{ . | absURL }}">
 	{{ end }}
 
 	<!-- Twitter and Open Graph general -->
@@ -52,7 +52,7 @@
 	{{ end }}
 	{{ with $.Site.Params.shareImages.twitter }}
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:image:src" content="{{ . }}">
+	<meta name="twitter:image:src" content="{{ . | absURL }}">
 	{{ end }}
 	<!-- Maximum dimension: 1024px x 512px; minimum dimension: 440px x 220px -->
 
@@ -60,7 +60,7 @@
 
 	<!-- Open Graph general (Facebook, Pinterest & Google+) -->
 	{{ with $.Site.Params.shareImages.facebook }}
-	<meta property="og:image" content="{{ . }}"><!-- Recommended dimension: 1200px x 630px; minimum dimension: 600px x 315px -->
+	<meta property="og:image" content="{{ . | absURL }}"><!-- Recommended dimension: 1200px x 630px; minimum dimension: 600px x 315px -->
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />

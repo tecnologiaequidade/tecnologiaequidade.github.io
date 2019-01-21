@@ -1,4 +1,4 @@
-baseURL: "http://tecnologiaequidade.org.br"
+baseURL: "https://tecnologiaequidade.org.br"
 defaultContentLanguage: pt
 languageCode:    "pt-br"
 disableKinds:    ["taxonomy", "taxonomyTerm", "RSS"]
