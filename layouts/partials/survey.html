@@ -1,6 +1,6 @@
 {{ range where .Site.Pages ".File.TranslationBaseName" "survey" }}
 <div id="mc_embed_signup">
-	<form class="validate newsletter" action="https://twitter.us16.list-manage.com/subscribe/post?u=9b54dd7f6a0bdac9e2cd34ddd&amp;id=32bcf4c047" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	<form class="validate newsletter" action="{{ $.Site.Params.mailchimpList }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 		<div id="mc_embed_signup_scroll">
 			<div class="content smaller-content">
 				<div class="newsletter-text">

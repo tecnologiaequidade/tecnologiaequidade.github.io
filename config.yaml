@@ -26,6 +26,7 @@ languages:
     params:
       description: "O Instituto Tecnologia e Equidade é uma organização sem fins lucrativos que desenvolve pesquisas e projetos experimentais que contribuem para alcançar a equidade com o uso ético da tecnologia."
       subtitle: "Instituto Tecnologia & Equidade"
+      mailchimpList: "https://twitter.us16.list-manage.com/subscribe/post?u=9b54dd7f6a0bdac9e2cd34ddd&amp;id=32bcf4c047"
     menu:
       main:
           - Name: "Manifesto"
@@ -67,6 +68,7 @@ languages:
     params:
       description: "Is a non-profit organization that develops research and experimental projects that contribute to achieving equity with the ethical use of technology."
       subtitle: "The Technology & Equity Institute (T&EI)"
+      mailchimpList: "https://twitter.us16.list-manage.com/subscribe/post?u=9b54dd7f6a0bdac9e2cd34ddd&amp;id=502c578acc"
     menu:
       main:
           - Name: "Manifesto"
@@ -108,6 +110,7 @@ languages:
     params:
       description: "El Instituto Tecnologia y Equidad es una organización sin fines de lucro que desarrolla investigaciones y proyectos experimentales que contribuyen para alcanzar la equidad con el uso ético de la tecnología."
       subtitle: "Instituto Tecnología y Equidad"
+      mailchimpList: "https://twitter.us16.list-manage.com/subscribe/post?u=9b54dd7f6a0bdac9e2cd34ddd&amp;id=36ab48a6e3"
     menu:
       main:
           - Name: "Manifiesto"
