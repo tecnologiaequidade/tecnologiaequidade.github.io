@@ -7,13 +7,16 @@ subtitle: ''
 darkText: false
 draft: false
 summary: >-
-  Projeto de pesquisa e ação para entender o possível impacto dos perfis não humanos em redes sociais nas eleições de 2018. Além disso, a iniciativa busca incidir positivamente nesse cenário, incluindo recomendações para o uso ético dessa tecnologia e a criação de uma plataforma de identificação e denúncias de robôs.
+  Projeto de pesquisa e ação para entender o possível impacto dos perfis não
+  humanos em redes sociais nas eleições de 2018. Além disso, a iniciativa busca
+  incidir positivamente nesse cenário, incluindo recomendações para o uso ético
+  dessa tecnologia e a criação de uma plataforma de identificação e denúncias de
+  robôs.
 relatedProjects:
   - project: pegabot
 weight: 2
 ---
-
-A pesquisa “Desinformação em Eleições: desequilíbrios acelerados pela tecnologia” [^1] e o White Paper “Recomendações Sistêmicas para Combater a Desinformação nas Eleições do Brasil” são iniciativas do Instituto Tecnologia e Equidade (IT&E) publicadas em junho de 2018.
+A pesquisa “Desinformação em Eleições: desequilíbrios acelerados pela tecnologia” \[^1] e o White Paper “Recomendações Sistêmicas para Combater a Desinformação nas Eleições do Brasil” são iniciativas do Instituto Tecnologia e Equidade (IT&E) publicadas em julho de 2018.
 
 Na pesquisa, buscamos explorar dimensões a respeito das fake news e dos bots — suas origens, tipos, características, comportamentos, entornos, antídotos, legislação e iniciativas inspiradoras ao redor do mundo.
 
@@ -21,4 +24,4 @@ O White Paper é um dos principais desdobramentos da pesquisa. A partir do Mapa 
 
 O objetivo deste projeto é gerar eleições mais justas e equitativas. Que elas possam ter, como propósito central, o ato de oferecer informações aos cidadãos a partir de dados e conteúdos legítimos, reduzindo, ao máximo, a desinformação, o uso malicioso da tecnologia e, principalmente, a manipulação do eleitor.
 
-[^1]: A equipe responsável pela pesquisa é composta por Ellen Aquino, Carlos Júnior, Ariel Kogan, Márcio Vasconcelos e Thiago Rondon.
+\[^1]: A equipe responsável pela pesquisa é composta por Ellen Aquino, Carlos Júnior, Ariel Kogan, Márcio Vasconcelos e Thiago Rondon.

@@ -34,3 +34,21 @@ list:
     logotype: /uploads/agenciabrasil.png
     name: 'Agência Brasil '
     slug: agenciabrasil
+  - alt: logo da VICE
+    link: >-
+      https://www.vice.com/pt_br/article/qvm9pm/pesquisadores-afirmam-que-bots-farao-grande-estrago-nas-eleicoes-de-2018
+    logotype: /uploads/vice.png
+    name: VICE
+    slug: vice
+  - alt: logo da Época Negócios
+    link: >-
+      https://epocanegocios.globo.com/colunas/Multidoes/noticia/2018/10/desculpem-criancas-mas-estamos-perdidos-com-tanto-odio.html
+    logotype: /uploads/epocanegocios.png
+    name: Época Negócios
+    slug: epocanegocios
+  - alt: logo da DemocraciaAbierta
+    link: >-
+      https://www.opendemocracy.net/democraciaabierta/ariel-kogan-marcio-vasconcelos/recomenda-es-para-combater-desinforma-o-na-propagan
+    logotype: /uploads/democraciaabierta.png
+    name: DemocraciaAbierta
+    slug: DemocraciaAbierta
